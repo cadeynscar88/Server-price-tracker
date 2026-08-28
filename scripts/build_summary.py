@@ -6,7 +6,11 @@ ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'; OBS=DATA/'observatio
 config=json.loads((DATA/'config.json').read_text()); products=json.loads((DATA/'products.json').read_text())
 def observations(pid):
  p=OBS/f'{pid}.json'; return json.loads(p.read_text()) if p.exists() else []
-def verified(pid): return [o for o in observations(pid) if o.get('status')=='verified' and isinstance(o.get('price'),(int,float))]
+def trusted(o):
+ if o.get('status')!='verified' or not isinstance(o.get('price'),(int,float)): return False
+ if o.get('method')=='serpapi_google_shopping': return o.get('match_status')=='strong'
+ return True
+def verified(pid): return [o for o in observations(pid) if trusted(o)]
 def stats(pid):
  v=sorted(verified(pid),key=lambda o:o.get('timestamp',''))
  if not v:return None
@@ -28,6 +32,6 @@ def main():
  target=config['target_budget']; verdict='NONE' if missing else ('BUY' if total<=target else 'WATCH' if total<=target*1.08 else 'WAIT')
  old=json.loads((DATA/'summary.json').read_text()) if (DATA/'summary.json').exists() else {}; hist=old.get('build_history',[])
  if missing==0: hist.append({'timestamp':datetime.now(timezone.utc).isoformat(),'total':round(total,2)})
- summary={'generated':datetime.now(timezone.utc).isoformat(),'last_check':datetime.now(timezone.utc).isoformat(),'build_total':round(total,2) if missing==0 else None,'missing_components':missing,'recommendation':verdict,'target':target,'components':comps,'storage':stg,'best_storage':best,'build_history':hist[-400:]}
+ summary={'generated':datetime.now(timezone.utc).isoformat(),'last_check':datetime.now(timezone.utc).isoformat(),'build_total':round(total,2) if missing==0 else None,'missing_components':missing,'recommendation':verdict,'target':target,'components':comps,'storage':stg,'best_storage':best,'build_history':hist[-400:],'verification_policy':'Manual observations are trusted. SerpApi observations count only when match_status is strong.'}
  (DATA/'summary.json').write_text(json.dumps(summary,indent=2)); print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()
