@@ -3,7 +3,9 @@ name: SerpApi Price Check
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 6 * * *'
+    # Twice weekly: Tuesdays and Fridays at 06:17 UTC.
+    # GitHub Actions cron is always UTC.
+    - cron: '17 6 * * 2,5'
 
 permissions:
   contents: write
@@ -23,7 +25,9 @@ jobs:
       - name: Collect Google Shopping offers through SerpApi
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
-          SERPAPI_DAILY_BATCH: '7'
+          # 24 searches/run keeps even a 10-run month at 240 searches,
+          # leaving a small buffer under the 250-search free allowance.
+          SERPAPI_DAILY_BATCH: '24'
         run: python scripts/check_prices.py
       - name: Rebuild summary and retailer status
         run: |
