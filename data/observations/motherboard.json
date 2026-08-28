@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/product/1855749-REG/asus_proart_x870e_creator_wifi_motherboard.html",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "HTTP Error 403: Forbidden",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "ASUS ProArt X870E-CREATOR WIFI",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

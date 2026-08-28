@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/product/cyberpowerpc-gaming-desktop-amd-ryzen-9-9950x-2024-nvidia-geforce-rtx-5070-ti-16gb-64gb-ddr5-memory-4tb-ssd-storage-black/J3GWTS9P79",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "The read operation timed out",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "component_id": "nvme-4tb",
+    "component": "Approved 4 TB TLC NVMe candidates",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/western-digital-4tb-black-sn850x-nvme/p/N82E16820250244",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "No structured JSON-LD offer found",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "Approved 4TB TLC PCIe 4 NVMe",
+    "currency": "USD",
+    "availability": "Unknown"
+  },
+  {
+    "component_id": "nvme-4tb",
+    "component": "Approved 4 TB TLC NVMe candidates",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/product/1846008-REG/lexar_lnm790x004t_rnnnu_nm790_m_2_2280_pcie.html",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "HTTP Error 403: Forbidden",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "Approved 4TB TLC PCIe 4 NVMe",
+    "currency": "USD",
+    "availability": "Unknown"
+  },
+  {
+    "component_id": "nvme-4tb",
+    "component": "Approved 4 TB TLC NVMe candidates",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/product/683967/crucial-t500-4tb-3d-tlc-nand-flash-pcie-gen-4-x4-nvme-m2-internal-ssd",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "HTTP Error 403: Forbidden",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "Approved 4TB TLC PCIe 4 NVMe",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "cpu",
+    "component": "CPU \u2014 Ryzen 9 9950X",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/product/682197/amd-ryzen-9-9950x-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "HTTP Error 403: Forbidden",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "AMD Ryzen 9 9950X",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "prebuilt-cyberpower-9950x3d-5080",
+    "component": "Donor \u2014 CyberPowerPC 9950X3D / RTX 5080",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/ip/15901106431",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "No structured JSON-LD offer found",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "CyberPowerPC Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

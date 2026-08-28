@@ -1,6 +1,5 @@
 {
-  "generated_at": "Not yet checked",
-  "checked_at": null,
+  "generated_at": "2026-08-28T22:50:11.965039+00:00",
   "retailers": [
     {
       "retailer": "Amazon",
@@ -32,5 +31,12 @@
       "status": "manual",
       "reason": "No successful automated check recorded yet"
     }
-  ]
+  ],
+  "freshness_policy": {
+    "green": "successful verified price within 24 hours",
+    "yellow": "last successful price older than 24 hours",
+    "red": "check_failed / blocked / rate_limited",
+    "gray": "manual-only or not configured"
+  },
+  "note": "A retailer failure never changes a product price and never creates an inferred price."
 }

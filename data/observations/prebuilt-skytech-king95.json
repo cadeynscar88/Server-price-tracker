@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/ip/15571562340",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "No structured JSON-LD offer found",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]

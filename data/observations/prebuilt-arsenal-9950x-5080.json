@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/arsenalpc-gaming-desktop-pcs-nvidia-geforce-rtx-5080-amd-ryzen-9-9950x-128gb-ddr5-4tb-nvme-ssd-black/p/3D5-0073-00CS9",
+    "status": "check_failed",
+    "method": "watch",
+    "notes": "No structured JSON-LD offer found",
+    "timestamp": "2026-08-28T22:49:41.264247+00:00",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "currency": "USD",
+    "availability": "Unknown"
+  }
+]
