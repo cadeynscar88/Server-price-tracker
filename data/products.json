@@ -1,0 +1,703 @@
+[
+  {
+    "id": "cpu",
+    "category": "CPU",
+    "label": "CPU \u2014 Ryzen 9 9950X",
+    "model": "AMD Ryzen 9 9950X",
+    "manufacturer": "AMD",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [
+      {
+        "retailer": "microcenter",
+        "url": "https://www.microcenter.com/product/682197/amd-ryzen-9-9950x-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included"
+      }
+    ],
+    "search_terms": [
+      "AMD Ryzen 9 9950X"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=AMD+Ryzen+9+9950X",
+      "newegg": "https://www.newegg.com/p/pl?d=AMD+Ryzen+9+9950X",
+      "walmart": "https://www.walmart.com/search?q=AMD+Ryzen+9+9950X",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=AMD+Ryzen+9+9950X",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=AMD+Ryzen+9+9950X&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=AMD+Ryzen+9+9950X"
+    },
+    "notes": "Resolved 16C/32T AM5 baseline CPU.",
+    "kind": "component"
+  },
+  {
+    "id": "motherboard",
+    "category": "Motherboard",
+    "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "ASUS ProArt X870E-CREATOR WIFI",
+    "manufacturer": "ASUS",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [
+      {
+        "retailer": "bh",
+        "url": "https://www.bhphotovideo.com/c/product/1855749-REG/asus_proart_x870e_creator_wifi_motherboard.html"
+      }
+    ],
+    "search_terms": [
+      "ASUS ProArt X870E Creator WiFi"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=ASUS+ProArt+X870E+Creator+WiFi",
+      "newegg": "https://www.newegg.com/p/pl?d=ASUS+ProArt+X870E+Creator+WiFi",
+      "walmart": "https://www.walmart.com/search?q=ASUS+ProArt+X870E+Creator+WiFi",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=ASUS+ProArt+X870E+Creator+WiFi",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=ASUS+ProArt+X870E+Creator+WiFi&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=ASUS+ProArt+X870E+Creator+WiFi"
+    },
+    "notes": "Four M.2, integrated 10GbE and USB4.",
+    "kind": "component",
+    "attrs": {
+      "m2_slots": 4,
+      "pcie_gen": 5,
+      "pcie_lanes": "dual x16 physical; x8/x8 capable",
+      "ten_gbe": true,
+      "max_ram_gb": 256,
+      "expansion_ok": true,
+      "usb4": true
+    }
+  },
+  {
+    "id": "ram-128gb",
+    "category": "RAM",
+    "label": "RAM \u2014 128 GB DDR5",
+    "model": "128GB DDR5 (prefer 2x64GB, AM5 QVL-compatible)",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "128GB DDR5 2x64GB AM5"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=128GB+DDR5+2x64GB+AM5",
+      "newegg": "https://www.newegg.com/p/pl?d=128GB+DDR5+2x64GB+AM5",
+      "walmart": "https://www.walmart.com/search?q=128GB+DDR5+2x64GB+AM5",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=128GB+DDR5+2x64GB+AM5",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=128GB+DDR5+2x64GB+AM5&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=128GB+DDR5+2x64GB+AM5"
+    },
+    "notes": "Baseline RAM target; choose exact kit from motherboard QVL.",
+    "kind": "component"
+  },
+  {
+    "id": "ram-96gb",
+    "category": "RAM",
+    "label": "RAM option \u2014 96 GB DDR5",
+    "model": "96GB DDR5 (2x48GB)",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "96GB DDR5 2x48GB AM5"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=96GB+DDR5+2x48GB+AM5",
+      "newegg": "https://www.newegg.com/p/pl?d=96GB+DDR5+2x48GB+AM5",
+      "walmart": "https://www.walmart.com/search?q=96GB+DDR5+2x48GB+AM5",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=96GB+DDR5+2x48GB+AM5",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=96GB+DDR5+2x48GB+AM5&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=96GB+DDR5+2x48GB+AM5"
+    },
+    "notes": "Lower-cost day-one alternative.",
+    "kind": "component"
+  },
+  {
+    "id": "ram-64gb",
+    "category": "RAM",
+    "label": "RAM option \u2014 64 GB DDR5",
+    "model": "64GB DDR5 (2x32GB)",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "64GB DDR5 2x32GB AM5"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=64GB+DDR5+2x32GB+AM5",
+      "newegg": "https://www.newegg.com/p/pl?d=64GB+DDR5+2x32GB+AM5",
+      "walmart": "https://www.walmart.com/search?q=64GB+DDR5+2x32GB+AM5",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=64GB+DDR5+2x32GB+AM5",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=64GB+DDR5+2x32GB+AM5&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=64GB+DDR5+2x32GB+AM5"
+    },
+    "notes": "Staged-upgrade alternative.",
+    "kind": "component"
+  },
+  {
+    "id": "gpu-5070ti",
+    "category": "GPU / AI",
+    "label": "GPU option \u2014 RTX 5070 Ti 16 GB",
+    "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "RTX 5070 Ti 16GB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=RTX+5070+Ti+16GB",
+      "newegg": "https://www.newegg.com/p/pl?d=RTX+5070+Ti+16GB",
+      "walmart": "https://www.walmart.com/search?q=RTX+5070+Ti+16GB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5070+Ti+16GB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=RTX+5070+Ti+16GB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=RTX+5070+Ti+16GB"
+    },
+    "notes": "Value/performance AI option; separate from core baseline.",
+    "kind": "component"
+  },
+  {
+    "id": "gpu-5080",
+    "category": "GPU / AI",
+    "label": "GPU option \u2014 RTX 5080 16 GB",
+    "model": "NVIDIA GeForce RTX 5080 16GB",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "RTX 5080 16GB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=RTX+5080+16GB",
+      "newegg": "https://www.newegg.com/p/pl?d=RTX+5080+16GB",
+      "walmart": "https://www.walmart.com/search?q=RTX+5080+16GB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5080+16GB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=RTX+5080+16GB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=RTX+5080+16GB"
+    },
+    "notes": "High-performance AI option.",
+    "kind": "component"
+  },
+  {
+    "id": "gpu-5090",
+    "category": "GPU / AI",
+    "label": "GPU option \u2014 RTX 5090 32 GB",
+    "model": "NVIDIA GeForce RTX 5090 32GB",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "RTX 5090 32GB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=RTX+5090+32GB",
+      "newegg": "https://www.newegg.com/p/pl?d=RTX+5090+32GB",
+      "walmart": "https://www.walmart.com/search?q=RTX+5090+32GB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5090+32GB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=RTX+5090+32GB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=RTX+5090+32GB"
+    },
+    "notes": "Premium AI option; separate budget.",
+    "kind": "component"
+  },
+  {
+    "id": "gpu-24gb",
+    "category": "GPU / AI",
+    "label": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "24GB NVIDIA GPU",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "NVIDIA 24GB GPU"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=NVIDIA+24GB+GPU",
+      "newegg": "https://www.newegg.com/p/pl?d=NVIDIA+24GB+GPU",
+      "walmart": "https://www.walmart.com/search?q=NVIDIA+24GB+GPU",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=NVIDIA+24GB+GPU",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=NVIDIA+24GB+GPU&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=NVIDIA+24GB+GPU"
+    },
+    "notes": "Middle-ground local-AI option.",
+    "kind": "component"
+  },
+  {
+    "id": "nvme-4tb",
+    "category": "Storage",
+    "label": "Approved 4 TB TLC NVMe candidates",
+    "model": "Approved 4TB TLC PCIe 4 NVMe",
+    "manufacturer": "Multiple",
+    "qty": 2,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "newegg",
+        "url": "https://www.newegg.com/western-digital-4tb-black-sn850x-nvme/p/N82E16820250244"
+      },
+      {
+        "retailer": "bh",
+        "url": "https://www.bhphotovideo.com/c/product/1846008-REG/lexar_lnm790x004t_rnnnu_nm790_m_2_2280_pcie.html"
+      },
+      {
+        "retailer": "microcenter",
+        "url": "https://www.microcenter.com/product/683967/crucial-t500-4tb-3d-tlc-nand-flash-pcie-gen-4-x4-nvme-m2-internal-ssd"
+      }
+    ],
+    "search_terms": [
+      "4TB TLC NVMe SN850X NM790 T500"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=4TB+TLC+NVMe+SN850X+NM790+T500",
+      "newegg": "https://www.newegg.com/p/pl?d=4TB+TLC+NVMe+SN850X+NM790+T500",
+      "walmart": "https://www.walmart.com/search?q=4TB+TLC+NVMe+SN850X+NM790+T500",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=4TB+TLC+NVMe+SN850X+NM790+T500",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=4TB+TLC+NVMe+SN850X+NM790+T500&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=4TB+TLC+NVMe+SN850X+NM790+T500"
+    },
+    "notes": "Storage A uses two; track multiple approved TLC models.",
+    "kind": "component"
+  },
+  {
+    "id": "nvme-2tb",
+    "category": "Storage",
+    "label": "Approved 2 TB TLC NVMe candidates",
+    "model": "Approved 2TB TLC PCIe 4 NVMe",
+    "manufacturer": "Multiple",
+    "qty": 4,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "2TB TLC NVMe SN850X T500 990 PRO"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+      "newegg": "https://www.newegg.com/p/pl?d=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+      "walmart": "https://www.walmart.com/search?q=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=2TB+TLC+NVMe+SN850X+T500+990+PRO&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=2TB+TLC+NVMe+SN850X+T500+990+PRO"
+    },
+    "notes": "Storage B uses four.",
+    "kind": "component"
+  },
+  {
+    "id": "boot-ssd",
+    "category": "Boot/Cache SSD",
+    "label": "Boot SSD \u2014 1 TB NVMe",
+    "model": "1TB reliable NVMe SSD",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "1TB NVMe SSD TLC"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=1TB+NVMe+SSD+TLC",
+      "newegg": "https://www.newegg.com/p/pl?d=1TB+NVMe+SSD+TLC",
+      "walmart": "https://www.walmart.com/search?q=1TB+NVMe+SSD+TLC",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=1TB+NVMe+SSD+TLC",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=1TB+NVMe+SSD+TLC&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=1TB+NVMe+SSD+TLC"
+    },
+    "notes": "Separate OS/application drive.",
+    "kind": "component"
+  },
+  {
+    "id": "case",
+    "category": "Case",
+    "label": "Full tower / workstation case",
+    "model": "E-ATX full tower with 4+ physical drive positions",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "E-ATX full tower 4 drive bays GPU clearance"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=E-ATX+full+tower+4+drive+bays+GPU+clearance",
+      "newegg": "https://www.newegg.com/p/pl?d=E-ATX+full+tower+4+drive+bays+GPU+clearance",
+      "walmart": "https://www.walmart.com/search?q=E-ATX+full+tower+4+drive+bays+GPU+clearance",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=E-ATX+full+tower+4+drive+bays+GPU+clearance",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=E-ATX+full+tower+4+drive+bays+GPU+clearance&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=E-ATX+full+tower+4+drive+bays+GPU+clearance"
+    },
+    "notes": "Large GPU clearance, airflow and expansion.",
+    "kind": "component"
+  },
+  {
+    "id": "cpu-cooler",
+    "category": "Cooling",
+    "label": "High-end CPU cooling",
+    "model": "360mm AIO or equivalent high-end air cooler",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Ryzen 9950X 360mm AIO cooler"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Ryzen+9950X+360mm+AIO+cooler",
+      "newegg": "https://www.newegg.com/p/pl?d=Ryzen+9950X+360mm+AIO+cooler",
+      "walmart": "https://www.walmart.com/search?q=Ryzen+9950X+360mm+AIO+cooler",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Ryzen+9950X+360mm+AIO+cooler",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Ryzen+9950X+360mm+AIO+cooler&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Ryzen+9950X+360mm+AIO+cooler"
+    },
+    "notes": "Sized for sustained server load.",
+    "kind": "component"
+  },
+  {
+    "id": "psu",
+    "category": "PSU",
+    "label": "PSU \u2014 1000 W ATX 3.1",
+    "model": "1000W fully modular ATX 3.1 PSU",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "1000W ATX 3.1 PSU"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=1000W+ATX+3.1+PSU",
+      "newegg": "https://www.newegg.com/p/pl?d=1000W+ATX+3.1+PSU",
+      "walmart": "https://www.walmart.com/search?q=1000W+ATX+3.1+PSU",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=1000W+ATX+3.1+PSU",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=1000W+ATX+3.1+PSU&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=1000W+ATX+3.1+PSU"
+    },
+    "notes": "Quality modular baseline; increase if future GPU requires.",
+    "kind": "component"
+  },
+  {
+    "id": "10gbe",
+    "category": "Networking",
+    "label": "10 GbE networking",
+    "model": "Integrated 10GbE on ProArt board / Intel X550-class fallback",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Intel X550 10GbE adapter"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Intel+X550+10GbE+adapter",
+      "newegg": "https://www.newegg.com/p/pl?d=Intel+X550+10GbE+adapter",
+      "walmart": "https://www.walmart.com/search?q=Intel+X550+10GbE+adapter",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Intel+X550+10GbE+adapter",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Intel+X550+10GbE+adapter&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Intel+X550+10GbE+adapter"
+    },
+    "notes": "Integrated on resolved motherboard; fallback adapter tracked.",
+    "kind": "component"
+  },
+  {
+    "id": "usb4",
+    "category": "High-Speed I/O",
+    "label": "USB4 / 40 Gbps-class I/O",
+    "model": "Integrated USB4 on ProArt board",
+    "manufacturer": "ASUS",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "USB4 40Gbps PCIe card"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=USB4+40Gbps+PCIe+card",
+      "newegg": "https://www.newegg.com/p/pl?d=USB4+40Gbps+PCIe+card",
+      "walmart": "https://www.walmart.com/search?q=USB4+40Gbps+PCIe+card",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=USB4+40Gbps+PCIe+card",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=USB4+40Gbps+PCIe+card&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=USB4+40Gbps+PCIe+card"
+    },
+    "notes": "Integrated on resolved motherboard.",
+    "kind": "component"
+  },
+  {
+    "id": "sd-reader",
+    "category": "Ingestion",
+    "label": "UHS-II USB-C SD reader",
+    "model": "UHS-II USB-C SD card reader",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "UHS-II USB-C SD card reader"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=UHS-II+USB-C+SD+card+reader",
+      "newegg": "https://www.newegg.com/p/pl?d=UHS-II+USB-C+SD+card+reader",
+      "walmart": "https://www.walmart.com/search?q=UHS-II+USB-C+SD+card+reader",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=UHS-II+USB-C+SD+card+reader",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=UHS-II+USB-C+SD+card+reader&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=UHS-II+USB-C+SD+card+reader"
+    },
+    "notes": "Quarantine/scan workflow before import.",
+    "kind": "component"
+  },
+  {
+    "id": "firewall",
+    "category": "Firewall",
+    "label": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": true,
+    "watch_urls": [],
+    "search_terms": [
+      "OPNsense firewall appliance Intel 2.5GbE"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=OPNsense+firewall+appliance+Intel+2.5GbE",
+      "newegg": "https://www.newegg.com/p/pl?d=OPNsense+firewall+appliance+Intel+2.5GbE",
+      "walmart": "https://www.walmart.com/search?q=OPNsense+firewall+appliance+Intel+2.5GbE",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=OPNsense+firewall+appliance+Intel+2.5GbE",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=OPNsense+firewall+appliance+Intel+2.5GbE&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=OPNsense+firewall+appliance+Intel+2.5GbE"
+    },
+    "notes": "Separate security boundary.",
+    "kind": "component"
+  },
+  {
+    "id": "backup-ssd",
+    "category": "Backup",
+    "label": "Offline backup SSD",
+    "model": "4TB external SSD",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "4TB external SSD"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=4TB+external+SSD",
+      "newegg": "https://www.newegg.com/p/pl?d=4TB+external+SSD",
+      "walmart": "https://www.walmart.com/search?q=4TB+external+SSD",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=4TB+external+SSD",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=4TB+external+SSD&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=4TB+external+SSD"
+    },
+    "notes": "Normally disconnected.",
+    "kind": "component"
+  },
+  {
+    "id": "vault",
+    "category": "Vault",
+    "label": "Secondary vault hardware",
+    "model": "1TB SSD small-form-factor vault",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "mini PC Raspberry Pi SSD 1TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=mini+PC+Raspberry+Pi+SSD+1TB",
+      "newegg": "https://www.newegg.com/p/pl?d=mini+PC+Raspberry+Pi+SSD+1TB",
+      "walmart": "https://www.walmart.com/search?q=mini+PC+Raspberry+Pi+SSD+1TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=mini+PC+Raspberry+Pi+SSD+1TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=mini+PC+Raspberry+Pi+SSD+1TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=mini+PC+Raspberry+Pi+SSD+1TB"
+    },
+    "notes": "Future secondary-location vault.",
+    "kind": "component"
+  },
+  {
+    "id": "prebuilt-ibuypower-7900x-5080",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "iBUYPOWER Slate Ryzen 9 7900X RTX 5080 32GB 2TB",
+    "manufacturer": "iBUYPOWER",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "iBUYPOWER Slate Ryzen 9 7900X RTX 5080"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080",
+      "newegg": "https://www.newegg.com/p/pl?d=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080",
+      "walmart": "https://www.walmart.com/search?q=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080"
+    },
+    "notes": "Evaluate donor value.",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-asus-g700-5080",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "ASUS ROG G700 Core Ultra 7 265KF RTX 5080 32GB 2TB",
+    "manufacturer": "ASUS",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [],
+    "search_terms": [
+      "ASUS ROG G700 RTX 5080"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=ASUS+ROG+G700+RTX+5080",
+      "newegg": "https://www.newegg.com/p/pl?d=ASUS+ROG+G700+RTX+5080",
+      "walmart": "https://www.walmart.com/search?q=ASUS+ROG+G700+RTX+5080",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=ASUS+ROG+G700+RTX+5080",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=ASUS+ROG+G700+RTX+5080&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=ASUS+ROG+G700+RTX+5080"
+    },
+    "notes": "Evaluate donor value.",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-cyberpower-9950x-5070ti",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
+    "manufacturer": "CyberPowerPC",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "bestbuy",
+        "url": "https://www.bestbuy.com/product/cyberpowerpc-gaming-desktop-amd-ryzen-9-9950x-2024-nvidia-geforce-rtx-5070-ti-16gb-64gb-ddr5-memory-4tb-ssd-storage-black/J3GWTS9P79"
+      }
+    ],
+    "search_terms": [
+      "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+      "walmart": "https://www.walmart.com/search?q=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB"
+    },
+    "notes": "Closest donor to core CPU/storage requirements.",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-skytech-king95",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "manufacturer": "Skytech",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "walmart",
+        "url": "https://www.walmart.com/ip/15571562340"
+      }
+    ],
+    "search_terms": [
+      "Skytech King 95 9950X3D RTX 5080 64GB 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+      "walmart": "https://www.walmart.com/search?q=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB"
+    },
+    "notes": "",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-skytech-o11v",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech O11V Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "manufacturer": "Skytech",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "walmart",
+        "url": "https://www.walmart.com/ip/17894368646"
+      }
+    ],
+    "search_terms": [
+      "Skytech O11V 9950X3D RTX 5080 64GB 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+      "walmart": "https://www.walmart.com/search?q=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB"
+    },
+    "notes": "",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-cyberpower-9950x3d-5080",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 CyberPowerPC 9950X3D / RTX 5080",
+    "model": "CyberPowerPC Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "manufacturer": "CyberPowerPC",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "walmart",
+        "url": "https://www.walmart.com/ip/15901106431"
+      }
+    ],
+    "search_terms": [
+      "CyberPowerPC 9950X3D RTX 5080 64GB 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB",
+      "walmart": "https://www.walmart.com/search?q=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=CyberPowerPC+9950X3D+RTX+5080+64GB+4TB"
+    },
+    "notes": "",
+    "kind": "prebuilt"
+  },
+  {
+    "id": "prebuilt-arsenal-9950x-5080",
+    "category": "Prebuilt Donor",
+    "label": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "manufacturer": "ArsenalPC",
+    "qty": 1,
+    "in_build": false,
+    "watch_urls": [
+      {
+        "retailer": "newegg",
+        "url": "https://www.newegg.com/arsenalpc-gaming-desktop-pcs-nvidia-geforce-rtx-5080-amd-ryzen-9-9950x-128gb-ddr5-4tb-nvme-ssd-black/p/3D5-0073-00CS9"
+      }
+    ],
+    "search_terms": [
+      "ArsenalPC Ryzen 9 9950X RTX 5080 128GB 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+      "walmart": "https://www.walmart.com/search?q=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB"
+    },
+    "notes": "Track primarily for unusually deep discounts.",
+    "kind": "prebuilt"
+  }
+]

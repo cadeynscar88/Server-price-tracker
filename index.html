@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  PRIVATE SERVER PRICE TRACKER — PST v1.0.0
+  PRIVATE SERVER PRICE TRACKER — PST v1.1.3
   ==========================================================
   Single-file PWA. iPhone-first. Deploys on GitHub Pages.
   Data store: JSON files in this repo (written via GitHub REST API).
@@ -258,24 +258,10 @@ input.num,select.num{font-family:var(--mono)}
         <input id="set-repo" class="num" placeholder="cadeyn/private-server-price-tracker" autocapitalize="off" autocorrect="off">
         <label>Branch</label>
         <input id="set-branch" class="num" value="main" autocapitalize="off">
-        <label>Fine-grained personal access token</label>
-        <input id="set-token" class="num" type="password" placeholder="github_pat_…" autocapitalize="off">
-        <p class="hint">Scope the token to this one repo, Contents: Read &amp; write only. It stays on this device (never written to the repo).</p>
+        <p class="hint">Read-only browser mode. No GitHub token is stored in the iPhone app; automated checks run in GitHub Actions.</p>
       </div>
     </section>
-    <section>
-      <h2>Adapters</h2>
-      <div class="card">
-        <label>Best Buy API key</label>
-        <input id="set-bbkey" class="num" type="password" placeholder="from developer.bestbuy.com" autocapitalize="off">
-        <label>Proxy base URL (Netlify function)</label>
-        <input id="set-proxy" class="num" placeholder="https://yoursite.netlify.app/.netlify/functions/proxy" autocapitalize="off">
-        <p class="hint">The proxy reads JSON-LD price data from retailer product pages the browser can't fetch directly (CORS). Leave blank to skip those retailers — they'll record CHECK FAILED, never a guess.</p>
-        <label style="display:flex;align-items:center;gap:8px;text-transform:none;font-size:13px;color:var(--ink)">
-          <input type="checkbox" id="set-autocheck" style="width:auto"> Auto-run check when data is stale (&gt;48 h) on open
-        </label>
-      </div>
-    </section>
+    <section><h2>Automated checks</h2><div class="card"><p class="hint">Price checks run through GitHub Actions in no-API mode. Blocked pages are recorded as check_failed; prices are never guessed.</p></div></section>
     <section>
       <h2>Pending (unsynced) entries</h2>
       <div class="card">
@@ -284,7 +270,7 @@ input.num,select.num{font-family:var(--mono)}
       </div>
     </section>
     <button class="btn" id="btn-save-settings">Save settings</button>
-    <div class="footer">PST v1.0.0 · data lives in your repo · no third party holds your history</div>
+    <div class="footer">PST v1.1.3 · data lives in your repo · no third party holds your history</div>
   </div>
 </main>
 
@@ -334,7 +320,7 @@ const LS = {
   save(o){ localStorage.setItem(this.k, JSON.stringify(o)); }
 };
 const PENDING_KEY = "pst_pending_v1";
-const S = Object.assign({ repo:"", branch:"main", token:"", bbkey:"", proxy:"", autocheck:false }, LS.load());
+const S = Object.assign({ repo:"", branch:"main", autocheck:false }, LS.load()); delete S.token; delete S.bbkey; delete S.proxy;
 
 // Guess owner/repo from a GitHub Pages URL: owner.github.io/repo
 (function guessRepo(){
@@ -368,29 +354,9 @@ const nowISO = ()=> new Date().toISOString();
 const GH = {
   base(){ return `https://api.github.com/repos/${S.repo}/contents/`; },
   headers(raw){ return { "Authorization":"Bearer "+S.token, "Accept": raw?"application/vnd.github.raw+json":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28" }; },
-  canWrite(){ return !!(S.token && S.repo); },
-  async read(path){
-    if (this.canWrite()){
-      const r = await fetch(this.base()+path+"?ref="+S.branch, { headers:this.headers(true) });
-      if (r.status===404) return null;
-      if (!r.ok) throw new Error(`GitHub read ${path}: HTTP ${r.status}`);
-      return await r.json();
-    }
-    const r = await fetch(path+"?v="+Date.now());
-    if (!r.ok) return null;
-    return await r.json();
-  },
-  async write(path, obj, msg){
-    if (!this.canWrite()) throw new Error("No GitHub token configured (Setup tab)");
-    // fetch current sha (if file exists)
-    let sha;
-    const head = await fetch(this.base()+path+"?ref="+S.branch, { headers:this.headers(false) });
-    if (head.ok) sha = (await head.json()).sha;
-    const body = { message: msg, branch: S.branch, content: b64(JSON.stringify(obj, null, 2)) };
-    if (sha) body.sha = sha;
-    const r = await fetch(this.base()+path, { method:"PUT", headers:this.headers(false), body: JSON.stringify(body) });
-    if (!r.ok) throw new Error(`GitHub write ${path}: HTTP ${r.status} ${(await r.text()).slice(0,120)}`);
-  }
+  canWrite(){ return false; },
+  async read(path){ const r=await fetch(path+"?v="+Date.now(),{cache:"no-store"}); if(!r.ok)return null; return await r.json(); },
+  async write(){ throw new Error("Browser write access is disabled. Use GitHub Actions or export manual entries."); }
 };
 function b64(str){
   const bytes = new TextEncoder().encode(str);
@@ -864,12 +830,12 @@ function showView(v){
 }
 
 function loadSettingsUI(){
-  $("#set-repo").value=S.repo; $("#set-branch").value=S.branch; $("#set-token").value=S.token;
-  $("#set-bbkey").value=S.bbkey; $("#set-proxy").value=S.proxy; $("#set-autocheck").checked=!!S.autocheck;
+  $("#set-repo").value=S.repo; $("#set-branch").value=S.branch; 
+    $("#set-autocheck").checked=!!S.autocheck;
 }
 function saveSettings(){
   S.repo=$("#set-repo").value.trim(); S.branch=$("#set-branch").value.trim()||"main";
-  S.token=$("#set-token").value.trim(); S.bbkey=$("#set-bbkey").value.trim();
+   
   S.proxy=$("#set-proxy").value.trim().replace(/\/$/,""); S.autocheck=$("#set-autocheck").checked;
   LS.save(S);
   boot(); // reload data with new credentials
