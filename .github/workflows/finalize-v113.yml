@@ -1,0 +1,141 @@
+name: Finalize tracker v1.1.3
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Final cleanup and workflow install
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Remove obsolete/case-duplicate data and old Netlify/browser-token remnants.
+          rm -rf data/Observations
+          rm -f netlify.toml
+
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html')
+          s=p.read_text()
+
+          # Browser button now explains that checks happen in Actions.
+          s=re.sub(r'async function runCheck\(\)\{.*?\n\}\n\n/\* ---- persistence:', '''async function runCheck(){
+  const log = $("#checklog");
+  if (log) log.textContent = "Automated price checks run securely in GitHub Actions (No-API Price Check). Refresh this page after the workflow completes.";
+  alert("Price checks run in GitHub Actions. Open the repository Actions tab and run ‘No-API Price Check’, then refresh this tracker.");
+}
+
+/* ---- persistence:''', s, count=1, flags=re.S)
+
+          # Remove obsolete proxy assignment that refers to a deleted field.
+          s=s.replace('  S.proxy=$("#set-proxy").value.trim().replace(/\\/$/,""); S.autocheck=$("#set-autocheck").checked;',
+                      '  S.autocheck=$("#set-autocheck").checked;')
+          # No automatic browser-side checks; GitHub Actions owns scheduling.
+          s=re.sub(r'\n  // check-on-open: the schedule substitute.*?runCheck\(\);',
+                   '\n  // Automated checks are scheduled in GitHub Actions; browser remains read-only.', s, count=1, flags=re.S)
+          # First-run/stale banner wording for read-only architecture.
+          s=s.replace('if (!GH.canWrite() && !S.bbkey && !state.pending.length && !Object.values(state.obs).some(a=>a.length)){',
+                      'if (!state.pending.length && !Object.values(state.obs).some(a=>a.length)){')
+          s=s.replace('<span><b>First run:</b> open Setup to connect your repo and adapters, or just add a price manually.</span><button onclick="showView(\'settings\')">SETUP</button>',
+                      '<span><b>First run:</b> no verified prices yet. Run the No-API Price Check workflow in GitHub Actions, or add a price manually.</span>')
+          s=s.replace('<span>Prices are <b>${Math.floor(ageH/24)}d ${Math.floor(ageH%24)}h</b> old.</span><button onclick="runCheck()">RUN CHECK</button>',
+                      '<span>Prices are <b>${Math.floor(ageH/24)}d ${Math.floor(ageH%24)}h</b> old. Run No-API Price Check in GitHub Actions, then refresh.</span>')
+          # Footer/version cleanup.
+          s=s.replace('PST v1.0.0','PST v1.1.3')
+          p.write_text(s)
+          PY
+
+          cat > .github/workflows/price-check.yml <<'YAML'
+          name: No-API Price Check
+
+          on:
+            workflow_dispatch:
+            schedule:
+              - cron: '17 6 * * *'
+
+          permissions:
+            contents: write
+
+          concurrency:
+            group: pst-price-check
+            cancel-in-progress: false
+
+          jobs:
+            check:
+              runs-on: ubuntu-latest
+              steps:
+                - uses: actions/checkout@v4
+                - uses: actions/setup-python@v5
+                  with:
+                    python-version: '3.12'
+                - name: Collect public product-page prices
+                  env:
+                    ALLOWED_WATCH_HOSTS: www.amazon.com,amazon.com,www.newegg.com,newegg.com,www.walmart.com,walmart.com,www.bestbuy.com,bestbuy.com,www.bhphotovideo.com,bhphotovideo.com,www.microcenter.com,microcenter.com
+                  run: python scripts/check_prices.py
+                - name: Rebuild summary and retailer status
+                  run: |
+                    python scripts/build_summary.py
+                    python scripts/build_retailer_status.py
+                - name: Commit observations
+                  run: |
+                    git config user.name "github-actions[bot]"
+                    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                    git add data
+                    git diff --cached --quiet || git commit -m "Update verified price observations"
+                    git push
+          YAML
+
+          cat > README.md <<'MD'
+          # Private Server Price Tracker — v1.1.3
+
+          iPhone-first GitHub Pages tracker for the planned private server build.
+
+          ## Architecture
+          - Browser/PWA is read-only with respect to GitHub. No PAT or retailer API secret is stored in the app.
+          - Automated public-page checks run in GitHub Actions through **No-API Price Check**.
+          - Failed/blocked checks are recorded as failures; the tracker never invents a price.
+          - Manual observations stay on-device until exported.
+
+          ## Repository layout
+          - `index.html` — GitHub Pages app
+          - `data/products.json` — resolved components, alternatives, and prebuilt donors
+          - `data/retailer_url_matrix.json` — exact watch URLs plus navigation/search URLs
+          - `data/observations/` — per-item price history
+          - `scripts/check_prices.py` — no-API collector
+          - `scripts/build_summary.py` — build/storage summary
+          - `.github/workflows/price-check.yml` — scheduled/manual price checks
+          - `icons/`, `manifest.webmanifest`, `sw.js` — PWA assets
+
+          ## Build targets
+          - Target budget: **$2,400** core/server-side target
+          - Storage: **4 TB usable protected storage**
+          - Track both **2×4 TB mirror** and **4×2 TB RAID10-style** layouts
+          - Minimum **4 NVMe/drive positions**
+          - Ryzen 9 9950X baseline, ASUS ProArt X870E-CREATOR WIFI, 128 GB DDR5 target
+          - GPU options and prebuilt donors are tracked separately so unusually good deals can be compared fairly.
+
+          ## Running a check
+          Open **Actions → No-API Price Check → Run workflow**. When it finishes, refresh the GitHub Pages app.
+          MD
+
+          # One-time workflows are no longer needed after this commit.
+          rm -f .github/workflows/migrate-v113.yml .github/workflows/finalize-v113.yml
+
+      - name: Commit final repository state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Finalize v1.1.3 tracker structure and no-API workflow"
+          git push
