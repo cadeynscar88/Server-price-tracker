@@ -8,7 +8,7 @@ This repository hosts the iPhone-first GitHub Pages tracker for the planned priv
 - Automated price discovery uses **SerpApi Google Shopping** from GitHub Actions.
 - `SERPAPI_API_KEY` exists only as a GitHub Actions Secret.
 - One Google Shopping search can return offers from multiple retailers for the same item.
-- The scheduled collector rotates **7 tracked products per day**, which is 217 searches in a 31-day month and leaves some room under a 250-search monthly allowance for manual runs.
+- The scheduled collector runs **twice per week, on Tuesdays and Fridays**, and rotates **24 tracked products per run**. This keeps even a 10-run month at 240 scheduled searches, leaving a small buffer under SerpApi's 250-search free allowance for manual runs.
 - If a retailer is absent from the latest Google Shopping result, it is explicitly flagged. The previous verified price is retained; no price is guessed or erased.
 
 ## Freshness colors
@@ -65,4 +65,4 @@ Create a repository Actions secret named exactly:
 
 `SERPAPI_API_KEY`
 
-Then open **Actions → SerpApi Price Check → Run workflow**. The workflow also runs once daily. Do not put the API key in `index.html`, a JSON file, browser storage, an issue, or a commit.
+Then open **Actions → SerpApi Price Check → Run workflow** for an immediate manual check. The scheduled workflow runs automatically **twice each week on Tuesdays and Fridays**. Do not put the API key in `index.html`, a JSON file, browser storage, an issue, or a commit.
