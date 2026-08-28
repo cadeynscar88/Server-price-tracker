@@ -1,0 +1,44 @@
+{
+  "generated": "2026-08-26T00:15:33.655413+00:00",
+  "last_check": "2026-08-26T00:15:33.655428+00:00",
+  "build_total": null,
+  "missing_components": 11,
+  "recommendation": "NONE",
+  "target": 2400,
+  "components": {
+    "cpu": null,
+    "motherboard": null,
+    "ram-64gb": null,
+    "boot-ssd": null,
+    "10gbe": null,
+    "case-cooling": null,
+    "psu": null,
+    "ups": null,
+    "firewall": null,
+    "ingestion": null
+  },
+  "storage": {
+    "A": {
+      "label": "2 \u00d7 4 TB NVMe",
+      "product_id": "nvme-4tb",
+      "qty": 2,
+      "usable_tb": 4,
+      "scheme": "Mirror",
+      "current_total": null,
+      "hist_low_total": null,
+      "hist_avg_total": null
+    },
+    "B": {
+      "label": "4 \u00d7 2 TB NVMe",
+      "product_id": "nvme-2tb",
+      "qty": 4,
+      "usable_tb": 4,
+      "scheme": "RAID10",
+      "current_total": null,
+      "hist_low_total": null,
+      "hist_avg_total": null
+    }
+  },
+  "best_storage": null,
+  "build_history": []
+}

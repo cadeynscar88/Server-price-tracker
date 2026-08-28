@@ -1,0 +1,12 @@
+[
+  { "id": "samsung",  "name": "Samsung",          "rating": 5, "category": "NVMe/SSD",     "warranty": "5 yr typical on Pro NVMe", "notes": "" },
+  { "id": "wd",       "name": "Western Digital",  "rating": 4, "category": "NVMe/SSD",     "warranty": "5 yr on Black/Red Pro",    "notes": "" },
+  { "id": "crucial",  "name": "Crucial (Micron)", "rating": 4, "category": "NVMe/RAM",     "warranty": "5 yr NVMe / lifetime RAM", "notes": "" },
+  { "id": "kingston", "name": "Kingston",         "rating": 4, "category": "NVMe/RAM",     "warranty": "Varies",                   "notes": "" },
+  { "id": "solidigm", "name": "Solidigm",         "rating": 4, "category": "NVMe",         "warranty": "5 yr typical",             "notes": "" },
+  { "id": "corsair",  "name": "Corsair",          "rating": 4, "category": "PSU/RAM/Case", "warranty": "PSU up to 10 yr",          "notes": "" },
+  { "id": "seasonic", "name": "Seasonic",         "rating": 5, "category": "PSU",          "warranty": "Up to 12 yr",              "notes": "" },
+  { "id": "asus",     "name": "ASUS",             "rating": 4, "category": "Motherboard",  "warranty": "3 yr typical",             "notes": "" },
+  { "id": "asrock",   "name": "ASRock",           "rating": 4, "category": "Motherboard",  "warranty": "3 yr typical",             "notes": "Strong server boards (ASRock Rack)" },
+  { "id": "msi",      "name": "MSI",              "rating": 3, "category": "Motherboard",  "warranty": "3 yr typical",             "notes": "" }
+]

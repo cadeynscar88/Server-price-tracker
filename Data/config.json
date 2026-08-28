@@ -1,0 +1,12 @@
+{
+  "app": "Private Server Price Tracker",
+  "version": "1.0.0",
+  "target_budget": 2400,
+  "currency": "USD",
+  "storage_requirement_tb": 4,
+  "storage_configs": {
+    "A": { "label": "2 \u00d7 4 TB NVMe", "product_id": "nvme-4tb", "qty": 2, "usable_tb": 4, "scheme": "Mirror" },
+    "B": { "label": "4 \u00d7 2 TB NVMe", "product_id": "nvme-2tb", "qty": 4, "usable_tb": 4, "scheme": "RAID10" }
+  },
+  "stale_after_hours": 48
+}

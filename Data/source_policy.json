@@ -1,0 +1,10 @@
+{
+  "principle": "verified_prices_only",
+  "mode": "no_api",
+  "targets": ["Amazon", "Newegg", "Walmart", "Best Buy", "B&H Photo", "Micro Center"],
+  "source": "exact public product pages supplied in each product's watch_urls",
+  "allowed": ["public HTML", "Schema.org JSON-LD", "public price meta tags"],
+  "disallowed": ["CAPTCHA bypass", "bot-protection bypass", "login bypass", "rate-limit evasion", "guessed prices"],
+  "failure_result": "check_failed",
+  "manual_fallback": true
+}

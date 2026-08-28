@@ -1,0 +1,279 @@
+[
+  {
+    "id": "cpu",
+    "category": "CPU",
+    "label": "CPU",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "CPU"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=CPU",
+      "newegg": "https://www.newegg.com/p/pl?d=CPU",
+      "walmart": "https://www.walmart.com/search?q=CPU",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=CPU",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=CPU&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=CPU"
+    }
+  },
+  {
+    "id": "motherboard",
+    "category": "Motherboard",
+    "label": "Motherboard",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "attrs": {
+      "m2_slots": null,
+      "pcie_gen": null,
+      "pcie_lanes": null,
+      "ten_gbe": null,
+      "max_ram_gb": null,
+      "expansion_ok": null
+    },
+    "search_terms": [
+      "Motherboard"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Motherboard",
+      "newegg": "https://www.newegg.com/p/pl?d=Motherboard",
+      "walmart": "https://www.walmart.com/search?q=Motherboard",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Motherboard",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Motherboard&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Motherboard"
+    }
+  },
+  {
+    "id": "ram-64gb",
+    "category": "RAM",
+    "label": "64 GB DDR5",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "64 GB DDR5"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=64+GB+DDR5",
+      "newegg": "https://www.newegg.com/p/pl?d=64+GB+DDR5",
+      "walmart": "https://www.walmart.com/search?q=64+GB+DDR5",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=64+GB+DDR5",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=64+GB+DDR5&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=64+GB+DDR5"
+    }
+  },
+  {
+    "id": "nvme-4tb",
+    "category": "Storage",
+    "label": "4 TB NVMe",
+    "model": "",
+    "manufacturer": "",
+    "qty": 2,
+    "in_build": false,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "4 TB NVMe"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=4+TB+NVMe",
+      "newegg": "https://www.newegg.com/p/pl?d=4+TB+NVMe",
+      "walmart": "https://www.walmart.com/search?q=4+TB+NVMe",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=4+TB+NVMe",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=4+TB+NVMe&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=4+TB+NVMe"
+    }
+  },
+  {
+    "id": "nvme-2tb",
+    "category": "Storage",
+    "label": "2 TB NVMe",
+    "model": "",
+    "manufacturer": "",
+    "qty": 4,
+    "in_build": false,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "2 TB NVMe"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=2+TB+NVMe",
+      "newegg": "https://www.newegg.com/p/pl?d=2+TB+NVMe",
+      "walmart": "https://www.walmart.com/search?q=2+TB+NVMe",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=2+TB+NVMe",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=2+TB+NVMe&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=2+TB+NVMe"
+    }
+  },
+  {
+    "id": "boot-ssd",
+    "category": "Boot/Cache SSD",
+    "label": "Boot/Cache SSD",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "Boot/Cache SSD"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Boot%2FCache+SSD",
+      "newegg": "https://www.newegg.com/p/pl?d=Boot%2FCache+SSD",
+      "walmart": "https://www.walmart.com/search?q=Boot%2FCache+SSD",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Boot%2FCache+SSD",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Boot%2FCache+SSD&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Boot%2FCache+SSD"
+    }
+  },
+  {
+    "id": "10gbe",
+    "category": "Networking",
+    "label": "10 GbE Networking",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "10 GbE Networking"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=10+GbE+Networking",
+      "newegg": "https://www.newegg.com/p/pl?d=10+GbE+Networking",
+      "walmart": "https://www.walmart.com/search?q=10+GbE+Networking",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=10+GbE+Networking",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=10+GbE+Networking&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=10+GbE+Networking"
+    }
+  },
+  {
+    "id": "case-cooling",
+    "category": "Case/Cooling",
+    "label": "Case / Cooling",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "Case / Cooling"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Case+%2F+Cooling",
+      "newegg": "https://www.newegg.com/p/pl?d=Case+%2F+Cooling",
+      "walmart": "https://www.walmart.com/search?q=Case+%2F+Cooling",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Case+%2F+Cooling",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Case+%2F+Cooling&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Case+%2F+Cooling"
+    }
+  },
+  {
+    "id": "psu",
+    "category": "PSU",
+    "label": "PSU",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "PSU"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=PSU",
+      "newegg": "https://www.newegg.com/p/pl?d=PSU",
+      "walmart": "https://www.walmart.com/search?q=PSU",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=PSU",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=PSU&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=PSU"
+    }
+  },
+  {
+    "id": "ups",
+    "category": "UPS",
+    "label": "UPS",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "attrs": {
+      "va": null,
+      "watts": null,
+      "runtime_min": null
+    },
+    "search_terms": [
+      "UPS"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=UPS",
+      "newegg": "https://www.newegg.com/p/pl?d=UPS",
+      "walmart": "https://www.walmart.com/search?q=UPS",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=UPS",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=UPS&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=UPS"
+    }
+  },
+  {
+    "id": "firewall",
+    "category": "Firewall",
+    "label": "Firewall",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "Firewall"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Firewall",
+      "newegg": "https://www.newegg.com/p/pl?d=Firewall",
+      "walmart": "https://www.walmart.com/search?q=Firewall",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Firewall",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Firewall&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Firewall"
+    }
+  },
+  {
+    "id": "ingestion",
+    "category": "Ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "model": "",
+    "manufacturer": "",
+    "qty": 1,
+    "in_build": true,
+    "bestbuy_sku": "",
+    "watch_urls": [],
+    "search_terms": [
+      "Ingestion (USB-C/TB, UHS-II)"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+      "newegg": "https://www.newegg.com/p/pl?d=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+      "walmart": "https://www.walmart.com/search?q=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=Ingestion+%28USB-C%2FTB%2C+UHS-II%29&N=0&InitialSearch=yes",
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Ingestion+%28USB-C%2FTB%2C+UHS-II%29"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "generated_at": "Not yet checked",
+  "checked_at": null,
+  "retailers": [
+    {
+      "retailer": "Amazon",
+      "status": "check_failed",
+      "reason": "No successful automated check recorded yet"
+    },
+    {
+      "retailer": "Newegg",
+      "status": "check_failed",
+      "reason": "No successful automated check recorded yet"
+    },
+    {
+      "retailer": "Walmart",
+      "status": "check_failed",
+      "reason": "No successful automated check recorded yet"
+    },
+    {
+      "retailer": "Best Buy",
+      "status": "check_failed",
+      "reason": "No successful automated check recorded yet"
+    },
+    {
+      "retailer": "B&H Photo",
+      "status": "manual",
+      "reason": "No successful automated check recorded yet"
+    },
+    {
+      "retailer": "Micro Center",
+      "status": "manual",
+      "reason": "No successful automated check recorded yet"
+    }
+  ]
+}

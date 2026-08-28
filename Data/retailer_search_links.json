@@ -1,0 +1,650 @@
+[
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "CPU",
+    "search_url": "https://www.amazon.com/s?k=CPU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "CPU",
+    "search_url": "https://www.newegg.com/p/pl?d=CPU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "CPU",
+    "search_url": "https://www.walmart.com/search?q=CPU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "CPU",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=CPU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "CPU",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=CPU&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "cpu",
+    "label": "CPU",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "CPU",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=CPU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "Motherboard",
+    "search_url": "https://www.amazon.com/s?k=Motherboard",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "Motherboard",
+    "search_url": "https://www.newegg.com/p/pl?d=Motherboard",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "Motherboard",
+    "search_url": "https://www.walmart.com/search?q=Motherboard",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "Motherboard",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Motherboard",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "Motherboard",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=Motherboard&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "motherboard",
+    "label": "Motherboard",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "Motherboard",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Motherboard",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.amazon.com/s?k=64+GB+DDR5",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.newegg.com/p/pl?d=64+GB+DDR5",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.walmart.com/search?q=64+GB+DDR5",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=64+GB+DDR5",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=64+GB+DDR5&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ram-64gb",
+    "label": "64 GB DDR5",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "64 GB DDR5",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=64+GB+DDR5",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.amazon.com/s?k=4+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.newegg.com/p/pl?d=4+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.walmart.com/search?q=4+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=4+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=4+TB+NVMe&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-4tb",
+    "label": "4 TB NVMe",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "4 TB NVMe",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=4+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.amazon.com/s?k=2+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.newegg.com/p/pl?d=2+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.walmart.com/search?q=2+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=2+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=2+TB+NVMe&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "nvme-2tb",
+    "label": "2 TB NVMe",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "2 TB NVMe",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=2+TB+NVMe",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.amazon.com/s?k=Boot%2FCache+SSD",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.newegg.com/p/pl?d=Boot%2FCache+SSD",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.walmart.com/search?q=Boot%2FCache+SSD",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Boot%2FCache+SSD",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=Boot%2FCache+SSD&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "boot-ssd",
+    "label": "Boot/Cache SSD",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "Boot/Cache SSD",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Boot%2FCache+SSD",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.amazon.com/s?k=10+GbE+Networking",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.newegg.com/p/pl?d=10+GbE+Networking",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.walmart.com/search?q=10+GbE+Networking",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=10+GbE+Networking",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=10+GbE+Networking&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "10gbe",
+    "label": "10 GbE Networking",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "10 GbE Networking",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=10+GbE+Networking",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.amazon.com/s?k=Case+%2F+Cooling",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.newegg.com/p/pl?d=Case+%2F+Cooling",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.walmart.com/search?q=Case+%2F+Cooling",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Case+%2F+Cooling",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=Case+%2F+Cooling&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "case-cooling",
+    "label": "Case / Cooling",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "Case / Cooling",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Case+%2F+Cooling",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "PSU",
+    "search_url": "https://www.amazon.com/s?k=PSU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "PSU",
+    "search_url": "https://www.newegg.com/p/pl?d=PSU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "PSU",
+    "search_url": "https://www.walmart.com/search?q=PSU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "PSU",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=PSU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "PSU",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=PSU&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "psu",
+    "label": "PSU",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "PSU",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=PSU",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "UPS",
+    "search_url": "https://www.amazon.com/s?k=UPS",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "UPS",
+    "search_url": "https://www.newegg.com/p/pl?d=UPS",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "UPS",
+    "search_url": "https://www.walmart.com/search?q=UPS",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "UPS",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=UPS",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "UPS",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=UPS&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ups",
+    "label": "UPS",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "UPS",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=UPS",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "Firewall",
+    "search_url": "https://www.amazon.com/s?k=Firewall",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "Firewall",
+    "search_url": "https://www.newegg.com/p/pl?d=Firewall",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "Firewall",
+    "search_url": "https://www.walmart.com/search?q=Firewall",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "Firewall",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Firewall",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "Firewall",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=Firewall&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "firewall",
+    "label": "Firewall",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "Firewall",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Firewall",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "amazon",
+    "retailer": "Amazon",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.amazon.com/s?k=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "newegg",
+    "retailer": "Newegg",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.newegg.com/p/pl?d=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "walmart",
+    "retailer": "Walmart",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.walmart.com/search?q=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "bestbuy",
+    "retailer": "Best Buy",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "bh",
+    "retailer": "B&H Photo",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.bhphotovideo.com/c/search?Ntt=Ingestion+%28USB-C%2FTB%2C+UHS-II%29&N=0&InitialSearch=yes",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  },
+  {
+    "product_id": "ingestion",
+    "label": "Ingestion (USB-C/TB, UHS-II)",
+    "retailer_id": "microcenter",
+    "retailer": "Micro Center",
+    "search_term": "Ingestion (USB-C/TB, UHS-II)",
+    "search_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Ingestion+%28USB-C%2FTB%2C+UHS-II%29",
+    "purpose": "Find the exact product page; do not use this search URL as a verified price source."
+  }
+]

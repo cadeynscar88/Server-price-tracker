@@ -1,0 +1,8 @@
+[
+  {"id":"amazon","name":"Amazon","domain":"amazon.com","mode":"public_page","automated":true,"notes":"Reads exact public product URLs; no API. Blocked/unsupported pages become check_failed."},
+  {"id":"newegg","name":"Newegg","domain":"newegg.com","mode":"public_page","automated":true,"notes":"Reads exact public product URLs; no API. Blocked/unsupported pages become check_failed."},
+  {"id":"walmart","name":"Walmart","domain":"walmart.com","mode":"public_page","automated":true,"notes":"Reads exact public product URLs; no API. Blocked/unsupported pages become check_failed."},
+  {"id":"bestbuy","name":"Best Buy","domain":"bestbuy.com","mode":"public_page","automated":true,"notes":"Uses public product-page data only; no API."},
+  {"id":"bh","name":"B&H Photo","domain":"bhphotovideo.com","mode":"public_page","automated":true,"notes":"Reads exact public product URLs; no API."},
+  {"id":"microcenter","name":"Micro Center","domain":"microcenter.com","mode":"public_page","automated":true,"notes":"Reads exact public product URLs; no API."}
+]
