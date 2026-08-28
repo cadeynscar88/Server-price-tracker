@@ -1,5 +1,5 @@
 // Minimal service worker: cache app shell, network-first for data.
-const SHELL = "pst-shell-v1";
+const SHELL = "pst-shell-v2";
 const SHELL_FILES = ["./", "./index.html", "./manifest.webmanifest"];
 
 self.addEventListener("install", (e) => {
