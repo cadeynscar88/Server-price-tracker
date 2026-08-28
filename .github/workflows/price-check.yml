@@ -1,0 +1,37 @@
+name: No-API Price Check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pst-price-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect public product-page prices
+        env:
+          ALLOWED_WATCH_HOSTS: www.amazon.com,amazon.com,www.newegg.com,newegg.com,www.walmart.com,walmart.com,www.bestbuy.com,bestbuy.com,www.bhphotovideo.com,bhphotovideo.com,www.microcenter.com,microcenter.com
+        run: python scripts/check_prices.py
+      - name: Rebuild summary and retailer status
+        run: |
+          python scripts/build_summary.py
+          python scripts/build_retailer_status.py
+      - name: Commit observations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Update verified price observations"
+          git push
