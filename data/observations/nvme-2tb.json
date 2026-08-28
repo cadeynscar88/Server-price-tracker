@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "Approved 2TB TLC PCIe 4 NVMe",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "KingSpec M.2 2280 2TB PCIe Gen 4x4 with NVMe 1.4 3D NAND Laptop & Desktop Internal Solid State Drive NVMe SSD R/W up to 4,000/3,700 MB/s XF-L 2TB 2280",
+    "retailer": "newegg",
+    "price": 238.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:5401670376259266749,productid:4929700520318637308,headlineOfferDocid:14285598138385251379,imageDocid:11941262239434377709,gpcid:10211625712837798741,mid:576462895430463624,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "KingSpec XG 7000 1TB M.2 2280 PCIe Gen 4.0x4 NVME 1.4 Speed up to 7400MB/s Write Speed up to 6600MB/s Internal Solid State Drive for PS5 PC Desktop La",
+    "retailer": "walmart",
+    "price": 284.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:9231227424904920016,productid:3938003275430235836,headlineOfferDocid:15182612247931475557,imageDocid:14058959720338984130,rds:PC_11735259160115429689|PROD_PC_11735259160115429689,gpcid:11735259160115429689,mid:576462806885386289,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "Team Group Team T-Force G50 M.2 NVMe Gen4 SSD",
+    "retailer": "bestbuy",
+    "price": 324.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:1295597565916095272,productid:4102544386239638797,headlineOfferDocid:6017044120135771326,imageDocid:733989990044364276,rds:PC_9244226631864238863|PROD_PC_9244226631864238863,gpcid:9244226631864238863,mid:576462512316395363,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "Crucial T500 NVMe M.2 SSD",
+    "retailer": "bh",
+    "price": 316.95,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:15191688972583364032,productid:3624368414054792711,headlineOfferDocid:6284906027064367864,imageDocid:13277108507392683100,rds:PC_4137460666004925054|PROD_PC_4137460666004925054,gpcid:4137460666004925054,mid:576462762139694533,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Approved 2 TB TLC NVMe candidates",
+    "model": "Approved 2TB TLC PCIe 4 NVMe",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=2TB+TLC+NVMe+SN850X+T500+990+PRO",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

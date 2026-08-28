@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "128GB DDR5 (prefer 2x64GB, AM5 QVL-compatible)",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=128GB+DDR5+2x64GB+AM5",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "V-color Manta XFinity RGB Ddr5 XMP 3.0 AMD Expo Cl38 RGB Gaming Desktop Upgrade RAM U-dimm Memory Module SK Hynix IC",
+    "retailer": "newegg",
+    "price": 3099.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=catalogid:2008464694301256326,productid:3212123266915401891,headlineOfferDocid:5598366519137764155,imageDocid:14615315231138621978,gpcid:4162617011956739528,mid:576462880025027823,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "Corsair Vengeance 128gb (2 x 64gb) 288-Pin PC RAM Ddr5 6400 (pc5 51200) Desktop Memory Model Cmk128gx5m2b6400c42",
+    "retailer": "walmart",
+    "price": 2599.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=productid:12731712101089193521,headlineOfferDocid:12731712101089193521,imageDocid:211509390353314499,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "Crucial Kit DDR5-5600 SODIMM ct2k",
+    "retailer": "bestbuy",
+    "price": 1699.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=catalogid:14209887720218055796,productid:1443569103577945893,headlineOfferDocid:6491365489799571630,imageDocid:15751888421600676214,rds:PC_991870441491676219|PROD_PC_991870441491676219,gpcid:991870441491676219,mid:576462912412337497,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "TEAMGROUP 128GB T-Create Expert DDR5 6400 MHz UDIMM Memory Kit ctcwd5128g6400hc42cdc01",
+    "retailer": "bh",
+    "price": 2339.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=catalogid:1519346185540271564,productid:13374998420434931412,headlineOfferDocid:13586760274259186099,imageDocid:13540294773393018582,rds:PC_12497232746334115578|PROD_PC_12497232746334115578,gpcid:8974688354830362596,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "ram-128gb",
+    "component": "RAM \u2014 128 GB DDR5",
+    "model": "G.Skill G5P 128GB DDR5-5600 PC5-44800 CL28 Quad Channel ECC Registered Memory Kit F5-5600R2834F32GQ4-G5P",
+    "retailer": "microcenter",
+    "price": 3699.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=catalogid:10237728879021528267,productid:10609712544742248582,headlineOfferDocid:11404860745557401117,imageDocid:17225418693046190327,gpcid:8356405378861743120,mid:576462887986349523,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

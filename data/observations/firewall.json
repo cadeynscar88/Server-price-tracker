@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=OPNsense+firewall+appliance+Intel+2.5GbE",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "Partaker Firewall, OPNsense, VPN, Network Security Appliance, Router PC, Intel Core I3 2328M / 2350M / 2370M, R03, 6 Intel Gigabit LAN, 2USB, COM, VGA",
+    "retailer": "newegg",
+    "price": 308.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=OPNsense firewall appliance Intel 2.5GbE&prds=productid:2401873051981277931,headlineOfferDocid:2401873051981277931,imageDocid:14012355189807073499,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=OPNsense+firewall+appliance+Intel+2.5GbE",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=OPNsense+firewall+appliance+Intel+2.5GbE",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=OPNsense+firewall+appliance+Intel+2.5GbE&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "firewall",
+    "component": "Dedicated OPNsense firewall appliance",
+    "model": "OPNsense-capable appliance with Intel NICs",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=OPNsense+firewall+appliance+Intel+2.5GbE",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

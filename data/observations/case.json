@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "E-ATX full tower with 4+ physical drive positions",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=E-ATX+full+tower+4+drive+bays+GPU+clearance",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "Zalman P50 ATX Mid-Tower Premium PC Case Panoramic Tempered Glass",
+    "retailer": "newegg",
+    "price": 69.98,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=E-ATX full tower 4 drive bays GPU clearance&prds=catalogid:13093590539102434427,productid:15098503671275686015,headlineOfferDocid:13595907202684606433,imageDocid:12074158983428270538,gpcid:3985585529893029377,mid:576462887315660584,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "Fractal Design Pop XL Air RGB Computer Case",
+    "retailer": "walmart",
+    "price": 95.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=E-ATX full tower 4 drive bays GPU clearance&prds=catalogid:10812841215087345072,productid:838344983279781362,headlineOfferDocid:15356272863620437650,imageDocid:17463438687358791614,rds:PC_17240823185571242008|PROD_PC_17240823185571242008,gpcid:17240823185571242008,mid:576462849155372625,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "Corsair FRAME 4000D RS ATX Mid-Tower PC Case",
+    "retailer": "bestbuy",
+    "price": 84.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=E-ATX full tower 4 drive bays GPU clearance&prds=catalogid:7692240999725176650,productid:17794112995761486134,headlineOfferDocid:13137970059003328048,imageDocid:12322716296959135922,rds:PC_15466962494035556615|PROD_PC_15466962494035556615,gpcid:15466962494035556615,mid:576462563334397299,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "Fractal Design Epoch XL Tower",
+    "retailer": "bh",
+    "price": 103.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=E-ATX full tower 4 drive bays GPU clearance&prds=catalogid:11126936570548612252,productid:1530657344598431727,headlineOfferDocid:845316474003390108,imageDocid:8096698553710113240,rds:PC_15820145133618805582|PROD_PC_15820145133618805582,gpcid:15820145133618805582,mid:576462912634739254,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "case",
+    "component": "Full tower / workstation case",
+    "model": "CORSAIR FRAME 4500X RS-R ARGB Panoramic Glass Mid-Tower PC Case",
+    "retailer": "microcenter",
+    "price": 119.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=E-ATX full tower 4 drive bays GPU clearance&prds=catalogid:981136983412806188,productid:4162984542165899697,headlineOfferDocid:4868739652248560559,imageDocid:9562781726919043811,rds:PC_14386663906457451592|PROD_PC_14386663906457451592,gpcid:14386663906457451592,mid:576462566978724604,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

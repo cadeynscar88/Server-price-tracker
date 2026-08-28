@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "24GB NVIDIA GPU",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=NVIDIA+24GB+GPU",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "NVIDIA GeForce RTX 4090 Founders Edition Graphics Card 24GB GDDR6X",
+    "retailer": "newegg",
+    "price": 3699.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA 24GB GPU&prds=catalogid:1057540625380674071,productid:9253525020385861232,headlineOfferDocid:1079672740117746343,imageDocid:762092359412462485,rds:PC_6393181646664227192|PROD_PC_6393181646664227192,gpcid:6393181646664227192,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "EVGA GeForce RTX 3090 Ti FTW3 ULTRA GAMING 24G-P5-4985-KR",
+    "retailer": "walmart",
+    "price": 2149.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA 24GB GPU&prds=catalogid:11180172884042066789,productid:5970108507414648184,headlineOfferDocid:3466839697497238076,imageDocid:2354997591863111212,rds:PC_13128964147186071022|PROD_PC_13128964147186071022,gpcid:13128964147186071022,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "24GB NVIDIA GPU",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=NVIDIA+24GB+GPU",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "24GB NVIDIA GPU",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=NVIDIA+24GB+GPU&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "gpu-24gb",
+    "component": "GPU option \u2014 24 GB NVIDIA class",
+    "model": "24GB NVIDIA GPU",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=NVIDIA+24GB+GPU",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

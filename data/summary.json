@@ -1,22 +1,110 @@
 {
-  "generated": "2026-08-28T22:50:11.938062+00:00",
-  "last_check": "2026-08-28T22:50:11.938071+00:00",
-  "build_total": null,
-  "missing_components": 12,
-  "recommendation": "NONE",
+  "generated": "2026-08-28T23:44:09.228842+00:00",
+  "last_check": "2026-08-28T23:44:09.228845+00:00",
+  "build_total": 4123.17,
+  "missing_components": 0,
+  "recommendation": "WAIT",
   "target": 2400,
   "components": {
-    "cpu": null,
-    "motherboard": null,
-    "ram-128gb": null,
-    "boot-ssd": null,
-    "case": null,
-    "cpu-cooler": null,
-    "psu": null,
-    "10gbe": null,
-    "usb4": null,
-    "sd-reader": null,
-    "firewall": null
+    "cpu": {
+      "label": "CPU \u2014 Ryzen 9 9950X",
+      "current": 450.99,
+      "low": 450.99,
+      "high": 998.99,
+      "avg": 735.0,
+      "median": 745.01,
+      "n": 4
+    },
+    "motherboard": {
+      "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+      "current": 274.95,
+      "low": 274.95,
+      "high": 978.99,
+      "avg": 482.782,
+      "median": 399.99,
+      "n": 5
+    },
+    "ram-128gb": {
+      "label": "RAM \u2014 128 GB DDR5",
+      "current": 1699.0,
+      "low": 1699.0,
+      "high": 3699.99,
+      "avg": 2687.792,
+      "median": 2599.99,
+      "n": 5
+    },
+    "boot-ssd": {
+      "label": "Boot SSD \u2014 1 TB NVMe",
+      "current": 139.99,
+      "low": 139.99,
+      "high": 179.99,
+      "avg": 153.49,
+      "median": 146.99,
+      "n": 4
+    },
+    "case": {
+      "label": "Full tower / workstation case",
+      "current": 69.98,
+      "low": 69.98,
+      "high": 119.99,
+      "avg": 94.988,
+      "median": 95.99,
+      "n": 5
+    },
+    "cpu-cooler": {
+      "label": "High-end CPU cooling",
+      "current": 59.99,
+      "low": 59.99,
+      "high": 384.99,
+      "avg": 135.676,
+      "median": 79.99,
+      "n": 5
+    },
+    "psu": {
+      "label": "PSU \u2014 1000 W ATX 3.1",
+      "current": 69.99,
+      "low": 69.99,
+      "high": 129.99,
+      "avg": 102.8625,
+      "median": 105.735,
+      "n": 4
+    },
+    "10gbe": {
+      "label": "10 GbE networking",
+      "current": 123.74,
+      "low": 123.74,
+      "high": 149.99,
+      "avg": 136.865,
+      "median": 136.865,
+      "n": 2
+    },
+    "usb4": {
+      "label": "USB4 / 40 Gbps-class I/O",
+      "current": 25.58,
+      "low": 25.58,
+      "high": 129.0,
+      "avg": 81.19,
+      "median": 88.99,
+      "n": 3
+    },
+    "sd-reader": {
+      "label": "UHS-II USB-C SD reader",
+      "current": 7.99,
+      "low": 7.99,
+      "high": 29.99,
+      "avg": 16.2425,
+      "median": 13.495000000000001,
+      "n": 4
+    },
+    "firewall": {
+      "label": "Dedicated OPNsense firewall appliance",
+      "current": 308.99,
+      "low": 308.99,
+      "high": 308.99,
+      "avg": 308.99,
+      "median": 308.99,
+      "n": 1
+    }
   },
   "storage": {
     "A": {
@@ -25,9 +113,9 @@
       "qty": 2,
       "usable_tb": 4,
       "scheme": "Mirror",
-      "current_total": null,
-      "hist_low_total": null,
-      "hist_avg_total": null
+      "current_total": 891.98,
+      "hist_low_total": 891.98,
+      "hist_avg_total": 1038.784
     },
     "B": {
       "label": "4 \u00d7 2 TB approved TLC NVMe",
@@ -35,11 +123,16 @@
       "qty": 4,
       "usable_tb": 4,
       "scheme": "RAID10",
-      "current_total": null,
-      "hist_low_total": null,
-      "hist_avg_total": null
+      "current_total": 955.96,
+      "hist_low_total": 955.96,
+      "hist_avg_total": 1165.92
     }
   },
-  "best_storage": null,
-  "build_history": []
+  "best_storage": "A",
+  "build_history": [
+    {
+      "timestamp": "2026-08-28T23:44:09.228795+00:00",
+      "total": 4123.17
+    }
+  ]
 }

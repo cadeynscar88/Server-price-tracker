@@ -11,5 +11,79 @@
     "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
     "currency": "USD",
     "availability": "Unknown"
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC Ryzen 9 9900X RTX 5080 2TB NVMe SSD",
+    "retailer": "newegg",
+    "price": 3889.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ArsenalPC Ryzen 9 9950X RTX 5080 128GB 4TB&prds=catalogid:9641343589118026050,productid:17553674430605465501,headlineOfferDocid:17610336543420414395,imageDocid:6167515268427458775,gpcid:5892271664989142377,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-arsenal-9950x-5080",
+    "component": "Donor \u2014 ArsenalPC 9950X / RTX 5080 / 128GB",
+    "model": "ArsenalPC ASUS Prime AP202 Ryzen 9 9950X RTX 5080 128GB 4TB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=ArsenalPC+Ryzen+9+9950X+RTX+5080+128GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
   }
 ]

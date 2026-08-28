@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "360mm AIO or equivalent high-end air cooler",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Ryzen+9950X+360mm+AIO+cooler",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "Gigabyte Eagle 360 ICE AIO CPU Cooler",
+    "retailer": "newegg",
+    "price": 79.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Ryzen 9950X 360mm AIO cooler&prds=catalogid:2808322787901880352,productid:1438712346236941342,headlineOfferDocid:18363177725461236281,imageDocid:5333519920140614538,gpcid:5316427094479831502,mid:576462544114379923,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "ASUS ROG RYUO IV 360 ARGB",
+    "retailer": "walmart",
+    "price": 384.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Ryzen 9950X 360mm AIO cooler&prds=catalogid:8801819375618755491,productid:7401658268070801647,headlineOfferDocid:13733118810573014467,imageDocid:9631628159309164621,rds:PC_11361195919628900909|PROD_PC_11361195919628900909,gpcid:10300020520534663742,mid:576462892374666762,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "Gamdias CHIONE P5-360 Liquid CPU Cooler 360mm AIO w/Customizable 3.4\" IPS LCD",
+    "retailer": "bestbuy",
+    "price": 85.42,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Ryzen 9950X 360mm AIO cooler&prds=catalogid:13438244308698232458,productid:15362837676621290616,headlineOfferDocid:13483083125779547602,imageDocid:13404682959843279198,rds:PC_9096572599763056669|PROD_PC_9096572599763056669,gpcid:9096572599763056669,mid:576462556212868336,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "Cooler Master MasterLiquid 360L Core ARGB",
+    "retailer": "bh",
+    "price": 67.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Ryzen 9950X 360mm AIO cooler&prds=catalogid:8005698829671574687,productid:14466201918375938805,headlineOfferDocid:11180291056109323939,imageDocid:16166709953778349661,rds:PC_15438525221410865872|PROD_PC_15438525221410865872,gpcid:8016819091277505495,mid:576462897985889083,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "cpu-cooler",
+    "component": "High-end CPU cooling",
+    "model": "Cooler Master MasterLiquid ML360R RGB",
+    "retailer": "microcenter",
+    "price": 59.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Ryzen 9950X 360mm AIO cooler&prds=catalogid:3471226067301816385,productid:3473705645679782689,headlineOfferDocid:542693851933745229,imageDocid:8819879486418082820,rds:PC_34957656172764498|PROD_PC_34957656172764498,gpcid:34957656172764498,mid:576462563330970392,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

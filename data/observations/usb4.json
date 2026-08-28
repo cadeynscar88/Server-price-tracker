@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "Integrated USB4 on ProArt board",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=USB4+40Gbps+PCIe+card",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "Syba IO Crest SY-PEX20230 USB 3.2 Gen 2x2 PCIe x4 Card",
+    "retailer": "newegg",
+    "price": 25.58,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=USB4 40Gbps PCIe card&prds=catalogid:4791869581677292903,productid:15070942124088838708,headlineOfferDocid:12526997545039052895,imageDocid:4542154672997287820,rds:PC_9988011440876423768|PROD_PC_9988011440876423768,gpcid:9988011440876423768,mid:576462490821922835,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "Xiwai Type-C Usb4 40Gbps to Pci-e 4.0 X4 SSD Nvme Ngff M-Key Enclosure Usb-c 20Gbps Asm2464 Chipset",
+    "retailer": "walmart",
+    "price": 88.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=USB4 40Gbps PCIe card&prds=catalogid:16094487197857922523,productid:15700931590698460815,headlineOfferDocid:14898524661288696543,imageDocid:4712757632638883569,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "Integrated USB4 on ProArt board",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=USB4+40Gbps+PCIe+card",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "QNAP QXP-40G2UC 2-Port USB4 PCIe 4.0 Expansion Card",
+    "retailer": "bh",
+    "price": 129.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=USB4 40Gbps PCIe card&prds=catalogid:15293200550200420245,productid:15013022296114111536,headlineOfferDocid:8059519298317901729,imageDocid:8605021419660257413,gpcid:15541828270928182608,mid:576462563302766506,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "usb4",
+    "component": "USB4 / 40 Gbps-class I/O",
+    "model": "Integrated USB4 on ProArt board",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=USB4+40Gbps+PCIe+card",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

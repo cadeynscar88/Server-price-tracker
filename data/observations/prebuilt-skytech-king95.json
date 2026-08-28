@@ -11,5 +11,83 @@
     "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
     "currency": "USD",
     "availability": "Unknown"
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech Gaming Skytech RTX 5070 Ti 2TB NVMe SSD",
+    "retailer": "newegg",
+    "price": 2799.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech King 95 9950X3D RTX 5080 64GB 4TB&prds=catalogid:594976494228367826,productid:660433444683105308,headlineOfferDocid:8706986770195597718,imageDocid:13518230863559357459,rds:PC_2800360405118410242|PROD_PC_2800360405118410242,gpcid:2800360405118410242,mid:576462884777245473,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Gaming PC Desktop Intel Core i7 14700F Nvidia GeForce RTX 5070 1TB Gen4 NVMe SSD 32gb Ddr5 Ram",
+    "retailer": "walmart",
+    "price": 1899.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech King 95 9950X3D RTX 5080 64GB 4TB&prds=catalogid:1803098998771924230,productid:15725098688428094364,headlineOfferDocid:10603663792423872854,imageDocid:16303431095996439518,rds:PC_7520984879984367806|PROD_PC_7520984879984367806,gpcid:7520984879984367806,mid:576462817027621655,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech Gaming KING95 Gaming PC Intel Core Ultra 7 U7 265F",
+    "retailer": "bestbuy",
+    "price": 1599.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech King 95 9950X3D RTX 5080 64GB 4TB&prds=catalogid:16012386787600052673,productid:6476444852380912262,headlineOfferDocid:16141914672238161129,imageDocid:636262242566784986,rds:PC_17610403490706150488|PROD_PC_17610403490706150488,gpcid:17610403490706150488,mid:576462549868556767,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-skytech-king95",
+    "component": "Donor \u2014 Skytech King 95 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Skytech+King+95+9950X3D+RTX+5080+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
   }
 ]

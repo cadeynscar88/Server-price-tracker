@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "iBUYPOWER Slate Ryzen 9 7900X RTX 5080 32GB 2TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "iBUYPOWER Slate Gaming PC Desktop Computer AMD Ryzen 7 8700F Cpu AMD Radeon RX 7700 XT 12gb Gpu",
+    "retailer": "newegg",
+    "price": 1399.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=iBUYPOWER Slate Ryzen 9 7900X RTX 5080&prds=catalogid:3989108776250402424,productid:7858409082453691009,headlineOfferDocid:8362849679316161149,imageDocid:14737140023235836697,rds:PC_10015591472370429102|PROD_PC_10015591472370429102,gpcid:10015591472370429102,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "Ibuypower Slate Gaming Desktop Intel Core i7 14700f RTX 5060Ti 8gb",
+    "retailer": "walmart",
+    "price": 1299.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=iBUYPOWER Slate Ryzen 9 7900X RTX 5080&prds=catalogid:12925064478796616939,productid:14605664178205924202,headlineOfferDocid:7536713033087481062,imageDocid:12690815860633125468,rds:PC_8223745546940786390|PROD_PC_8223745546940786390,gpcid:8223745546940786390,mid:576462888080616023,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "iBUYPOWER Slate Gaming Desktop PC Intel Core Ultra 5 225F 2025 Intel Arc B570 10GB 16GB DDR5 RGB 1TB NVMe SSD Storage",
+    "retailer": "bestbuy",
+    "price": 999.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=iBUYPOWER Slate Ryzen 9 7900X RTX 5080&prds=catalogid:6990721382398405300,productid:12903973642395303922,headlineOfferDocid:1364390537200095197,imageDocid:9436977122639552106,rds:PC_11560677633882454578|PROD_PC_11560677633882454578,gpcid:11560677633882454578,mid:576462887208014873,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "iBUYPOWER Slate Ryzen 9 7900X RTX 5080 32GB 2TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=iBUYPOWER+Slate+Ryzen+9+7900X+RTX+5080&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-ibuypower-7900x-5080",
+    "component": "Donor \u2014 iBUYPOWER Slate 7900X / RTX 5080",
+    "model": "IBuyPower Slate 9 Gaming PC",
+    "retailer": "microcenter",
+    "price": 1399.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=iBUYPOWER Slate Ryzen 9 7900X RTX 5080&prds=catalogid:2148602148667263890,productid:13918809637247417913,headlineOfferDocid:15597568159839116966,imageDocid:10080403647870409968,rds:PC_15272053005573674175|PROD_PC_15272053005573674175,gpcid:15272053005573674175,mid:576462889102250062,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

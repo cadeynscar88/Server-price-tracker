@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "1TB reliable NVMe SSD",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=1TB+NVMe+SSD+TLC",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "HUADISK 2 NVMe Ssd Gen4 PCIe, M.2 2280 Ssd, PCIe Gen4 x 4 NVMe Ssd, 3D Nand Flash Internal Solid State Drive for PS5,PC and Laptops",
+    "retailer": "newegg",
+    "price": 139.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:8794833213948355856,productid:11262518443240661932,headlineOfferDocid:17906985736195733200,imageDocid:7036291991833097344,rds:PC_3838019248648646657|PROD_PC_3838019248648646657,gpcid:3838019248648646657,mid:576462563938572367,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "Timetec 1TB M.2 2242 SSD NVMe PCIe Gen3x4 3D nand TLC Read/Write Speed Up to 2,100/1,600 MB/s Compatible with Lenovo Thinkpad",
+    "retailer": "walmart",
+    "price": 139.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:17236047716682826373,productid:5105019922348629883,headlineOfferDocid:2890250113666660555,imageDocid:8787039891015473030,rds:PC_18293711741814326540|PROD_PC_18293711741814326540,gpcid:18293711741814326540,mid:576462549603914321,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "Team Group MP33 M.2 2280 PCIe 3.0 x4 with NVMe 1.3 3D NAND Internal Solid State Drive",
+    "retailer": "bestbuy",
+    "price": 153.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:14200192616686773089,productid:4291801777536881478,headlineOfferDocid:7826879806414329924,imageDocid:16131272120298005476,rds:PC_8505653901168193602|PROD_PC_8505653901168193602,gpcid:8505653901168193602,mid:576462803944871890,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "1TB reliable NVMe SSD",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=1TB+NVMe+SSD+TLC&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 1 TB NVMe",
+    "model": "Klevv CRAS C715 3D NAND PCIe Gen 3 x4 NVMe M.2 2280 Internal Solid State Drive",
+    "retailer": "microcenter",
+    "price": 179.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:10942168728801962463,productid:5477609714703830794,headlineOfferDocid:4513032113432032972,imageDocid:9499487341520554662,rds:PC_15676654519890271383|PROD_PC_15676654519890271383,gpcid:15676654519890271383,mid:576462895614813579,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

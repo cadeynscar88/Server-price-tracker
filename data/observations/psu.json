@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "1000W fully modular ATX 3.1 PSU",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=1000W+ATX+3.1+PSU",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "Phanteks Revolt 80PLUS Platinum ATX 3.0 PCIe 5.0",
+    "retailer": "newegg",
+    "price": 69.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 PSU&prds=catalogid:2000347822310731260,productid:16058609296171208676,headlineOfferDocid:15821246580949776929,imageDocid:16066968189795712305,rds:PC_11641952126024867455|PROD_PC_11641952126024867455,gpcid:11641952126024867455,mid:576462461233972224,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "Apevia ATX-sl1000w Soul 1000W ATX 3.0 & 3.1 Compatible Fully Modular PCIe 5.1 12V-2x6 Connector",
+    "retailer": "walmart",
+    "price": 96.48,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 PSU&prds=catalogid:8943376665470598784,productid:3980309145419504643,headlineOfferDocid:14439415051378229915,imageDocid:5589989191053173484,gpcid:1343520896034125270,mid:576462899644304545,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "NZXT Gold Core 1000W ATX 3.1 Fully Modular Power Supply",
+    "retailer": "bestbuy",
+    "price": 114.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 PSU&prds=catalogid:7103508956566589631,productid:8186664043896438772,headlineOfferDocid:12535845557317688860,imageDocid:43426544693780765,rds:PC_10497604329026942529|PROD_PC_10497604329026942529,gpcid:10497604329026942529,mid:576462912430953077,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "1000W fully modular ATX 3.1 PSU",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=1000W+ATX+3.1+PSU&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "psu",
+    "component": "PSU \u2014 1000 W ATX 3.1",
+    "model": "MSI MAG Power Supply maga",
+    "retailer": "microcenter",
+    "price": 129.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 PSU&prds=catalogid:11614148176313014048,productid:13521758860884160883,headlineOfferDocid:12575509232124074951,imageDocid:17338976454957290633,rds:PC_3320754660248422689|PROD_PC_3320754660248422689,gpcid:3320754660248422689,mid:576462563285954321,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  }
+]

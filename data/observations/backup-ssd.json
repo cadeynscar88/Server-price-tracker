@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "4TB external SSD",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=4TB+external+SSD",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "Team Group PD20 ECO 4TB USB type-C mini External SSD",
+    "retailer": "newegg",
+    "price": 389.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=4TB external SSD&prds=catalogid:6827768551452113520,productid:12697352358810768087,headlineOfferDocid:431269688283572549,imageDocid:6162809416787744856,gpcid:136877889594683082,mid:576462898023297729,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "Avolusion PRO-T5 Series USB 3.0 External Gaming Hard Drive for PS5 Game Console",
+    "retailer": "walmart",
+    "price": 129.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=4TB external SSD&prds=catalogid:7363570794294385741,productid:223188085256221630,headlineOfferDocid:5536288940088484827,imageDocid:14507770840243862850,rds:PC_3298735515119034153|PROD_PC_3298735515119034153,gpcid:3298735515119034153,mid:576462563335476983,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "Extreme Portable SSD SanDisk",
+    "retailer": "bestbuy",
+    "price": 679.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=4TB external SSD&prds=catalogid:9242304619118966559,productid:17667852681863835238,headlineOfferDocid:6564895439355634733,imageDocid:9704514317405423299,rds:PC_4718076609925970333|PROD_PC_4718076609925970333,gpcid:4718076609925970333,mid:576462781501280273,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "Lexar ARMOR 700 USB 3.2 Portable SSD",
+    "retailer": "bh",
+    "price": 599.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=4TB external SSD&prds=catalogid:1752013571900180447,productid:9155073104593344709,headlineOfferDocid:10396703777706551180,imageDocid:17358884947577500083,rds:PC_223201666164471732|PROD_PC_223201666164471732,gpcid:223201666164471732,mid:576462852752005762,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "backup-ssd",
+    "component": "Offline backup SSD",
+    "model": "4TB external SSD",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=4TB+external+SSD",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

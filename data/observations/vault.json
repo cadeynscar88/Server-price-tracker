@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "1TB SSD small-form-factor vault",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=mini+PC+Raspberry+Pi+SSD+1TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "Patriot VIPER VP4000 Mini Solid State Drive",
+    "retailer": "newegg",
+    "price": 159.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=mini PC Raspberry Pi SSD 1TB&prds=catalogid:5254823045968441024,productid:8847647011231144779,headlineOfferDocid:17307821693081605545,imageDocid:15763188261570197532,rds:PC_1462981777517917595|PROD_PC_1462981777517917595,gpcid:1462981777517917595,mid:576462852031906958,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "Mini PC, AMD Ryzen 7 7730u 8c/16t Up to 4.5GHz, 16gb Onboard Lpddr4x, 1TB M.2 Ssd, Triple 4K Display, WiFi6 Bt5.2, Windows11 Pro, Silver",
+    "retailer": "walmart",
+    "price": 419.59,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=mini PC Raspberry Pi SSD 1TB&prds=catalogid:8047911387749127074,productid:4930088885895119348,headlineOfferDocid:15501904805685477903,imageDocid:11306913083205724845,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "1TB SSD small-form-factor vault",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=mini+PC+Raspberry+Pi+SSD+1TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "1TB SSD small-form-factor vault",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=mini+PC+Raspberry+Pi+SSD+1TB&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "vault",
+    "component": "Secondary vault hardware",
+    "model": "1TB SSD small-form-factor vault",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=mini+PC+Raspberry+Pi+SSD+1TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

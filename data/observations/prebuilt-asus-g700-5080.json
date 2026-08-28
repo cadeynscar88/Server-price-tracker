@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "ASUS ROG G700 Core Ultra 7 265KF RTX 5080 32GB 2TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=ASUS+ROG+G700+RTX+5080",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "Gigabyte GeForce RTX 5080 Gaming OC Graphics Card",
+    "retailer": "newegg",
+    "price": 1771.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ROG G700 RTX 5080&prds=catalogid:18104177900896231706,productid:16106266442424209260,headlineOfferDocid:18004096308031514151,imageDocid:13206080855228952721,rds:PC_16164665083366724027|PROD_PC_16164665083366724027,gpcid:16164665083366724027,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "Asus Intel Ultra 5",
+    "retailer": "walmart",
+    "price": 1641.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ROG G700 RTX 5080&prds=catalogid:8440938488877509579,productid:3547297517179894328,headlineOfferDocid:4428278110423938331,imageDocid:5408466972543503426,gpcid:18026963298915811809,mid:576462531551235517,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "ASUS ROG GM700 Gaming Desktop AMD Ryzen 7 9800X3D",
+    "retailer": "bestbuy",
+    "price": 2768.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ROG G700 RTX 5080&prds=catalogid:7339108993938749717,productid:1082043600822063831,headlineOfferDocid:13349055076300727492,imageDocid:8240699720591400674,rds:PC_18283498119306780404|PROD_PC_18283498119306780404,gpcid:18283498119306780404,mid:576462897989945850,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "ASUS ROG G700 Core Ultra 7 265KF RTX 5080 32GB 2TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=ASUS+ROG+G700+RTX+5080&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-asus-g700-5080",
+    "component": "Donor \u2014 ASUS ROG G700 / RTX 5080",
+    "model": "ASUS ROG G700 Core Ultra 7 265KF RTX 5080 32GB 2TB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=ASUS+ROG+G700+RTX+5080",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

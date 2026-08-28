@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "UHS-II USB-C SD card reader",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=UHS-II+USB-C+SD+card+reader",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "UGREEN USB C SD 4.0 Card Reader UHS-II Micro SD Card Reader Memory Card Reader Fast for SD Micro SD SDXc SDHc UHS-II & UHS-I Cards for iPhone 16/15",
+    "retailer": "newegg",
+    "price": 29.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHS-II USB-C SD card reader&prds=catalogid:17383492983763738407,productid:10158989587924222244,headlineOfferDocid:14172901221898630552,imageDocid:13573570398138473188,rds:PC_13388776742218591094|PROD_PC_13388776742218591094,gpcid:13388776742218591094,mid:576462741687745246,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "Ugreen USB-C OTG USB-C Card Reader",
+    "retailer": "walmart",
+    "price": 7.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHS-II USB-C SD card reader&prds=catalogid:10249199181739449632,productid:2447488558394427572,headlineOfferDocid:17138898872193896239,imageDocid:9248990355290802568,rds:PC_1039453357995767037|PROD_PC_1039453357995767037,gpcid:1039453357995767037,mid:576462561404588736,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "UGreen USB-C to SD/TF Memory Card Reader Aluminum Case",
+    "retailer": "bestbuy",
+    "price": 10.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHS-II USB-C SD card reader&prds=catalogid:214984891797088908,productid:16253162103485001301,headlineOfferDocid:18428909055600170762,imageDocid:12053131695011841058,rds:PC_14506276876641177000|PROD_PC_14506276876641177000,gpcid:14506276876641177000,mid:576462859082017822,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "Transcend RDF9 Card Reader",
+    "retailer": "bh",
+    "price": 16.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHS-II USB-C SD card reader&prds=catalogid:13901316755298490264,productid:866580098780121962,headlineOfferDocid:10834322156996397269,imageDocid:11485875709492132801,rds:PC_12624646047559704977|PROD_PC_12624646047559704977,gpcid:12624646047559704977,mid:576462854325961599,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "sd-reader",
+    "component": "UHS-II USB-C SD reader",
+    "model": "UHS-II USB-C SD card reader",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=UHS-II+USB-C+SD+card+reader",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]

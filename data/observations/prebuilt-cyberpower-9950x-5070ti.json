@@ -11,5 +11,83 @@
     "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
     "currency": "USD",
     "availability": "Unknown"
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "ArsenalPC Ryzen 9 9950X RTX 5070 Ti NVMe SSD",
+    "retailer": "newegg",
+    "price": 4199.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB&prds=catalogid:2210306966670444242,productid:474815491733156206,headlineOfferDocid:1562461185197772247,imageDocid:16478528194049002152,gpcid:13983021041222921685,mid:576462896370194094,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Gamer Supreme Gaming PC AMD Ryzen 7 9800X3D Nvidia GeForce RTX 5060 Ti 16gb",
+    "retailer": "walmart",
+    "price": 1859.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB&prds=catalogid:5536271785607079909,productid:10166964292340162324,headlineOfferDocid:10622461237372952652,imageDocid:7596792685675462352,rds:PC_9500259485845350734|PROD_PC_9500259485845350734,gpcid:9500259485845350734,mid:576462823637824734,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Gaming Desktop AMD Ryzen 7 8700F 2024 NVIDIA GeForce RTX 5060 8GB",
+    "retailer": "bestbuy",
+    "price": 1424.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB&prds=catalogid:17177839294838171870,productid:14695795712242904943,headlineOfferDocid:17693246719185697932,imageDocid:16502830726345377602,rds:PC_12196513211536949869|PROD_PC_12196513211536949869,gpcid:12196513211536949869,mid:576462550433573040,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-cyberpower-9950x-5070ti",
+    "component": "Donor \u2014 CyberPowerPC 9950X / RTX 5070 Ti",
+    "model": "CyberPowerPC Ryzen 9 9950X RTX 5070 Ti 64GB 4TB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=CyberPowerPC+Ryzen+9+9950X+RTX+5070+Ti+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
   }
 ]

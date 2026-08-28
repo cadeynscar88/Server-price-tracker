@@ -1,42 +1,66 @@
 {
-  "generated_at": "2026-08-28T22:50:11.965039+00:00",
+  "generated_at": "2026-08-28T23:44:09.249952+00:00",
   "retailers": [
     {
-      "retailer": "Amazon",
-      "status": "check_failed",
-      "reason": "No successful automated check recorded yet"
+      "id": "amazon",
+      "name": "Amazon",
+      "state": "red",
+      "status": "no verified price",
+      "last_verified_at": null,
+      "last_verified_price": null,
+      "latest_check_status": "not_found"
     },
     {
-      "retailer": "Newegg",
-      "status": "check_failed",
-      "reason": "No successful automated check recorded yet"
+      "id": "newegg",
+      "name": "Newegg",
+      "state": "green",
+      "status": "fresh within 7 days",
+      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "last_verified_price": 450.99,
+      "latest_check_status": "verified"
     },
     {
-      "retailer": "Walmart",
-      "status": "check_failed",
-      "reason": "No successful automated check recorded yet"
+      "id": "walmart",
+      "name": "Walmart",
+      "state": "green",
+      "status": "fresh within 7 days",
+      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "last_verified_price": 857.74,
+      "latest_check_status": "verified"
     },
     {
-      "retailer": "Best Buy",
-      "status": "check_failed",
-      "reason": "No successful automated check recorded yet"
+      "id": "bestbuy",
+      "name": "Best Buy",
+      "state": "green",
+      "status": "fresh within 7 days",
+      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "last_verified_price": 632.28,
+      "latest_check_status": "verified"
     },
     {
-      "retailer": "B&H Photo",
-      "status": "manual",
-      "reason": "No successful automated check recorded yet"
+      "id": "bh",
+      "name": "B&H Photo",
+      "state": "green",
+      "status": "fresh within 7 days",
+      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "last_verified_price": 998.99,
+      "latest_check_status": "verified"
     },
     {
-      "retailer": "Micro Center",
-      "status": "manual",
-      "reason": "No successful automated check recorded yet"
+      "id": "microcenter",
+      "name": "Micro Center",
+      "state": "red",
+      "status": "missing from latest search",
+      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "last_verified_price": 359.99,
+      "latest_check_status": "not_found"
     }
   ],
   "freshness_policy": {
-    "green": "successful verified price within 24 hours",
-    "yellow": "last successful price older than 24 hours",
-    "red": "check_failed / blocked / rate_limited",
-    "gray": "manual-only or not configured"
+    "green": "verified price is 7 days old or newer and latest check returned the retailer",
+    "yellow": "last verified price is more than 7 days old",
+    "red": "retailer missing from latest search, check failed, or no verified price after a failed/missing result",
+    "gray": "not checked/configured yet"
   },
-  "note": "A retailer failure never changes a product price and never creates an inferred price."
+  "note": "Missing results never erase the last verified price and no price is inferred."
 }

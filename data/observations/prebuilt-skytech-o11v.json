@@ -11,5 +11,83 @@
     "model": "Skytech O11V Ryzen 9 9950X3D RTX 5080 64GB 4TB",
     "currency": "USD",
     "availability": "Unknown"
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech O11V Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Azure 3",
+    "retailer": "newegg",
+    "price": 3699.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech O11V 9950X3D RTX 5080 64GB 4TB&prds=catalogid:2734560729379671113,productid:12686183593772809834,headlineOfferDocid:13555197914290788545,imageDocid:2151886476858843120,gpcid:2274980016806375536,mid:576462898027142158,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech King 95 Gaming PC Desktop Intel Core i7 14700F Nvidia GeForce RTX 5070 1TB Gen4 NVMe SSD 32gb Ddr5 Ram",
+    "retailer": "walmart",
+    "price": 1899.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech O11V 9950X3D RTX 5080 64GB 4TB&prds=catalogid:1803098998771924230,productid:15725098688428094364,headlineOfferDocid:10603663792423872854,imageDocid:16303431095996439518,rds:PC_7520984879984367806|PROD_PC_7520984879984367806,gpcid:7520984879984367806,mid:576462817027621655,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech Gaming Gaming AMD Ryzen 7 9700X",
+    "retailer": "bestbuy",
+    "price": 1749.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Skytech O11V 9950X3D RTX 5080 64GB 4TB&prds=catalogid:17511988017798034818,productid:12556209264527638348,headlineOfferDocid:10261114906419835909,imageDocid:17818221153145080630,rds:PC_14693639833397532823|PROD_PC_14693639833397532823,gpcid:14693639833397532823,mid:576462912346022699,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech O11V Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "prebuilt-skytech-o11v",
+    "component": "Donor \u2014 Skytech O11V 9950X3D / RTX 5080",
+    "model": "Skytech O11V Ryzen 9 9950X3D RTX 5080 64GB 4TB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Skytech+O11V+9950X3D+RTX+5080+64GB+4TB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
   }
 ]

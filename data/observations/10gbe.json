@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Integrated 10GbE on ProArt board / Intel X550-class fallback",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Intel+X550+10GbE+adapter",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Intel Corp X550T2BLK Converged Network Adapter X550",
+    "retailer": "newegg",
+    "price": 149.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Intel X550 10GbE adapter&prds=catalogid:7214753913134304565,productid:11337173686285605299,headlineOfferDocid:18181967709613036547,imageDocid:12099114910539207426,gpcid:13737995819511786820,mid:576462892665092733,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Integrated 10GbE on ProArt board / Intel X550-class fallback",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=Intel+X550+10GbE+adapter",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Intel Ethernet Converged Network Adapter X550-T2 x550t2",
+    "retailer": "bestbuy",
+    "price": 123.74,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Intel X550 10GbE adapter&prds=catalogid:2152759559340636942,productid:14663305225808696948,headlineOfferDocid:1332120190565710126,imageDocid:5815419662106618278,rds:PC_10757507229779091706|PROD_PC_10757507229779091706,gpcid:10757507229779091706,mid:576462892687547430,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": ""
+  },
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Integrated 10GbE on ProArt board / Intel X550-class fallback",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=Intel+X550+10GbE+adapter&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "10gbe",
+    "component": "10 GbE networking",
+    "model": "Integrated 10GbE on ProArt board / Intel X550-class fallback",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Intel+X550+10GbE+adapter",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-28T23:42:08.937937+00:00",
+    "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  }
+]
