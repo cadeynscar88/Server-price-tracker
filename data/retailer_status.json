@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-28T23:44:09.249952+00:00",
+  "generated_at": "2026-08-29T01:58:26.632179+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "red",
-      "status": "no verified price",
+      "status": "no trusted verified price",
       "last_verified_at": null,
       "last_verified_price": null,
       "latest_check_status": "not_found"
@@ -14,8 +14,8 @@
       "id": "newegg",
       "name": "Newegg",
       "state": "green",
-      "status": "fresh within 7 days",
-      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-08-29T01:57:20.087075+00:00",
       "last_verified_price": 450.99,
       "latest_check_status": "verified"
     },
@@ -23,26 +23,26 @@
       "id": "walmart",
       "name": "Walmart",
       "state": "green",
-      "status": "fresh within 7 days",
-      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-08-29T01:57:20.087075+00:00",
       "last_verified_price": 857.74,
       "latest_check_status": "verified"
     },
     {
       "id": "bestbuy",
       "name": "Best Buy",
-      "state": "green",
-      "status": "fresh within 7 days",
-      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
-      "last_verified_price": 632.28,
-      "latest_check_status": "verified"
+      "state": "yellow",
+      "status": "latest result needs model review",
+      "last_verified_at": "2026-08-29T01:57:20.087075+00:00",
+      "last_verified_price": 1255.99,
+      "latest_check_status": "manual_review"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
       "state": "green",
-      "status": "fresh within 7 days",
-      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-08-29T01:57:20.087075+00:00",
       "last_verified_price": 998.99,
       "latest_check_status": "verified"
     },
@@ -51,16 +51,16 @@
       "name": "Micro Center",
       "state": "red",
       "status": "missing from latest search",
-      "last_verified_at": "2026-08-28T23:42:08.937937+00:00",
-      "last_verified_price": 359.99,
+      "last_verified_at": "2026-08-29T01:57:20.087075+00:00",
+      "last_verified_price": 169.99,
       "latest_check_status": "not_found"
     }
   ],
   "freshness_policy": {
-    "green": "verified price is 7 days old or newer and latest check returned the retailer",
-    "yellow": "last verified price is more than 7 days old",
-    "red": "retailer missing from latest search, check failed, or no verified price after a failed/missing result",
+    "green": "trusted verified price is 7 days old or newer",
+    "yellow": "trusted price is stale or latest result needs manual model review",
+    "red": "retailer missing from latest search/check failed with no acceptable current result",
     "gray": "not checked/configured yet"
   },
-  "note": "Missing results never erase the last verified price and no price is inferred."
+  "note": "Ambiguous SerpApi offers never count toward totals. Missing/review results never erase a previously trusted price."
 }

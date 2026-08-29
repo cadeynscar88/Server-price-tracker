@@ -20,10 +20,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:5401670376259266749,productid:4929700520318637308,headlineOfferDocid:14285598138385251379,imageDocid:11941262239434377709,gpcid:10211625712837798741,mid:576462895430463624,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: rejected condition/accessory/system result",
+    "match_status": "review"
   },
   {
     "component_id": "nvme-2tb",
@@ -34,10 +35,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:9231227424904920016,productid:3938003275430235836,headlineOfferDocid:15182612247931475557,imageDocid:14058959720338984130,rds:PC_11735259160115429689|PROD_PC_11735259160115429689,gpcid:11735259160115429689,mid:576462806885386289,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong/missing capacity",
+    "match_status": "review"
   },
   {
     "component_id": "nvme-2tb",
@@ -48,10 +50,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:1295597565916095272,productid:4102544386239638797,headlineOfferDocid:6017044120135771326,imageDocid:733989990044364276,rds:PC_9244226631864238863|PROD_PC_9244226631864238863,gpcid:9244226631864238863,mid:576462512316395363,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong/missing capacity",
+    "match_status": "review"
   },
   {
     "component_id": "nvme-2tb",
@@ -62,10 +65,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=2TB TLC NVMe SN850X T500 990 PRO&prds=catalogid:15191688972583364032,productid:3624368414054792711,headlineOfferDocid:6284906027064367864,imageDocid:13277108507392683100,rds:PC_4137460666004925054|PROD_PC_4137460666004925054,gpcid:4137460666004925054,mid:576462762139694533,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong/missing capacity",
+    "match_status": "review"
   },
   {
     "component_id": "nvme-2tb",
@@ -78,5 +82,92 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "Lexar NM790 / WD SN850X / Kingston KC3000 / Crucial T500 / Samsung 990 PRO 2TB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=2TB+NVMe+SSD",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "Adata Legend 710 Solid State Drive",
+    "retailer": "newegg",
+    "price": 199.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB NVMe SSD&prds=catalogid:5201271807153211970,productid:14926446781031323023,headlineOfferDocid:307040993279968920,imageDocid:5480207702595317411,rds:PC_11463773236846433296|PROD_PC_11463773236846433296,gpcid:11463773236846433296,mid:576462745571122594,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong/missing capacity"
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "Western Digital WD Blue SN5100 NVMe PCIe 4.0 Internal SSD",
+    "retailer": "walmart",
+    "price": 275.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB NVMe SSD&prds=catalogid:7261534121597043455,productid:15714245027707093435,headlineOfferDocid:14681138219296582515,imageDocid:10771846931239131236,rds:PC_10383044063422444796|PROD_PC_10383044063422444796,gpcid:10383044063422444796,mid:576462869761910193,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong/missing capacity"
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "Patriot P300 2 PCIe",
+    "retailer": "bestbuy",
+    "price": 229.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB NVMe SSD&prds=catalogid:5346433598467057341,productid:4955564851663654474,headlineOfferDocid:5420308251591548980,imageDocid:3739013024534307431,rds:PC_8583301360159169084|PROD_PC_8583301360159169084,gpcid:8583301360159169084,mid:576462810347914534,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong/missing capacity"
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "Lexar 2TB NQ780 PCIe 4.0 M.2 Internal SSD",
+    "retailer": "bh",
+    "price": 279.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB NVMe SSD&prds=catalogid:1858617015624244923,productid:16929217022062058238,headlineOfferDocid:18112093852584371195,imageDocid:4373331157144274315,rds:PC_588031491950546525|PROD_PC_588031491950546525,gpcid:588031491950546525,mid:576462516962239716,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "not approved SSD family"
+  },
+  {
+    "component_id": "nvme-2tb",
+    "component": "Storage pool \u2014 approved 2TB TLC NVMe",
+    "model": "KLEVV CRAS C910G SSD 2 NVMe 2280",
+    "retailer": "microcenter",
+    "price": 299.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=2TB NVMe SSD&prds=catalogid:6331373251125044399,productid:16463789952015737964,headlineOfferDocid:11914583373535954351,imageDocid:13588283200575676186,rds:PC_16651324805237584542|PROD_PC_16651324805237584542,gpcid:16651324805237584542,mid:576462897756597195,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong/missing capacity"
   }
 ]

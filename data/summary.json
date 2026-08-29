@@ -1,109 +1,383 @@
 {
-  "generated": "2026-08-28T23:44:09.228842+00:00",
-  "last_check": "2026-08-28T23:44:09.228845+00:00",
-  "build_total": 4123.17,
-  "missing_components": 0,
-  "recommendation": "WAIT",
+  "generated": "2026-08-29T01:58:26.606844+00:00",
+  "last_check": "2026-08-29T01:58:26.606855+00:00",
   "target": 2400,
+  "recommended_scenario": null,
+  "build_total": null,
+  "recommendation": "INCOMPLETE",
   "components": {
     "cpu": {
-      "label": "CPU \u2014 Ryzen 9 9950X",
-      "current": 450.99,
-      "low": 450.99,
-      "high": 998.99,
-      "avg": 735.0,
-      "median": 745.01,
-      "n": 4
+      "n": 7,
+      "cur": 450.99,
+      "curObs": {
+        "component_id": "cpu",
+        "component": "CPU \u2014 Ryzen 9 9950X",
+        "model": "AMD Ryzen 9 9950X - Ryzen 9 9000 Series Granite Ridge (Zen 5) 16-Core 4.3 GHz - Socket AM5 170W - Radeon Graphics Processor - 100-100001277 - Bulk - O",
+        "retailer": "newegg",
+        "price": 450.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X&prds=productid:6768868961505716867,headlineOfferDocid:6768868961505716867,imageDocid:16006460584795134854,rds:PC_11386183803805302431|PROD_PC_11386183803805302431,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 450.99,
+      "max": 998.99,
+      "avg": 749.6742857142857,
+      "median": 857.74
     },
     "motherboard": {
-      "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-      "current": 274.95,
-      "low": 274.95,
-      "high": 978.99,
-      "avg": 482.782,
-      "median": 399.99,
-      "n": 5
+      "n": 3,
+      "cur": 509.99,
+      "curObs": {
+        "component_id": "motherboard",
+        "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+        "model": "ASUS ProArt X870E-CREATOR WIFI AM5 ATX Motherboard",
+        "retailer": "newegg",
+        "price": 509.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:10741079162533220249,productid:14204450086831888575,headlineOfferDocid:5566686179634384400,imageDocid:8502187660856065117,rds:PC_3375806997263209023|PROD_PC_3375806997263209023,gpcid:3375806997263209023,mid:576462898585408334,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 509.99,
+      "max": 1568.98,
+      "avg": 1019.32,
+      "median": 978.99
+    },
+    "ram-96gb": null,
+    "ram-96gb-ecc": {
+      "n": 1,
+      "cur": 2599.98,
+      "curObs": {
+        "component_id": "ram-96gb-ecc",
+        "component": "RAM \u2014 96GB DDR5 ECC UDIMM 2\u00d748",
+        "model": "A-Tech 96GB (2x48GB) 2Rx8 PC5-44800E DDR5 PC5-44800 MHz ECC UDIMM Unbuffered DIMM 288-Pin Dual Rank x8 Server & Workstation RAM Memory Upgrade Kit",
+        "retailer": "newegg",
+        "price": 2599.98,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 ECC UDIMM 2x48GB AM5&prds=productid:8608207903539951358,headlineOfferDocid:8608207903539951358,imageDocid:6134327833751270742,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "DDR5 two-DIMM capacity branch match"
+      },
+      "min": 2599.98,
+      "max": 2599.98,
+      "avg": 2599.98,
+      "median": 2599.98
     },
     "ram-128gb": {
-      "label": "RAM \u2014 128 GB DDR5",
-      "current": 1699.0,
-      "low": 1699.0,
-      "high": 3699.99,
-      "avg": 2687.792,
-      "median": 2599.99,
-      "n": 5
+      "n": 2,
+      "cur": 2599.99,
+      "curObs": {
+        "component_id": "ram-128gb",
+        "component": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+        "model": "Corsair Vengeance 128gb (2 x 64gb) 288-Pin PC RAM Ddr5 6400 (pc5 51200) Desktop Memory Model Cmk128gx5m2b6400c42",
+        "retailer": "walmart",
+        "price": 2599.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=productid:12731712101089193521,headlineOfferDocid:12731712101089193521,imageDocid:211509390353314499,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "DDR5 two-DIMM capacity branch match"
+      },
+      "min": 2599.99,
+      "max": 2599.99,
+      "avg": 2599.99,
+      "median": 2599.99
     },
+    "ram-128gb-ecc": null,
+    "ram-64gb": {
+      "n": 1,
+      "cur": 1255.99,
+      "curObs": {
+        "component_id": "ram-64gb",
+        "component": "RAM \u2014 64GB DDR5 2\u00d732 fallback",
+        "model": "CORSAIR - VENGEANCE 64GB (2x32GB) DDR5 6400MHz C32 UDIMM Desktop Memory - Black",
+        "retailer": "bestbuy",
+        "price": 1255.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=64GB DDR5 2x32GB AM5&prds=productid:15530829201229723917,headlineOfferDocid:15530829201229723917,imageDocid:18080573944325998804,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "DDR5 two-DIMM capacity branch match"
+      },
+      "min": 1255.99,
+      "max": 1255.99,
+      "avg": 1255.99,
+      "median": 1255.99
+    },
+    "gpu-5070ti": {
+      "n": 1,
+      "cur": 2079.98,
+      "curObs": {
+        "component_id": "gpu-5070ti",
+        "component": "GPU \u2014 RTX 5070 Ti 16GB",
+        "model": "ASUS PRIME GeForce RTX 5070 Ti 16GB GDDR7 OC Edition PCIe 5.0 DLSS 4.0 Graphics Card + ASUS ROG Strix 34\" UltraWide QHD 2K 1440P 280Hz G-Sync HDR500 0",
+        "retailer": "newegg",
+        "price": 2079.98,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5070 Ti 16GB&prds=productid:2680173154008540412,headlineOfferDocid:2680173154008540412,imageDocid:14101556492690487401,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 2079.98,
+      "max": 2079.98,
+      "avg": 2079.98,
+      "median": 2079.98
+    },
+    "gpu-pro4000": {
+      "n": 1,
+      "cur": 4199.0,
+      "curObs": {
+        "component_id": "gpu-pro4000",
+        "component": "GPU \u2014 RTX PRO 4000 Blackwell 24GB",
+        "model": "Rtx PRO 4000 SFF Blackwell 24gb Gddr7 ECC - PCIe 5.0x8, 4X mDP 2.1b, Low-Profile Dual-Slot AI Workstation GPU, Size: 167*69*40mm",
+        "retailer": "walmart",
+        "price": 4199.0,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4000 Blackwell 24GB&prds=productid:12779361092070100089,headlineOfferDocid:12779361092070100089,imageDocid:14732823947185756440,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 4199.0,
+      "max": 4199.0,
+      "avg": 4199.0,
+      "median": 4199.0
+    },
+    "gpu-5090": {
+      "n": 2,
+      "cur": 5319.05,
+      "curObs": {
+        "component_id": "gpu-5090",
+        "component": "GPU \u2014 RTX 5090 32GB",
+        "model": "NVIDIA GeForce RTX 5090 32GB GDDR7 Founders Edition Graphics Card",
+        "retailer": "walmart",
+        "price": 5319.05,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 5319.05,
+      "max": 8029.0,
+      "avg": 6674.025,
+      "median": 6674.025
+    },
+    "gpu-pro4500": {
+      "n": 1,
+      "cur": 8099.99,
+      "curObs": {
+        "component_id": "gpu-pro4500",
+        "component": "GPU \u2014 RTX PRO 4500 Blackwell 32GB",
+        "model": "Adamant Custom - Intel i9 14th Gen - RTX PRO 4500 Blackwell - 1TB NVMe SSD 10TB HDD - 32GB DDR5 Memory",
+        "retailer": "newegg",
+        "price": 8099.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4500 Blackwell 32GB&prds=catalogid:15663743915525547626,productid:15303976900460493908,headlineOfferDocid:10174843279781227890,imageDocid:11092605237479728100,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 8099.99,
+      "max": 8099.99,
+      "avg": 8099.99,
+      "median": 8099.99
+    },
+    "nvme-4tb": null,
+    "nvme-2tb": null,
     "boot-ssd": {
-      "label": "Boot SSD \u2014 1 TB NVMe",
-      "current": 139.99,
-      "low": 139.99,
-      "high": 179.99,
-      "avg": 153.49,
-      "median": 146.99,
-      "n": 4
+      "n": 1,
+      "cur": 299.75,
+      "curObs": {
+        "component_id": "boot-ssd",
+        "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+        "model": "Samsung 870 EVO 500GB SATA 2.5\" SSD | DropReference",
+        "retailer": "newegg",
+        "price": 299.75,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "approved SATA boot SSD"
+      },
+      "min": 299.75,
+      "max": 299.75,
+      "avg": 299.75,
+      "median": 299.75
     },
     "case": {
-      "label": "Full tower / workstation case",
-      "current": 69.98,
-      "low": 69.98,
-      "high": 119.99,
-      "avg": 94.988,
-      "median": 95.99,
-      "n": 5
+      "n": 2,
+      "cur": 119.99,
+      "curObs": {
+        "component_id": "case",
+        "component": "Case \u2014 Lian Li LANCOOL 217 Black",
+        "model": "Lian Li LANCOOL 217 Walnut Wood ATX Mid Tower Case",
+        "retailer": "bestbuy",
+        "price": 119.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:10461061247321777192,productid:3382990075034655739,headlineOfferDocid:17459793961397024887,imageDocid:7599938648235551533,rds:PC_17587801874154008408|PROD_PC_17587801874154008408,gpcid:17587801874154008408,mid:576462563318789133,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 119.99,
+      "max": 124.99,
+      "avg": 122.49,
+      "median": 122.49
     },
-    "cpu-cooler": {
-      "label": "High-end CPU cooling",
-      "current": 59.99,
-      "low": 59.99,
-      "high": 384.99,
-      "avg": 135.676,
-      "median": 79.99,
-      "n": 5
+    "cooler-noctua": {
+      "n": 2,
+      "cur": 159.95,
+      "curObs": {
+        "component_id": "cooler-noctua",
+        "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+        "model": "Noctua NH-D15 G2 CPU Air Cooler",
+        "retailer": "newegg",
+        "price": 159.95,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Noctua NH-D15 G2&prds=catalogid:7076726148966148667,productid:8134988988767512689,headlineOfferDocid:2165990889225150012,imageDocid:16799120443763115772,rds:PC_17132896970172464592|PROD_PC_17132896970172464592,gpcid:17132896970172464592,mid:576462898603785197,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 159.95,
+      "max": 169.99,
+      "avg": 164.97,
+      "median": 164.97
     },
-    "psu": {
-      "label": "PSU \u2014 1000 W ATX 3.1",
-      "current": 69.99,
-      "low": 69.99,
-      "high": 129.99,
-      "avg": 102.8625,
-      "median": 105.735,
-      "n": 4
+    "cooler-thermalright": {
+      "n": 2,
+      "cur": 63.99,
+      "curObs": {
+        "component_id": "cooler-thermalright",
+        "component": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+        "model": "Thermalright Phantom Spirit 120 EVO CPU Air Cooler, 7 Heat Pipes, Dual 120mm PWM Fans, for Am4/am5 Lga1700/1851, Black",
+        "retailer": "walmart",
+        "price": 63.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Thermalright Phantom Spirit 120 EVO&prds=productid:11201403805883781884,headlineOfferDocid:11201403805883781884,imageDocid:8106838146395348907,rds:PC_10574359510775471093|PROD_PC_10574359510775471093,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 63.99,
+      "max": 79.9,
+      "avg": 71.94500000000001,
+      "median": 71.94500000000001
     },
-    "10gbe": {
-      "label": "10 GbE networking",
-      "current": 123.74,
-      "low": 123.74,
-      "high": 149.99,
-      "avg": 136.865,
-      "median": 136.865,
-      "n": 2
+    "psu-1000w": {
+      "n": 2,
+      "cur": 138.99,
+      "curObs": {
+        "component_id": "psu-1000w",
+        "component": "PSU \u2014 1000W ATX 3.1 approved",
+        "model": "MSI MAG A1000GL PCIE5 Power Supply 1000W Power ATX 3.1 Ready Native Dual-Color PCIe CEM 5.1 Connector",
+        "retailer": "walmart",
+        "price": 138.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 RM1000x A1000GL&prds=catalogid:2194254729192596845,productid:727438459356351063,headlineOfferDocid:490470158235905447,imageDocid:3010158502404116047,rds:PC_5241812533977832061|PROD_PC_5241812533977832061,gpcid:5241812533977832061,mid:576462563315201858,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "approved 1000W PSU family"
+      },
+      "min": 138.99,
+      "max": 149.99,
+      "avg": 144.49,
+      "median": 144.49
     },
-    "usb4": {
-      "label": "USB4 / 40 Gbps-class I/O",
-      "current": 25.58,
-      "low": 25.58,
-      "high": 129.0,
-      "avg": 81.19,
-      "median": 88.99,
-      "n": 3
+    "psu-1200w": null,
+    "ups-1000w": {
+      "n": 1,
+      "cur": 287.19,
+      "curObs": {
+        "component_id": "ups-1000w",
+        "component": "UPS \u2014 1500VA / 1000W pure sine",
+        "model": "Monoprice CyberPower CP1500PFCLCD PFC Sinewave UPS Systems 1500VA/1000W 120 VAC",
+        "retailer": "newegg",
+        "price": 287.19,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPower CP1500PFCLCD 1500VA 1000W&prds=catalogid:10609477281975324875,productid:6415032238488455133,headlineOfferDocid:4982349593528371223,imageDocid:3578460555052361638,gpcid:60935610139272321,mid:576462898017091634,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 287.19,
+      "max": 287.19,
+      "avg": 287.19,
+      "median": 287.19
     },
-    "sd-reader": {
-      "label": "UHS-II USB-C SD reader",
-      "current": 7.99,
-      "low": 7.99,
-      "high": 29.99,
-      "avg": 16.2425,
-      "median": 13.495000000000001,
-      "n": 4
-    },
-    "firewall": {
-      "label": "Dedicated OPNsense firewall appliance",
-      "current": 308.99,
-      "low": 308.99,
-      "high": 308.99,
-      "avg": 308.99,
-      "median": 308.99,
-      "n": 1
+    "ups-1500w": {
+      "n": 2,
+      "cur": 916.24,
+      "curObs": {
+        "component_id": "ups-1500w",
+        "component": "UPS \u2014 1500VA / 1500W pure sine",
+        "model": "CyberPower PR1500LCD Smart App Sinewave UPS",
+        "retailer": "bestbuy",
+        "price": 916.24,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPower PR1500LCD 1500VA 1500W&prds=catalogid:9822511957691231805,productid:320028213574108535,headlineOfferDocid:2352616230598017245,imageDocid:16494116847662358552,rds:PC_14256077328524300515|PROD_PC_14256077328524300515,gpcid:14256077328524300515,mid:576462428271808558,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T01:57:20.087075+00:00",
+        "notes": "exact model match"
+      },
+      "min": 916.24,
+      "max": 1085.95,
+      "avg": 1001.095,
+      "median": 1001.095
     }
   },
   "storage": {
@@ -112,27 +386,423 @@
       "product_id": "nvme-4tb",
       "qty": 2,
       "usable_tb": 4,
-      "scheme": "Mirror",
-      "current_total": 891.98,
-      "hist_low_total": 891.98,
-      "hist_avg_total": 1038.784
+      "scheme": "ZFS mirror",
+      "preferred": true,
+      "current_total": null
     },
     "B": {
       "label": "4 \u00d7 2 TB approved TLC NVMe",
       "product_id": "nvme-2tb",
       "qty": 4,
       "usable_tb": 4,
-      "scheme": "RAID10",
-      "current_total": 955.96,
-      "hist_low_total": 955.96,
-      "hist_avg_total": 1165.92
+      "scheme": "2 mirrored vdevs",
+      "preferred": false,
+      "current_total": null
     }
   },
-  "best_storage": "A",
+  "scenarios": [
+    {
+      "id": "single-5070ti",
+      "label": "1\u00d7 RTX 5070 Ti 16GB",
+      "vram_gb": 16,
+      "requires_second_gpu": false,
+      "storage_choice": null,
+      "ram_choice": "ram-128gb",
+      "cooler_choice": "cooler-thermalright",
+      "psu_choice": "psu-1000w",
+      "ups_choice": "ups-1000w",
+      "estimated_peak_w": 650,
+      "items": [
+        {
+          "id": "cpu",
+          "label": "CPU \u2014 Ryzen 9 9950X",
+          "qty": 1,
+          "unit_price": 450.99,
+          "total": 450.99
+        },
+        {
+          "id": "motherboard",
+          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+          "qty": 1,
+          "unit_price": 509.99,
+          "total": 509.99
+        },
+        {
+          "id": "case",
+          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
+          "qty": 1,
+          "unit_price": 119.99,
+          "total": 119.99
+        },
+        {
+          "id": "boot-ssd",
+          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+          "qty": 1,
+          "unit_price": 299.75,
+          "total": 299.75
+        },
+        {
+          "id": "ram-128gb",
+          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+          "qty": 1,
+          "unit_price": 2599.99,
+          "total": 2599.99
+        },
+        {
+          "id": "cooler-thermalright",
+          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+          "qty": 1,
+          "unit_price": 63.99,
+          "total": 63.99
+        },
+        {
+          "id": "psu-1000w",
+          "label": "PSU \u2014 1000W ATX 3.1 approved",
+          "qty": 1,
+          "unit_price": 138.99,
+          "total": 138.99
+        },
+        {
+          "id": "ups-1000w",
+          "label": "UPS \u2014 1500VA / 1000W pure sine",
+          "qty": 1,
+          "unit_price": 287.19,
+          "total": 287.19
+        },
+        {
+          "id": "gpu-5070ti",
+          "label": "GPU \u2014 RTX 5070 Ti 16GB",
+          "qty": 1,
+          "unit_price": 2079.98,
+          "total": 2079.98
+        }
+      ],
+      "missing": [
+        "storage",
+        "backup-ssd"
+      ],
+      "total": null,
+      "recommendation": "INCOMPLETE",
+      "physical_fit": "standard-check"
+    },
+    {
+      "id": "dual-5070ti",
+      "label": "2\u00d7 RTX 5070 Ti 16GB",
+      "vram_gb": 16,
+      "requires_second_gpu": true,
+      "storage_choice": null,
+      "ram_choice": "ram-128gb",
+      "cooler_choice": "cooler-thermalright",
+      "psu_choice": null,
+      "ups_choice": "ups-1500w",
+      "estimated_peak_w": 950,
+      "items": [
+        {
+          "id": "cpu",
+          "label": "CPU \u2014 Ryzen 9 9950X",
+          "qty": 1,
+          "unit_price": 450.99,
+          "total": 450.99
+        },
+        {
+          "id": "motherboard",
+          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+          "qty": 1,
+          "unit_price": 509.99,
+          "total": 509.99
+        },
+        {
+          "id": "case",
+          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
+          "qty": 1,
+          "unit_price": 119.99,
+          "total": 119.99
+        },
+        {
+          "id": "boot-ssd",
+          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+          "qty": 1,
+          "unit_price": 299.75,
+          "total": 299.75
+        },
+        {
+          "id": "ram-128gb",
+          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+          "qty": 1,
+          "unit_price": 2599.99,
+          "total": 2599.99
+        },
+        {
+          "id": "cooler-thermalright",
+          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+          "qty": 1,
+          "unit_price": 63.99,
+          "total": 63.99
+        },
+        {
+          "id": "ups-1500w",
+          "label": "UPS \u2014 1500VA / 1500W pure sine",
+          "qty": 1,
+          "unit_price": 916.24,
+          "total": 916.24
+        },
+        {
+          "id": "gpu-5070ti",
+          "label": "GPU \u2014 RTX 5070 Ti 16GB",
+          "qty": 2,
+          "unit_price": 2079.98,
+          "total": 4159.96
+        }
+      ],
+      "missing": [
+        "psu",
+        "storage",
+        "backup-ssd"
+      ],
+      "total": null,
+      "recommendation": "INCOMPLETE",
+      "physical_fit": "exact-SKU-check"
+    },
+    {
+      "id": "single-pro4000",
+      "label": "1\u00d7 RTX PRO 4000 Blackwell 24GB",
+      "vram_gb": 24,
+      "requires_second_gpu": false,
+      "storage_choice": null,
+      "ram_choice": "ram-128gb",
+      "cooler_choice": "cooler-thermalright",
+      "psu_choice": "psu-1000w",
+      "ups_choice": "ups-1000w",
+      "estimated_peak_w": 500,
+      "items": [
+        {
+          "id": "cpu",
+          "label": "CPU \u2014 Ryzen 9 9950X",
+          "qty": 1,
+          "unit_price": 450.99,
+          "total": 450.99
+        },
+        {
+          "id": "motherboard",
+          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+          "qty": 1,
+          "unit_price": 509.99,
+          "total": 509.99
+        },
+        {
+          "id": "case",
+          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
+          "qty": 1,
+          "unit_price": 119.99,
+          "total": 119.99
+        },
+        {
+          "id": "boot-ssd",
+          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+          "qty": 1,
+          "unit_price": 299.75,
+          "total": 299.75
+        },
+        {
+          "id": "ram-128gb",
+          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+          "qty": 1,
+          "unit_price": 2599.99,
+          "total": 2599.99
+        },
+        {
+          "id": "cooler-thermalright",
+          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+          "qty": 1,
+          "unit_price": 63.99,
+          "total": 63.99
+        },
+        {
+          "id": "psu-1000w",
+          "label": "PSU \u2014 1000W ATX 3.1 approved",
+          "qty": 1,
+          "unit_price": 138.99,
+          "total": 138.99
+        },
+        {
+          "id": "ups-1000w",
+          "label": "UPS \u2014 1500VA / 1000W pure sine",
+          "qty": 1,
+          "unit_price": 287.19,
+          "total": 287.19
+        }
+      ],
+      "missing": [
+        "gpu-pro4000:over-ceiling",
+        "storage",
+        "backup-ssd"
+      ],
+      "total": null,
+      "recommendation": "INCOMPLETE",
+      "physical_fit": "standard-check"
+    },
+    {
+      "id": "single-5090",
+      "label": "1\u00d7 RTX 5090 32GB",
+      "vram_gb": 32,
+      "requires_second_gpu": false,
+      "storage_choice": null,
+      "ram_choice": "ram-128gb",
+      "cooler_choice": "cooler-thermalright",
+      "psu_choice": "psu-1000w",
+      "ups_choice": "ups-1500w",
+      "estimated_peak_w": 950,
+      "items": [
+        {
+          "id": "cpu",
+          "label": "CPU \u2014 Ryzen 9 9950X",
+          "qty": 1,
+          "unit_price": 450.99,
+          "total": 450.99
+        },
+        {
+          "id": "motherboard",
+          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+          "qty": 1,
+          "unit_price": 509.99,
+          "total": 509.99
+        },
+        {
+          "id": "case",
+          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
+          "qty": 1,
+          "unit_price": 119.99,
+          "total": 119.99
+        },
+        {
+          "id": "boot-ssd",
+          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+          "qty": 1,
+          "unit_price": 299.75,
+          "total": 299.75
+        },
+        {
+          "id": "ram-128gb",
+          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+          "qty": 1,
+          "unit_price": 2599.99,
+          "total": 2599.99
+        },
+        {
+          "id": "cooler-thermalright",
+          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+          "qty": 1,
+          "unit_price": 63.99,
+          "total": 63.99
+        },
+        {
+          "id": "psu-1000w",
+          "label": "PSU \u2014 1000W ATX 3.1 approved",
+          "qty": 1,
+          "unit_price": 138.99,
+          "total": 138.99
+        },
+        {
+          "id": "ups-1500w",
+          "label": "UPS \u2014 1500VA / 1500W pure sine",
+          "qty": 1,
+          "unit_price": 916.24,
+          "total": 916.24
+        }
+      ],
+      "missing": [
+        "gpu-5090:over-ceiling",
+        "storage",
+        "backup-ssd"
+      ],
+      "total": null,
+      "recommendation": "INCOMPLETE",
+      "physical_fit": "standard-check"
+    },
+    {
+      "id": "single-pro4500",
+      "label": "1\u00d7 RTX PRO 4500 Blackwell 32GB",
+      "vram_gb": 32,
+      "requires_second_gpu": false,
+      "storage_choice": null,
+      "ram_choice": "ram-128gb",
+      "cooler_choice": "cooler-thermalright",
+      "psu_choice": "psu-1000w",
+      "ups_choice": "ups-1000w",
+      "estimated_peak_w": 575,
+      "items": [
+        {
+          "id": "cpu",
+          "label": "CPU \u2014 Ryzen 9 9950X",
+          "qty": 1,
+          "unit_price": 450.99,
+          "total": 450.99
+        },
+        {
+          "id": "motherboard",
+          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+          "qty": 1,
+          "unit_price": 509.99,
+          "total": 509.99
+        },
+        {
+          "id": "case",
+          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
+          "qty": 1,
+          "unit_price": 119.99,
+          "total": 119.99
+        },
+        {
+          "id": "boot-ssd",
+          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+          "qty": 1,
+          "unit_price": 299.75,
+          "total": 299.75
+        },
+        {
+          "id": "ram-128gb",
+          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
+          "qty": 1,
+          "unit_price": 2599.99,
+          "total": 2599.99
+        },
+        {
+          "id": "cooler-thermalright",
+          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
+          "qty": 1,
+          "unit_price": 63.99,
+          "total": 63.99
+        },
+        {
+          "id": "psu-1000w",
+          "label": "PSU \u2014 1000W ATX 3.1 approved",
+          "qty": 1,
+          "unit_price": 138.99,
+          "total": 138.99
+        },
+        {
+          "id": "ups-1000w",
+          "label": "UPS \u2014 1500VA / 1000W pure sine",
+          "qty": 1,
+          "unit_price": 287.19,
+          "total": 287.19
+        }
+      ],
+      "missing": [
+        "gpu-pro4500:over-ceiling",
+        "storage",
+        "backup-ssd"
+      ],
+      "total": null,
+      "recommendation": "INCOMPLETE",
+      "physical_fit": "standard-check"
+    }
+  ],
   "build_history": [
     {
       "timestamp": "2026-08-28T23:44:09.228795+00:00",
       "total": 4123.17
     }
-  ]
+  ],
+  "verification_policy": "Manual verified observations are trusted. SerpApi observations count only with match_status=strong. Dynamic scenarios enforce storage, RAM, PSU, UPS and GPU ceiling rules."
 }

@@ -20,10 +20,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:8794833213948355856,productid:11262518443240661932,headlineOfferDocid:17906985736195733200,imageDocid:7036291991833097344,rds:PC_3838019248648646657|PROD_PC_3838019248648646657,gpcid:3838019248648646657,mid:576462563938572367,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: rejected condition/accessory/system result",
+    "match_status": "review"
   },
   {
     "component_id": "boot-ssd",
@@ -34,10 +35,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:17236047716682826373,productid:5105019922348629883,headlineOfferDocid:2890250113666660555,imageDocid:8787039891015473030,rds:PC_18293711741814326540|PROD_PC_18293711741814326540,gpcid:18293711741814326540,mid:576462549603914321,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: not approved SATA boot family",
+    "match_status": "review"
   },
   {
     "component_id": "boot-ssd",
@@ -48,10 +50,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:14200192616686773089,productid:4291801777536881478,headlineOfferDocid:7826879806414329924,imageDocid:16131272120298005476,rds:PC_8505653901168193602|PROD_PC_8505653901168193602,gpcid:8505653901168193602,mid:576462803944871890,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: not approved SATA boot family",
+    "match_status": "review"
   },
   {
     "component_id": "boot-ssd",
@@ -74,9 +77,91 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=1TB NVMe SSD TLC&prds=catalogid:10942168728801962463,productid:5477609714703830794,headlineOfferDocid:4513032113432032972,imageDocid:9499487341520554662,rds:PC_15676654519890271383|PROD_PC_15676654519890271383,gpcid:15676654519890271383,mid:576462895614813579,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: not approved SATA boot family",
+    "match_status": "review"
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Samsung 870 EVO 500GB / Crucial MX500 500GB / Kingston KC600 512GB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=500GB+SATA+SSD+870+EVO+MX500+KC600",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Samsung 870 EVO 500GB SATA 2.5\" SSD | DropReference",
+    "retailer": "newegg",
+    "price": 299.75,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "approved SATA boot SSD"
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Samsung 870 EVO Sata III 2.5\" Internal Ssd",
+    "retailer": "walmart",
+    "price": 252.98,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:16069839872292562127,productid:17287958675458748605,headlineOfferDocid:6788151505280592636,imageDocid:3946379443407148774,rds:PC_16706299182074782857|PROD_PC_16706299182074782857,gpcid:16706299182074782857,mid:576462898603726586,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "capacity not approved"
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Crucial MX500 SSD",
+    "retailer": "bestbuy",
+    "price": 249.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:12414838533900404931,productid:719662035539057004,headlineOfferDocid:13504260726131747628,imageDocid:967953791341378234,rds:PC_11164590791470513784|PROD_PC_11164590791470513784,gpcid:11164590791470513784,mid:576462775206564810,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "capacity not approved"
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Samsung 870 EVO 500GB / Crucial MX500 500GB / Kingston KC600 512GB",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=500GB+SATA+SSD+870+EVO+MX500+KC600&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "boot-ssd",
+    "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
+    "model": "Samsung 870 EVO 500GB / Crucial MX500 500GB / Kingston KC600 512GB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=500GB+SATA+SSD+870+EVO+MX500+KC600",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
   }
 ]

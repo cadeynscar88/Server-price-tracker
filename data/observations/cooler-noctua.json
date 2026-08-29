@@ -1,0 +1,80 @@
+[
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Noctua+NH-D15+G2",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2 CPU Air Cooler",
+    "retailer": "newegg",
+    "price": 159.95,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Noctua NH-D15 G2&prds=catalogid:7076726148966148667,productid:8134988988767512689,headlineOfferDocid:2165990889225150012,imageDocid:16799120443763115772,rds:PC_17132896970172464592|PROD_PC_17132896970172464592,gpcid:17132896970172464592,mid:576462898603785197,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "exact model match"
+  },
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=Noctua+NH-D15+G2",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Noctua+NH-D15+G2",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=Noctua+NH-D15+G2&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "cooler-noctua",
+    "component": "CPU cooler \u2014 Noctua NH-D15 G2",
+    "model": "Noctua NH-D15 G2 Dual Tower CPU Cooler",
+    "retailer": "microcenter",
+    "price": 169.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Noctua NH-D15 G2&prds=catalogid:17915640143023605191,productid:7103813439038334523,headlineOfferDocid:3616667841004815983,imageDocid:10880679707855987093,rds:PC_2791857994799677353|PROD_PC_2791857994799677353,gpcid:2791857994799677353,mid:576462896386794870,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "exact model match"
+  }
+]

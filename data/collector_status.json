@@ -1,10 +1,13 @@
 {
-  "checked_at": "2026-08-28T23:42:08.937937+00:00",
+  "checked_at": "2026-08-29T01:57:20.087075+00:00",
   "source": "serpapi_google_shopping",
-  "searches_attempted": 24,
+  "searches_attempted": 21,
   "batch_size": 24,
-  "verified_retailer_offers": 84,
-  "missing_retailer_results": 60,
+  "searchable_products": 21,
+  "verified_retailer_offers": 25,
+  "manual_review_candidates": 47,
+  "missing_retailer_results": 54,
   "check_failures": 0,
-  "note": "A missing retailer is flagged; its last verified price is retained and never guessed."
+  "existing_results_revalidated": 40,
+  "note": "Only strong model matches affect trusted prices; derived items consume no search quota."
 }

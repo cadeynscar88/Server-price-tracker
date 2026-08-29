@@ -20,10 +20,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:14783466645072705958,productid:12950267327745092442,headlineOfferDocid:5416966608093044394,imageDocid:5735564764842359135,rds:PC_3918010100264201148|PROD_PC_3918010100264201148,gpcid:3918010100264201148,mid:576462567045163647,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
+    "match_status": "review"
   },
   {
     "component_id": "ram-96gb",
@@ -34,10 +35,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:6561152785484303004,productid:18234775503934709143,headlineOfferDocid:12205293482233025599,imageDocid:17738464182183806781,gpcid:1426716299820839713,mid:576462483263138841,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
+    "match_status": "review"
   },
   {
     "component_id": "ram-96gb",
@@ -48,10 +50,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:9021315664198171717,productid:4385196940915801758,headlineOfferDocid:3607825125711942070,imageDocid:8697417300629706273,rds:PC_17354866167635046997|PROD_PC_17354866167635046997,gpcid:12568668862533529570,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
+    "match_status": "review"
   },
   {
     "component_id": "ram-96gb",
@@ -62,10 +65,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:1980796390993561343,productid:537682041396179246,headlineOfferDocid:15169168389152457043,imageDocid:3206893468574712372,rds:PC_5562936309390275410|PROD_PC_5562936309390275410,gpcid:5562936309390275410,mid:576462849353782522,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
+    "match_status": "review"
   },
   {
     "component_id": "ram-96gb",
@@ -78,5 +82,89 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Retailer was not present in the latest Google Shopping result for this item."
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "96GB DDR5 2x48GB AM5 non-ECC",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=96GB+DDR5+2x48GB+AM5",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "Corsair Vengeance 96GB DDR5 SDRAM Memory Kit cmk96gx5m2b5600c40",
+    "retailer": "newegg",
+    "price": 1364.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:14783466645072705958,productid:12950267327745092442,headlineOfferDocid:5416966608093044394,imageDocid:5735564764842359135,rds:PC_3918010100264201148|PROD_PC_3918010100264201148,gpcid:3918010100264201148,mid:576462567045163647,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong RAM capacity/module layout"
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "MAXPOWER Dimm 288-Pin 5600 MHz PC5-44800 Registered DDR5 Memory Module",
+    "retailer": "walmart",
+    "price": 5375.68,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:6561152785484303004,productid:18234775503934709143,headlineOfferDocid:12205293482233025599,imageDocid:17738464182183806781,gpcid:1426716299820839713,mid:576462483263138841,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong RAM capacity/module layout"
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "Kingston FURY Renegade 96GB DDR5 SDRAM Memory Kit",
+    "retailer": "bestbuy",
+    "price": 2040.75,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:9021315664198171717,productid:4385196940915801758,headlineOfferDocid:3607825125711942070,imageDocid:8697417300629706273,rds:PC_17354866167635046997|PROD_PC_17354866167635046997,gpcid:12568668862533529570,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong RAM capacity/module layout"
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "Patriot Viper Elite 5 DDR5 SDRAM Memory Kit",
+    "retailer": "bh",
+    "price": 1849.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 2x48GB AM5&prds=catalogid:1980796390993561343,productid:537682041396179246,headlineOfferDocid:15169168389152457043,imageDocid:3206893468574712372,rds:PC_5562936309390275410|PROD_PC_5562936309390275410,gpcid:5562936309390275410,mid:576462849353782522,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "wrong RAM capacity/module layout"
+  },
+  {
+    "component_id": "ram-96gb",
+    "component": "RAM \u2014 96GB DDR5 2\u00d748 non-ECC",
+    "model": "96GB DDR5 2x48GB AM5 non-ECC",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=96GB+DDR5+2x48GB+AM5",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
   }
 ]

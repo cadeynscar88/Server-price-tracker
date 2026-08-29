@@ -33,10 +33,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:15099628657802953553,headlineOfferDocid:15099628657802953553,imageDocid:4369296347793758570,rds:PC_13431363402723836614|PROD_PC_13431363402723836614,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: required exact-model terms missing",
+    "match_status": "review"
   },
   {
     "component_id": "motherboard",
@@ -47,10 +48,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:3465569018701681174,productid:12512969285549230332,headlineOfferDocid:7875622690194331319,imageDocid:15163008706655487547,rds:PC_2987308690016023693|PROD_PC_2987308690016023693,gpcid:2987308690016023693,mid:576462898024621901,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: required exact-model terms missing",
+    "match_status": "review"
   },
   {
     "component_id": "motherboard",
@@ -61,10 +63,11 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:8426632766297864118,productid:14248748201738743054,headlineOfferDocid:10672668205022275804,imageDocid:6544356829177371409,rds:PC_1210316175174948519|PROD_PC_1210316175174948519,gpcid:1210316175174948519,mid:576462898593924628,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: required exact-model terms missing",
+    "match_status": "review"
   },
   {
     "component_id": "motherboard",
@@ -78,7 +81,8 @@
     "status": "verified",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: exact model match",
+    "match_status": "strong"
   },
   {
     "component_id": "motherboard",
@@ -89,9 +93,97 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:10554105854784555946,productid:13022787830241456362,headlineOfferDocid:15784413241805289896,imageDocid:2037717341731921846,rds:PC_11016108649693155833|PROD_PC_11016108649693155833,gpcid:11016108649693155833,mid:576462895433990492,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
-    "notes": ""
+    "notes": "Revalidated v2.1: required exact-model terms missing",
+    "match_status": "review"
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "ASUS ProArt X870E-CREATOR WIFI",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=ASUS+ProArt+X870E+Creator+WiFi",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "ASUS ProArt X870E-CREATOR WIFI AM5 ATX Motherboard",
+    "retailer": "newegg",
+    "price": 509.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:10741079162533220249,productid:14204450086831888575,headlineOfferDocid:5566686179634384400,imageDocid:8502187660856065117,rds:PC_3375806997263209023|PROD_PC_3375806997263209023,gpcid:3375806997263209023,mid:576462898585408334,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "exact model match"
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "Asus ROG Strix X870e-a Gaming Wifi7 Neo, AMD ATX motherboard, 16+2+2 power stages, Ddr5 slots, four M.2 slots, PCIe 5.0 with full support for next-gen",
+    "retailer": "walmart",
+    "price": 449.58,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:14184123816215428931,headlineOfferDocid:14184123816215428931,imageDocid:17968591847004004640,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "ASUS TUF Gaming X870 PLUS WIFI Motherboard",
+    "retailer": "bestbuy",
+    "price": 229.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:18150490571205349571,productid:14520738255426550436,headlineOfferDocid:8788085598353612715,imageDocid:5470742791407196225,rds:PC_6775129630788083612|PROD_PC_6775129630788083612,gpcid:14630838974937669674,mid:576462796450477527,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "AMD Ryzen 9 9900X3D with ASUS ProArt X870E-Creator WiFi & Corsair 32GB VENGEANCE RGB DDR5-6000 Combo",
+    "retailer": "bh",
+    "price": 1568.98,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:15211923336434952577,headlineOfferDocid:15211923336434952577,imageDocid:15688898237738844387,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "exact model match"
+  },
+  {
+    "component_id": "motherboard",
+    "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
+    "model": "ASUS TUF Gaming X870E-PLUS WIFI7 Motherboard",
+    "retailer": "microcenter",
+    "price": 179.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:9058000356253547092,productid:13018901816936430678,headlineOfferDocid:3571181777358895325,imageDocid:8269387915207095202,rds:PC_2620267737952735938|PROD_PC_2620267737952735938,gpcid:2620267737952735938,mid:576462840771303422,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T01:57:20.087075+00:00",
+    "notes": "required exact-model terms missing"
   }
 ]
