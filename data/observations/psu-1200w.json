@@ -73,5 +73,80 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
     "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic VERTEX GX-1200 ATX 3.1",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=Seasonic+VERTEX+GX-1200+ATX+3.1",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic Vertex PX-1200 1200W Modular Power Supply",
+    "retailer": "newegg",
+    "price": 319.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Seasonic VERTEX GX-1200 ATX 3.1&prds=catalogid:8564841783149146422,productid:18252852092739887092,headlineOfferDocid:11445882884498574669,imageDocid:6027913851529617017,rds:PC_542972369713704015|PROD_PC_542972369713704015,gpcid:542972369713704015,mid:576462446884908284,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "not approved 1200W PSU"
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic VERTEX GX-1200 ATX 3.1",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=Seasonic+VERTEX+GX-1200+ATX+3.1",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic VERTEX GX-1200 ATX 3.1",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=Seasonic+VERTEX+GX-1200+ATX+3.1",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic VERTEX GX-1200 ATX 3.1",
+    "retailer": "bh",
+    "source_url": "https://www.bhphotovideo.com/c/search?Ntt=Seasonic+VERTEX+GX-1200+ATX+3.1&N=0&InitialSearch=yes",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "psu-1200w",
+    "component": "PSU \u2014 1200W ATX 3.1 approved",
+    "model": "Seasonic VERTEX GX-1200 ATX 3.1",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Seasonic+VERTEX+GX-1200+ATX+3.1",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:05:27.108851+00:00",
+    "notes": "No acceptable Shopping result."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-29T01:57:20.087075+00:00",
+  "checked_at": "2026-08-29T02:05:27.108851+00:00",
   "source": "serpapi_google_shopping",
   "searches_attempted": 21,
   "batch_size": 24,
@@ -8,6 +8,6 @@
   "manual_review_candidates": 47,
   "missing_retailer_results": 54,
   "check_failures": 0,
-  "existing_results_revalidated": 40,
+  "existing_results_revalidated": 0,
   "note": "Only strong model matches affect trusted prices; derived items consume no search quota."
 }
