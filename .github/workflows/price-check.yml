@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -35,9 +37,28 @@ jobs:
           python scripts/build_summary.py
           python scripts/build_retailer_status.py
       - name: Commit observations
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || git commit -m "Update SerpApi price observations"
-          git push
+          if git diff --cached --quiet; then
+            echo "No tracker data changes to commit."
+            exit 0
+          fi
+          git commit -m "Update SerpApi price observations"
+
+          # main may advance while SerpApi is running (for example from a manual edit,
+          # preflight-related commit, or another maintenance change). Rebase the
+          # generated observation commit onto the latest main before pushing.
+          git fetch origin main
+          git rebase origin/main
+
+          # Retry once if main advances in the small window between fetch/rebase and push.
+          if ! git push origin HEAD:main; then
+            echo "Remote main advanced during push; rebasing once more and retrying."
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
