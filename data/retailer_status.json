@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:05:29.645934+00:00",
+  "generated_at": "2026-08-29T02:37:24.197523+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -15,7 +15,7 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-08-29T02:05:27.108851+00:00",
+      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
       "last_verified_price": 450.99,
       "latest_check_status": "verified"
     },
@@ -24,7 +24,7 @@
       "name": "Walmart",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-08-29T02:05:27.108851+00:00",
+      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
       "last_verified_price": 857.74,
       "latest_check_status": "verified"
     },
@@ -33,7 +33,7 @@
       "name": "Best Buy",
       "state": "yellow",
       "status": "latest result needs model review",
-      "last_verified_at": "2026-08-29T02:05:27.108851+00:00",
+      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
       "last_verified_price": 1255.99,
       "latest_check_status": "manual_review"
     },
@@ -42,7 +42,7 @@
       "name": "B&H Photo",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-08-29T02:05:27.108851+00:00",
+      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
       "last_verified_price": 998.99,
       "latest_check_status": "verified"
     },
@@ -51,7 +51,7 @@
       "name": "Micro Center",
       "state": "red",
       "status": "missing from latest search",
-      "last_verified_at": "2026-08-29T02:05:27.108851+00:00",
+      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
       "last_verified_price": 169.99,
       "latest_check_status": "not_found"
     }

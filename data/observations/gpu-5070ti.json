@@ -154,5 +154,83 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
     "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=NVIDIA+RTX+5070+Ti+16GB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "ASUS PRIME GeForce RTX 5070 Ti 16GB GDDR7 OC Edition PCIe 5.0 DLSS 4.0 Graphics Card + ASUS ROG Strix 34\" UltraWide QHD 2K 1440P 280Hz G-Sync HDR500 0",
+    "retailer": "newegg",
+    "price": 2079.98,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5070 Ti 16GB&prds=productid:2680173154008540412,headlineOfferDocid:2680173154008540412,imageDocid:14101556492690487401,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "exact model match"
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=NVIDIA+RTX+5070+Ti+16GB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=NVIDIA+RTX+5070+Ti+16GB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "ASUS GeForce RTX 5070 Ti TUF Gaming",
+    "retailer": "bh",
+    "price": 1309.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5070 Ti 16GB&prds=catalogid:10930583483598597921,productid:2159065879947896768,headlineOfferDocid:16817879102721973143,imageDocid:8952205678335557051,rds:PC_12304544252254687931|PROD_PC_12304544252254687931,gpcid:12304544252254687931,mid:576462896328485291,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "manual_review",
+    "method": "serpapi_google_shopping",
+    "match_status": "review",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "gpu-5070ti",
+    "component": "GPU \u2014 RTX 5070 Ti 16GB",
+    "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=NVIDIA+RTX+5070+Ti+16GB",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-08-29T02:37:22.107045+00:00",
+    "notes": "No acceptable Shopping result."
   }
 ]

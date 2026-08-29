@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-29T02:05:27.108851+00:00",
+  "checked_at": "2026-08-29T02:37:22.107045+00:00",
   "source": "serpapi_google_shopping",
   "searches_attempted": 21,
   "batch_size": 24,
@@ -15,10 +15,12 @@
     "monthly_limit": 250,
     "reserve": 10,
     "planned_budget": 240,
-    "checks_used": 66,
-    "checks_remaining_to_plan": 174,
-    "checks_remaining_absolute": 184,
-    "source": "tracker_ledger"
+    "checks_used": 87,
+    "checks_remaining_to_plan": 153,
+    "checks_remaining_absolute": 163,
+    "last_updated": "2026-08-29T02:37:22.107045+00:00",
+    "source": "tracker_ledger",
+    "note": "Tracks SerpApi search attempts made by this repository; provider-dashboard usage outside this repo is not included."
   },
-  "note": "Only strong model matches affect trusted prices; derived items consume no search quota. Current repo-tracked monthly SerpApi attempts: 66."
+  "note": "Only strong model matches affect trusted prices; derived items consume no search quota. Quota ledger increments once per SerpApi search attempt."
 }

@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-29T02:05:29.616545+00:00",
-  "last_check": "2026-08-29T02:05:29.616554+00:00",
+  "generated": "2026-08-29T02:37:24.167030+00:00",
+  "last_check": "2026-08-29T02:37:24.167039+00:00",
   "target": 2400,
   "recommended_scenario": null,
   "build_total": null,
   "recommendation": "INCOMPLETE",
   "components": {
     "cpu": {
-      "n": 10,
+      "n": 13,
       "cur": 450.99,
       "curObs": {
         "component_id": "cpu",
@@ -21,16 +21,16 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 450.99,
       "max": 998.99,
-      "avg": 755.5440000000001,
+      "avg": 758.7046153846154,
       "median": 857.74
     },
     "motherboard": {
-      "n": 5,
+      "n": 7,
       "cur": 509.99,
       "curObs": {
         "component_id": "motherboard",
@@ -44,17 +44,17 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 509.99,
       "max": 1568.98,
-      "avg": 1027.386,
+      "avg": 1030.8428571428572,
       "median": 978.99
     },
     "ram-96gb": null,
     "ram-96gb-ecc": {
-      "n": 2,
+      "n": 3,
       "cur": 2599.98,
       "curObs": {
         "component_id": "ram-96gb-ecc",
@@ -68,7 +68,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "DDR5 two-DIMM capacity branch match"
       },
       "min": 2599.98,
@@ -77,7 +77,7 @@
       "median": 2599.98
     },
     "ram-128gb": {
-      "n": 3,
+      "n": 4,
       "cur": 2599.99,
       "curObs": {
         "component_id": "ram-128gb",
@@ -91,7 +91,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "DDR5 two-DIMM capacity branch match"
       },
       "min": 2599.99,
@@ -101,7 +101,7 @@
     },
     "ram-128gb-ecc": null,
     "ram-64gb": {
-      "n": 2,
+      "n": 3,
       "cur": 1255.99,
       "curObs": {
         "component_id": "ram-64gb",
@@ -115,7 +115,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "DDR5 two-DIMM capacity branch match"
       },
       "min": 1255.99,
@@ -124,7 +124,7 @@
       "median": 1255.99
     },
     "gpu-5070ti": {
-      "n": 2,
+      "n": 3,
       "cur": 2079.98,
       "curObs": {
         "component_id": "gpu-5070ti",
@@ -138,7 +138,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 2079.98,
@@ -147,7 +147,7 @@
       "median": 2079.98
     },
     "gpu-pro4000": {
-      "n": 2,
+      "n": 3,
       "cur": 4199.0,
       "curObs": {
         "component_id": "gpu-pro4000",
@@ -161,7 +161,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 4199.0,
@@ -170,7 +170,7 @@
       "median": 4199.0
     },
     "gpu-5090": {
-      "n": 4,
+      "n": 6,
       "cur": 5319.05,
       "curObs": {
         "component_id": "gpu-5090",
@@ -184,16 +184,16 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 5319.05,
       "max": 8029.0,
-      "avg": 6674.025,
+      "avg": 6674.025000000001,
       "median": 6674.025
     },
     "gpu-pro4500": {
-      "n": 2,
+      "n": 3,
       "cur": 8099.99,
       "curObs": {
         "component_id": "gpu-pro4500",
@@ -207,18 +207,18 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 8099.99,
       "max": 8099.99,
-      "avg": 8099.99,
+      "avg": 8099.990000000001,
       "median": 8099.99
     },
     "nvme-4tb": null,
     "nvme-2tb": null,
     "boot-ssd": {
-      "n": 2,
+      "n": 3,
       "cur": 299.75,
       "curObs": {
         "component_id": "boot-ssd",
@@ -232,7 +232,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "approved SATA boot SSD"
       },
       "min": 299.75,
@@ -241,7 +241,7 @@
       "median": 299.75
     },
     "case": {
-      "n": 4,
+      "n": 6,
       "cur": 119.99,
       "curObs": {
         "component_id": "case",
@@ -255,7 +255,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 119.99,
@@ -264,7 +264,7 @@
       "median": 122.49
     },
     "cooler-noctua": {
-      "n": 4,
+      "n": 6,
       "cur": 159.95,
       "curObs": {
         "component_id": "cooler-noctua",
@@ -278,7 +278,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 159.95,
@@ -287,7 +287,7 @@
       "median": 164.97
     },
     "cooler-thermalright": {
-      "n": 4,
+      "n": 6,
       "cur": 63.99,
       "curObs": {
         "component_id": "cooler-thermalright",
@@ -301,7 +301,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 63.99,
@@ -310,7 +310,7 @@
       "median": 71.94500000000001
     },
     "psu-1000w": {
-      "n": 4,
+      "n": 6,
       "cur": 138.99,
       "curObs": {
         "component_id": "psu-1000w",
@@ -324,7 +324,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "approved 1000W PSU family"
       },
       "min": 138.99,
@@ -334,7 +334,7 @@
     },
     "psu-1200w": null,
     "ups-1000w": {
-      "n": 2,
+      "n": 3,
       "cur": 287.19,
       "curObs": {
         "component_id": "ups-1000w",
@@ -348,7 +348,7 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 287.19,
@@ -357,7 +357,7 @@
       "median": 287.19
     },
     "ups-1500w": {
-      "n": 4,
+      "n": 6,
       "cur": 916.24,
       "curObs": {
         "component_id": "ups-1500w",
@@ -371,12 +371,12 @@
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:05:27.108851+00:00",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match"
       },
       "min": 916.24,
       "max": 1085.95,
-      "avg": 1001.095,
+      "avg": 1001.0949999999999,
       "median": 1001.095
     }
   },
