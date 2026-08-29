@@ -1,0 +1,17 @@
+{
+  "provider": "serpapi",
+  "month": "2026-08",
+  "monthly_limit": 250,
+  "reserve": 10,
+  "planned_budget": 240,
+  "checks_used": 66,
+  "checks_remaining_to_plan": 174,
+  "checks_remaining_absolute": 184,
+  "last_updated": "2026-08-29T02:05:27.108851+00:00",
+  "source": "tracker_ledger",
+  "baseline": {
+    "confirmed_repository_runs": [24, 21, 21],
+    "confirmed_total": 66
+  },
+  "note": "Tracks SerpApi search attempts made by this repository; provider-dashboard usage outside this repo is not included."
+}
