@@ -1,26 +1,26 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "target_period": "2025-08",
   "research_date": "2026-08-28",
-  "methodology": "Historical web research only; no SerpApi quota consumed. Prefer exact dated US retail observations in August 2025. When an exact SKU was not selected in the tracker or a defensible dated retail price could not be found, no price is invented.",
+  "methodology": "Historical web research only; no SerpApi quota consumed. For each exact tracked SKU, use the lowest defensible dated US retail observation found in August 2025. Market/MSRP references may be retained for context but are not eligible to trigger BUY NOW. When an exact SKU was not selected or a defensible dated retail price could not be found, no price is invented.",
   "baselines": {
     "cpu": {
-      "price": 539.49,
-      "date": "2025-08-25",
-      "retailer": "B&H Photo",
+      "price": 515.04,
+      "date": "2025-08-04",
+      "retailer": "Newegg",
       "model": "AMD Ryzen 9 9950X",
       "confidence": "high",
-      "source_url": "https://www.trackalacker.com/products/showcase/amd-ryzen-9-9950x/listings/135481/amd-ryzen-9-9950x",
-      "note": "Dated in-stock observation; nearby August observations include $533.95 on Aug 18 and $549.00 on Aug 11."
+      "source_url": "https://www.nowinstock.net/full_historydetails/112/76720/",
+      "note": "Lowest verified August 2025 Newegg retail observation found in the historical record."
     },
     "motherboard": {
       "price": 506.99,
-      "date": "2025-08-25",
+      "date": "2025-08-13",
       "retailer": "Newegg",
       "model": "ASUS ProArt X870E-CREATOR WIFI",
       "confidence": "high",
       "source_url": "https://www.nowinstock.net/full_historydetails/124/78660/",
-      "note": "Exact-model in-stock observation; same $506.99 recorded Aug 13 and Aug 29."
+      "note": "Lowest verified August 2025 Newegg observation found; repeated on Aug 25 and Aug 29."
     },
     "gpu-5070ti": {
       "price": 749.00,
@@ -29,7 +29,7 @@
       "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
       "confidence": "medium",
       "source_url": "https://jad.stormrage.ro/good-to-know/top-10-video-cards-2025.html",
-      "note": "Contemporaneous August 2025 source reports typical street price around $749; not an exact retailer transaction."
+      "note": "Contemporaneous August 2025 source reports typical street price around $749; not an exact retailer transaction and not eligible to trigger BUY NOW."
     },
     "gpu-5090": {
       "price": 1999.00,
@@ -38,7 +38,7 @@
       "model": "NVIDIA GeForce RTX 5090 32GB",
       "confidence": "medium",
       "source_url": "https://jad.stormrage.ro/good-to-know/top-10-video-cards-2025.html",
-      "note": "August 2025 contemporaneous MSRP reference. Actual AIB street prices varied materially, so this is marked medium confidence and should not be treated as a verified retailer sale."
+      "note": "August 2025 contemporaneous MSRP reference. Not an exact retailer sale and not eligible to trigger BUY NOW."
     },
     "nvme-4tb-samsung-990pro": {
       "price": 279.00,
@@ -76,7 +76,7 @@
       "model": "Thermalright Phantom Spirit 120 EVO",
       "confidence": "medium",
       "source_url": "https://www.pricearchive.org/aliexpress.com/item/1005006849401583",
-      "note": "Exact dated historical listing; seller/channel differs from preferred US retailers, so confidence is medium."
+      "note": "Exact dated historical listing; seller/channel differs from preferred US retailers, so it is not eligible to trigger BUY NOW."
     },
     "ups-1000": {
       "price": 189.95,
