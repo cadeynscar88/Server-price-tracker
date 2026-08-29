@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-29T02:53:37.396432+00:00",
-  "last_check": "2026-08-29T02:53:37.396443+00:00",
+  "generated": "2026-08-29T02:55:12.969126+00:00",
+  "last_check": "2026-08-29T02:37:22.107045+00:00",
   "target": 2400,
   "recommended_scenario": null,
   "build_total": null,
@@ -607,5 +607,5 @@
       "total": 4123.17
     }
   ],
-  "verification_policy": "Manual verified observations are trusted. SerpApi observations count only with match_status=strong. Dynamic scenarios enforce storage, RAM, PSU, UPS and GPU ceiling rules."
+  "verification_policy": "SerpApi prices count only when standalone product identity, condition, variant and sanity-price rules pass with match_status=strong. Manual-review rows never affect totals."
 }
