@@ -5,6 +5,10 @@
   "currency": "USD",
   "storage_requirement_tb": 4,
   "stale_after_hours": 168,
+  "storage_configs": {
+    "A": {"label":"2 × 4 TB approved TLC NVMe","product_id":"nvme-4tb","qty":2,"usable_tb":4,"scheme":"Mirror"},
+    "B": {"label":"4 × 2 TB approved TLC NVMe","product_id":"nvme-2tb","qty":4,"usable_tb":4,"scheme":"Two mirrored vdevs"}
+  },
   "build_policy": {
     "phase": "stage_1_server",
     "storage": {
@@ -18,75 +22,14 @@
       "initial_m2_assignment": {"M2_1":"data","M2_2":"reserve_or_data_4x2tb","M2_3":"data","M2_4":"reserve_or_data_4x2tb"},
       "lane_warning": "Populating M.2_2 reduces bandwidth available to PCIEX16(G5)_2; preserve M.2_2 when practical for dual-GPU x8/x8."
     },
-    "ram": {
-      "preferred_gb": 96,
-      "upgrade_gb": 128,
-      "fallback_gb": 64,
-      "two_dimms_preferred": true,
-      "ecc_preferred_not_required": true,
-      "favor_128_if_premium_pct_lte": 25,
-      "favor_ecc_if_premium_pct_lte": 20,
-      "low_profile_preferred": true
-    },
-    "gpu": {
-      "single_gpu_default": true,
-      "vram_tiers_gb": {"budget":16,"preferred":24,"optimal":32,"dream":48},
-      "gpu_price_hard_ceiling_usd": 3000,
-      "dual_16gb_allowed": true,
-      "dual_gpu_requires_fit_power_connector_and_lane_checks": true
-    },
-    "case": {
-      "selected": "Lian Li LANCOOL 217 Black",
-      "stock_fans_initially": true,
-      "additional_fan_cost_initially_usd": 0,
-      "filtered_positive_pressure_required": true
-    },
-    "cpu_cooling": {
-      "dynamic": true,
-      "preferred": "Noctua NH-D15 G2",
-      "value": "Thermalright Phantom Spirit 120 EVO",
-      "favor_noctua_if_premium_usd_lte": 60,
-      "ram_clearance_check_required": true,
-      "aio_not_preferred": true
-    },
-    "psu": {
-      "dynamic": true,
-      "baseline_w": 1000,
-      "upgrade_w": 1200,
-      "atx_3_1_required": true,
-      "fully_modular_required": true,
-      "native_12v_2x6_required_when_gpu_needs_it": true,
-      "dual_gpu_requires_independent_approved_cabling": true,
-      "favor_1200_if_premium_usd_lte": 75
-    },
-    "ups": {
-      "dynamic": true,
-      "baseline_va": 1500,
-      "baseline_w": 1000,
-      "pure_sine_required": true,
-      "usb_or_network_shutdown_required": true,
-      "target_price_usd": [200,250],
-      "purpose": "graceful shutdown, not extended runtime"
-    },
-    "boot": {
-      "interface": "2.5-inch SATA",
-      "target_capacity_gb": 500,
-      "tlc_preferred": true,
-      "approved_only": true,
-      "target_price_usd": [35,60],
-      "soft_ceiling_usd": 70
-    },
-    "security": {
-      "encryption_at_rest_required": true,
-      "encrypted_remote_transport_required": true,
-      "normal_read_requires_security_key": false,
-      "stream_download_search_ai_requires_security_key": false,
-      "server_data_write_requires_fido2_key": true,
-      "admin_requires_fido2_plus_strong_auth": true,
-      "snapshots_and_backups_protected_from_normal_write_session": true,
-      "two_registered_security_keys_required_before_production": true,
-      "break_glass_recovery_material_required": true
-    },
+    "ram": {"preferred_gb":96,"upgrade_gb":128,"fallback_gb":64,"two_dimms_preferred":true,"ecc_preferred_not_required":true,"favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20,"low_profile_preferred":true},
+    "gpu": {"single_gpu_default":true,"vram_tiers_gb":{"budget":16,"preferred":24,"optimal":32,"dream":48},"gpu_price_hard_ceiling_usd":3000,"dual_16gb_allowed":true,"dual_gpu_requires_fit_power_connector_and_lane_checks":true},
+    "case": {"selected":"Lian Li LANCOOL 217 Black","stock_fans_initially":true,"additional_fan_cost_initially_usd":0,"filtered_positive_pressure_required":true},
+    "cpu_cooling": {"dynamic":true,"preferred":"Noctua NH-D15 G2","value":"Thermalright Phantom Spirit 120 EVO","favor_noctua_if_premium_usd_lte":60,"ram_clearance_check_required":true,"aio_not_preferred":true},
+    "psu": {"dynamic":true,"baseline_w":1000,"upgrade_w":1200,"atx_3_1_required":true,"fully_modular_required":true,"native_12v_2x6_required_when_gpu_needs_it":true,"dual_gpu_requires_independent_approved_cabling":true,"favor_1200_if_premium_usd_lte":75},
+    "ups": {"dynamic":true,"baseline_va":1500,"baseline_w":1000,"pure_sine_required":true,"usb_or_network_shutdown_required":true,"target_price_usd":[200,250],"purpose":"graceful shutdown, not extended runtime"},
+    "boot": {"interface":"2.5-inch SATA","target_capacity_gb":500,"tlc_preferred":true,"approved_only":true,"target_price_usd":[35,60],"soft_ceiling_usd":70},
+    "security": {"encryption_at_rest_required":true,"encrypted_remote_transport_required":true,"normal_read_requires_security_key":false,"stream_download_search_ai_requires_security_key":false,"server_data_write_requires_fido2_key":true,"admin_requires_fido2_plus_strong_auth":true,"snapshots_and_backups_protected_from_normal_write_session":true,"two_registered_security_keys_required_before_production":true,"break_glass_recovery_material_required":true},
     "deferred": ["remote_vault","firewall","wifi_ap"],
     "not_price_tracked": ["sd_reader_existing","optical_drive_user_supplied","extra_case_fans_initially"]
   }
