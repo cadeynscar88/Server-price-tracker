@@ -134,13 +134,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:7993738274843253325,productid:14149048691623916767,headlineOfferDocid:3880531271181183552,imageDocid:11539709188691944188,rds:PC_15597484233404265483|PROD_PC_15597484233404265483,gpcid:15597484233404265483,mid:576462892312634448,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
     "notes": "exact model match",
     "validation_version": "2.3",
-    "validation_reason": "exact standalone model + sane price"
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",
@@ -221,13 +221,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:7993738274843253325,productid:14149048691623916767,headlineOfferDocid:3880531271181183552,imageDocid:11539709188691944188,rds:PC_15597484233404265483|PROD_PC_15597484233404265483,gpcid:15597484233404265483,mid:576462892312634448,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
     "notes": "exact model match",
     "validation_version": "2.3",
-    "validation_reason": "exact standalone model + sane price"
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",
@@ -308,13 +308,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:7993738274843253325,productid:14149048691623916767,headlineOfferDocid:3880531271181183552,imageDocid:11539709188691944188,rds:PC_15597484233404265483|PROD_PC_15597484233404265483,gpcid:15597484233404265483,mid:576462892312634448,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
     "notes": "exact model match",
     "validation_version": "2.3",
-    "validation_reason": "exact standalone model + sane price"
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",

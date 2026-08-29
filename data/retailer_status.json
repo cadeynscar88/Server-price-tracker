@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:55:13.012262+00:00",
+  "generated_at": "2026-08-29T02:56:33.083550+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -13,11 +13,11 @@
     {
       "id": "newegg",
       "name": "Newegg",
-      "state": "green",
-      "status": "fresh trusted price",
+      "state": "yellow",
+      "status": "latest result needs model review",
       "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 450.99,
-      "latest_check_status": "verified"
+      "last_verified_price": 509.99,
+      "latest_check_status": "manual_review"
     },
     {
       "id": "walmart",

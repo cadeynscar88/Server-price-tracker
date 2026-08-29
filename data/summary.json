@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T02:55:12.969126+00:00",
+  "generated": "2026-08-29T02:56:33.036684+00:00",
   "last_check": "2026-08-29T02:37:22.107045+00:00",
   "target": 2400,
   "recommended_scenario": null,
@@ -7,28 +7,28 @@
   "recommendation": "INCOMPLETE",
   "components": {
     "cpu": {
-      "n": 13,
-      "cur": 450.99,
+      "n": 9,
+      "cur": 632.28,
       "curObs": {
         "component_id": "cpu",
         "component": "CPU \u2014 Ryzen 9 9950X",
-        "model": "AMD Ryzen 9 9950X - Ryzen 9 9000 Series Granite Ridge (Zen 5) 16-Core 4.3 GHz - Socket AM5 170W - Radeon Graphics Processor - 100-100001277 - Bulk - O",
-        "retailer": "newegg",
-        "price": 450.99,
+        "model": "AMD Ryzen 9 9950X 16-Core Processor",
+        "retailer": "bestbuy",
+        "price": 632.28,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X&prds=productid:6768868961505716867,headlineOfferDocid:6768868961505716867,imageDocid:16006460584795134854,rds:PC_11386183803805302431|PROD_PC_11386183803805302431,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X&prds=catalogid:3384584436670908380,productid:13840852360156597862,headlineOfferDocid:9945994750814919446,imageDocid:380895529031502384,rds:PC_16531250299087675312|PROD_PC_16531250299087675312,gpcid:16531250299087675312,mid:576462517490073141,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
+        "timestamp": "2026-08-28T23:42:08.937937+00:00",
+        "notes": "Revalidated v2.1: exact model match",
         "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
         "validation_version": "2.3",
         "validation_reason": "exact standalone model + sane price"
       },
-      "min": 450.99,
+      "min": 632.28,
       "max": 998.99,
-      "avg": 758.7046153846154,
+      "avg": 895.4666666666667,
       "median": 857.74
     },
     "motherboard": {
@@ -68,31 +68,7 @@
     "nvme-4tb": null,
     "nvme-2tb": null,
     "boot-ssd": null,
-    "case": {
-      "n": 3,
-      "cur": 124.99,
-      "curObs": {
-        "component_id": "case",
-        "component": "Case \u2014 Lian Li LANCOOL 217 Black",
-        "model": "Lian Li LANCOOL 217 INF Tempered Glass ATX Mid-Tower Computer Case",
-        "retailer": "walmart",
-        "price": 124.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:7993738274843253325,productid:14149048691623916767,headlineOfferDocid:3880531271181183552,imageDocid:11539709188691944188,rds:PC_15597484233404265483|PROD_PC_15597484233404265483,gpcid:15597484233404265483,mid:576462892312634448,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 124.99,
-      "max": 124.99,
-      "avg": 124.99,
-      "median": 124.99
-    },
+    "case": null,
     "cooler-noctua": {
       "n": 6,
       "cur": 159.95,
@@ -257,8 +233,8 @@
           "id": "cpu",
           "label": "CPU \u2014 Ryzen 9 9950X",
           "qty": 1,
-          "unit_price": 450.99,
-          "total": 450.99
+          "unit_price": 632.28,
+          "total": 632.28
         },
         {
           "id": "motherboard",
@@ -271,8 +247,8 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 124.99,
-          "total": 124.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "boot-ssd",
@@ -304,6 +280,7 @@
         }
       ],
       "missing": [
+        "case",
         "boot-ssd",
         "ram",
         "gpu-5070ti",
@@ -330,8 +307,8 @@
           "id": "cpu",
           "label": "CPU \u2014 Ryzen 9 9950X",
           "qty": 1,
-          "unit_price": 450.99,
-          "total": 450.99
+          "unit_price": 632.28,
+          "total": 632.28
         },
         {
           "id": "motherboard",
@@ -344,8 +321,8 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 124.99,
-          "total": 124.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "boot-ssd",
@@ -370,6 +347,7 @@
         }
       ],
       "missing": [
+        "case",
         "boot-ssd",
         "ram",
         "psu",
@@ -397,8 +375,8 @@
           "id": "cpu",
           "label": "CPU \u2014 Ryzen 9 9950X",
           "qty": 1,
-          "unit_price": 450.99,
-          "total": 450.99
+          "unit_price": 632.28,
+          "total": 632.28
         },
         {
           "id": "motherboard",
@@ -411,8 +389,8 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 124.99,
-          "total": 124.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "boot-ssd",
@@ -444,6 +422,7 @@
         }
       ],
       "missing": [
+        "case",
         "boot-ssd",
         "ram",
         "gpu-pro4000",
@@ -470,8 +449,8 @@
           "id": "cpu",
           "label": "CPU \u2014 Ryzen 9 9950X",
           "qty": 1,
-          "unit_price": 450.99,
-          "total": 450.99
+          "unit_price": 632.28,
+          "total": 632.28
         },
         {
           "id": "motherboard",
@@ -484,8 +463,8 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 124.99,
-          "total": 124.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "boot-ssd",
@@ -517,6 +496,7 @@
         }
       ],
       "missing": [
+        "case",
         "boot-ssd",
         "ram",
         "gpu-5090",
@@ -543,8 +523,8 @@
           "id": "cpu",
           "label": "CPU \u2014 Ryzen 9 9950X",
           "qty": 1,
-          "unit_price": 450.99,
-          "total": 450.99
+          "unit_price": 632.28,
+          "total": 632.28
         },
         {
           "id": "motherboard",
@@ -557,8 +537,8 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 124.99,
-          "total": 124.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "boot-ssd",
@@ -590,6 +570,7 @@
         }
       ],
       "missing": [
+        "case",
         "boot-ssd",
         "ram",
         "gpu-pro4500",
