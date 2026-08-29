@@ -22,11 +22,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate tracker configuration before API calls
+        run: python scripts/validate_tracker.py
       - name: Collect Google Shopping offers through SerpApi
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
-          # 24 searches/run keeps even a 10-run month at 240 searches,
-          # leaving a small buffer under the 250-search free allowance.
+          # Hard-capped by data/config.json as well. Derived items do not consume searches.
           SERPAPI_DAILY_BATCH: '24'
         run: python scripts/check_prices.py
       - name: Rebuild summary and retailer status
