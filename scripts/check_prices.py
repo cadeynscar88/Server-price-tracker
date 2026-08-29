@@ -2,7 +2,8 @@
 """SerpApi Google Shopping collector.
 
 Only standalone, sane-price, strong identity matches become trusted prices.
-Historical SerpApi observations can be revalidated offline without making API calls.
+Deterministically wrong results are rejected; manual review is reserved for ambiguity.
+A small quota-safe retailer fallback budget improves discovery without exceeding the run cap.
 """
 import json, os, re, hashlib
 from datetime import datetime, timezone, date
@@ -13,25 +14,17 @@ from urllib.request import Request, urlopen
 ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'; OBS=DATA/'observations'
 PRODUCTS=json.loads((DATA/'products.json').read_text()); CONFIG=json.loads((DATA/'config.json').read_text()); OBS.mkdir(exist_ok=True)
 RETAILERS={'amazon':('amazon','amazon.com'),'newegg':('newegg','newegg.com'),'walmart':('walmart','walmart.com'),'bestbuy':('best buy','bestbuy.com'),'bh':('b&h','b&h photo','bhphotovideo'),'microcenter':('micro center','microcenter')}
+RETAILER_QUERY_NAMES={'amazon':'Amazon','newegg':'Newegg','walmart':'Walmart','bestbuy':'Best Buy','bh':'B&H Photo','microcenter':'Micro Center'}
 CONDITION_REJECT=('refurbished','renewed','used','pre-owned','preowned','open box','open-box','for parts','damaged','renewed premium')
 ACCESSORY_REJECT=('water block','waterblock','heatsink only','fan only','empty box','backplate','replacement fan','mounting kit','bracket only','cable only')
-BUNDLE_REJECT=('bundle','combo','with monitor','with display','monitor included','keyboard mouse','mouse keyboard')
+BUNDLE_REJECT=('bundle','combo','with monitor','with display','monitor included','keyboard mouse','mouse keyboard','processor motherboard kit','motherboard kit')
 SYSTEM_REJECT=('gaming pc','desktop pc','desktop computer','workstation pc','workstation computer','prebuilt','pre-built','complete system','gaming desktop','tower computer','computer tower','desktop tower')
 NONRETAIL_REJECT=('bulk','oem','tray processor','tray cpu')
 APPROVED_NVME=('sn850x','nm790','t500','kc3000','990 pro')
-STORAGE_QUERIES={
- 'nvme-4tb':['Lexar NM790 4TB NVMe','WD Black SN850X 4TB NVMe','Kingston KC3000 4TB NVMe','Crucial T500 4TB NVMe','Samsung 990 PRO 4TB NVMe'],
- 'nvme-2tb':['Lexar NM790 2TB NVMe','WD Black SN850X 2TB NVMe','Kingston KC3000 2TB NVMe','Crucial T500 2TB NVMe','Samsung 990 PRO 2TB NVMe']
-}
+STORAGE_QUERIES={'nvme-4tb':['Lexar NM790 4TB NVMe','WD Black SN850X 4TB NVMe','Kingston KC3000 4TB NVMe','Crucial T500 4TB NVMe','Samsung 990 PRO 4TB NVMe'],'nvme-2tb':['Lexar NM790 2TB NVMe','WD Black SN850X 2TB NVMe','Kingston KC3000 2TB NVMe','Crucial T500 2TB NVMe','Samsung 990 PRO 2TB NVMe']}
 QUOTA_PATH=DATA/'quota_status.json'
-PRICE_BANDS={
- 'cpu':(250,1200),'motherboard':(200,1200),
- 'ram-64gb':(70,850),'ram-96gb':(100,1400),'ram-96gb-ecc':(120,1800),'ram-128gb':(140,1800),'ram-128gb-ecc':(160,2200),
- 'gpu-5070ti':(450,1800),'gpu-pro4000':(700,3000),'gpu-5090':(1200,3000),'gpu-pro4500':(900,3000),
- 'nvme-4tb':(120,900),'nvme-2tb':(60,500),'boot-ssd':(20,180),
- 'case':(70,300),'cooler-noctua':(60,250),'cooler-thermalright':(25,180),
- 'psu-1000w':(80,350),'psu-1200w':(100,450),'ups-1000w':(100,650),'ups-1500w':(250,1600)
-}
+PRICE_BANDS={'cpu':(250,1200),'motherboard':(200,1200),'ram-64gb':(70,850),'ram-96gb':(100,1400),'ram-96gb-ecc':(120,1800),'ram-128gb':(140,1800),'ram-128gb-ecc':(160,2200),'gpu-5070ti':(450,1800),'gpu-pro4000':(700,3000),'gpu-5090':(1200,3000),'gpu-pro4500':(900,3000),'nvme-4tb':(120,900),'nvme-2tb':(60,500),'boot-ssd':(20,180),'case':(70,300),'cooler-noctua':(60,250),'cooler-thermalright':(25,180),'psu-1000w':(80,350),'psu-1200w':(100,450),'ups-1000w':(100,650),'ups-1500w':(250,1600)}
+DETERMINISTIC_REASONS=('rejected condition','accessory/part result','bundle result','non-retail/bulk component result','complete-system/prebuilt result','different model/variant','wrong/missing capacity','not approved SSD family','not internal NVMe drive','not approved SATA boot family','capacity not approved','boot drive must be SATA','wrong RAM capacity/module layout','ECC result belongs in ECC branch','not approved 1000W PSU','not approved 1200W PSU')
 
 def now(): return datetime.now(timezone.utc).isoformat()
 def norm(v):
@@ -45,7 +38,7 @@ def retailer_slug(v):
 def append(pid,row):
  p=OBS/f'{pid}.json'; a=json.loads(p.read_text()) if p.exists() else []; a.append(row); p.write_text(json.dumps(a,indent=2))
 def serp(q,key):
- req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.3'})
+ req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.4'})
  with urlopen(req,timeout=30) as r: payload=json.loads(r.read())
  if payload.get('error'): raise RuntimeError(payload['error'])
  return payload
@@ -57,8 +50,7 @@ def expected(p): return list((p.get('retailer_search_urls') or {}).keys())
 def source_url(r,f=''): return r.get('product_link') or r.get('link') or f
 
 def quota_limits():
- p=CONFIG.get('preflight',{}); absolute=max(1,int(p.get('serpapi_monthly_limit',250))); reserve=max(0,int(p.get('serpapi_reserve',10)))
- planned=int(p.get('serpapi_monthly_budget',absolute-reserve)); planned=max(0,min(planned,absolute-reserve if reserve<=absolute else 0)); return absolute,reserve,planned
+ p=CONFIG.get('preflight',{}); absolute=max(1,int(p.get('serpapi_monthly_limit',250))); reserve=max(0,int(p.get('serpapi_reserve',10))); planned=int(p.get('serpapi_monthly_budget',absolute-reserve)); planned=max(0,min(planned,absolute-reserve if reserve<=absolute else 0)); return absolute,reserve,planned
 def quota_state(ts=None):
  dt=datetime.fromisoformat((ts or now()).replace('Z','+00:00')); month=dt.astimezone(timezone.utc).strftime('%Y-%m'); absolute,reserve,planned=quota_limits(); previous={}
  if QUOTA_PATH.exists():
@@ -93,19 +85,7 @@ def match_result(p,r,pr=None):
  if not ok:return False,reason
  ok,reason=price_sane(pid,pr)
  if not ok:return False,reason
- exact={
-  'cpu':(('9950x',),('9950x3d',)),
-  'motherboard':(('proart','x870e'),('x670e',)),
-  'gpu-5070ti':(('5070','ti','16gb'),('5070 ti super','5080','5090')),
-  'gpu-pro4000':(('rtx','pro','4000','blackwell','24gb'),('ada',)),
-  'gpu-5090':(('5090','32gb'),('5090d','5090 d')),
-  'gpu-pro4500':(('rtx','pro','4500','blackwell','32gb'),('ada',)),
-  'case':(('lancool','217'),('walnut','wood','white','inf')),
-  'cooler-noctua':(('nh','d15','g2'),()),
-  'cooler-thermalright':(('phantom','spirit','120','evo'),()),
-  'ups-1000w':(('cp1500pfclcd',),()),
-  'ups-1500w':(('pr1500lcd',),('cp1500pfclcd',)),
- }
+ exact={'cpu':(('9950x',),('9950x3d',)),'motherboard':(('proart','x870e'),('x670e','rog','tuf')),'gpu-5070ti':(('5070','ti','16gb'),('5070 ti super','5080','5090')),'gpu-pro4000':(('rtx','pro','4000','blackwell','24gb'),('ada',)),'gpu-5090':(('5090','32gb'),('5090d','5090 d')),'gpu-pro4500':(('rtx','pro','4500','blackwell','32gb'),('ada',)),'case':(('lancool','217'),('walnut','wood','white','inf')),'cooler-noctua':(('nh','d15','g2'),()),'cooler-thermalright':(('phantom','spirit','120','evo'),()),'ups-1000w':(('cp1500pfclcd',),()),'ups-1500w':(('pr1500lcd',),('cp1500pfclcd',))}
  if pid in exact:
   req,forbid=exact[pid]
   if not has_all(t,req):return False,'required exact-model terms missing'
@@ -136,8 +116,13 @@ def match_result(p,r,pr=None):
  if pid=='psu-1200w':return (True,'approved 1200W PSU + sane price') if '1200w' in t and 'vertex' in t and 'gx' in t else (False,'not approved 1200W PSU')
  return False,'no strong rule for this item'
 
+def classification(reason):
+ if reason.startswith('price $'): return 'rejected'
+ if reason in DETERMINISTIC_REASONS:return 'rejected'
+ return 'manual_review'
+
 def revalidate_existing():
- changed=0; reviewed=0; trusted=0; pmap={p['id']:p for p in PRODUCTS}
+ changed=reviewed=rejected=trusted=0; pmap={p['id']:p for p in PRODUCTS}
  for path in OBS.glob('*.json'):
   p=pmap.get(path.stem)
   if not p:continue
@@ -146,47 +131,72 @@ def revalidate_existing():
   dirty=False
   for row in rows:
    if row.get('method')!='serpapi_google_shopping' or not isinstance(row.get('price'),(int,float)):continue
-   ok,reason=match_result(p,{'title':row.get('model',''),'extracted_price':row.get('price')},row.get('price')); new_status='verified' if ok else 'manual_review'; new_match='strong' if ok else 'review'; trusted+=int(ok); reviewed+=int(not ok)
-   if row.get('status')!=new_status or row.get('match_status')!=new_match or row.get('validation_version')!='2.3' or row.get('validation_reason')!=reason:
-    row['status']=new_status; row['match_status']=new_match; row['validation_version']='2.3'; row['validation_reason']=reason; dirty=True; changed+=1
+   ok,reason=match_result(p,{'title':row.get('model',''),'extracted_price':row.get('price')},row.get('price'))
+   new_status='verified' if ok else classification(reason); new_match='strong' if ok else ('rejected' if new_status=='rejected' else 'review')
+   trusted+=int(ok); rejected+=int(new_status=='rejected'); reviewed+=int(new_status=='manual_review')
+   if row.get('status')!=new_status or row.get('match_status')!=new_match or row.get('validation_version')!='2.4' or row.get('validation_reason')!=reason:
+    row['status']=new_status; row['match_status']=new_match; row['validation_version']='2.4'; row['validation_reason']=reason; dirty=True; changed+=1
   if dirty:path.write_text(json.dumps(rows,indent=2))
- return {'changed':changed,'trusted_rows':trusted,'review_rows':reviewed}
+ return {'changed':changed,'trusted_rows':trusted,'rejected_rows':rejected,'review_rows':reviewed}
 
-def observation(p,slug,r,pr,ts,status,reason):
- return {'component_id':p['id'],'component':p['label'],'model':r.get('title') or p.get('model',''),'retailer':slug,'price':pr,'currency':'USD','source_url':source_url(r,(p.get('retailer_search_urls') or {}).get(slug,'')),'availability':'Shown in Google Shopping','status':status,'method':'serpapi_google_shopping','match_status':'strong' if status=='verified' else 'review','validation_version':'2.3','validation_reason':reason,'timestamp':ts,'notes':reason}
+def observation(p,slug,r,pr,ts,status,reason,query_kind='generic'):
+ return {'component_id':p['id'],'component':p['label'],'model':r.get('title') or p.get('model',''),'retailer':slug,'price':pr,'currency':'USD','source_url':source_url(r,(p.get('retailer_search_urls') or {}).get(slug,'')),'availability':'Shown in Google Shopping','status':status,'method':'serpapi_google_shopping','match_status':'strong' if status=='verified' else ('rejected' if status=='rejected' else 'review'),'validation_version':'2.4','validation_reason':reason,'query_kind':query_kind,'timestamp':ts,'notes':reason}
 def search_query(p,ts=None):
  terms=STORAGE_QUERIES.get(p.get('id')) or p.get('search_terms') or [p.get('model') or p.get('label')]
  if len(terms)==1:return terms[0]
  d=datetime.fromisoformat((ts or now()).replace('Z','+00:00')).date().toordinal(); salt=int(hashlib.sha1(p['id'].encode()).hexdigest()[:8],16); return terms[(d+salt)%len(terms)]
-def collect(p,key,ts):
- q=search_query(p,ts); payload=serp(q,key); strong={}; review={}
+def retailer_query(p,slug,ts=None): return f"{search_query(p,ts)} {RETAILER_QUERY_NAMES.get(slug,slug)}"
+def parse_payload(p,payload,ts,query_kind='generic',only_slug=None):
+ strong={}; review={}; rejected={}
  for r in payload.get('shopping_results') or []:
   slug=retailer_slug(r.get('source') or r.get('seller') or r.get('merchant')); pr=price(r)
-  if not slug or pr is None:continue
-  ok,reason=match_result(p,r,pr); bucket=strong if ok else review; row=observation(p,slug,r,pr,ts,'verified' if ok else 'manual_review',reason)
+  if not slug or pr is None or (only_slug and slug!=only_slug):continue
+  ok,reason=match_result(p,r,pr); status='verified' if ok else classification(reason); bucket=strong if ok else (rejected if status=='rejected' else review); row=observation(p,slug,r,pr,ts,status,reason,query_kind)
   if slug not in bucket or pr<bucket[slug]['price']:bucket[slug]=row
- v=rv=m=0
+ return strong,review,rejected
+def collect(p,key,ts):
+ payload=serp(search_query(p,ts),key); strong,review,rejected=parse_payload(p,payload,ts); v=rv=rj=m=0; unresolved=[]
  for slug in expected(p):
   if slug in strong:append(p['id'],strong[slug]); v+=1
-  elif slug in review:append(p['id'],review[slug]); rv+=1
-  else:append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'not_found','method':'serpapi_google_shopping','timestamp':ts,'notes':'No acceptable Shopping result.'}); m+=1
- return v,rv,m
+  elif slug in review:append(p['id'],review[slug]); rv+=1; unresolved.append(slug)
+  elif slug in rejected:append(p['id'],rejected[slug]); rj+=1; unresolved.append(slug)
+  else:unresolved.append(slug)
+ return v,rv,rj,m,unresolved
+def fallback_collect(p,slug,key,ts):
+ payload=serp(retailer_query(p,slug,ts),key); strong,review,rejected=parse_payload(p,payload,ts,'retailer_fallback',slug)
+ if slug in strong: append(p['id'],strong[slug]); return 'verified'
+ if slug in review: append(p['id'],review[slug]); return 'manual_review'
+ if slug in rejected: append(p['id'],rejected[slug]); return 'rejected'
+ append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'not_found','method':'serpapi_google_shopping','query_kind':'retailer_fallback','timestamp':ts,'notes':'No matching result in retailer-specific fallback.'}); return 'not_found'
 def searchable_products():return [p for p in PRODUCTS if p.get('price_source','search')=='search' and p.get('search_terms') and p.get('retailer_search_urls')]
 def selected(batch,limit=None):
  items=searchable_products()
  if not items:return []
  n=len(items); count=min(batch,n) if limit is None else min(batch,n,max(0,int(limit))); start=(date.today().toordinal()*batch)%n; return [items[(start+i)%n] for i in range(count)]
+def fallback_candidates(picks,unresolved):
+ priority={'cpu':0,'motherboard':1,'case':2,'boot-ssd':3,'nvme-4tb':4,'nvme-2tb':5}
+ out=[]
+ for p in picks:
+  for slug in unresolved.get(p['id'],[]): out.append((priority.get(p['id'],20),p['id'],slug,p))
+ out.sort(key=lambda x:(x[0],x[1],x[2])); return out
+
 def main():
- ts=now(); revalidated=revalidate_existing(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(CONFIG.get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); quota=quota_state(ts); picks=selected(batch,quota['checks_remaining_to_plan']); v=rv=m=fail=attempted=0
+ ts=now(); revalidated=revalidate_existing(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(CONFIG.get('preflight',{}).get('max_serpapi_searches_per_run',24)); fallback_budget=max(0,min(3,int(CONFIG.get('preflight',{}).get('retailer_fallback_searches_per_run',3)))); base_cap=max(1,max_batch-fallback_budget); requested=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); quota=quota_state(ts); base_budget=min(base_cap,requested,quota['checks_remaining_to_plan']); picks=selected(base_budget,base_budget); v=rv=rj=m=fail=attempted=fallbacks=0; unresolved={}
  if not key:
   status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':0,'existing_results_revalidated':revalidated,'quota':quota,'note':'SERPAPI_API_KEY missing; offline revalidation completed and no quota was consumed.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
  if not picks:
-  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'batch_size':batch,'searchable_products':len(searchable_products()),'check_failures':0,'existing_results_revalidated':revalidated,'quota':quota,'note':'Monthly tracker budget exhausted; no SerpApi request was made.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
+  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'batch_size':requested,'searchable_products':len(searchable_products()),'check_failures':0,'existing_results_revalidated':revalidated,'quota':quota,'note':'Monthly tracker budget exhausted; no SerpApi request was made.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
  for p in picks:
   quota=bump_quota(ts); attempted+=1
-  try:a,b,c=collect(p,key,ts); v+=a; rv+=b; m+=c
+  try:a,b,c,d,u=collect(p,key,ts); v+=a; rv+=b; rj+=c; m+=d; unresolved[p['id']]=u
   except Exception as e:
    fail+=1
    for slug in expected(p):append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'check_failed','method':'serpapi_google_shopping','timestamp':ts,'notes':str(e)})
- status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':attempted,'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'existing_results_revalidated':revalidated,'quota':quota,'note':'Only standalone strong identity matches inside sanity bands affect trusted prices. Quota increments once per SerpApi search attempt.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
+ for _,_,slug,p in fallback_candidates(picks,unresolved):
+  if fallbacks>=fallback_budget or attempted>=max_batch or quota_state(ts)['checks_remaining_to_plan']<=0:break
+  quota=bump_quota(ts); attempted+=1; fallbacks+=1
+  try:
+   status=fallback_collect(p,slug,key,ts); v+=int(status=='verified'); rv+=int(status=='manual_review'); rj+=int(status=='rejected'); m+=int(status=='not_found')
+  except Exception as e: fail+=1; append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'check_failed','method':'serpapi_google_shopping','query_kind':'retailer_fallback','timestamp':ts,'notes':str(e)})
+ quota=quota_state(ts); status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':attempted,'base_searches':attempted-fallbacks,'retailer_fallback_searches':fallbacks,'max_searches_per_run':max_batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'auto_rejected_results':rj,'missing_retailer_results':m,'check_failures':fail,'existing_results_revalidated':revalidated,'quota':quota,'note':'Strong exact matches are trusted; deterministic wrong items are auto-rejected; only ambiguity enters manual review. Up to three retailer-specific fallback searches are used within the same hard per-run quota cap.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
 if __name__=='__main__':main()
