@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'; OBS=DATA/'observations'
 PRODUCTS=json.loads((DATA/'products.json').read_text()); OBS.mkdir(exist_ok=True)
 RETAILERS={'amazon':('amazon','amazon.com'),'newegg':('newegg','newegg.com'),'walmart':('walmart','walmart.com'),'bestbuy':('best buy','bestbuy.com'),'bh':('b&h','b&h photo','bhphotovideo'),'microcenter':('micro center','microcenter')}
-REJECT=('refurbished','renewed','used','pre-owned','preowned','open box','open-box','water block','waterblock','heatsink only','fan only','empty box','laptop','desktop pc')
+REJECT=('refurbished','renewed','used','pre-owned','preowned','open box','open-box','water block','waterblock','heatsink only','fan only','empty box','laptop','desktop pc','gaming pc','bundle only')
 APPROVED_NVME=('sn850x','nm790','t500','kc3000','990 pro')
 
 def now(): return datetime.now(timezone.utc).isoformat()
@@ -24,7 +24,7 @@ def retailer_slug(v):
 def append(pid,row):
  p=OBS/f'{pid}.json'; a=json.loads(p.read_text()) if p.exists() else []; a.append(row); p.write_text(json.dumps(a,indent=2))
 def serp(q,key):
- req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.0'})
+ req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.1'})
  with urlopen(req,timeout=30) as r: payload=json.loads(r.read())
  if payload.get('error'): raise RuntimeError(payload['error'])
  return payload
@@ -36,27 +36,28 @@ def expected(p): return list((p.get('retailer_search_urls') or {}).keys())
 def source_url(r,f=''): return r.get('product_link') or r.get('link') or f
 
 def match_result(p,r):
- t=norm(r.get('title')); pid=p.get('id','')
+ raw=str(r.get('title') or ''); t=norm(raw); pid=p.get('id','')
  if not t: return False,'missing title'
  if any(norm(x) in t for x in REJECT): return False,'rejected condition/accessory/system result'
  exact={
   'cpu':(('9950x',),('9950x3d',)),
   'motherboard':(('proart','x870e'),()),
-  'gpu-5070ti':(('5070','ti'),()),
+  'gpu-5070ti':(('5070','ti','16gb'),()),
   'gpu-pro4000':(('rtx','pro','4000','blackwell','24gb'),()),
   'gpu-5090':(('5090','32gb'),()),
   'gpu-pro4500':(('rtx','pro','4500','blackwell','32gb'),()),
   'case':(('lancool','217'),()),
   'cooler-noctua':(('nh','d15','g2'),()),
   'cooler-thermalright':(('phantom','spirit','120','evo'),()),
-  'ups':(('cp1500pfclcd',),()),
+  'ups-1000w':(('cp1500pfclcd',),()),
+  'ups-1500w':(('pr1500lcd',),('cp1500pfclcd',)),
  }
  if pid in exact:
   req,forbid=exact[pid]
   if not has_all(t,req): return False,'required exact-model terms missing'
   if any(norm(x) in t for x in forbid): return False,'different model variant'
   return True,'exact model match'
- if pid in {'nvme-4tb','nvme-2tb','backup-ssd'}:
+ if pid in {'nvme-4tb','nvme-2tb'}:
   cap='4tb' if pid=='nvme-4tb' else '2tb'
   if cap not in t: return False,'wrong/missing capacity'
   if not any(norm(m) in t for m in APPROVED_NVME): return False,'not approved SSD family'
@@ -64,12 +65,23 @@ def match_result(p,r):
  if pid=='boot-ssd':
   if not any(x in t for x in ('870 evo','mx500','kc600')): return False,'not approved SATA boot family'
   if not any(x in t for x in ('500gb','512gb','1tb','250gb')): return False,'capacity not approved'
+  if 'nvme' in t or 'm 2' in t: return False,'boot drive must be SATA'
   return True,'approved SATA boot SSD'
  if pid.startswith('ram-'):
-  cap={'ram-96gb':'96gb','ram-128gb':'128gb','ram-64gb':'64gb'}[pid]
-  if cap not in t: return False,'wrong RAM capacity'
-  if 'ddr5' not in t: return False,'DDR5 missing'
-  return True,'capacity + DDR5 match; exact QVL/ECC status still sanity-checked before buy'
+  req={
+   'ram-96gb':('96gb','48gb',False),
+   'ram-96gb-ecc':('96gb','48gb',True),
+   'ram-128gb':('128gb','64gb',False),
+   'ram-128gb-ecc':('128gb','64gb',True),
+   'ram-64gb':('64gb','32gb',False)
+  }.get(pid)
+  if not req: return False,'unknown RAM rule'
+  cap,module,ecc=req
+  if cap not in t or module not in t or 'ddr5' not in t: return False,'wrong RAM capacity/module layout'
+  is_ecc='ecc' in t
+  if ecc and (not is_ecc or not any(x in t for x in ('udimm','unbuffered')) or 'rdimm' in t): return False,'true ECC UDIMM not confirmed'
+  if not ecc and is_ecc: return False,'ECC result belongs in ECC branch'
+  return True,'DDR5 two-DIMM capacity branch match'
  if pid=='psu-1000w':
   if '1000w' in t and any(x in t for x in ('rm1000x','a1000gl')): return True,'approved 1000W PSU family'
   return False,'not approved 1000W PSU'
@@ -80,9 +92,10 @@ def match_result(p,r):
 
 def cleanup_legacy():
  changed=0
- for p in PRODUCTS:
-  path=OBS/f"{p['id']}.json"
-  if not path.exists(): continue
+ pmap={p['id']:p for p in PRODUCTS}
+ for path in OBS.glob('*.json'):
+  pid=path.stem; p=pmap.get(pid)
+  if not p: continue
   try: rows=json.loads(path.read_text())
   except Exception: continue
   dirty=False
@@ -109,11 +122,13 @@ def collect(p,key,ts):
   elif slug in review: append(p['id'],review[slug]); rv+=1
   else: append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'not_found','method':'serpapi_google_shopping','timestamp':ts,'notes':'No acceptable Shopping result.'}); m+=1
  return v,rv,m
+def searchable_products(): return [p for p in PRODUCTS if p.get('price_source','search')=='search' and p.get('search_terms') and p.get('retailer_search_urls')]
 def selected(batch=24):
- if not PRODUCTS:return []
- n=len(PRODUCTS); start=(date.today().toordinal()*batch)%n; return [PRODUCTS[(start+i)%n] for i in range(min(batch,n))]
+ items=searchable_products()
+ if not items:return []
+ n=len(items); start=(date.today().toordinal()*batch)%n; return [items[(start+i)%n] for i in range(min(batch,n))]
 def main():
- ts=now(); legacy=cleanup_legacy(); key=os.getenv('SERPAPI_API_KEY','').strip(); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH','24')),len(PRODUCTS) or 1)); picks=selected(batch); v=rv=m=fail=0
+ ts=now(); legacy=cleanup_legacy(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(json.loads((DATA/'config.json').read_text()).get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); picks=selected(batch); v=rv=m=fail=0
  if not key:
   status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':1,'legacy_results_revalidated':legacy,'note':'SERPAPI_API_KEY missing.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
  for p in picks:
@@ -122,5 +137,5 @@ def main():
   except Exception as e:
    fail+=1
    for slug in expected(p): append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'check_failed','method':'serpapi_google_shopping','timestamp':ts,'notes':str(e)})
- status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':len(picks),'batch_size':batch,'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'legacy_results_revalidated':legacy,'note':'Only strong model matches affect trusted prices.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
+ status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':len(picks),'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'legacy_results_revalidated':legacy,'note':'Only strong model matches affect trusted prices; derived items consume no search quota.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
 if __name__=='__main__': main()
