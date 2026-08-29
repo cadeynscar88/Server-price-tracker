@@ -41,7 +41,7 @@ def choose_psu(min_w):
  if p12 is not None and p1 is not None and p12-p1<=lim:return 'psu-1200w'
  return 'psu-1000w' if p1 is not None else ('psu-1200w' if p12 is not None else None)
 def choose_ups(peak_w):
- head=config['dynamic_groups']['ups']['rules']['output_headroom_pct']/100; need=peak_w*(1+head)
+ need=peak_w*(1+config['dynamic_groups']['ups']['rules']['output_headroom_pct']/100)
  for pid in ('ups-1000w','ups-1500w'):
   if cur(pid) is not None and pmap[pid].get('attrs',{}).get('output_w',0)>=need:return pid
  return None
@@ -54,12 +54,10 @@ def choose_storage(stg,second_gpu=False):
  a,b=stg['A']['current_total'],stg['B']['current_total']
  if a is None:return 'B' if b is not None else None
  if b is None:return 'A'
- rule=config['storage_rules']; threshold=rule['choose_4x2_only_if_savings_with_second_gpu_usd_gte'] if second_gpu else rule['choose_4x2_only_if_savings_usd_gte']
+ threshold=config['storage_rules']['choose_4x2_only_if_savings_with_second_gpu_usd_gte'] if second_gpu else config['storage_rules']['choose_4x2_only_if_savings_usd_gte']
  return 'B' if a-b>=threshold else 'A'
 def add_item(items,pid,qty=1,price_override=None):
- price=cur(pid) if price_override is None else price_override
- items.append({'id':pid,'label':pmap.get(pid,{}).get('label',pid),'qty':qty,'unit_price':price,'total':price*qty if price is not None else None})
- return price is not None
+ price=cur(pid) if price_override is None else price_override; items.append({'id':pid,'label':pmap.get(pid,{}).get('label',pid),'qty':qty,'unit_price':price,'total':price*qty if price is not None else None}); return price is not None
 
 def scenario(g,stg):
  items=[]; missing=[]
@@ -76,7 +74,6 @@ def scenario(g,stg):
  if storage_key is None:missing.append('storage')
  else:
   c=stg[storage_key]; items.append({'id':c['product_id'],'label':c['label'],'qty':c['qty'],'unit_price':cur(c['product_id']),'total':c['current_total']})
- # Offline backup derives from the currently trusted single-drive 2TB pool price.
  backup=cur('nvme-2tb')
  if backup is None:missing.append('backup-ssd')
  else:items.append({'id':'backup-ssd','label':pmap['backup-ssd']['label'],'qty':1,'unit_price':backup,'total':backup})
@@ -85,15 +82,17 @@ def scenario(g,stg):
  return {'id':g['id'],'label':g['label'],'vram_gb':g.get('vram_gb'),'requires_second_gpu':g.get('requires_second_gpu',False),'storage_choice':storage_key,'ram_choice':ram,'cooler_choice':cooler,'psu_choice':psu,'ups_choice':ups,'estimated_peak_w':g['estimated_peak_w'],'items':items,'missing':missing,'total':round(total,2) if total is not None else None,'recommendation':verdict,'physical_fit':g.get('physical_fit','standard-check')}
 
 def main():
- stg=storage_totals(); scenarios=[scenario(g,stg) for g in config['gpu_scenarios']]
- complete=[s for s in scenarios if s['total'] is not None]
- within=[s for s in complete if s['total']<=config['target_budget']]
- if within: recommended=max(within,key=lambda s:(s.get('vram_gb') or 0,-s['total']))
- elif complete: recommended=min(complete,key=lambda s:s['total'])
- else: recommended=None
+ generated=datetime.now(timezone.utc).isoformat(); collector={}
+ try: collector=json.loads((DATA/'collector_status.json').read_text())
+ except Exception: collector={}
+ last_check=collector.get('checked_at')
+ stg=storage_totals(); scenarios=[scenario(g,stg) for g in config['gpu_scenarios']]; complete=[s for s in scenarios if s['total'] is not None]; within=[s for s in complete if s['total']<=config['target_budget']]
+ recommended=max(within,key=lambda s:(s.get('vram_gb') or 0,-s['total'])) if within else (min(complete,key=lambda s:s['total']) if complete else None)
  comps={p['id']:stats(p['id']) for p in products if p.get('price_source','search')=='search'}
  old=json.loads((DATA/'summary.json').read_text()) if (DATA/'summary.json').exists() else {}; hist=old.get('build_history',[])
- if recommended and recommended['total'] is not None:hist.append({'timestamp':datetime.now(timezone.utc).isoformat(),'scenario':recommended['id'],'total':recommended['total']})
- summary={'generated':datetime.now(timezone.utc).isoformat(),'last_check':datetime.now(timezone.utc).isoformat(),'target':config['target_budget'],'recommended_scenario':recommended['id'] if recommended else None,'build_total':recommended['total'] if recommended else None,'recommendation':recommended['recommendation'] if recommended else 'INCOMPLETE','components':comps,'storage':stg,'scenarios':scenarios,'build_history':hist[-400:],'verification_policy':'Manual verified observations are trusted. SerpApi observations count only with match_status=strong. Dynamic scenarios enforce storage, RAM, PSU, UPS and GPU ceiling rules.'}
+ # Only record a history point once per actual collector timestamp, not every offline rebuild.
+ if recommended and recommended['total'] is not None and last_check:
+  if not hist or hist[-1].get('timestamp')!=last_check: hist.append({'timestamp':last_check,'scenario':recommended['id'],'total':recommended['total']})
+ summary={'generated':generated,'last_check':last_check,'target':config['target_budget'],'recommended_scenario':recommended['id'] if recommended else None,'build_total':recommended['total'] if recommended else None,'recommendation':recommended['recommendation'] if recommended else 'INCOMPLETE','components':comps,'storage':stg,'scenarios':scenarios,'build_history':hist[-400:],'verification_policy':'SerpApi prices count only when standalone product identity, condition, variant and sanity-price rules pass with match_status=strong. Manual-review rows never affect totals.'}
  (DATA/'summary.json').write_text(json.dumps(summary,indent=2)); print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()
