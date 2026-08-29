@@ -1,6 +1,6 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
@@ -63,5 +63,11 @@
     "read_stream_download_requires_fido2": false,
     "protected_snapshot_deletion": "admin-only"
   },
-  "preflight": {"validate_before_api":true,"max_serpapi_searches_per_run":24}
+  "preflight": {
+    "validate_before_api": true,
+    "max_serpapi_searches_per_run": 24,
+    "serpapi_monthly_limit": 250,
+    "serpapi_reserve": 10,
+    "serpapi_monthly_budget": 240
+  }
 }
