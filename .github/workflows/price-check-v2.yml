@@ -30,6 +30,11 @@ jobs:
       - name: Validate tracker configuration before API calls
         run: python scripts/validate_tracker.py
 
+      - name: Run offline unit tests before API calls
+        env:
+          SERPAPI_API_KEY: ''
+        run: python -m unittest discover -s tests -v
+
       - name: Collect Google Shopping offers through SerpApi
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
@@ -44,6 +49,7 @@ jobs:
       - name: Validate generated JSON
         run: |
           python -m json.tool data/collector_status.json >/dev/null
+          python -m json.tool data/quota_status.json >/dev/null
           python -m json.tool data/summary.json >/dev/null
           python -m json.tool data/retailer_status.json >/dev/null
 
