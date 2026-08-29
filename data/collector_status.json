@@ -9,5 +9,16 @@
   "missing_retailer_results": 54,
   "check_failures": 0,
   "existing_results_revalidated": 0,
-  "note": "Only strong model matches affect trusted prices; derived items consume no search quota."
+  "quota": {
+    "provider": "serpapi",
+    "month": "2026-08",
+    "monthly_limit": 250,
+    "reserve": 10,
+    "planned_budget": 240,
+    "checks_used": 66,
+    "checks_remaining_to_plan": 174,
+    "checks_remaining_absolute": 184,
+    "source": "tracker_ledger"
+  },
+  "note": "Only strong model matches affect trusted prices; derived items consume no search quota. Current repo-tracked monthly SerpApi attempts: 66."
 }
