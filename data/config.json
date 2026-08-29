@@ -1,36 +1,67 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
   "stale_after_hours": 168,
-  "storage_configs": {
-    "A": {"label":"2 × 4 TB approved TLC NVMe","product_id":"nvme-4tb","qty":2,"usable_tb":4,"scheme":"Mirror"},
-    "B": {"label":"4 × 2 TB approved TLC NVMe","product_id":"nvme-2tb","qty":4,"usable_tb":4,"scheme":"Two mirrored vdevs"}
-  },
-  "build_policy": {
-    "phase": "stage_1_server",
-    "storage": {
-      "preferred": "2x4tb_mirror",
-      "alternative": "4x2tb_two_mirrors",
-      "require_tlc": true,
-      "same_model_per_array": true,
-      "four_by_2tb_savings_required_usd": 200,
-      "four_by_2tb_savings_required_with_second_gpu_usd": 250,
-      "boot_must_not_use_m2": true,
-      "initial_m2_assignment": {"M2_1":"data","M2_2":"reserve_or_data_4x2tb","M2_3":"data","M2_4":"reserve_or_data_4x2tb"},
-      "lane_warning": "Populating M.2_2 reduces bandwidth available to PCIEX16(G5)_2; preserve M.2_2 when practical for dual-GPU x8/x8."
+  "fixed_build": ["cpu", "motherboard", "case", "boot-ssd"],
+  "dynamic_groups": {
+    "ram": {
+      "required": true,
+      "candidates": ["ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc", "ram-64gb"],
+      "rules": {"base":"ram-96gb","favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20}
     },
-    "ram": {"preferred_gb":96,"upgrade_gb":128,"fallback_gb":64,"two_dimms_preferred":true,"ecc_preferred_not_required":true,"favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20,"low_profile_preferred":true},
-    "gpu": {"single_gpu_default":true,"vram_tiers_gb":{"budget":16,"preferred":24,"optimal":32,"dream":48},"gpu_price_hard_ceiling_usd":3000,"dual_16gb_allowed":true,"dual_gpu_requires_fit_power_connector_and_lane_checks":true},
-    "case": {"selected":"Lian Li LANCOOL 217 Black","stock_fans_initially":true,"additional_fan_cost_initially_usd":0,"filtered_positive_pressure_required":true},
-    "cpu_cooling": {"dynamic":true,"preferred":"Noctua NH-D15 G2","value":"Thermalright Phantom Spirit 120 EVO","favor_noctua_if_premium_usd_lte":60,"ram_clearance_check_required":true,"aio_not_preferred":true},
-    "psu": {"dynamic":true,"baseline_w":1000,"upgrade_w":1200,"atx_3_1_required":true,"fully_modular_required":true,"native_12v_2x6_required_when_gpu_needs_it":true,"dual_gpu_requires_independent_approved_cabling":true,"favor_1200_if_premium_usd_lte":75},
-    "ups": {"dynamic":true,"baseline_va":1500,"baseline_w":1000,"pure_sine_required":true,"usb_or_network_shutdown_required":true,"target_price_usd":[200,250],"purpose":"graceful shutdown, not extended runtime"},
-    "boot": {"interface":"2.5-inch SATA","target_capacity_gb":500,"tlc_preferred":true,"approved_only":true,"target_price_usd":[35,60],"soft_ceiling_usd":70},
-    "security": {"encryption_at_rest_required":true,"encrypted_remote_transport_required":true,"normal_read_requires_security_key":false,"stream_download_search_ai_requires_security_key":false,"server_data_write_requires_fido2_key":true,"admin_requires_fido2_plus_strong_auth":true,"snapshots_and_backups_protected_from_normal_write_session":true,"two_registered_security_keys_required_before_production":true,"break_glass_recovery_material_required":true},
-    "deferred": ["remote_vault","firewall","wifi_ap"],
-    "not_price_tracked": ["sd_reader_existing","optical_drive_user_supplied","extra_case_fans_initially"]
-  }
+    "cooler": {
+      "required": true,
+      "candidates": ["cooler-noctua", "cooler-thermalright"],
+      "rules": {"favor_noctua_if_premium_usd_lte":60}
+    },
+    "gpu": {
+      "required": true,
+      "candidates": ["gpu-5070ti", "gpu-pro4000", "gpu-5090", "gpu-pro4500"],
+      "rules": {"hard_price_ceiling_usd":3000,"preferred_vram_gb":24,"optimal_vram_gb":32}
+    },
+    "psu": {
+      "required": true,
+      "candidates": ["psu-1000w", "psu-1200w"],
+      "rules": {"base":"psu-1000w","favor_1200_if_premium_usd_lte":75}
+    },
+    "ups": {
+      "required": true,
+      "candidates": ["ups-1000w", "ups-1500w"],
+      "rules": {"baseline":"ups-1000w","output_headroom_pct":20}
+    }
+  },
+  "storage_configs": {
+    "A": {"label":"2 × 4 TB approved TLC NVMe","product_id":"nvme-4tb","qty":2,"usable_tb":4,"scheme":"ZFS mirror","preferred":true},
+    "B": {"label":"4 × 2 TB approved TLC NVMe","product_id":"nvme-2tb","qty":4,"usable_tb":4,"scheme":"2 mirrored vdevs","preferred":false}
+  },
+  "storage_rules": {
+    "choose_4x2_only_if_savings_usd_gte": 200,
+    "choose_4x2_only_if_savings_with_second_gpu_usd_gte": 250,
+    "m2_assignment_2x4": ["M.2_1", "M.2_3"],
+    "m2_assignment_4x2": ["M.2_1", "M.2_2", "M.2_3", "M.2_4"],
+    "m2_2_warning": "M.2_2 shares bandwidth with PCIEX16(G5)_2; occupying M.2_2 reduces second-GPU lane allocation."
+  },
+  "gpu_scenarios": [
+    {"id":"single-5070ti","label":"1× RTX 5070 Ti 16GB","product_id":"gpu-5070ti","qty":1,"psu_min_w":1000,"estimated_peak_w":650,"vram_gb":16},
+    {"id":"dual-5070ti","label":"2× RTX 5070 Ti 16GB","product_id":"gpu-5070ti","qty":2,"psu_min_w":1200,"estimated_peak_w":950,"vram_gb":16,"requires_second_gpu":true,"physical_fit":"exact-SKU-check"},
+    {"id":"single-pro4000","label":"1× RTX PRO 4000 Blackwell 24GB","product_id":"gpu-pro4000","qty":1,"psu_min_w":1000,"estimated_peak_w":500,"vram_gb":24},
+    {"id":"single-5090","label":"1× RTX 5090 32GB","product_id":"gpu-5090","qty":1,"psu_min_w":1000,"estimated_peak_w":950,"vram_gb":32},
+    {"id":"single-pro4500","label":"1× RTX PRO 4500 Blackwell 32GB","product_id":"gpu-pro4500","qty":1,"psu_min_w":1000,"estimated_peak_w":575,"vram_gb":32}
+  ],
+  "derived_items": [
+    {"id":"backup-ssd","source_product_id":"nvme-2tb","qty":1,"note":"Stage-1 offline backup; enclosure/accessory cost handled manually if needed."}
+  ],
+  "deferred_stage2": ["firewall", "wifi-ap", "vault"],
+  "owned_or_untracked": ["sd-reader", "optical-drive", "additional-case-fans"],
+  "security_policy": {
+    "encryption_at_rest": true,
+    "encrypted_remote_access": true,
+    "write_requires_fido2": true,
+    "read_stream_download_requires_fido2": false,
+    "protected_snapshot_deletion": "admin-only"
+  },
+  "preflight": {"validate_before_api":true,"max_serpapi_searches_per_run":24}
 }
