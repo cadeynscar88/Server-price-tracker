@@ -36,7 +36,7 @@ def expected(p): return list((p.get('retailer_search_urls') or {}).keys())
 def source_url(r,f=''): return r.get('product_link') or r.get('link') or f
 
 def match_result(p,r):
- raw=str(r.get('title') or ''); t=norm(raw); pid=p.get('id','')
+ t=norm(r.get('title')); pid=p.get('id','')
  if not t: return False,'missing title'
  if any(norm(x) in t for x in REJECT): return False,'rejected condition/accessory/system result'
  exact={
@@ -90,20 +90,21 @@ def match_result(p,r):
   return False,'not approved 1200W PSU'
  return False,'no strong rule for this item'
 
-def cleanup_legacy():
- changed=0
- pmap={p['id']:p for p in PRODUCTS}
+def revalidate_existing():
+ """Re-run every prior SerpApi priced observation through the current matcher before any new collection."""
+ changed=0; pmap={p['id']:p for p in PRODUCTS}
  for path in OBS.glob('*.json'):
-  pid=path.stem; p=pmap.get(pid)
+  p=pmap.get(path.stem)
   if not p: continue
   try: rows=json.loads(path.read_text())
   except Exception: continue
   dirty=False
   for row in rows:
-   if row.get('method')=='serpapi_google_shopping' and row.get('status')=='verified' and not row.get('match_status'):
-    ok,reason=match_result(p,{'title':row.get('model','')}); row['match_status']='strong' if ok else 'review'; row['notes']=(row.get('notes','')+' Legacy revalidation: '+reason).strip()
-    if not ok: row['status']='manual_review'
-    dirty=True; changed+=1
+   if row.get('method')!='serpapi_google_shopping' or not isinstance(row.get('price'),(int,float)): continue
+   ok,reason=match_result(p,{'title':row.get('model','')})
+   new_status='verified' if ok else 'manual_review'; new_match='strong' if ok else 'review'
+   if row.get('status')!=new_status or row.get('match_status')!=new_match:
+    row['status']=new_status; row['match_status']=new_match; row['notes']=(row.get('notes','')+' Revalidated v2.1: '+reason).strip(); dirty=True; changed+=1
   if dirty: path.write_text(json.dumps(rows,indent=2))
  return changed
 
@@ -128,14 +129,14 @@ def selected(batch=24):
  if not items:return []
  n=len(items); start=(date.today().toordinal()*batch)%n; return [items[(start+i)%n] for i in range(min(batch,n))]
 def main():
- ts=now(); legacy=cleanup_legacy(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(json.loads((DATA/'config.json').read_text()).get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); picks=selected(batch); v=rv=m=fail=0
+ ts=now(); revalidated=revalidate_existing(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(json.loads((DATA/'config.json').read_text()).get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); picks=selected(batch); v=rv=m=fail=0
  if not key:
-  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':1,'legacy_results_revalidated':legacy,'note':'SERPAPI_API_KEY missing.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
+  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':1,'existing_results_revalidated':revalidated,'note':'SERPAPI_API_KEY missing.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
  for p in picks:
   try:
    a,b,c=collect(p,key,ts); v+=a; rv+=b; m+=c
   except Exception as e:
    fail+=1
    for slug in expected(p): append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'check_failed','method':'serpapi_google_shopping','timestamp':ts,'notes':str(e)})
- status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':len(picks),'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'legacy_results_revalidated':legacy,'note':'Only strong model matches affect trusted prices; derived items consume no search quota.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
+ status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':len(picks),'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'existing_results_revalidated':revalidated,'note':'Only strong model matches affect trusted prices; derived items consume no search quota.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
 if __name__=='__main__': main()
