@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3356.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -51,7 +53,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -66,7 +70,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2339.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -81,7 +87,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3699.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -108,7 +116,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3356.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -135,7 +145,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -150,7 +162,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2339.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -165,7 +179,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3699.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -192,7 +208,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3356.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -219,7 +237,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -234,7 +254,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2339.99 outside sanity band $160-$2200"
   },
   {
     "component_id": "ram-128gb-ecc",
@@ -249,6 +271,8 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $3699.99 outside sanity band $160-$2200"
   }
 ]

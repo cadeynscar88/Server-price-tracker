@@ -20,11 +20,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:3530128356622739387,headlineOfferDocid:3530128356622739387,imageDocid:15244695684187898470,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $8029.00 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -35,11 +37,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $5319.05 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $5099.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -69,7 +75,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4999.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -104,11 +112,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:3530128356622739387,headlineOfferDocid:3530128356622739387,imageDocid:15244695684187898470,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $8029.00 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -119,11 +129,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $5319.05 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -138,7 +150,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $5099.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -153,7 +167,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4999.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -188,11 +204,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:3530128356622739387,headlineOfferDocid:3530128356622739387,imageDocid:15244695684187898470,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $8029.00 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -203,11 +221,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $5319.05 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -222,7 +242,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $5099.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",
@@ -237,7 +259,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4999.99 outside sanity band $1200-$3000"
   },
   {
     "component_id": "gpu-5090",

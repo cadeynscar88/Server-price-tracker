@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: rejected condition/accessory/system result",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SATA boot family"
   },
   {
     "component_id": "boot-ssd",
@@ -39,7 +41,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: not approved SATA boot family",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SATA boot family"
   },
   {
     "component_id": "boot-ssd",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: not approved SATA boot family",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SATA boot family"
   },
   {
     "component_id": "boot-ssd",
@@ -81,7 +87,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: not approved SATA boot family",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SATA boot family"
   },
   {
     "component_id": "boot-ssd",
@@ -104,11 +112,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "approved SATA boot SSD"
+    "notes": "approved SATA boot SSD",
+    "validation_version": "2.3",
+    "validation_reason": "price $299.75 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -123,7 +133,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $252.98 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -138,7 +150,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $249.00 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -185,11 +199,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "approved SATA boot SSD"
+    "notes": "approved SATA boot SSD",
+    "validation_version": "2.3",
+    "validation_reason": "price $299.75 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -204,7 +220,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $252.98 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -219,7 +237,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $249.00 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -266,11 +286,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "approved SATA boot SSD"
+    "notes": "approved SATA boot SSD",
+    "validation_version": "2.3",
+    "validation_reason": "price $299.75 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -285,7 +307,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $252.98 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",
@@ -300,7 +324,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "capacity not approved"
+    "notes": "capacity not approved",
+    "validation_version": "2.3",
+    "validation_reason": "price $249.00 outside sanity band $20-$180"
   },
   {
     "component_id": "boot-ssd",

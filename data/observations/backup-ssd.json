@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: no strong rule for this item",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "no strong rule for this item"
   },
   {
     "component_id": "backup-ssd",
@@ -39,7 +41,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: no strong rule for this item",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "no strong rule for this item"
   },
   {
     "component_id": "backup-ssd",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: no strong rule for this item",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "no strong rule for this item"
   },
   {
     "component_id": "backup-ssd",
@@ -69,7 +75,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: no strong rule for this item",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "no strong rule for this item"
   },
   {
     "component_id": "backup-ssd",

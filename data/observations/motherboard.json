@@ -37,7 +37,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -52,7 +54,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -67,7 +71,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -82,7 +88,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: exact model match",
-    "match_status": "strong"
+    "match_status": "strong",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "motherboard",
@@ -97,7 +105,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -124,7 +134,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "motherboard",
@@ -139,7 +151,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -154,7 +168,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -165,11 +181,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:15211923336434952577,headlineOfferDocid:15211923336434952577,imageDocid:15688898237738844387,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "bundle result"
   },
   {
     "component_id": "motherboard",
@@ -184,7 +202,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $179.99 outside sanity band $200-$1200"
   },
   {
     "component_id": "motherboard",
@@ -211,7 +231,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "motherboard",
@@ -226,7 +248,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -241,7 +265,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -252,11 +278,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:15211923336434952577,headlineOfferDocid:15211923336434952577,imageDocid:15688898237738844387,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "bundle result"
   },
   {
     "component_id": "motherboard",
@@ -271,7 +299,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $179.99 outside sanity band $200-$1200"
   },
   {
     "component_id": "motherboard",
@@ -298,7 +328,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "motherboard",
@@ -313,7 +345,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -328,7 +362,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "motherboard",
@@ -339,11 +375,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=productid:15211923336434952577,headlineOfferDocid:15211923336434952577,imageDocid:15688898237738844387,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "bundle result"
   },
   {
     "component_id": "motherboard",
@@ -358,6 +396,8 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $179.99 outside sanity band $200-$1200"
   }
 ]

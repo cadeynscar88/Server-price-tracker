@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "price $69.98 outside sanity band $70-$300"
   },
   {
     "component_id": "case",
@@ -39,7 +41,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -69,7 +75,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -84,7 +92,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: required exact-model terms missing",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -111,7 +121,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -126,7 +138,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "case",
@@ -137,11 +151,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:10461061247321777192,productid:3382990075034655739,headlineOfferDocid:17459793961397024887,imageDocid:7599938648235551533,rds:PC_17587801874154008408|PROD_PC_17587801874154008408,gpcid:17587801874154008408,mid:576462563318789133,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",
@@ -192,7 +208,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -207,7 +225,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "case",
@@ -218,11 +238,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:10461061247321777192,productid:3382990075034655739,headlineOfferDocid:17459793961397024887,imageDocid:7599938648235551533,rds:PC_17587801874154008408|PROD_PC_17587801874154008408,gpcid:17587801874154008408,mid:576462563318789133,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",
@@ -273,7 +295,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "case",
@@ -288,7 +312,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "strong",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "exact standalone model + sane price"
   },
   {
     "component_id": "case",
@@ -299,11 +325,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:10461061247321777192,productid:3382990075034655739,headlineOfferDocid:17459793961397024887,imageDocid:7599938648235551533,rds:PC_17587801874154008408|PROD_PC_17587801874154008408,gpcid:17587801874154008408,mid:576462563318789133,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "different model/variant"
   },
   {
     "component_id": "case",

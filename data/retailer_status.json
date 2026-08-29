@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:37:24.197523+00:00",
+  "generated_at": "2026-08-29T02:53:37.426567+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -34,7 +34,7 @@
       "state": "yellow",
       "status": "latest result needs model review",
       "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 1255.99,
+      "last_verified_price": 916.24,
       "latest_check_status": "manual_review"
     },
     {

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-29T02:37:24.167030+00:00",
-  "last_check": "2026-08-29T02:37:24.167039+00:00",
+  "generated": "2026-08-29T02:53:37.396432+00:00",
+  "last_check": "2026-08-29T02:53:37.396443+00:00",
   "target": 2400,
   "recommended_scenario": null,
   "build_total": null,
@@ -22,7 +22,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 450.99,
       "max": 998.99,
@@ -30,7 +32,7 @@
       "median": 857.74
     },
     "motherboard": {
-      "n": 7,
+      "n": 4,
       "cur": 509.99,
       "curObs": {
         "component_id": "motherboard",
@@ -45,223 +47,51 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 509.99,
-      "max": 1568.98,
-      "avg": 1030.8428571428572,
-      "median": 978.99
+      "max": 978.99,
+      "avg": 627.24,
+      "median": 509.99
     },
     "ram-96gb": null,
-    "ram-96gb-ecc": {
-      "n": 3,
-      "cur": 2599.98,
-      "curObs": {
-        "component_id": "ram-96gb-ecc",
-        "component": "RAM \u2014 96GB DDR5 ECC UDIMM 2\u00d748",
-        "model": "A-Tech 96GB (2x48GB) 2Rx8 PC5-44800E DDR5 PC5-44800 MHz ECC UDIMM Unbuffered DIMM 288-Pin Dual Rank x8 Server & Workstation RAM Memory Upgrade Kit",
-        "retailer": "newegg",
-        "price": 2599.98,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=96GB DDR5 ECC UDIMM 2x48GB AM5&prds=productid:8608207903539951358,headlineOfferDocid:8608207903539951358,imageDocid:6134327833751270742,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "DDR5 two-DIMM capacity branch match"
-      },
-      "min": 2599.98,
-      "max": 2599.98,
-      "avg": 2599.98,
-      "median": 2599.98
-    },
-    "ram-128gb": {
-      "n": 4,
-      "cur": 2599.99,
-      "curObs": {
-        "component_id": "ram-128gb",
-        "component": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-        "model": "Corsair Vengeance 128gb (2 x 64gb) 288-Pin PC RAM Ddr5 6400 (pc5 51200) Desktop Memory Model Cmk128gx5m2b6400c42",
-        "retailer": "walmart",
-        "price": 2599.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=128GB DDR5 2x64GB AM5&prds=productid:12731712101089193521,headlineOfferDocid:12731712101089193521,imageDocid:211509390353314499,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "DDR5 two-DIMM capacity branch match"
-      },
-      "min": 2599.99,
-      "max": 2599.99,
-      "avg": 2599.99,
-      "median": 2599.99
-    },
+    "ram-96gb-ecc": null,
+    "ram-128gb": null,
     "ram-128gb-ecc": null,
-    "ram-64gb": {
-      "n": 3,
-      "cur": 1255.99,
-      "curObs": {
-        "component_id": "ram-64gb",
-        "component": "RAM \u2014 64GB DDR5 2\u00d732 fallback",
-        "model": "CORSAIR - VENGEANCE 64GB (2x32GB) DDR5 6400MHz C32 UDIMM Desktop Memory - Black",
-        "retailer": "bestbuy",
-        "price": 1255.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=64GB DDR5 2x32GB AM5&prds=productid:15530829201229723917,headlineOfferDocid:15530829201229723917,imageDocid:18080573944325998804,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "DDR5 two-DIMM capacity branch match"
-      },
-      "min": 1255.99,
-      "max": 1255.99,
-      "avg": 1255.99,
-      "median": 1255.99
-    },
-    "gpu-5070ti": {
-      "n": 3,
-      "cur": 2079.98,
-      "curObs": {
-        "component_id": "gpu-5070ti",
-        "component": "GPU \u2014 RTX 5070 Ti 16GB",
-        "model": "ASUS PRIME GeForce RTX 5070 Ti 16GB GDDR7 OC Edition PCIe 5.0 DLSS 4.0 Graphics Card + ASUS ROG Strix 34\" UltraWide QHD 2K 1440P 280Hz G-Sync HDR500 0",
-        "retailer": "newegg",
-        "price": 2079.98,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5070 Ti 16GB&prds=productid:2680173154008540412,headlineOfferDocid:2680173154008540412,imageDocid:14101556492690487401,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
-      },
-      "min": 2079.98,
-      "max": 2079.98,
-      "avg": 2079.98,
-      "median": 2079.98
-    },
-    "gpu-pro4000": {
-      "n": 3,
-      "cur": 4199.0,
-      "curObs": {
-        "component_id": "gpu-pro4000",
-        "component": "GPU \u2014 RTX PRO 4000 Blackwell 24GB",
-        "model": "Rtx PRO 4000 SFF Blackwell 24gb Gddr7 ECC - PCIe 5.0x8, 4X mDP 2.1b, Low-Profile Dual-Slot AI Workstation GPU, Size: 167*69*40mm",
-        "retailer": "walmart",
-        "price": 4199.0,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4000 Blackwell 24GB&prds=productid:12779361092070100089,headlineOfferDocid:12779361092070100089,imageDocid:14732823947185756440,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
-      },
-      "min": 4199.0,
-      "max": 4199.0,
-      "avg": 4199.0,
-      "median": 4199.0
-    },
-    "gpu-5090": {
-      "n": 6,
-      "cur": 5319.05,
-      "curObs": {
-        "component_id": "gpu-5090",
-        "component": "GPU \u2014 RTX 5090 32GB",
-        "model": "NVIDIA GeForce RTX 5090 32GB GDDR7 Founders Edition Graphics Card",
-        "retailer": "walmart",
-        "price": 5319.05,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
-      },
-      "min": 5319.05,
-      "max": 8029.0,
-      "avg": 6674.025000000001,
-      "median": 6674.025
-    },
-    "gpu-pro4500": {
-      "n": 3,
-      "cur": 8099.99,
-      "curObs": {
-        "component_id": "gpu-pro4500",
-        "component": "GPU \u2014 RTX PRO 4500 Blackwell 32GB",
-        "model": "Adamant Custom - Intel i9 14th Gen - RTX PRO 4500 Blackwell - 1TB NVMe SSD 10TB HDD - 32GB DDR5 Memory",
-        "retailer": "newegg",
-        "price": 8099.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4500 Blackwell 32GB&prds=catalogid:15663743915525547626,productid:15303976900460493908,headlineOfferDocid:10174843279781227890,imageDocid:11092605237479728100,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
-      },
-      "min": 8099.99,
-      "max": 8099.99,
-      "avg": 8099.990000000001,
-      "median": 8099.99
-    },
+    "ram-64gb": null,
+    "gpu-5070ti": null,
+    "gpu-pro4000": null,
+    "gpu-5090": null,
+    "gpu-pro4500": null,
     "nvme-4tb": null,
     "nvme-2tb": null,
-    "boot-ssd": {
-      "n": 3,
-      "cur": 299.75,
-      "curObs": {
-        "component_id": "boot-ssd",
-        "component": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-        "model": "Samsung 870 EVO 500GB SATA 2.5\" SSD | DropReference",
-        "retailer": "newegg",
-        "price": 299.75,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=500GB SATA SSD 870 EVO MX500 KC600&prds=catalogid:8394617671485176695,productid:17963751954485610187,headlineOfferDocid:13996908997162021868,imageDocid:14996520447632555194,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "approved SATA boot SSD"
-      },
-      "min": 299.75,
-      "max": 299.75,
-      "avg": 299.75,
-      "median": 299.75
-    },
+    "boot-ssd": null,
     "case": {
-      "n": 6,
-      "cur": 119.99,
+      "n": 3,
+      "cur": 124.99,
       "curObs": {
         "component_id": "case",
         "component": "Case \u2014 Lian Li LANCOOL 217 Black",
-        "model": "Lian Li LANCOOL 217 Walnut Wood ATX Mid Tower Case",
-        "retailer": "bestbuy",
-        "price": 119.99,
+        "model": "Lian Li LANCOOL 217 INF Tempered Glass ATX Mid-Tower Computer Case",
+        "retailer": "walmart",
+        "price": 124.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:10461061247321777192,productid:3382990075034655739,headlineOfferDocid:17459793961397024887,imageDocid:7599938648235551533,rds:PC_17587801874154008408|PROD_PC_17587801874154008408,gpcid:17587801874154008408,mid:576462563318789133,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li LANCOOL 217 Black&prds=catalogid:7993738274843253325,productid:14149048691623916767,headlineOfferDocid:3880531271181183552,imageDocid:11539709188691944188,rds:PC_15597484233404265483|PROD_PC_15597484233404265483,gpcid:15597484233404265483,mid:576462892312634448,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
-      "min": 119.99,
+      "min": 124.99,
       "max": 124.99,
-      "avg": 122.49,
-      "median": 122.49
+      "avg": 124.99,
+      "median": 124.99
     },
     "cooler-noctua": {
       "n": 6,
@@ -279,7 +109,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 159.95,
       "max": 169.99,
@@ -302,7 +134,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 63.99,
       "max": 79.9,
@@ -325,7 +159,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "approved 1000W PSU family"
+        "notes": "approved 1000W PSU family",
+        "validation_version": "2.3",
+        "validation_reason": "approved 1000W PSU + sane price"
       },
       "min": 138.99,
       "max": 149.99,
@@ -349,7 +185,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 287.19,
       "max": 287.19,
@@ -372,7 +210,9 @@
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match"
+        "notes": "exact model match",
+        "validation_version": "2.3",
+        "validation_reason": "exact standalone model + sane price"
       },
       "min": 916.24,
       "max": 1085.95,
@@ -407,7 +247,7 @@
       "vram_gb": 16,
       "requires_second_gpu": false,
       "storage_choice": null,
-      "ram_choice": "ram-128gb",
+      "ram_choice": null,
       "cooler_choice": "cooler-thermalright",
       "psu_choice": "psu-1000w",
       "ups_choice": "ups-1000w",
@@ -431,22 +271,15 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 119.99,
-          "total": 119.99
+          "unit_price": 124.99,
+          "total": 124.99
         },
         {
           "id": "boot-ssd",
           "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
           "qty": 1,
-          "unit_price": 299.75,
-          "total": 299.75
-        },
-        {
-          "id": "ram-128gb",
-          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-          "qty": 1,
-          "unit_price": 2599.99,
-          "total": 2599.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "cooler-thermalright",
@@ -468,16 +301,12 @@
           "qty": 1,
           "unit_price": 287.19,
           "total": 287.19
-        },
-        {
-          "id": "gpu-5070ti",
-          "label": "GPU \u2014 RTX 5070 Ti 16GB",
-          "qty": 1,
-          "unit_price": 2079.98,
-          "total": 2079.98
         }
       ],
       "missing": [
+        "boot-ssd",
+        "ram",
+        "gpu-5070ti",
         "storage",
         "backup-ssd"
       ],
@@ -491,7 +320,7 @@
       "vram_gb": 16,
       "requires_second_gpu": true,
       "storage_choice": null,
-      "ram_choice": "ram-128gb",
+      "ram_choice": null,
       "cooler_choice": "cooler-thermalright",
       "psu_choice": null,
       "ups_choice": "ups-1500w",
@@ -515,22 +344,15 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 119.99,
-          "total": 119.99
+          "unit_price": 124.99,
+          "total": 124.99
         },
         {
           "id": "boot-ssd",
           "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
           "qty": 1,
-          "unit_price": 299.75,
-          "total": 299.75
-        },
-        {
-          "id": "ram-128gb",
-          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-          "qty": 1,
-          "unit_price": 2599.99,
-          "total": 2599.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "cooler-thermalright",
@@ -545,17 +367,13 @@
           "qty": 1,
           "unit_price": 916.24,
           "total": 916.24
-        },
-        {
-          "id": "gpu-5070ti",
-          "label": "GPU \u2014 RTX 5070 Ti 16GB",
-          "qty": 2,
-          "unit_price": 2079.98,
-          "total": 4159.96
         }
       ],
       "missing": [
+        "boot-ssd",
+        "ram",
         "psu",
+        "gpu-5070ti",
         "storage",
         "backup-ssd"
       ],
@@ -569,7 +387,7 @@
       "vram_gb": 24,
       "requires_second_gpu": false,
       "storage_choice": null,
-      "ram_choice": "ram-128gb",
+      "ram_choice": null,
       "cooler_choice": "cooler-thermalright",
       "psu_choice": "psu-1000w",
       "ups_choice": "ups-1000w",
@@ -593,22 +411,15 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 119.99,
-          "total": 119.99
+          "unit_price": 124.99,
+          "total": 124.99
         },
         {
           "id": "boot-ssd",
           "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
           "qty": 1,
-          "unit_price": 299.75,
-          "total": 299.75
-        },
-        {
-          "id": "ram-128gb",
-          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-          "qty": 1,
-          "unit_price": 2599.99,
-          "total": 2599.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "cooler-thermalright",
@@ -633,7 +444,9 @@
         }
       ],
       "missing": [
-        "gpu-pro4000:over-ceiling",
+        "boot-ssd",
+        "ram",
+        "gpu-pro4000",
         "storage",
         "backup-ssd"
       ],
@@ -647,7 +460,7 @@
       "vram_gb": 32,
       "requires_second_gpu": false,
       "storage_choice": null,
-      "ram_choice": "ram-128gb",
+      "ram_choice": null,
       "cooler_choice": "cooler-thermalright",
       "psu_choice": "psu-1000w",
       "ups_choice": "ups-1500w",
@@ -671,22 +484,15 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 119.99,
-          "total": 119.99
+          "unit_price": 124.99,
+          "total": 124.99
         },
         {
           "id": "boot-ssd",
           "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
           "qty": 1,
-          "unit_price": 299.75,
-          "total": 299.75
-        },
-        {
-          "id": "ram-128gb",
-          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-          "qty": 1,
-          "unit_price": 2599.99,
-          "total": 2599.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "cooler-thermalright",
@@ -711,7 +517,9 @@
         }
       ],
       "missing": [
-        "gpu-5090:over-ceiling",
+        "boot-ssd",
+        "ram",
+        "gpu-5090",
         "storage",
         "backup-ssd"
       ],
@@ -725,7 +533,7 @@
       "vram_gb": 32,
       "requires_second_gpu": false,
       "storage_choice": null,
-      "ram_choice": "ram-128gb",
+      "ram_choice": null,
       "cooler_choice": "cooler-thermalright",
       "psu_choice": "psu-1000w",
       "ups_choice": "ups-1000w",
@@ -749,22 +557,15 @@
           "id": "case",
           "label": "Case \u2014 Lian Li LANCOOL 217 Black",
           "qty": 1,
-          "unit_price": 119.99,
-          "total": 119.99
+          "unit_price": 124.99,
+          "total": 124.99
         },
         {
           "id": "boot-ssd",
           "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
           "qty": 1,
-          "unit_price": 299.75,
-          "total": 299.75
-        },
-        {
-          "id": "ram-128gb",
-          "label": "RAM \u2014 128GB DDR5 2\u00d764 non-ECC",
-          "qty": 1,
-          "unit_price": 2599.99,
-          "total": 2599.99
+          "unit_price": null,
+          "total": null
         },
         {
           "id": "cooler-thermalright",
@@ -789,7 +590,9 @@
         }
       ],
       "missing": [
-        "gpu-pro4500:over-ceiling",
+        "boot-ssd",
+        "ram",
+        "gpu-pro4500",
         "storage",
         "backup-ssd"
       ],

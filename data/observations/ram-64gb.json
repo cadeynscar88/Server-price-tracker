@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $919.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -47,11 +49,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=64GB DDR5 2x32GB AM5&prds=productid:15530829201229723917,headlineOfferDocid:15530829201229723917,imageDocid:18080573944325998804,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "DDR5 two-DIMM capacity branch match"
+    "notes": "DDR5 two-DIMM capacity branch match",
+    "validation_version": "2.3",
+    "validation_reason": "price $1255.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -66,7 +70,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1039.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -105,7 +111,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $919.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -128,11 +136,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=64GB DDR5 2x32GB AM5&prds=productid:15530829201229723917,headlineOfferDocid:15530829201229723917,imageDocid:18080573944325998804,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "DDR5 two-DIMM capacity branch match"
+    "notes": "DDR5 two-DIMM capacity branch match",
+    "validation_version": "2.3",
+    "validation_reason": "price $1255.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -147,7 +157,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1039.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -186,7 +198,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $919.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -209,11 +223,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=64GB DDR5 2x32GB AM5&prds=productid:15530829201229723917,headlineOfferDocid:15530829201229723917,imageDocid:18080573944325998804,rds:PC_2292217983575301401|PROD_PC_2292217983575301401,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "DDR5 two-DIMM capacity branch match"
+    "notes": "DDR5 two-DIMM capacity branch match",
+    "validation_version": "2.3",
+    "validation_reason": "price $1255.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",
@@ -228,7 +244,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1039.99 outside sanity band $70-$850"
   },
   {
     "component_id": "ram-64gb",

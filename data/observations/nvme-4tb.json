@@ -63,7 +63,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong/missing capacity",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -78,7 +80,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: not approved SSD family",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SSD family"
   },
   {
     "component_id": "nvme-4tb",
@@ -93,7 +97,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong/missing capacity",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -108,7 +114,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong/missing capacity",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -123,7 +131,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong/missing capacity",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -150,7 +160,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -165,7 +177,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "not approved SSD family"
+    "notes": "not approved SSD family",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SSD family"
   },
   {
     "component_id": "nvme-4tb",
@@ -180,7 +194,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -195,7 +211,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -210,7 +228,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -237,7 +257,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -252,7 +274,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "not approved SSD family"
+    "notes": "not approved SSD family",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SSD family"
   },
   {
     "component_id": "nvme-4tb",
@@ -267,7 +291,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -282,7 +308,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -297,7 +325,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -324,7 +354,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -339,7 +371,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "not approved SSD family"
+    "notes": "not approved SSD family",
+    "validation_version": "2.3",
+    "validation_reason": "not approved SSD family"
   },
   {
     "component_id": "nvme-4tb",
@@ -354,7 +388,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -369,7 +405,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   },
   {
     "component_id": "nvme-4tb",
@@ -384,6 +422,8 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong/missing capacity"
+    "notes": "wrong/missing capacity",
+    "validation_version": "2.3",
+    "validation_reason": "wrong/missing capacity"
   }
 ]

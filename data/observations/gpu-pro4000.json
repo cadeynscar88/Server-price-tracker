@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "gpu-pro4000",
@@ -35,11 +37,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4000 Blackwell 24GB&prds=productid:12779361092070100089,headlineOfferDocid:12779361092070100089,imageDocid:14732823947185756440,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $4199.00 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $3622.03 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -69,7 +75,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4699.99 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -108,7 +116,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "gpu-pro4000",
@@ -119,11 +129,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4000 Blackwell 24GB&prds=productid:12779361092070100089,headlineOfferDocid:12779361092070100089,imageDocid:14732823947185756440,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $4199.00 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -138,7 +150,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $3622.03 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -153,7 +167,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4699.99 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -192,7 +208,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "required exact-model terms missing"
   },
   {
     "component_id": "gpu-pro4000",
@@ -203,11 +221,13 @@
     "currency": "USD",
     "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 4000 Blackwell 24GB&prds=productid:12779361092070100089,headlineOfferDocid:12779361092070100089,imageDocid:14732823947185756440,pvt:hg&hl=en&gl=us&udm=28",
     "availability": "Shown in Google Shopping",
-    "status": "verified",
+    "status": "manual_review",
     "method": "serpapi_google_shopping",
-    "match_status": "strong",
+    "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "exact model match"
+    "notes": "exact model match",
+    "validation_version": "2.3",
+    "validation_reason": "price $4199.00 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -222,7 +242,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $3622.03 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",
@@ -237,7 +259,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "required exact-model terms missing"
+    "notes": "required exact-model terms missing",
+    "validation_version": "2.3",
+    "validation_reason": "price $4699.99 outside sanity band $700-$3000"
   },
   {
     "component_id": "gpu-pro4000",

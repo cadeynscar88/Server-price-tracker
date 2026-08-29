@@ -24,7 +24,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-96gb",
@@ -39,7 +41,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "price $5375.68 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -54,7 +58,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "price $2040.75 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -69,7 +75,9 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-28T23:42:08.937937+00:00",
     "notes": "Revalidated v2.1: wrong RAM capacity/module layout",
-    "match_status": "review"
+    "match_status": "review",
+    "validation_version": "2.3",
+    "validation_reason": "price $1849.99 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -108,7 +116,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-96gb",
@@ -123,7 +133,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $5375.68 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -138,7 +150,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2040.75 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -153,7 +167,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T01:57:20.087075+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1849.99 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -192,7 +208,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-96gb",
@@ -207,7 +225,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $5375.68 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -222,7 +242,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2040.75 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -237,7 +259,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:05:27.108851+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1849.99 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -276,7 +300,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "wrong RAM capacity/module layout"
   },
   {
     "component_id": "ram-96gb",
@@ -291,7 +317,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $5375.68 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -306,7 +334,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $2040.75 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
@@ -321,7 +351,9 @@
     "method": "serpapi_google_shopping",
     "match_status": "review",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
-    "notes": "wrong RAM capacity/module layout"
+    "notes": "wrong RAM capacity/module layout",
+    "validation_version": "2.3",
+    "validation_reason": "price $1849.99 outside sanity band $100-$1400"
   },
   {
     "component_id": "ram-96gb",
