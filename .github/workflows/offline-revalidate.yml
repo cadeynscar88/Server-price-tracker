@@ -1,0 +1,73 @@
+name: Offline Price Revalidation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check_prices.py'
+      - 'scripts/revalidate_existing.py'
+      - 'tests/test_offline.py'
+      - '.github/workflows/offline-revalidate.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pst-offline-revalidate
+  cancel-in-progress: false
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Python
+        run: python -m compileall -q scripts tests
+      - name: Validate tracker
+        run: python scripts/validate_tracker.py
+      - name: Run offline regression tests
+        run: python -m unittest -v tests.test_offline
+      - name: Revalidate stored observations without API
+        env:
+          SERPAPI_API_KEY: ''
+        run: python scripts/revalidate_existing.py
+      - name: Rebuild summary locally
+        run: |
+          python scripts/build_summary.py
+          python scripts/build_retailer_status.py
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool data/offline_revalidation_status.json >/dev/null
+          python -m json.tool data/quota_status.json >/dev/null
+          python -m json.tool data/summary.json >/dev/null
+          python -m json.tool data/retailer_status.json >/dev/null
+      - name: Confirm quota did not change
+        run: |
+          git diff -- data/quota_status.json
+          if ! git diff --quiet -- data/quota_status.json; then
+            echo 'ERROR: offline revalidation changed quota_status.json'
+            exit 1
+          fi
+      - name: Commit reclassified observations
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/observations data/offline_revalidation_status.json data/summary.json data/retailer_status.json
+          if git diff --cached --quiet; then
+            echo "No revalidation changes to publish."
+            exit 0
+          fi
+          git commit -m "Revalidate stored prices offline"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
