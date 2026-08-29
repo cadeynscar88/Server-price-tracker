@@ -7,34 +7,22 @@ sys.path.insert(0,str(ROOT))
 from scripts import check_prices as cp
 
 class MatchTests(unittest.TestCase):
-    def ok(self,pid,title,price):
-        return cp.match_result({'id':pid},{'title':title,'extracted_price':price},price)[0]
-    def test_cpu_exact_accepts(self):
-        self.assertTrue(self.ok('cpu','AMD Ryzen 9 9950X 16-Core Processor',599.99))
-    def test_cpu_x3d_rejected(self):
-        self.assertFalse(self.ok('cpu','AMD Ryzen 9 9950X3D Processor',699.99))
-    def test_used_result_rejected(self):
-        self.assertFalse(self.ok('cpu','Used AMD Ryzen 9 9950X',499.99))
-    def test_gpu_monitor_bundle_rejected(self):
-        self.assertFalse(self.ok('gpu-5070ti','RTX 5070 Ti 16GB Graphics Card Bundle with 34 inch Monitor',1499.99))
-    def test_gpu_prebuilt_rejected(self):
-        self.assertFalse(self.ok('gpu-pro4500','Workstation PC with NVIDIA RTX PRO 4500 Blackwell 32GB',2499.99))
-    def test_gpu_outlier_price_rejected(self):
-        self.assertFalse(self.ok('gpu-pro4500','NVIDIA RTX PRO 4500 Blackwell 32GB Graphics Card',8099.99))
-    def test_ram_outlier_price_rejected(self):
-        self.assertFalse(self.ok('ram-64gb','64GB DDR5 2x32GB Memory Kit',1255.99))
-    def test_ram_requires_two_dimm_kit(self):
-        self.assertFalse(self.ok('ram-96gb','96GB DDR5 48GB Memory',399.99))
-    def test_case_walnut_rejected(self):
-        self.assertFalse(self.ok('case','Lian Li LANCOOL 217 Walnut ATX Case',119.99))
-    def test_case_black_accepts(self):
-        self.assertTrue(self.ok('case','Lian Li LANCOOL 217 Black ATX Case',119.99))
-    def test_approved_2tb_nvme_accepts(self):
-        self.assertTrue(self.ok('nvme-2tb','WD_BLACK SN850X 2TB NVMe SSD',149.99))
-    def test_wrong_nvme_capacity_rejected(self):
-        self.assertFalse(self.ok('nvme-2tb','WD_BLACK SN850X 4TB NVMe SSD',299.99))
-    def test_boot_outlier_rejected(self):
-        self.assertFalse(self.ok('boot-ssd','Samsung 870 EVO 500GB SATA SSD',299.75))
+    def ok(self,pid,title,price): return cp.match_result({'id':pid},{'title':title,'extracted_price':price},price)[0]
+    def test_cpu_exact_accepts(self): self.assertTrue(self.ok('cpu','AMD Ryzen 9 9950X 16-Core Processor',599.99))
+    def test_cpu_x3d_rejected(self): self.assertFalse(self.ok('cpu','AMD Ryzen 9 9950X3D Processor',699.99))
+    def test_cpu_bulk_rejected(self): self.assertFalse(self.ok('cpu','AMD Ryzen 9 9950X Bulk Processor',450.99))
+    def test_used_result_rejected(self): self.assertFalse(self.ok('cpu','Used AMD Ryzen 9 9950X',499.99))
+    def test_gpu_monitor_bundle_rejected(self): self.assertFalse(self.ok('gpu-5070ti','RTX 5070 Ti 16GB Graphics Card Bundle with 34 inch Monitor',1499.99))
+    def test_gpu_prebuilt_rejected(self): self.assertFalse(self.ok('gpu-pro4500','Workstation PC with NVIDIA RTX PRO 4500 Blackwell 32GB',2499.99))
+    def test_gpu_outlier_price_rejected(self): self.assertFalse(self.ok('gpu-pro4500','NVIDIA RTX PRO 4500 Blackwell 32GB Graphics Card',8099.99))
+    def test_ram_outlier_price_rejected(self): self.assertFalse(self.ok('ram-64gb','64GB DDR5 2x32GB Memory Kit',1255.99))
+    def test_ram_requires_two_dimm_kit(self): self.assertFalse(self.ok('ram-96gb','96GB DDR5 48GB Memory',399.99))
+    def test_case_walnut_rejected(self): self.assertFalse(self.ok('case','Lian Li LANCOOL 217 Walnut ATX Case',119.99))
+    def test_case_inf_rejected(self): self.assertFalse(self.ok('case','Lian Li LANCOOL 217 INF Black ATX Case',124.99))
+    def test_case_black_accepts(self): self.assertTrue(self.ok('case','Lian Li LANCOOL 217 Black ATX Case',119.99))
+    def test_approved_2tb_nvme_accepts(self): self.assertTrue(self.ok('nvme-2tb','WD_BLACK SN850X 2TB NVMe SSD',149.99))
+    def test_wrong_nvme_capacity_rejected(self): self.assertFalse(self.ok('nvme-2tb','WD_BLACK SN850X 4TB NVMe SSD',299.99))
+    def test_boot_outlier_rejected(self): self.assertFalse(self.ok('boot-ssd','Samsung 870 EVO 500GB SATA SSD',299.75))
 
 class QuotaTests(unittest.TestCase):
     def setUp(self):
@@ -48,11 +36,10 @@ class QuotaTests(unittest.TestCase):
         cp.QUOTA_PATH.write_text(json.dumps({'month':'2026-08','checks_used':239})); q=cp.quota_state('2026-09-01T00:00:00+00:00')
         self.assertEqual(q['checks_used'],0); self.assertEqual(q['checks_remaining_to_plan'],240)
     def test_selection_respects_remaining_budget(self):
-        with patch.object(cp,'searchable_products',return_value=[{'id':str(i)} for i in range(20)]):
-            self.assertEqual(len(cp.selected(24,3)),3); self.assertEqual(cp.selected(24,0),[])
-    def test_rotating_query_costs_no_extra_search(self):
-        p={'id':'nvme-4tb','search_terms':['SN850X 4TB NVMe','NM790 4TB NVMe','KC3000 4TB NVMe']}
-        self.assertIn(cp.search_query(p,'2026-08-28T00:00:00+00:00'),p['search_terms'])
+        with patch.object(cp,'searchable_products',return_value=[{'id':str(i)} for i in range(20)]): self.assertEqual(len(cp.selected(24,3)),3); self.assertEqual(cp.selected(24,0),[])
+    def test_storage_query_rotates_exact_approved_family_without_extra_search(self):
+        p={'id':'nvme-4tb','search_terms':['4TB NVMe SSD']}; q=cp.search_query(p,'2026-08-28T00:00:00+00:00')
+        self.assertIn(q,cp.STORAGE_QUERIES['nvme-4tb']); self.assertNotEqual(q,'4TB NVMe SSD')
 
 class RevalidationTests(unittest.TestCase):
     def test_revalidation_downgrades_bad_historical_row_without_network(self):
@@ -61,8 +48,7 @@ class RevalidationTests(unittest.TestCase):
             with tempfile.TemporaryDirectory() as td:
                 cp.OBS=Path(td); cp.PRODUCTS=[{'id':'gpu-pro4500','label':'GPU'}]
                 (cp.OBS/'gpu-pro4500.json').write_text(json.dumps([{'method':'serpapi_google_shopping','status':'verified','match_status':'strong','model':'Workstation PC with NVIDIA RTX PRO 4500 Blackwell 32GB','price':8099.99}]))
-                with patch.object(cp,'serp',side_effect=AssertionError('network must not be called')):
-                    result=cp.revalidate_existing()
+                with patch.object(cp,'serp',side_effect=AssertionError('network must not be called')): result=cp.revalidate_existing()
                 row=json.loads((cp.OBS/'gpu-pro4500.json').read_text())[0]
                 self.assertEqual(row['status'],'manual_review'); self.assertEqual(row['match_status'],'review'); self.assertEqual(result['changed'],1)
         finally: cp.OBS,cp.PRODUCTS=old_obs,old_products
