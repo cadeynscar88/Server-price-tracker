@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/check_prices.py'
       - 'scripts/revalidate_existing.py'
+      - 'scripts/build_summary.py'
       - 'tests/test_offline.py'
       - '.github/workflows/offline-revalidate.yml'
 
