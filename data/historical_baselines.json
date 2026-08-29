@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "target_period": "2025-08",
+  "research_date": "2026-08-28",
+  "methodology": "Historical web research only; no SerpApi quota consumed. Prefer exact dated US retail observations in August 2025. When an exact SKU was not selected in the tracker or a defensible dated retail price could not be found, no price is invented.",
+  "baselines": {
+    "cpu": {
+      "price": 539.49,
+      "date": "2025-08-25",
+      "retailer": "B&H Photo",
+      "model": "AMD Ryzen 9 9950X",
+      "confidence": "high",
+      "source_url": "https://www.trackalacker.com/products/showcase/amd-ryzen-9-9950x/listings/135481/amd-ryzen-9-9950x",
+      "note": "Dated in-stock observation; nearby August observations include $533.95 on Aug 18 and $549.00 on Aug 11."
+    },
+    "motherboard": {
+      "price": 506.99,
+      "date": "2025-08-25",
+      "retailer": "Newegg",
+      "model": "ASUS ProArt X870E-CREATOR WIFI",
+      "confidence": "high",
+      "source_url": "https://www.nowinstock.net/full_historydetails/124/78660/",
+      "note": "Exact-model in-stock observation; same $506.99 recorded Aug 13 and Aug 29."
+    },
+    "gpu-5070ti": {
+      "price": 749.00,
+      "date": "2025-08-26",
+      "retailer": "market reference",
+      "model": "NVIDIA GeForce RTX 5070 Ti 16GB",
+      "confidence": "medium",
+      "source_url": "https://jad.stormrage.ro/good-to-know/top-10-video-cards-2025.html",
+      "note": "Contemporaneous August 2025 source reports typical street price around $749; not an exact retailer transaction."
+    },
+    "gpu-5090": {
+      "price": 1999.00,
+      "date": "2025-08-26",
+      "retailer": "NVIDIA MSRP reference",
+      "model": "NVIDIA GeForce RTX 5090 32GB",
+      "confidence": "medium",
+      "source_url": "https://jad.stormrage.ro/good-to-know/top-10-video-cards-2025.html",
+      "note": "August 2025 contemporaneous MSRP reference. Actual AIB street prices varied materially, so this is marked medium confidence and should not be treated as a verified retailer sale."
+    },
+    "nvme-4tb-samsung-990pro": {
+      "price": 279.00,
+      "date": "2025-08-17",
+      "retailer": "Amazon",
+      "model": "Samsung 990 PRO 4TB with heatsink",
+      "confidence": "high",
+      "source_url": "https://www.tomshardware.com/pc-components/ssds/the-award-winning-samsung-990-pro-4tb-ssd-is-only-usd279-our-favorite-ssd-drops-to-a-great-price",
+      "maps_to": "nvme-4tb",
+      "note": "Exact 4TB family in approved storage pool."
+    },
+    "boot-ssd-kc600": {
+      "price": 52.98,
+      "date": "2025-08-26",
+      "retailer": "Newegg Sellers",
+      "model": "Kingston KC600 512GB",
+      "confidence": "high",
+      "source_url": "https://pangoly.com/en/price-history/kingston-kc600-512gb",
+      "maps_to": "boot-ssd",
+      "note": "Exact approved SATA boot family/capacity; Pangoly identifies this as its tracked low on Aug 26, 2025."
+    },
+    "case": {
+      "price": 119.99,
+      "date": "2025-08-28",
+      "retailer": "market/MSRP reference",
+      "model": "Lian Li LANCOOL 217 Black (LAN217X)",
+      "confidence": "medium-high",
+      "source_url": "https://www.tomshardware.com/pc-components/pc-cases/hands-on-with-lian-lis-lancool-217-pc-case",
+      "note": "US black-model MSRP was $119.99 and contemporary 2025 retailer reviews/listings show the same price."
+    },
+    "cooler-thermalright": {
+      "price": 70.84,
+      "date": "2025-08-28",
+      "retailer": "AliExpress historical listing",
+      "model": "Thermalright Phantom Spirit 120 EVO",
+      "confidence": "medium",
+      "source_url": "https://www.pricearchive.org/aliexpress.com/item/1005006849401583",
+      "note": "Exact dated historical listing; seller/channel differs from preferred US retailers, so confidence is medium."
+    },
+    "ups-1000": {
+      "price": 189.95,
+      "date": "2025-08-20",
+      "retailer": "B&H Photo",
+      "model": "CyberPower CP1500PFCLCD",
+      "confidence": "high",
+      "source_url": "https://www.cpricewatch.com/blog/2025/08/bh-dealzone-cyberpower-cp1500pfclcd-sinewave-ups-189/",
+      "note": "Documented one-day B&H DealZone price."
+    }
+  },
+  "unpriced": {
+    "ram-96gb": "No exact RAM SKU is selected; a generic capacity baseline would not be apples-to-apples.",
+    "ram-96gb-ecc": "No exact ECC UDIMM kit SKU is selected; no price invented.",
+    "ram-128gb": "No exact RAM SKU is selected; no price invented.",
+    "ram-128gb-ecc": "No exact ECC UDIMM kit SKU is selected; no price invented.",
+    "ram-64gb": "Fallback category has no exact kit SKU; no price invented.",
+    "gpu-pro4000": "RTX PRO 4000 Blackwell was announced for summer 2025, but no sufficiently reliable exact August 2025 US retail observation was found in this research pass.",
+    "gpu-pro4500": "RTX PRO 4500 Blackwell was announced for summer 2025, but no sufficiently reliable exact August 2025 US retail observation was found in this research pass.",
+    "nvme-4tb": "Pool contains five approved families. A verified Samsung 990 PRO 4TB August baseline is stored separately and mapped to this pool; other families require exact dated evidence before aggregation.",
+    "nvme-2tb": "Pool contains five approved families; no single generic pool price is used.",
+    "boot-ssd": "Pool contains three approved SATA families. A verified Kingston KC600 512GB baseline is stored separately and mapped to this pool.",
+    "cooler-noctua": "No sufficiently reliable exact dated August 2025 US retail observation found in this pass.",
+    "psu-1000-corsair": "No sufficiently reliable exact dated August 2025 observation for the tracked ATX 3.1 revision found in this pass.",
+    "psu-1000-msi": "Historical sources found current/aggregate pricing but not a defensible exact August 2025 observation.",
+    "psu-1200": "No sufficiently reliable exact dated August 2025 US retail observation found in this pass.",
+    "ups-1500": "No sufficiently reliable exact dated August 2025 retail observation found for PR1500LCD in this pass.",
+    "backup-2tb": "Derived from the approved 2TB pool; it should inherit an exact drive-family historical price rather than receive an invented generic value."
+  }
+}
