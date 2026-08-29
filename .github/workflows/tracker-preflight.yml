@@ -1,0 +1,40 @@
+name: Tracker Preflight
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/config.json'
+      - 'data/products.json'
+      - 'scripts/**'
+      - 'index.html'
+      - 'sw.js'
+      - 'COMPONENT_SEARCH_MANIFEST.md'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Python scripts
+        run: python -m compileall -q scripts
+      - name: Validate tracker schema and hard rules
+        run: python scripts/validate_tracker.py
+      - name: Rebuild summary locally without API calls
+        run: |
+          python scripts/build_summary.py
+          python scripts/build_retailer_status.py
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool data/config.json >/dev/null
+          python -m json.tool data/products.json >/dev/null
+          python -m json.tool data/summary.json >/dev/null
+          python -m json.tool data/retailer_status.json >/dev/null
