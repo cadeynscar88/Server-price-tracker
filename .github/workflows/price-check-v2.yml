@@ -1,0 +1,77 @@
+name: SerpApi Price Check v2
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Twice weekly: Tuesdays and Fridays at 06:17 UTC.
+    - cron: '17 6 * * 2,5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pst-price-check-v2
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full repository history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate tracker configuration before API calls
+        run: python scripts/validate_tracker.py
+
+      - name: Collect Google Shopping offers through SerpApi
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SERPAPI_DAILY_BATCH: '24'
+        run: python scripts/check_prices.py
+
+      - name: Rebuild summary and retailer status
+        run: |
+          python scripts/build_summary.py
+          python scripts/build_retailer_status.py
+
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool data/collector_status.json >/dev/null
+          python -m json.tool data/summary.json >/dev/null
+          python -m json.tool data/retailer_status.json >/dev/null
+
+      - name: Commit and safely publish observations
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data
+          if git diff --cached --quiet; then
+            echo "No tracker data changed; nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "Update SerpApi price observations"
+
+          # main can move while SerpApi is running. Rebase our data commit
+          # on the newest main before push instead of failing non-fast-forward.
+          git fetch origin main
+          git rebase origin/main
+
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+
+          echo "main changed during push; retrying once after another fetch/rebase"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
