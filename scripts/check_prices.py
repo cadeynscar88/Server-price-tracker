@@ -7,10 +7,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'; OBS=DATA/'observations'
-PRODUCTS=json.loads((DATA/'products.json').read_text()); OBS.mkdir(exist_ok=True)
+PRODUCTS=json.loads((DATA/'products.json').read_text()); CONFIG=json.loads((DATA/'config.json').read_text()); OBS.mkdir(exist_ok=True)
 RETAILERS={'amazon':('amazon','amazon.com'),'newegg':('newegg','newegg.com'),'walmart':('walmart','walmart.com'),'bestbuy':('best buy','bestbuy.com'),'bh':('b&h','b&h photo','bhphotovideo'),'microcenter':('micro center','microcenter')}
 REJECT=('refurbished','renewed','used','pre-owned','preowned','open box','open-box','water block','waterblock','heatsink only','fan only','empty box','laptop','desktop pc','gaming pc','bundle only')
 APPROVED_NVME=('sn850x','nm790','t500','kc3000','990 pro')
+QUOTA_PATH=DATA/'quota_status.json'
 
 def now(): return datetime.now(timezone.utc).isoformat()
 def norm(v):
@@ -24,7 +25,7 @@ def retailer_slug(v):
 def append(pid,row):
  p=OBS/f'{pid}.json'; a=json.loads(p.read_text()) if p.exists() else []; a.append(row); p.write_text(json.dumps(a,indent=2))
 def serp(q,key):
- req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.1'})
+ req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.2'})
  with urlopen(req,timeout=30) as r: payload=json.loads(r.read())
  if payload.get('error'): raise RuntimeError(payload['error'])
  return payload
@@ -34,6 +35,36 @@ def price(r):
  m=re.search(r'([0-9][0-9,]*(?:\.[0-9]{1,2})?)',str(r.get('price') or '')); return float(m.group(1).replace(',','')) if m else None
 def expected(p): return list((p.get('retailer_search_urls') or {}).keys())
 def source_url(r,f=''): return r.get('product_link') or r.get('link') or f
+
+def quota_limits():
+ p=CONFIG.get('preflight',{})
+ absolute=max(1,int(p.get('serpapi_monthly_limit',250)))
+ reserve=max(0,int(p.get('serpapi_reserve',10)))
+ planned=int(p.get('serpapi_monthly_budget',absolute-reserve))
+ planned=max(0,min(planned,absolute-reserve if reserve<=absolute else 0))
+ return absolute,reserve,planned
+
+def quota_state(ts=None):
+ """Return repo-tracked monthly SerpApi usage; reset automatically on UTC month rollover."""
+ dt=datetime.fromisoformat((ts or now()).replace('Z','+00:00')); month=dt.astimezone(timezone.utc).strftime('%Y-%m')
+ absolute,reserve,planned=quota_limits(); previous={}
+ if QUOTA_PATH.exists():
+  try: previous=json.loads(QUOTA_PATH.read_text())
+  except Exception: previous={}
+ used=int(previous.get('checks_used',0)) if previous.get('month')==month else 0
+ used=max(0,used)
+ return {
+  'provider':'serpapi','month':month,'monthly_limit':absolute,'reserve':reserve,'planned_budget':planned,
+  'checks_used':used,'checks_remaining_to_plan':max(0,planned-used),'checks_remaining_absolute':max(0,absolute-used),
+  'last_updated':previous.get('last_updated') if previous.get('month')==month else None,
+  'source':'tracker_ledger','note':'Tracks SerpApi search attempts made by this repository; provider-dashboard usage outside this repo is not included.'
+ }
+
+def write_quota(q,ts=None):
+ q=dict(q); q['last_updated']=ts or now(); q['checks_remaining_to_plan']=max(0,q['planned_budget']-q['checks_used']); q['checks_remaining_absolute']=max(0,q['monthly_limit']-q['checks_used']); QUOTA_PATH.write_text(json.dumps(q,indent=2)); return q
+
+def bump_quota(ts=None):
+ q=quota_state(ts); q['checks_used']+=1; return write_quota(q,ts)
 
 def match_result(p,r):
  t=norm(r.get('title')); pid=p.get('id','')
@@ -104,7 +135,7 @@ def revalidate_existing():
    ok,reason=match_result(p,{'title':row.get('model','')})
    new_status='verified' if ok else 'manual_review'; new_match='strong' if ok else 'review'
    if row.get('status')!=new_status or row.get('match_status')!=new_match:
-    row['status']=new_status; row['match_status']=new_match; row['notes']=(row.get('notes','')+' Revalidated v2.1: '+reason).strip(); dirty=True; changed+=1
+    row['status']=new_status; row['match_status']=new_match; row['notes']=(row.get('notes','')+' Revalidated v2.2: '+reason).strip(); dirty=True; changed+=1
   if dirty: path.write_text(json.dumps(rows,indent=2))
  return changed
 
@@ -124,19 +155,23 @@ def collect(p,key,ts):
   else: append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'not_found','method':'serpapi_google_shopping','timestamp':ts,'notes':'No acceptable Shopping result.'}); m+=1
  return v,rv,m
 def searchable_products(): return [p for p in PRODUCTS if p.get('price_source','search')=='search' and p.get('search_terms') and p.get('retailer_search_urls')]
-def selected(batch=24):
+def selected(batch,limit=None):
  items=searchable_products()
  if not items:return []
- n=len(items); start=(date.today().toordinal()*batch)%n; return [items[(start+i)%n] for i in range(min(batch,n))]
+ n=len(items); count=min(batch,n) if limit is None else min(batch,n,max(0,int(limit)))
+ start=(date.today().toordinal()*batch)%n; return [items[(start+i)%n] for i in range(count)]
 def main():
- ts=now(); revalidated=revalidate_existing(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(json.loads((DATA/'config.json').read_text()).get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); picks=selected(batch); v=rv=m=fail=0
+ ts=now(); revalidated=revalidate_existing(); key=os.getenv('SERPAPI_API_KEY','').strip(); max_batch=int(CONFIG.get('preflight',{}).get('max_serpapi_searches_per_run',24)); batch=max(1,min(int(os.getenv('SERPAPI_DAILY_BATCH',str(max_batch))),max_batch)); quota=quota_state(ts); picks=selected(batch,quota['checks_remaining_to_plan']); v=rv=m=fail=attempted=0
  if not key:
-  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':1,'existing_results_revalidated':revalidated,'note':'SERPAPI_API_KEY missing.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
+  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'check_failures':1,'existing_results_revalidated':revalidated,'quota':quota,'note':'SERPAPI_API_KEY missing; no quota was consumed.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
+ if not picks:
+  status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':0,'batch_size':batch,'searchable_products':len(searchable_products()),'check_failures':0,'existing_results_revalidated':revalidated,'quota':quota,'note':'Monthly tracker budget exhausted; no SerpApi request was made.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2)); return
  for p in picks:
+  quota=bump_quota(ts); attempted+=1
   try:
    a,b,c=collect(p,key,ts); v+=a; rv+=b; m+=c
   except Exception as e:
    fail+=1
    for slug in expected(p): append(p['id'],{'component_id':p['id'],'component':p['label'],'model':p.get('model',''),'retailer':slug,'source_url':(p.get('retailer_search_urls') or {}).get(slug,''),'availability':'Unknown','status':'check_failed','method':'serpapi_google_shopping','timestamp':ts,'notes':str(e)})
- status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':len(picks),'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'existing_results_revalidated':revalidated,'note':'Only strong model matches affect trusted prices; derived items consume no search quota.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
+ status={'checked_at':ts,'source':'serpapi_google_shopping','searches_attempted':attempted,'batch_size':batch,'searchable_products':len(searchable_products()),'verified_retailer_offers':v,'manual_review_candidates':rv,'missing_retailer_results':m,'check_failures':fail,'existing_results_revalidated':revalidated,'quota':quota,'note':'Only strong model matches affect trusted prices; derived items consume no search quota. Quota ledger increments once per SerpApi search attempt.'}; (DATA/'collector_status.json').write_text(json.dumps(status,indent=2)); print(json.dumps(status,indent=2))
 if __name__=='__main__': main()
