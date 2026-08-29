@@ -1,37 +1,17 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
   "stale_after_hours": 168,
   "fixed_build": ["cpu", "motherboard", "case", "boot-ssd"],
   "dynamic_groups": {
-    "ram": {
-      "required": true,
-      "candidates": ["ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc", "ram-64gb"],
-      "rules": {"base":"ram-96gb","favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20}
-    },
-    "cooler": {
-      "required": true,
-      "candidates": ["cooler-noctua", "cooler-thermalright"],
-      "rules": {"favor_noctua_if_premium_usd_lte":60}
-    },
-    "gpu": {
-      "required": true,
-      "candidates": ["gpu-5070ti", "gpu-pro4000", "gpu-5090", "gpu-pro4500"],
-      "rules": {"hard_price_ceiling_usd":3000,"preferred_vram_gb":24,"optimal_vram_gb":32}
-    },
-    "psu": {
-      "required": true,
-      "candidates": ["psu-1000w", "psu-1200w"],
-      "rules": {"base":"psu-1000w","favor_1200_if_premium_usd_lte":75}
-    },
-    "ups": {
-      "required": true,
-      "candidates": ["ups-1000w", "ups-1500w"],
-      "rules": {"baseline":"ups-1000w","output_headroom_pct":20}
-    }
+    "ram": {"required": true,"candidates": ["ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc", "ram-64gb"],"rules": {"base":"ram-96gb","favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20}},
+    "cooler": {"required": true,"candidates": ["cooler-noctua", "cooler-thermalright"],"rules": {"favor_noctua_if_premium_usd_lte":60}},
+    "gpu": {"required": true,"candidates": ["gpu-5070ti", "gpu-pro4000", "gpu-5090", "gpu-pro4500"],"rules": {"hard_price_ceiling_usd":3000,"preferred_vram_gb":24,"optimal_vram_gb":32}},
+    "psu": {"required": true,"candidates": ["psu-1000w", "psu-1200w"],"rules": {"base":"psu-1000w","favor_1200_if_premium_usd_lte":75}},
+    "ups": {"required": true,"candidates": ["ups-1000w", "ups-1500w"],"rules": {"baseline":"ups-1000w","output_headroom_pct":20}}
   },
   "storage_configs": {
     "A": {"label":"2 × 4 TB approved TLC NVMe","product_id":"nvme-4tb","qty":2,"usable_tb":4,"scheme":"ZFS mirror","preferred":true},
@@ -51,23 +31,9 @@
     {"id":"single-5090","label":"1× RTX 5090 32GB","product_id":"gpu-5090","qty":1,"psu_min_w":1000,"estimated_peak_w":950,"vram_gb":32},
     {"id":"single-pro4500","label":"1× RTX PRO 4500 Blackwell 32GB","product_id":"gpu-pro4500","qty":1,"psu_min_w":1000,"estimated_peak_w":575,"vram_gb":32}
   ],
-  "derived_items": [
-    {"id":"backup-ssd","source_product_id":"nvme-2tb","qty":1,"note":"Stage-1 offline backup; enclosure/accessory cost handled manually if needed."}
-  ],
+  "derived_items": [{"id":"backup-ssd","source_product_id":"nvme-2tb","qty":1,"note":"Stage-1 offline backup; enclosure/accessory cost handled manually if needed."}],
   "deferred_stage2": ["firewall", "wifi-ap", "vault"],
   "owned_or_untracked": ["sd-reader", "optical-drive", "additional-case-fans"],
-  "security_policy": {
-    "encryption_at_rest": true,
-    "encrypted_remote_access": true,
-    "write_requires_fido2": true,
-    "read_stream_download_requires_fido2": false,
-    "protected_snapshot_deletion": "admin-only"
-  },
-  "preflight": {
-    "validate_before_api": true,
-    "max_serpapi_searches_per_run": 24,
-    "serpapi_monthly_limit": 250,
-    "serpapi_reserve": 10,
-    "serpapi_monthly_budget": 240
-  }
+  "security_policy": {"encryption_at_rest": true,"encrypted_remote_access": true,"write_requires_fido2": true,"read_stream_download_requires_fido2": false,"protected_snapshot_deletion": "admin-only"},
+  "preflight": {"validate_before_api": true,"max_serpapi_searches_per_run": 24,"serpapi_monthly_limit": 250,"serpapi_reserve": 10,"serpapi_monthly_budget": 240}
 }
