@@ -1,6 +1,6 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
@@ -18,16 +18,18 @@
   "dynamic_groups": {
     "ram": {
       "required": true,
-      "initial_strategy": "Use bundled 32GB 2x16GB if included with an attractive CPU/motherboard bundle; measure real sustained memory pressure before upgrading. Bundled 32GB is not a standalone tracked product yet.",
-      "candidates": ["ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"],
+      "initial_strategy": "Start with 32GB 2x16GB, preferably included in a CPU/motherboard bundle; otherwise use the tracked 32GB kit. Do not buy 64/96/128GB preemptively. Upgrade only after sustained server-health evidence.",
+      "candidates": ["ram-32gb", "ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"],
       "rules": {
+        "initial": "ram-32gb",
         "initial_if_bundle": "bundled-32gb-2x16",
         "preferred_dimm_count": 2,
         "avoid_4_dimm_upgrade_by_default": true,
         "upgrade_path": ["ram-64gb", "ram-96gb", "ram-128gb"],
         "favor_128_if_premium_pct_lte": 25,
         "favor_ecc_if_premium_pct_lte": 20,
-        "upgrade_only_after_sustained_pressure": true
+        "upgrade_only_after_sustained_pressure": true,
+        "deferred_search_ids": ["ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"]
       }
     },
     "cooler": {"required": true,"candidates": ["cooler-noctua", "cooler-thermalright"],"rules": {"favor_noctua_if_premium_usd_lte":60}},
@@ -44,7 +46,15 @@
     "alternative_x870e_bundle_investigate_target_usd": 800,
     "included_32gb_ram_is_useful": true,
     "microcenter_partial_return_assumption": "Assume bundle components cannot be individually returned for refund; value bundle as if all components are kept.",
-    "bundle_value_method": "Compare total retained-component value, exact compatibility, retailer warranty/returns, and standalone current pricing."
+    "bundle_value_method": "Compare total retained-component value, exact compatibility, retailer warranty/returns, standalone current pricing, and whether the bundle can be fully tested inside its return window."
+  },
+  "deal_search_policy": {
+    "active_ids": ["cpu-9950x3d", "bundle-9950x-proart", "openbox-cpu-9950x", "openbox-proart-x870e", "openbox-gpu-5070ti", "prebuilt-openbox-5080"],
+    "open_box_requires_condition_evidence": true,
+    "prebuilt_64gb_strong_match": true,
+    "prebuilt_32gb_manual_review": true,
+    "do_not_auto_buy_from_deal_feed": true,
+    "verification_required": ["exact_model_or_system_specs", "seller", "shipping_origin_if_applicable", "condition", "warranty", "return_window", "testability_within_return_window"]
   },
   "purchase_sequence": {
     "principle": "A deal is not a BUY unless the component can be adequately inspected/tested within its retailer return window.",
@@ -110,5 +120,5 @@
   "deferred_stage2": ["firewall", "wifi-ap", "vault"],
   "owned_or_untracked": ["sd-reader", "optical-drive", "additional-case-fans"],
   "security_policy": {"encryption_at_rest": true,"encrypted_remote_access": true,"write_requires_fido2": true,"read_stream_download_requires_fido2": false,"protected_snapshot_deletion": "admin-only"},
-  "preflight": {"validate_before_api": true,"required_m2_slots":4,"max_serpapi_searches_per_run":24,"serpapi_monthly_limit":250,"serpapi_reserve":10,"serpapi_monthly_budget":240}
+  "preflight": {"validate_before_api": true,"required_m2_slots":4,"max_serpapi_searches_per_run":24,"retailer_fallback_searches_per_run":1,"serpapi_monthly_limit":250,"serpapi_reserve":10,"serpapi_monthly_budget":240}
 }
