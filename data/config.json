@@ -1,17 +1,92 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.3.0",
+  "version": "2.5.0",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
   "stale_after_hours": 168,
   "fixed_build": ["cpu", "motherboard", "case", "boot-ssd"],
+  "cpu_policy": {
+    "primary": "AMD Ryzen 9 9950X",
+    "alternative": "AMD Ryzen 9 9950X3D",
+    "favor_x3d_if_premium_usd_lte": 75,
+    "retail_preferred": true,
+    "marketplace_oem_policy": "Do not treat OEM/tray/international marketplace listings as equivalent to US retail boxed CPUs. Verify seller, shipping origin, return policy and warranty before BUY.",
+    "retail_9950x_target_usd": 450,
+    "open_box_9950x_target_usd": 420
+  },
   "dynamic_groups": {
-    "ram": {"required": true,"candidates": ["ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc", "ram-64gb"],"rules": {"base":"ram-96gb","favor_128_if_premium_pct_lte":25,"favor_ecc_if_premium_pct_lte":20}},
+    "ram": {
+      "required": true,
+      "initial_strategy": "Use bundled 32GB 2x16GB if included with an attractive CPU/motherboard bundle; measure real sustained memory pressure before upgrading.",
+      "candidates": ["ram-32gb", "ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"],
+      "rules": {
+        "initial_if_bundle": "ram-32gb",
+        "preferred_dimm_count": 2,
+        "avoid_4_dimm_upgrade_by_default": true,
+        "upgrade_path": ["ram-64gb", "ram-96gb", "ram-128gb"],
+        "favor_128_if_premium_pct_lte": 25,
+        "favor_ecc_if_premium_pct_lte": 20,
+        "upgrade_only_after_sustained_pressure": true
+      }
+    },
     "cooler": {"required": true,"candidates": ["cooler-noctua", "cooler-thermalright"],"rules": {"favor_noctua_if_premium_usd_lte":60}},
     "gpu": {"required": true,"candidates": ["gpu-5070ti", "gpu-pro4000", "gpu-5090", "gpu-pro4500"],"rules": {"hard_price_ceiling_usd":3000,"preferred_vram_gb":24,"optimal_vram_gb":32}},
     "psu": {"required": true,"candidates": ["psu-1000w", "psu-1200w"],"rules": {"base":"psu-1000w","favor_1200_if_premium_usd_lte":75}},
     "ups": {"required": true,"candidates": ["ups-1000w", "ups-1500w"],"rules": {"baseline":"ups-1000w","output_headroom_pct":20}}
+  },
+  "bundle_policy": {
+    "watch_cpu_motherboard_bundles": true,
+    "preferred_exact_bundle": "Ryzen 9 9950X + ASUS ProArt X870E-CREATOR WIFI",
+    "preferred_exact_bundle_with_ram": "Ryzen 9 9950X + ASUS ProArt X870E-CREATOR WIFI + DDR5",
+    "cpu_motherboard_buy_target_usd": 850,
+    "cpu_motherboard_ram_strong_buy_target_usd": 1000,
+    "alternative_x870e_bundle_investigate_target_usd": 800,
+    "included_32gb_ram_is_useful": true,
+    "microcenter_partial_return_assumption": "Assume bundle components cannot be individually returned for refund; value bundle as if all components are kept.",
+    "bundle_value_method": "Compare total retained-component value, exact compatibility, retailer warranty/returns, and standalone current pricing."
+  },
+  "purchase_sequence": {
+    "principle": "A deal is not a BUY unless the component can be adequately inspected/tested within its retailer return window.",
+    "early_safe": ["case"],
+    "early_if_exceptional": ["ups"],
+    "core_buy_together": ["cpu", "motherboard", "ram", "cooler", "psu"],
+    "buy_shortly_after_core": ["nvme-4tb", "nvme-2tb", "boot-ssd", "gpu", "ups"],
+    "core_test_goal": "POST and stability-test CPU/motherboard/RAM/cooler/PSU immediately while return windows remain open.",
+    "open_box_test_immediately": true
+  },
+  "open_box_policy": {
+    "enabled": true,
+    "search_prebuilts": true,
+    "search_components": true,
+    "home_search_area": "North Houston, Texas",
+    "normal_drive_radius_hours": 2,
+    "allow_farther_for_exceptional_deal": true,
+    "drive_savings_guidance_usd": {"under_30_min":50,"30_to_60_min":100,"1_to_2_hours":200,"several_hours":400},
+    "component_rules": {
+      "case": "Good open-box candidate; prefer >=20-25% savings and verify completeness.",
+      "cpu": "Good candidate when warranty/return protection is strong; target <=420 for 9950X.",
+      "motherboard": "Caution; inspect socket pins/accessories and require strong returnability; prefer >=20-25% savings.",
+      "ram": "Case-by-case; prefer >=20% savings and easy returns.",
+      "gpu": "Case-by-case; require meaningful savings, warranty/return protection and exact SKU fit.",
+      "nvme": "Prefer new.",
+      "boot_ssd": "Prefer new.",
+      "psu": "Prefer new.",
+      "ups": "Prefer new because battery age/history matters."
+    },
+    "prebuilt_evaluation": ["total_price", "gpu_value", "cpu_value", "motherboard_model_and_m2", "pcie_lanes", "ram_capacity_and_upgradeability", "psu_make_model_and_cabling", "case_expansion", "cooling_reliability", "networking", "storage_upgrade_path", "linux_truenas_suitability", "proprietary_limitations", "warranty_and_returns", "conversion_cost_vs_custom_build"]
+  },
+  "server_health_future": {
+    "memory_monitoring_required": true,
+    "memory_upgrade_requires_historical_evidence": true,
+    "memory_metrics": ["available_memory", "application_memory", "swap_usage", "swap_activity", "zfs_arc_size", "oom_events", "service_memory", "ai_indexing_memory"],
+    "memory_history": {
+      "graph_required": true,
+      "retain_history_across_ram_upgrades": true,
+      "rollups": ["hourly_peak", "daily_peak", "sustained_high_usage_duration", "7_day_trend", "30_day_trend", "90_day_trend"],
+      "event_markers": ["ai_indexing", "malware_scan", "multiple_family_streams", "backup_job", "application_update", "ram_upgrade"],
+      "rule": "Do not recommend RAM expansion from instantaneous used-RAM percentage. Distinguish Linux/ZFS cache from genuine sustained application memory pressure."
+    }
   },
   "storage_configs": {
     "A": {"label":"2 × 4 TB approved TLC NVMe","product_id":"nvme-4tb","qty":2,"usable_tb":4,"scheme":"ZFS mirror","preferred":true},
@@ -35,5 +110,5 @@
   "deferred_stage2": ["firewall", "wifi-ap", "vault"],
   "owned_or_untracked": ["sd-reader", "optical-drive", "additional-case-fans"],
   "security_policy": {"encryption_at_rest": true,"encrypted_remote_access": true,"write_requires_fido2": true,"read_stream_download_requires_fido2": false,"protected_snapshot_deletion": "admin-only"},
-  "preflight": {"validate_before_api": true,"max_serpapi_searches_per_run": 24,"serpapi_monthly_limit": 250,"serpapi_reserve": 10,"serpapi_monthly_budget": 240}
+  "preflight": {"validate_before_api": true,"required_m2_slots":4,"max_serpapi_searches_per_run":24,"serpapi_monthly_limit":250,"serpapi_reserve":10,"serpapi_monthly_budget":240}
 }
