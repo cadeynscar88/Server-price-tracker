@@ -21,16 +21,10 @@ def stats(pid):
 def cur(pid):
  st=stats(pid); return st['cur'] if st else None
 
-def choose_ecc(non_ecc,ecc,max_pct):
- a,b=cur(non_ecc),cur(ecc)
- if b is not None and (a is None or b<=a*(1+max_pct/100)): return ecc
- return non_ecc if a is not None else (ecc if b is not None else None)
 def choose_ram():
- r=config['dynamic_groups']['ram']['rules']; p96=choose_ecc('ram-96gb','ram-96gb-ecc',r['favor_ecc_if_premium_pct_lte']); p128=choose_ecc('ram-128gb','ram-128gb-ecc',r['favor_ecc_if_premium_pct_lte'])
- if p96 and p128 and cur(p128)<=cur(p96)*(1+r['favor_128_if_premium_pct_lte']/100): return p128
- if p96:return p96
- if p128:return p128
- return 'ram-64gb' if cur('ram-64gb') is not None else None
+ # Initial production strategy is deliberately 32GB/2x16. Larger kits remain
+ # reference/deferred products until Server Health shows sustained pressure.
+ return 'ram-32gb' if cur('ram-32gb') is not None else None
 def choose_cooler():
  n,t=cur('cooler-noctua'),cur('cooler-thermalright'); lim=config['dynamic_groups']['cooler']['rules']['favor_noctua_if_premium_usd_lte']
  if n is not None and (t is None or n-t<=lim): return 'cooler-noctua'
@@ -81,18 +75,30 @@ def scenario(g,stg):
  verdict='INCOMPLETE' if missing else ('BUY' if total<=config['target_budget'] else 'WATCH' if total<=config['target_budget']*1.08 else 'WAIT')
  return {'id':g['id'],'label':g['label'],'vram_gb':g.get('vram_gb'),'requires_second_gpu':g.get('requires_second_gpu',False),'storage_choice':storage_key,'ram_choice':ram,'cooler_choice':cooler,'psu_choice':psu,'ups_choice':ups,'estimated_peak_w':g['estimated_peak_w'],'items':items,'missing':missing,'total':round(total,2) if total is not None else None,'recommendation':verdict,'physical_fit':g.get('physical_fit','standard-check')}
 
+def deal_watch():
+ ids=config.get('deal_search_policy',{}).get('active_ids',[]); out={}
+ for pid in ids:
+  st=stats(pid); row={'id':pid,'label':pmap.get(pid,{}).get('label',pid),'stats':st,'status':'NO_VERIFIED_DEAL'}
+  if st:
+   price=st['cur']; row['status']='VERIFIED'
+   if pid=='bundle-9950x-proart':
+    has_ram='32gb' in str(st['curObs'].get('model','')).lower(); target=config['bundle_policy']['cpu_motherboard_ram_strong_buy_target_usd'] if has_ram else config['bundle_policy']['cpu_motherboard_buy_target_usd']; row['target']=target; row['status']='STRONG_DEAL' if price<=target else 'WATCH'
+   elif pid=='openbox-cpu-9950x': row['target']=config['cpu_policy']['open_box_9950x_target_usd']; row['status']='STRONG_DEAL' if price<=row['target'] else 'WATCH'
+   elif pid=='cpu-9950x3d':
+    base=cur('cpu'); row['premium_vs_9950x']=round(price-base,2) if base is not None else None; row['status']='PREFER_X3D' if base is not None and price-base<=config['cpu_policy']['favor_x3d_if_premium_usd_lte'] else 'WATCH'
+  out[pid]=row
+ return out
+
 def main():
  generated=datetime.now(timezone.utc).isoformat(); collector={}
  try: collector=json.loads((DATA/'collector_status.json').read_text())
  except Exception: collector={}
- last_check=collector.get('checked_at')
- stg=storage_totals(); scenarios=[scenario(g,stg) for g in config['gpu_scenarios']]; complete=[s for s in scenarios if s['total'] is not None]; within=[s for s in complete if s['total']<=config['target_budget']]
+ last_check=collector.get('checked_at'); stg=storage_totals(); scenarios=[scenario(g,stg) for g in config['gpu_scenarios']]; complete=[s for s in scenarios if s['total'] is not None]; within=[s for s in complete if s['total']<=config['target_budget']]
  recommended=max(within,key=lambda s:(s.get('vram_gb') or 0,-s['total'])) if within else (min(complete,key=lambda s:s['total']) if complete else None)
  comps={p['id']:stats(p['id']) for p in products if p.get('price_source','search')=='search'}
  old=json.loads((DATA/'summary.json').read_text()) if (DATA/'summary.json').exists() else {}; hist=old.get('build_history',[])
- # Only record a history point once per actual collector timestamp, not every offline rebuild.
  if recommended and recommended['total'] is not None and last_check:
   if not hist or hist[-1].get('timestamp')!=last_check: hist.append({'timestamp':last_check,'scenario':recommended['id'],'total':recommended['total']})
- summary={'generated':generated,'last_check':last_check,'target':config['target_budget'],'recommended_scenario':recommended['id'] if recommended else None,'build_total':recommended['total'] if recommended else None,'recommendation':recommended['recommendation'] if recommended else 'INCOMPLETE','components':comps,'storage':stg,'scenarios':scenarios,'build_history':hist[-400:],'verification_policy':'SerpApi prices count only when standalone product identity, condition, variant and sanity-price rules pass with match_status=strong. Manual-review rows never affect totals.'}
+ summary={'generated':generated,'last_check':last_check,'target':config['target_budget'],'recommended_scenario':recommended['id'] if recommended else None,'build_total':recommended['total'] if recommended else None,'recommendation':recommended['recommendation'] if recommended else 'INCOMPLETE','initial_ram_strategy':'32GB 2x16; larger RAM searches paused until sustained memory-pressure evidence','components':comps,'deal_watch':deal_watch(),'storage':stg,'scenarios':scenarios,'build_history':hist[-400:],'verification_policy':'SerpApi prices count only when identity, condition/type and sanity-price rules pass with match_status=strong. Deferred products do not consume searches; manual-review rows never affect totals.'}
  (DATA/'summary.json').write_text(json.dumps(summary,indent=2)); print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()
