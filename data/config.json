@@ -1,6 +1,6 @@
 {
   "app": "Private Server Price Tracker",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "target_budget": 2400,
   "currency": "USD",
   "storage_requirement_tb": 4,
@@ -18,10 +18,10 @@
   "dynamic_groups": {
     "ram": {
       "required": true,
-      "initial_strategy": "Use bundled 32GB 2x16GB if included with an attractive CPU/motherboard bundle; measure real sustained memory pressure before upgrading.",
-      "candidates": ["ram-32gb", "ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"],
+      "initial_strategy": "Use bundled 32GB 2x16GB if included with an attractive CPU/motherboard bundle; measure real sustained memory pressure before upgrading. Bundled 32GB is not a standalone tracked product yet.",
+      "candidates": ["ram-64gb", "ram-96gb", "ram-96gb-ecc", "ram-128gb", "ram-128gb-ecc"],
       "rules": {
-        "initial_if_bundle": "ram-32gb",
+        "initial_if_bundle": "bundled-32gb-2x16",
         "preferred_dimm_count": 2,
         "avoid_4_dimm_upgrade_by_default": true,
         "upgrade_path": ["ram-64gb", "ram-96gb", "ram-128gb"],
