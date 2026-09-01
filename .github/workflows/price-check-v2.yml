@@ -27,6 +27,28 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Apply purchased-component exclusions
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = Path('data')
+          config = json.loads((data / 'config.json').read_text())
+          products_path = data / 'products.json'
+          products = json.loads(products_path.read_text())
+          excluded = set(config.get('deal_search_policy', {}).get('excluded_purchased_ids', []))
+
+          changed = []
+          for product in products:
+              if product.get('id') in excluded and product.get('search_enabled', True):
+                  product['search_enabled'] = False
+                  changed.append(product.get('id'))
+
+          products_path.write_text(json.dumps(products, indent=2) + '\n')
+          print('Disabled purchased/stale searches:', ', '.join(changed) if changed else 'already disabled')
+          PY
+
       - name: Validate tracker configuration before API calls
         run: python scripts/validate_tracker.py
 
