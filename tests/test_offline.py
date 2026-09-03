@@ -15,17 +15,16 @@ class MatchTests(unittest.TestCase):
  def test_gpu_outlier_price_rejected(self): self.assertFalse(self.ok('gpu-pro4500','NVIDIA RTX PRO 4500 Blackwell 32GB Graphics Card',8099.99))
  def test_ram_outlier_price_rejected(self): self.assertFalse(self.ok('ram-64gb','64GB DDR5 2x32GB Memory Kit',1255.99))
  def test_ram_requires_two_dimm_kit(self): self.assertFalse(self.ok('ram-96gb','96GB DDR5 48GB Memory',399.99))
- def test_case_walnut_rejected(self): self.assertFalse(self.ok('case','Lian Li LANCOOL 217 Walnut ATX Case',119.99))
- def test_case_inf_rejected(self): self.assertFalse(self.ok('case','Lian Li LANCOOL 217 INF Black ATX Case',124.99))
- def test_case_black_accepts(self): self.assertTrue(self.ok('case','Lian Li LANCOOL 217 Black ATX Case',119.99))
+ def test_case_wrong_model_rejected(self): self.assertFalse(self.ok('case','Lian Li LANCOOL 217 Black ATX Case',119.99))
+ def test_case_exact_accepts(self): self.assertTrue(self.ok('case','Lian Li O11 Dynamic EVO RGB White ATX Case',139.99))
  def test_approved_2tb_nvme_accepts(self): self.assertTrue(self.ok('nvme-2tb','WD_BLACK SN850X 2TB NVMe SSD',149.99))
  def test_wrong_nvme_capacity_rejected(self): self.assertFalse(self.ok('nvme-2tb','WD_BLACK SN850X 4TB NVMe SSD',299.99))
  def test_boot_outlier_rejected(self): self.assertFalse(self.ok('boot-ssd','Samsung 870 EVO 500GB SATA SSD',299.75))
  def test_wrong_tuf_board_is_rejected(self):
   ok,reason=cp.match_result({'id':'motherboard'},{'title':'ASUS TUF Gaming X870E Motherboard','extracted_price':349.99},349.99); self.assertFalse(ok); self.assertEqual(cp.classification(reason),'rejected')
  def test_board_bundle_is_rejected(self):
-  ok,reason=cp.match_result({'id':'motherboard'},{'title':'AMD Ryzen 7 9800X3D + ASUS ProArt X870E-Creator WiFi Motherboard Kit','extracted_price':978.99},978.99); self.assertFalse(ok); self.assertEqual(cp.classification(reason),'rejected')
- def test_exact_proart_is_verified(self): self.assertTrue(self.ok('motherboard','ASUS ProArt X870E-CREATOR WIFI AMD AM5 ATX Motherboard',509.99))
+  ok,reason=cp.match_result({'id':'motherboard'},{'title':'AMD Ryzen 7 9800X3D + ASRock X870E Taichi White Motherboard Kit','extracted_price':978.99},978.99); self.assertFalse(ok); self.assertEqual(cp.classification(reason),'rejected')
+ def test_exact_taichi_white_is_verified(self): self.assertTrue(self.ok('motherboard','ASRock X870E Taichi White AM5 E-ATX Motherboard',429.99))
  def test_ambiguous_missing_title_stays_review(self): self.assertEqual(cp.classification('missing title'),'manual_review')
 
 class QuotaTests(unittest.TestCase):
