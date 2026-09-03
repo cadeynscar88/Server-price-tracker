@@ -1,592 +1,337 @@
 {
-  "generated": "2026-08-29T02:56:33.036684+00:00",
+  "generated": "2026-09-03T19:29:19.710663+00:00",
   "last_check": "2026-08-29T02:37:22.107045+00:00",
-  "target": 2400,
-  "recommended_scenario": null,
-  "build_total": null,
-  "recommendation": "INCOMPLETE",
-  "components": {
+  "tracker_version": "2.9.0",
+  "target_budget": 4000,
+  "build_state_updated": "2026-09-03",
+  "confirmed_build": {
+    "cpu": "AMD Ryzen 9 9950X3D \u2014 purchased",
+    "motherboard": "ASRock X870E Taichi White \u2014 purchased",
+    "gaming_gpu": "MSI RTX 5070 Ti Frieren Edition 16GB \u2014 purchased",
+    "case": "Lian Li O11 Dynamic EVO RGB White \u2014 purchased",
+    "ram_primary_target": "64GB (2x32GB) DDR5-6000 CL30 AMD EXPO; exact Royal Neo F5-6000J3036G32GX2-TR5NS ideal if sane price",
+    "ram_aesthetic_alternative": "G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28 F5-6000J2836G16GX2-TR5NS",
+    "cpu_cooler": "Lian Li HydroShift II OLED Curved 360 P28 White",
+    "psu": "Lian Li RS1200G/RS1200W 1200W White ATX 3.1",
+    "fans": "6x 120mm white reverse-blade intake fans for side + bottom",
+    "main_storage": "Lexar NM790 4TB purchased; second exact NM790 4TB later for mirror",
+    "os_ssd": "Optional reputable ~1TB NVMe; architecturally recommended but not currently deal-watched",
+    "optical": "Blu-ray/DVD drive; UHD capability preferred if cost-effective",
+    "ups": "Later, after final GPU/power envelope is settled"
+  },
+  "purchased_components": {
     "cpu": {
-      "n": 9,
-      "cur": 632.28,
-      "curObs": {
-        "component_id": "cpu",
-        "component": "CPU \u2014 Ryzen 9 9950X",
-        "model": "AMD Ryzen 9 9950X 16-Core Processor",
-        "retailer": "bestbuy",
-        "price": 632.28,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X&prds=catalogid:3384584436670908380,productid:13840852360156597862,headlineOfferDocid:9945994750814919446,imageDocid:380895529031502384,rds:PC_16531250299087675312|PROD_PC_16531250299087675312,gpcid:16531250299087675312,mid:576462517490073141,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "timestamp": "2026-08-28T23:42:08.937937+00:00",
-        "notes": "Revalidated v2.1: exact model match",
-        "match_status": "strong",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 632.28,
-      "max": 998.99,
-      "avg": 895.4666666666667,
-      "median": 857.74
+      "status": "purchased",
+      "model": "AMD Ryzen 9 9950X3D",
+      "purchase_price_usd": 619.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center Houston",
+      "track_price": true,
+      "track_reason": "Price protection: flag verified new prices below $619.99 during plausible adjustment/return window."
     },
     "motherboard": {
-      "n": 4,
-      "cur": 509.99,
-      "curObs": {
-        "component_id": "motherboard",
-        "component": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-        "model": "ASUS ProArt X870E-CREATOR WIFI AM5 ATX Motherboard",
-        "retailer": "newegg",
-        "price": 509.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=ASUS ProArt X870E Creator WiFi&prds=catalogid:10741079162533220249,productid:14204450086831888575,headlineOfferDocid:5566686179634384400,imageDocid:8502187660856065117,rds:PC_3375806997263209023|PROD_PC_3375806997263209023,gpcid:3375806997263209023,mid:576462898585408334,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 509.99,
-      "max": 978.99,
-      "avg": 627.24,
-      "median": 509.99
+      "status": "purchased",
+      "model": "ASRock X870E Taichi White",
+      "purchase_price_usd": 429.99,
+      "protection_plan_usd": 74.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center Houston",
+      "track_price": false
     },
-    "ram-96gb": null,
-    "ram-96gb-ecc": null,
-    "ram-128gb": null,
-    "ram-128gb-ecc": null,
-    "ram-64gb": null,
-    "gpu-5070ti": null,
-    "gpu-pro4000": null,
-    "gpu-5090": null,
-    "gpu-pro4500": null,
-    "nvme-4tb": null,
-    "nvme-2tb": null,
-    "boot-ssd": null,
-    "case": null,
-    "cooler-noctua": {
-      "n": 6,
-      "cur": 159.95,
-      "curObs": {
-        "component_id": "cooler-noctua",
-        "component": "CPU cooler \u2014 Noctua NH-D15 G2",
-        "model": "Noctua NH-D15 G2 CPU Air Cooler",
-        "retailer": "newegg",
-        "price": 159.95,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=Noctua NH-D15 G2&prds=catalogid:7076726148966148667,productid:8134988988767512689,headlineOfferDocid:2165990889225150012,imageDocid:16799120443763115772,rds:PC_17132896970172464592|PROD_PC_17132896970172464592,gpcid:17132896970172464592,mid:576462898603785197,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 159.95,
-      "max": 169.99,
-      "avg": 164.97,
-      "median": 164.97
+    "gaming_gpu": {
+      "status": "purchased",
+      "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB",
+      "purchase_price_usd": 1179.99,
+      "protection_plan_usd": 139.99,
+      "track_price": false
     },
-    "cooler-thermalright": {
-      "n": 6,
-      "cur": 63.99,
-      "curObs": {
-        "component_id": "cooler-thermalright",
-        "component": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-        "model": "Thermalright Phantom Spirit 120 EVO CPU Air Cooler, 7 Heat Pipes, Dual 120mm PWM Fans, for Am4/am5 Lga1700/1851, Black",
-        "retailer": "walmart",
-        "price": 63.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=Thermalright Phantom Spirit 120 EVO&prds=productid:11201403805883781884,headlineOfferDocid:11201403805883781884,imageDocid:8106838146395348907,rds:PC_10574359510775471093|PROD_PC_10574359510775471093,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 63.99,
-      "max": 79.9,
-      "avg": 71.94500000000001,
-      "median": 71.94500000000001
+    "main_storage_1": {
+      "status": "purchased",
+      "model": "Lexar NM790 4TB TLC Gen4 NVMe",
+      "purchase_price_usd": 499.99,
+      "track_price": true,
+      "track_reason": "Watch for second matching 4TB mirror drive."
     },
-    "psu-1000w": {
-      "n": 6,
-      "cur": 138.99,
-      "curObs": {
-        "component_id": "psu-1000w",
-        "component": "PSU \u2014 1000W ATX 3.1 approved",
-        "model": "MSI MAG A1000GL PCIE5 Power Supply 1000W Power ATX 3.1 Ready Native Dual-Color PCIe CEM 5.1 Connector",
-        "retailer": "walmart",
-        "price": 138.99,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=1000W ATX 3.1 RM1000x A1000GL&prds=catalogid:2194254729192596845,productid:727438459356351063,headlineOfferDocid:490470158235905447,imageDocid:3010158502404116047,rds:PC_5241812533977832061|PROD_PC_5241812533977832061,gpcid:5241812533977832061,mid:576462563315201858,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "approved 1000W PSU family",
-        "validation_version": "2.3",
-        "validation_reason": "approved 1000W PSU + sane price"
+    "case": {
+      "status": "purchased",
+      "model": "Lian Li O11 Dynamic EVO RGB White",
+      "purchase_price_usd": 139.99,
+      "purchase_date": "2026-09-02",
+      "track_price": false
+    }
+  },
+  "returned_components": {
+    "motherboard_previous": {
+      "model": "Gigabyte X870 AORUS Tachyon ICE",
+      "returned": "2026-09-02",
+      "refund_usd": 383.99,
+      "protection_refund_usd": 54.99
+    }
+  },
+  "confirmed_hardware_subtotal_ex_tax_usd": 3084.93,
+  "remaining_budget_to_target_usd": 915.07,
+  "ram_strategy": {
+    "required": true,
+    "initial_strategy": "Prefer 64GB 2x32 DDR5-6000 CL30 EXPO; 32GB Royal Neo remains acceptable aesthetic/interim path.",
+    "candidates": [
+      "ram-royal-neo-64",
+      "ram-royal-neo-32",
+      "ram-64gb-alt"
+    ],
+    "rules": {
+      "initial": "ram-royal-neo-64",
+      "preferred_dimm_count": 2,
+      "avoid_4_dimm_upgrade_by_default": true,
+      "royal_neo_32_exact": "F5-6000J2836G16GX2-TR5NS",
+      "royal_neo_64_exact": "F5-6000J3036G32GX2-TR5NS",
+      "royal_neo_32_buy_lte_usd": 500,
+      "royal_neo_32_excellent_lte_usd": 450,
+      "royal_neo_32_exceptional_lte_usd": 400,
+      "royal_neo_64_buy_lte_usd": 800,
+      "royal_neo_64_excellent_lte_usd": 700,
+      "interim_64gb_target_range_usd": [
+        250,
+        350
+      ]
+    }
+  },
+  "cooler_strategy": {
+    "required": true,
+    "candidates": [
+      "cooler-hydroshift-ii",
+      "cooler-tryx-panorama-se"
+    ],
+    "rules": {
+      "preferred": "cooler-hydroshift-ii",
+      "strong_deal_below_usd": 270,
+      "exceptional_deal_lte_usd": 250
+    }
+  },
+  "psu_strategy": {
+    "required": true,
+    "candidates": [
+      "psu-lianli-rs1200"
+    ],
+    "rules": {
+      "preferred": "psu-lianli-rs1200",
+      "buy_lte_usd": 140,
+      "reassess_1500_1600w_if_high_power_second_gpu": true
+    }
+  },
+  "future_gpu_watch": {
+    "enabled": true,
+    "manual_plus_automation": true,
+    "primary_candidates": [
+      {
+        "product_id": "gpu-pro5000-blackwell-48gb",
+        "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC",
+        "attention_price_usd": 5000
       },
-      "min": 138.99,
-      "max": 149.99,
-      "avg": 144.49,
-      "median": 144.49
+      {
+        "product_id": "gpu-a6000-48gb",
+        "model": "NVIDIA RTX A6000 48GB ECC",
+        "attention_price_usd": 3500,
+        "strong_price_usd": 3200,
+        "exceptional_price_usd": 3000
+      },
+      {
+        "product_id": "gpu-5090",
+        "model": "NVIDIA GeForce RTX 5090 32GB",
+        "attention_price_usd": 3000,
+        "especially_compelling_price_usd": 2500
+      },
+      {
+        "product_id": "gpu-3090",
+        "model": "NVIDIA GeForce RTX 3090 24GB",
+        "attention_price_usd": 700,
+        "strong_price_usd": 600,
+        "note": "Interim AI card only; prefer air-cooled and require strong buyer protection or in-person testing."
+      }
+    ],
+    "wildcard": {
+      "product_id": "gpu-pro6000-blackwell-96gb",
+      "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC",
+      "movement_below_usd": 10000,
+      "serious_range_usd": [
+        7000,
+        8000
+      ],
+      "deep_look_lte_usd": 6000
+    }
+  },
+  "storage_rules": {
+    "preferred_exact_4tb_model": "Lexar NM790 4TB",
+    "first_drive_purchased": true,
+    "first_drive_purchase_price_usd": 499.99,
+    "second_matching_drive_needed": true,
+    "m2_assignment_current": {
+      "M.2_1": "Future Gen5 or OS/hypervisor depending final design",
+      "M.2_2": "Lexar NM790 4TB purchased",
+      "M.2_3": "Future matching NM790 mirror",
+      "M.2_4": "Free"
     },
-    "psu-1200w": null,
-    "ups-1000w": {
+    "lane_note": "ASRock X870E Taichi White is authoritative. Do not carry forward the retired ProArt M.2_2 lane-sharing rule."
+  },
+  "component_price_stats": {
+    "cpu-9950x3d": null,
+    "motherboard-taichi-white": null,
+    "gpu-frieren-5070ti": null,
+    "case-o11-evo-rgb-white": null,
+    "ram-royal-neo-64": null,
+    "ram-royal-neo-32": null,
+    "ram-64gb-alt": null,
+    "cooler-hydroshift-ii": null,
+    "cooler-tryx-panorama-se": null,
+    "psu-lianli-rs1200": null,
+    "fans-lianli-tl120-reverse": null,
+    "fans-value-reverse": null,
+    "nvme-nm790-4tb": null,
+    "boot-os-nvme-1tb": null,
+    "optical-uhd": null,
+    "gpu-3090": null,
+    "gpu-5090": {
       "n": 3,
-      "cur": 287.19,
+      "cur": 5319.05,
       "curObs": {
-        "component_id": "ups-1000w",
-        "component": "UPS \u2014 1500VA / 1000W pure sine",
-        "model": "Monoprice CyberPower CP1500PFCLCD PFC Sinewave UPS Systems 1500VA/1000W 120 VAC",
-        "retailer": "newegg",
-        "price": 287.19,
+        "component_id": "gpu-5090",
+        "component": "GPU \u2014 RTX 5090 32GB",
+        "model": "NVIDIA GeForce RTX 5090 32GB GDDR7 Founders Edition Graphics Card",
+        "retailer": "walmart",
+        "price": 5319.05,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPower CP1500PFCLCD 1500VA 1000W&prds=catalogid:10609477281975324875,productid:6415032238488455133,headlineOfferDocid:4982349593528371223,imageDocid:3578460555052361638,gpcid:60935610139272321,mid:576462898017091634,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
+        "validation_version": "2.7",
+        "validation_reason": "exact model/condition + sane price"
       },
-      "min": 287.19,
-      "max": 287.19,
-      "avg": 287.19,
-      "median": 287.19
+      "min": 5319.05,
+      "max": 5319.05,
+      "avg": 5319.05,
+      "median": 5319.05
     },
-    "ups-1500w": {
-      "n": 6,
-      "cur": 916.24,
-      "curObs": {
-        "component_id": "ups-1500w",
-        "component": "UPS \u2014 1500VA / 1500W pure sine",
-        "model": "CyberPower PR1500LCD Smart App Sinewave UPS",
-        "retailer": "bestbuy",
-        "price": 916.24,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=CyberPower PR1500LCD 1500VA 1500W&prds=catalogid:9822511957691231805,productid:320028213574108535,headlineOfferDocid:2352616230598017245,imageDocid:16494116847662358552,rds:PC_14256077328524300515|PROD_PC_14256077328524300515,gpcid:14256077328524300515,mid:576462428271808558,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping",
-        "status": "verified",
-        "method": "serpapi_google_shopping",
-        "match_status": "strong",
-        "timestamp": "2026-08-29T02:37:22.107045+00:00",
-        "notes": "exact model match",
-        "validation_version": "2.3",
-        "validation_reason": "exact standalone model + sane price"
-      },
-      "min": 916.24,
-      "max": 1085.95,
-      "avg": 1001.0949999999999,
-      "median": 1001.095
-    }
+    "gpu-pro5000-blackwell-48gb": null,
+    "gpu-a6000-48gb": null,
+    "gpu-pro6000-blackwell-96gb": null,
+    "ups": null
   },
-  "storage": {
-    "A": {
-      "label": "2 \u00d7 4 TB approved TLC NVMe",
-      "product_id": "nvme-4tb",
-      "qty": 2,
-      "usable_tb": 4,
-      "scheme": "ZFS mirror",
-      "preferred": true,
-      "current_total": null
-    },
-    "B": {
-      "label": "4 \u00d7 2 TB approved TLC NVMe",
-      "product_id": "nvme-2tb",
-      "qty": 4,
-      "usable_tb": 4,
-      "scheme": "2 mirrored vdevs",
-      "preferred": false,
-      "current_total": null
-    }
-  },
-  "scenarios": [
+  "manual_price_crossover": [
     {
-      "id": "single-5070ti",
-      "label": "1\u00d7 RTX 5070 Ti 16GB",
-      "vram_gb": 16,
-      "requires_second_gpu": false,
-      "storage_choice": null,
-      "ram_choice": null,
-      "cooler_choice": "cooler-thermalright",
-      "psu_choice": "psu-1000w",
-      "ups_choice": "ups-1000w",
-      "estimated_peak_w": 650,
-      "items": [
-        {
-          "id": "cpu",
-          "label": "CPU \u2014 Ryzen 9 9950X",
-          "qty": 1,
-          "unit_price": 632.28,
-          "total": 632.28
-        },
-        {
-          "id": "motherboard",
-          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-          "qty": 1,
-          "unit_price": 509.99,
-          "total": 509.99
-        },
-        {
-          "id": "case",
-          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "boot-ssd",
-          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "cooler-thermalright",
-          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-          "qty": 1,
-          "unit_price": 63.99,
-          "total": 63.99
-        },
-        {
-          "id": "psu-1000w",
-          "label": "PSU \u2014 1000W ATX 3.1 approved",
-          "qty": 1,
-          "unit_price": 138.99,
-          "total": 138.99
-        },
-        {
-          "id": "ups-1000w",
-          "label": "UPS \u2014 1500VA / 1000W pure sine",
-          "qty": 1,
-          "unit_price": 287.19,
-          "total": 287.19
-        }
-      ],
-      "missing": [
-        "case",
-        "boot-ssd",
-        "ram",
-        "gpu-5070ti",
-        "storage",
-        "backup-ssd"
-      ],
-      "total": null,
-      "recommendation": "INCOMPLETE",
-      "physical_fit": "standard-check"
+      "category": "RAM",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836G16GX2-TR5NS",
+      "observed_price_usd": 604.68,
+      "source": "user screenshot",
+      "date": "2026-09-03",
+      "verdict": "WAIT/SKIP",
+      "verified_live": false,
+      "thresholds": {
+        "buy_lte": 500,
+        "excellent_lte": 450,
+        "exceptional_lte": 400
+      }
     },
     {
-      "id": "dual-5070ti",
-      "label": "2\u00d7 RTX 5070 Ti 16GB",
-      "vram_gb": 16,
-      "requires_second_gpu": true,
-      "storage_choice": null,
-      "ram_choice": null,
-      "cooler_choice": "cooler-thermalright",
-      "psu_choice": null,
-      "ups_choice": "ups-1500w",
-      "estimated_peak_w": 950,
-      "items": [
-        {
-          "id": "cpu",
-          "label": "CPU \u2014 Ryzen 9 9950X",
-          "qty": 1,
-          "unit_price": 632.28,
-          "total": 632.28
-        },
-        {
-          "id": "motherboard",
-          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-          "qty": 1,
-          "unit_price": 509.99,
-          "total": 509.99
-        },
-        {
-          "id": "case",
-          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "boot-ssd",
-          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "cooler-thermalright",
-          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-          "qty": 1,
-          "unit_price": 63.99,
-          "total": 63.99
-        },
-        {
-          "id": "ups-1500w",
-          "label": "UPS \u2014 1500VA / 1500W pure sine",
-          "qty": 1,
-          "unit_price": 916.24,
-          "total": 916.24
-        }
-      ],
-      "missing": [
-        "case",
-        "boot-ssd",
-        "ram",
-        "psu",
-        "gpu-5070ti",
-        "storage",
-        "backup-ssd"
-      ],
-      "total": null,
-      "recommendation": "INCOMPLETE",
-      "physical_fit": "exact-SKU-check"
+      "category": "RAM",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836G16GX2-TR5NS",
+      "observed_price_usd": 529.99,
+      "source": "Micro Center Houston prior observation",
+      "date": "2026-09-02",
+      "availability": "sold out at observation",
+      "verdict": "WAIT",
+      "verified_live": false
     },
     {
-      "id": "single-pro4000",
-      "label": "1\u00d7 RTX PRO 4000 Blackwell 24GB",
-      "vram_gb": 24,
-      "requires_second_gpu": false,
-      "storage_choice": null,
-      "ram_choice": null,
-      "cooler_choice": "cooler-thermalright",
-      "psu_choice": "psu-1000w",
-      "ups_choice": "ups-1000w",
-      "estimated_peak_w": 500,
-      "items": [
-        {
-          "id": "cpu",
-          "label": "CPU \u2014 Ryzen 9 9950X",
-          "qty": 1,
-          "unit_price": 632.28,
-          "total": 632.28
-        },
-        {
-          "id": "motherboard",
-          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-          "qty": 1,
-          "unit_price": 509.99,
-          "total": 509.99
-        },
-        {
-          "id": "case",
-          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "boot-ssd",
-          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "cooler-thermalright",
-          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-          "qty": 1,
-          "unit_price": 63.99,
-          "total": 63.99
-        },
-        {
-          "id": "psu-1000w",
-          "label": "PSU \u2014 1000W ATX 3.1 approved",
-          "qty": 1,
-          "unit_price": 138.99,
-          "total": 138.99
-        },
-        {
-          "id": "ups-1000w",
-          "label": "UPS \u2014 1500VA / 1000W pure sine",
-          "qty": 1,
-          "unit_price": 287.19,
-          "total": 287.19
-        }
-      ],
-      "missing": [
-        "case",
-        "boot-ssd",
-        "ram",
-        "gpu-pro4000",
-        "storage",
-        "backup-ssd"
-      ],
-      "total": null,
-      "recommendation": "INCOMPLETE",
-      "physical_fit": "standard-check"
+      "category": "AIO",
+      "model": "TRYX Panorama SE 360 ARGB White",
+      "mpn": "L-P360L-AM3M-G0W",
+      "observed_price_usd": 249.99,
+      "source": "Micro Center screenshot",
+      "verdict": "GOOD/WAIT versus preferred HydroShift",
+      "verified_live": false
     },
     {
-      "id": "single-5090",
-      "label": "1\u00d7 RTX 5090 32GB",
-      "vram_gb": 32,
-      "requires_second_gpu": false,
-      "storage_choice": null,
-      "ram_choice": null,
-      "cooler_choice": "cooler-thermalright",
-      "psu_choice": "psu-1000w",
-      "ups_choice": "ups-1500w",
-      "estimated_peak_w": 950,
-      "items": [
-        {
-          "id": "cpu",
-          "label": "CPU \u2014 Ryzen 9 9950X",
-          "qty": 1,
-          "unit_price": 632.28,
-          "total": 632.28
-        },
-        {
-          "id": "motherboard",
-          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-          "qty": 1,
-          "unit_price": 509.99,
-          "total": 509.99
-        },
-        {
-          "id": "case",
-          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "boot-ssd",
-          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "cooler-thermalright",
-          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-          "qty": 1,
-          "unit_price": 63.99,
-          "total": 63.99
-        },
-        {
-          "id": "psu-1000w",
-          "label": "PSU \u2014 1000W ATX 3.1 approved",
-          "qty": 1,
-          "unit_price": 138.99,
-          "total": 138.99
-        },
-        {
-          "id": "ups-1500w",
-          "label": "UPS \u2014 1500VA / 1500W pure sine",
-          "qty": 1,
-          "unit_price": 916.24,
-          "total": 916.24
-        }
-      ],
-      "missing": [
-        "case",
-        "boot-ssd",
-        "ram",
-        "gpu-5090",
-        "storage",
-        "backup-ssd"
-      ],
-      "total": null,
-      "recommendation": "INCOMPLETE",
-      "physical_fit": "standard-check"
+      "category": "PSU",
+      "model": "Lian Li RS1200G/RS1200W 1200W White ATX 3.1",
+      "observed_price_usd": 139.99,
+      "source": "prior live cart observation",
+      "verdict": "BUY at this level",
+      "verified_live": false,
+      "thresholds": {
+        "buy_lte": 140
+      }
     },
     {
-      "id": "single-pro4500",
-      "label": "1\u00d7 RTX PRO 4500 Blackwell 32GB",
-      "vram_gb": 32,
-      "requires_second_gpu": false,
-      "storage_choice": null,
-      "ram_choice": null,
-      "cooler_choice": "cooler-thermalright",
-      "psu_choice": "psu-1000w",
-      "ups_choice": "ups-1000w",
-      "estimated_peak_w": 575,
-      "items": [
-        {
-          "id": "cpu",
-          "label": "CPU \u2014 Ryzen 9 9950X",
-          "qty": 1,
-          "unit_price": 632.28,
-          "total": 632.28
-        },
-        {
-          "id": "motherboard",
-          "label": "Motherboard \u2014 ASUS ProArt X870E-CREATOR WIFI",
-          "qty": 1,
-          "unit_price": 509.99,
-          "total": 509.99
-        },
-        {
-          "id": "case",
-          "label": "Case \u2014 Lian Li LANCOOL 217 Black",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "boot-ssd",
-          "label": "Boot SSD \u2014 approved 500/512GB SATA TLC",
-          "qty": 1,
-          "unit_price": null,
-          "total": null
-        },
-        {
-          "id": "cooler-thermalright",
-          "label": "CPU cooler \u2014 Thermalright Phantom Spirit 120 EVO",
-          "qty": 1,
-          "unit_price": 63.99,
-          "total": 63.99
-        },
-        {
-          "id": "psu-1000w",
-          "label": "PSU \u2014 1000W ATX 3.1 approved",
-          "qty": 1,
-          "unit_price": 138.99,
-          "total": 138.99
-        },
-        {
-          "id": "ups-1000w",
-          "label": "UPS \u2014 1500VA / 1000W pure sine",
-          "qty": 1,
-          "unit_price": 287.19,
-          "total": 287.19
-        }
+      "category": "SSD",
+      "model": "Lexar NM790 4TB TLC Gen4 NVMe",
+      "observed_price_usd": 499.99,
+      "source": "confirmed purchase",
+      "verdict": "OWNED; reference for second matching mirror",
+      "verified_live": false
+    },
+    {
+      "category": "SSD",
+      "model": "Samsung 990 EVO Plus 4TB",
+      "observed_price_usd": 500,
+      "source": "user marketplace screenshot",
+      "date": "2026-09-03",
+      "verdict": "SKIP",
+      "verified_live": false,
+      "reconsider_lte_range_usd": [
+        350,
+        400
+      ]
+    },
+    {
+      "category": "GPU",
+      "model": "ASUS TUF RTX 4090 OC 24GB",
+      "observed_price_usd": 800,
+      "source": "OfferUp Foley AL listing/user screenshots",
+      "date": "2026-09-03",
+      "verdict": "REJECT AS VIABLE DEAL pending strong verification; suspicious seller/listing signals",
+      "verified_live": false
+    },
+    {
+      "category": "GPU bundle",
+      "model": "Gigabyte RTX 3090 OC 24GB + Minisforum eGPU dock + Gigabyte 750W PSU",
+      "observed_price_usd": 1200,
+      "source": "user marketplace screenshot",
+      "date": "2026-09-03",
+      "verdict": "SKIP; no separate deals; included PSU not useful as main system PSU",
+      "verified_live": false,
+      "reconsider_bundle_range_usd": [
+        850,
+        950
+      ]
+    },
+    {
+      "category": "Fans",
+      "model": "Lian Li 120mm TL UNI lot",
+      "quantity": 6,
+      "source": "user marketplace screenshot",
+      "date": "2026-09-03",
+      "verdict": "GOOD LEAD only if correct blade orientation/controller/cables; ask seller",
+      "verified_live": false,
+      "target_bundle_range_usd": [
+        100,
+        150
       ],
-      "missing": [
-        "case",
-        "boot-ssd",
-        "ram",
-        "gpu-pro4500",
-        "storage",
-        "backup-ssd"
-      ],
-      "total": null,
-      "recommendation": "INCOMPLETE",
-      "physical_fit": "standard-check"
+      "buy_lte_usd": 120
+    },
+    {
+      "category": "CPU",
+      "model": "AMD Ryzen 9 9950X3D",
+      "observed_price_usd": 619.99,
+      "source": "confirmed Micro Center Houston purchase",
+      "date": "2026-09-02",
+      "verdict": "OWNED; price-protection reference",
+      "verified_live": false
     }
   ],
-  "build_history": [
-    {
-      "timestamp": "2026-08-28T23:44:09.228795+00:00",
-      "total": 4123.17
-    }
-  ],
-  "verification_policy": "SerpApi prices count only when standalone product identity, condition, variant and sanity-price rules pass with match_status=strong. Manual-review rows never affect totals."
+  "verification_policy": "Manual crossover rows are historical/reference observations unless verified_live=true. Automated prices count only when tracker verification rules pass."
 }

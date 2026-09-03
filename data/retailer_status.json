@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:56:33.083550+00:00",
+  "generated_at": "2026-09-03T19:29:19.747308+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -13,11 +13,11 @@
     {
       "id": "newegg",
       "name": "Newegg",
-      "state": "yellow",
-      "status": "latest result needs model review",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 509.99,
-      "latest_check_status": "manual_review"
+      "state": "gray",
+      "status": "no trusted verified price",
+      "last_verified_at": null,
+      "last_verified_price": null,
+      "latest_check_status": "rejected"
     },
     {
       "id": "walmart",
@@ -25,34 +25,34 @@
       "state": "green",
       "status": "fresh trusted price",
       "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 857.74,
+      "last_verified_price": 5319.05,
       "latest_check_status": "verified"
     },
     {
       "id": "bestbuy",
       "name": "Best Buy",
-      "state": "yellow",
-      "status": "latest result needs model review",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 916.24,
-      "latest_check_status": "manual_review"
+      "state": "gray",
+      "status": "no trusted verified price",
+      "last_verified_at": null,
+      "last_verified_price": null,
+      "latest_check_status": "rejected"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
-      "state": "green",
-      "status": "fresh trusted price",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 998.99,
-      "latest_check_status": "verified"
+      "state": "gray",
+      "status": "no trusted verified price",
+      "last_verified_at": null,
+      "last_verified_price": null,
+      "latest_check_status": "rejected"
     },
     {
       "id": "microcenter",
       "name": "Micro Center",
       "state": "red",
-      "status": "missing from latest search",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 169.99,
+      "status": "no trusted verified price",
+      "last_verified_at": null,
+      "last_verified_price": null,
       "latest_check_status": "not_found"
     }
   ],
