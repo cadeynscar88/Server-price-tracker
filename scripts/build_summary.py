@@ -48,6 +48,7 @@ def main():
       'returned_components':config.get('returned_components',{}),
       'confirmed_hardware_subtotal_ex_tax_usd':config.get('confirmed_hardware_subtotal_ex_tax_usd',purchase_total),
       'remaining_budget_to_target_usd':round(config.get('target_budget',0)-config.get('confirmed_hardware_subtotal_ex_tax_usd',purchase_total),2),
+      'completion_cost_models':config.get('completion_cost_models',{}),
       'ram_strategy':config.get('dynamic_groups',{}).get('ram',{}),
       'cooler_strategy':config.get('dynamic_groups',{}).get('cooler',{}),
       'psu_strategy':config.get('dynamic_groups',{}).get('psu',{}),
