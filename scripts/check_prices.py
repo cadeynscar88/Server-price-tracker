@@ -35,8 +35,9 @@ STORAGE_QUERIES={
 }
 PRICE_BANDS={
  'cpu':(250,1200),'cpu-9950x3d':(300,1300),'motherboard':(200,1200),
- 'ram-32gb':(40,400),'ram-64gb':(70,850),'ram-96gb':(100,1400),'ram-96gb-ecc':(120,1800),'ram-128gb':(140,1800),'ram-128gb-ecc':(160,2200),
- 'gpu-5070ti':(450,1800),'gpu-pro4000':(700,3000),'gpu-5090':(1200,3000),'gpu-pro4500':(900,3000),
+ 'ram-32gb':(40,700),'ram-64gb':(70,1100),'ram-96gb':(100,1400),'ram-96gb-ecc':(120,1800),'ram-128gb':(140,1800),'ram-128gb-ecc':(160,2200),
+ 'gpu-5070ti':(450,1800),'gpu-pro4000':(700,3000),'gpu-5090':(1200,6000),'gpu-pro4500':(900,6000),
+ 'gpu-pro5000-blackwell-48gb':(2000,9000),'gpu-a6000-48gb':(1000,8000),'gpu-pro6000-blackwell-96gb':(3000,20000),
  'nvme-4tb':(120,900),'nvme-2tb':(60,500),'boot-ssd':(20,180),'case':(70,300),
  'cooler-noctua':(60,250),'cooler-thermalright':(25,180),'psu-1000w':(80,350),'psu-1200w':(100,450),
  'ups-1000w':(100,650),'ups-1500w':(250,1600),
@@ -45,7 +46,7 @@ PRICE_BANDS={
 }
 DETERMINISTIC_REASONS={
  'rejected condition','accessory/part result','bundle result','non-retail/bulk component result','complete-system/prebuilt result',
- 'different model/variant','wrong/missing capacity','not approved SSD family','not internal NVMe drive','not approved SATA boot family',
+ 'different model/variant','required exact-model terms missing','wrong/missing capacity','not approved SSD family','not internal NVMe drive','not approved SATA boot family',
  'capacity not approved','boot drive must be SATA','wrong RAM capacity/module layout','ECC result belongs in ECC branch',
  'not approved 1000W PSU','not approved 1200W PSU','open-box condition not confirmed','bundle identity not confirmed',
  'prebuilt identity not confirmed'
@@ -67,7 +68,7 @@ def retailer_slug(v):
 def append(pid,row):
  p=OBS/f'{pid}.json'; rows=json.loads(p.read_text()) if p.exists() else []; rows.append(row); p.write_text(json.dumps(rows,indent=2))
 def serp(q,key):
- req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.6'})
+ req=Request('https://serpapi.com/search.json?'+urlencode({'engine':'google_shopping','q':q,'hl':'en','gl':'us','api_key':key}),headers={'User-Agent':'PrivateServerPriceTracker/2.7'})
  with urlopen(req,timeout=30) as r: payload=json.loads(r.read())
  if payload.get('error'): raise RuntimeError(payload['error'])
  return payload
@@ -108,7 +109,7 @@ def product_type_clean(pid,t):
  else:
   if any(norm(x) in t for x in CONDITION_REJECT) or 'open box' in t: return False,'rejected condition'
  if pid not in BUNDLE_IDS and any(norm(x) in t for x in BUNDLE_REJECT): return False,'bundle result'
- if pid in {'cpu','cpu-9950x3d','openbox-cpu-9950x','gpu-5070ti','gpu-pro4000','gpu-5090','gpu-pro4500','openbox-gpu-5070ti'} and any(norm(x) in t for x in NONRETAIL_REJECT): return False,'non-retail/bulk component result'
+ if pid in {'cpu','cpu-9950x3d','openbox-cpu-9950x','gpu-5070ti','gpu-pro4000','gpu-5090','gpu-pro4500','gpu-pro5000-blackwell-48gb','gpu-a6000-48gb','gpu-pro6000-blackwell-96gb','openbox-gpu-5070ti'} and any(norm(x) in t for x in NONRETAIL_REJECT): return False,'non-retail/bulk component result'
  component_like=(pid.startswith('gpu-') or pid.startswith('ram-') or pid in {'cpu','cpu-9950x3d','motherboard','nvme-4tb','nvme-2tb','boot-ssd','psu-1000w','psu-1200w','openbox-cpu-9950x','openbox-proart-x870e','openbox-gpu-5070ti'})
  if pid not in PREBUILT_IDS and component_like and any(norm(x) in t for x in SYSTEM_REJECT): return False,'complete-system/prebuilt result'
  return True,'product type plausible'
@@ -123,12 +124,15 @@ def match_result(p,r,pr=None):
  exact={
   'cpu':(('9950x',),('9950x3d','9950x3d2')),
   'cpu-9950x3d':(('9950x3d',),('9950x3d2',)),
-  'motherboard':(('proart','x870e'),('x670e','rog','tuf')),
+  'motherboard':(('asrock','x870e','taichi','white'),('proart','tuf','rog','x670e')),
   'gpu-5070ti':(('5070','ti','16gb'),('5070 ti super','5080','5090')),
   'gpu-pro4000':(('rtx','pro','4000','blackwell','24gb'),('ada',)),
   'gpu-5090':(('5090','32gb'),('5090d','5090 d')),
   'gpu-pro4500':(('rtx','pro','4500','blackwell','32gb'),('ada',)),
-  'case':(('lancool','217'),('walnut','wood','white','inf')),
+  'gpu-pro5000-blackwell-48gb':(('rtx','pro','5000','blackwell','48gb'),('ada',)),
+  'gpu-a6000-48gb':(('rtx','a6000','48gb'),('ada','6000 blackwell')),
+  'gpu-pro6000-blackwell-96gb':(('rtx','pro','6000','blackwell','96gb'),('ada',)),
+  'case':(('lian','li','o11','dynamic','evo','rgb','white'),('lancool','black')),
   'cooler-noctua':(('nh','d15','g2'),()),'cooler-thermalright':(('phantom','spirit','120','evo'),()),
   'ups-1000w':(('cp1500pfclcd',),()),'ups-1500w':(('pr1500lcd',),('cp1500pfclcd',)),
   'openbox-cpu-9950x':(('9950x','open box'),('9950x3d','9950x3d2')),
@@ -173,7 +177,7 @@ def match_result(p,r,pr=None):
   if not ecc and is_ecc:return False,'ECC result belongs in ECC branch'
   return True,'DDR5 two-DIMM capacity branch + sane price'
  if pid=='psu-1000w':return (True,'approved 1000W PSU + sane price') if '1000w' in t and any(x in t for x in ('rm1000x','a1000gl')) else (False,'not approved 1000W PSU')
- if pid=='psu-1200w':return (True,'approved 1200W PSU + sane price') if '1200w' in t and 'vertex' in t and 'gx' in t else (False,'not approved 1200W PSU')
+ if pid=='psu-1200w':return (True,'approved 1200W PSU + sane price') if '1200w' in t and (('lian' in t and 'li' in t and ('rs1200g' in t or 'rs1200w' in t)) or ('vertex' in t and 'gx' in t)) else (False,'not approved 1200W PSU')
  return False,'no strong rule for this item'
 
 def classification(reason):
@@ -194,13 +198,13 @@ def revalidate_existing():
    synthetic={'title':row.get('model',''),'condition':row.get('condition',''),'extracted_price':row.get('price')}
    ok,reason=match_result(p,synthetic,row.get('price')); new_status='verified' if ok else classification(reason); new_match='strong' if ok else ('rejected' if new_status=='rejected' else 'review')
    trusted+=int(ok); rejected+=int(new_status=='rejected'); reviewed+=int(new_status=='manual_review')
-   if row.get('status')!=new_status or row.get('match_status')!=new_match or row.get('validation_version')!='2.6' or row.get('validation_reason')!=reason:
-    row['status']=new_status; row['match_status']=new_match; row['validation_version']='2.6'; row['validation_reason']=reason; dirty=True; changed+=1
+   if row.get('status')!=new_status or row.get('match_status')!=new_match or row.get('validation_version')!='2.7' or row.get('validation_reason')!=reason:
+    row['status']=new_status; row['match_status']=new_match; row['validation_version']='2.7'; row['validation_reason']=reason; dirty=True; changed+=1
   if dirty:path.write_text(json.dumps(rows,indent=2))
  return {'changed':changed,'trusted_rows':trusted,'rejected_rows':rejected,'review_rows':reviewed}
 
 def observation(p,slug,r,pr,ts,status,reason,query_kind='generic'):
- return {'component_id':p['id'],'component':p['label'],'model':r.get('title') or p.get('model',''),'condition':r.get('condition'),'seller':r.get('source') or r.get('seller') or r.get('merchant'),'delivery':r.get('delivery'),'retailer':slug,'price':pr,'currency':'USD','source_url':source_url(r,(p.get('retailer_search_urls') or {}).get(slug,'')),'availability':'Shown in Google Shopping','status':status,'method':'serpapi_google_shopping','match_status':'strong' if status=='verified' else ('rejected' if status=='rejected' else 'review'),'validation_version':'2.6','validation_reason':reason,'query_kind':query_kind,'timestamp':ts,'notes':reason}
+ return {'component_id':p['id'],'component':p['label'],'model':r.get('title') or p.get('model',''),'condition':r.get('condition'),'seller':r.get('source') or r.get('seller') or r.get('merchant'),'delivery':r.get('delivery'),'retailer':slug,'price':pr,'currency':'USD','source_url':source_url(r,(p.get('retailer_search_urls') or {}).get(slug,'')),'availability':'Shown in Google Shopping','status':status,'method':'serpapi_google_shopping','match_status':'strong' if status=='verified' else ('rejected' if status=='rejected' else 'review'),'validation_version':'2.7','validation_reason':reason,'query_kind':query_kind,'timestamp':ts,'notes':reason}
 def search_query(p,ts=None):
  terms=STORAGE_QUERIES.get(p.get('id')) or p.get('search_terms') or [p.get('model') or p.get('label')]
  if len(terms)==1:return terms[0]
