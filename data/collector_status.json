@@ -1,26 +1,34 @@
 {
-  "checked_at": "2026-08-29T02:37:22.107045+00:00",
+  "checked_at": "2026-09-03T19:38:02.762600+00:00",
   "source": "serpapi_google_shopping",
-  "searches_attempted": 21,
-  "batch_size": 24,
-  "searchable_products": 21,
-  "verified_retailer_offers": 25,
-  "manual_review_candidates": 47,
-  "missing_retailer_results": 54,
+  "searches_attempted": 16,
+  "base_searches": 15,
+  "retailer_fallback_searches": 1,
+  "max_searches_per_run": 24,
+  "searchable_products": 15,
+  "verified_retailer_offers": 8,
+  "manual_review_candidates": 0,
+  "auto_rejected_results": 8,
+  "missing_retailer_results": 1,
   "check_failures": 0,
-  "existing_results_revalidated": 0,
+  "existing_results_revalidated": {
+    "changed": 0,
+    "trusted_rows": 3,
+    "rejected_rows": 9,
+    "review_rows": 0
+  },
   "quota": {
     "provider": "serpapi",
-    "month": "2026-08",
+    "month": "2026-09",
     "monthly_limit": 250,
     "reserve": 10,
     "planned_budget": 240,
-    "checks_used": 87,
-    "checks_remaining_to_plan": 153,
-    "checks_remaining_absolute": 163,
-    "last_updated": "2026-08-29T02:37:22.107045+00:00",
+    "checks_used": 16,
+    "checks_remaining_to_plan": 224,
+    "checks_remaining_absolute": 234,
+    "last_updated": "2026-09-03T19:38:02.762600+00:00",
     "source": "tracker_ledger",
-    "note": "Tracks SerpApi search attempts made by this repository; provider-dashboard usage outside this repo is not included."
+    "note": "Tracks SerpApi attempts made by this repository; provider-dashboard usage outside this repo is not included."
   },
-  "note": "Only strong model matches affect trusted prices; derived items consume no search quota. Quota ledger increments once per SerpApi search attempt."
+  "note": "Current Frieren build targets searched with product-specific strong-match rules. Manual-review/rejected rows never count as trusted prices."
 }

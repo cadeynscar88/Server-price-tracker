@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "optical-uhd",
+    "component": "Optical drive \u2014 Blu-ray/DVD, UHD-capable preferred",
+    "model": "Liteon Lite-On EB1 Ultra Slim External Blu-Ray UHD",
+    "condition": null,
+    "seller": "Newegg.com - JustFirst Store",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 115.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHD Blu-ray drive PC&prds=catalogid:6714085590482637431,productid:1291260407435828468,headlineOfferDocid:12094005062041121694,imageDocid:2280259552220096439,rds:PC_10560774416384627882|PROD_PC_10560774416384627882,gpcid:10560774416384627882,mid:576462751590129217,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "UHD/4K Blu-ray drive + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "UHD/4K Blu-ray drive + sane price"
+  }
+]

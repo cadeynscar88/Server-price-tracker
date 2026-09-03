@@ -274,5 +274,26 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-08-29T02:37:22.107045+00:00",
     "notes": "No acceptable Shopping result."
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future AI GPU \u2014 RTX 5090 32GB",
+    "model": "GIGABYTE - Windforce GeForce RTX 5090 OC 32GB GDDR7 Graphics Card Blackwell Architecture, Triple Fans, with HDMI Cable",
+    "condition": null,
+    "seller": "Best Buy",
+    "delivery": null,
+    "retailer": "bestbuy",
+    "price": 5299.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:3357102048069633057,headlineOfferDocid:3357102048069633057,imageDocid:15731831772443242659,rds:PC_45237817609205859|PROD_PC_45237817609205859,gpcid:45237817609205859,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX 5090 32GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "RTX 5090 32GB + sane price"
   }
 ]

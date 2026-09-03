@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "gpu-3090",
+    "component": "Interim AI GPU \u2014 RTX 3090 24GB air-cooled",
+    "model": "Gigabyte Geforce Rtx 3090 24gb Gddr6x Public Turbo Graphics Card",
+    "condition": null,
+    "seller": "eBay - globalphotographystore",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 1273.09,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=RTX 3090 24GB&prds=productid:12002180916015343787,headlineOfferDocid:12002180916015343787,imageDocid:765596435138048999,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX 3090 24GB candidate + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "RTX 3090 24GB candidate + sane price"
+  }
+]

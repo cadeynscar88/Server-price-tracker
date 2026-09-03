@@ -1,23 +1,515 @@
 [
-  {"id":"cpu-9950x3d","category":"CPU","label":"CPU — AMD Ryzen 9 9950X3D","model":"AMD Ryzen 9 9950X3D","manufacturer":"AMD","qty":1,"in_build":true,"search_enabled":true,"watch_urls":[],"search_terms":["AMD Ryzen 9 9950X3D"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=AMD+Ryzen+9+9950X3D","bestbuy":"https://www.bestbuy.com/site/searchpage.jsp?st=AMD+Ryzen+9+9950X3D","newegg":"https://www.newegg.com/p/pl?d=AMD+Ryzen+9+9950X3D"},"notes":"Purchased Sep 2 2026 for $619.99; continue tracking for price protection below purchase price.","kind":"component","price_source":"search","attrs":{"cores":16,"threads":32}},
-  {"id":"motherboard-taichi-white","category":"Motherboard","label":"Motherboard — ASRock X870E Taichi White","model":"ASRock X870E Taichi White","manufacturer":"ASRock","qty":1,"in_build":true,"search_enabled":false,"watch_urls":[],"search_terms":["ASRock X870E Taichi White"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=ASRock+X870E+Taichi+White"},"notes":"Purchased; four M.2 slots, 10GbE, Wi-Fi 7, USB4. Do not apply the old ProArt M.2 lane-sharing assumption.","kind":"component","price_source":"search","attrs":{"m2_slots":4,"ten_gbe":true,"usb4":true}},
-  {"id":"gpu-frieren-5070ti","category":"GPU / Gaming","label":"GPU — MSI RTX 5070 Ti Frieren Edition 16GB","model":"MSI GeForce RTX 5070 Ti Frieren Edition 16GB","manufacturer":"MSI","qty":1,"in_build":true,"search_enabled":false,"watch_urls":[],"search_terms":["MSI RTX 5070 Ti Frieren Edition 16GB"],"retailer_search_urls":{"newegg":"https://www.newegg.com/p/pl?d=MSI+RTX+5070+Ti+Frieren"},"notes":"Purchased; visual centerpiece. Future GPU #2 must not force this card to be hidden or visually subordinated.","kind":"component","price_source":"search","attrs":{"vram_gb":16}},
-  {"id":"case-o11-evo-rgb-white","category":"Case","label":"Case — Lian Li O11 Dynamic EVO RGB White","model":"Lian Li O11 Dynamic EVO RGB White","manufacturer":"Lian Li","qty":1,"in_build":true,"search_enabled":false,"watch_urls":[],"search_terms":["Lian Li O11 Dynamic EVO RGB White"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+O11+Dynamic+EVO+RGB+White"},"notes":"Purchased Sep 2 2026 for $139.99.","kind":"component","price_source":"search"},
-  {"id":"ram-royal-neo-64","category":"RAM","label":"RAM — G.Skill Trident Z5 Royal Neo Silver 64GB DDR5-6000 CL30","model":"G.Skill F5-6000J3036G32GX2-TR5NS","manufacturer":"G.Skill","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["F5-6000J3036G32GX2-TR5NS","Trident Z5 Royal Neo Silver 64GB 6000 CL30"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=F5-6000J3036G32GX2-TR5NS","newegg":"https://www.newegg.com/p/pl?d=F5-6000J3036G32GX2-TR5NS"},"notes":"Preferred final capacity: 2x32GB, AMD EXPO. <=$700 excellent; <=$800 buy territory subject to live verification.","kind":"component","price_source":"search","attrs":{"capacity_gb":64,"dimm_count":2,"speed_mt_s":6000,"cl":30}},
-  {"id":"ram-royal-neo-32","category":"RAM","label":"RAM — G.Skill Trident Z5 Royal Neo Silver 32GB DDR5-6000 CL28","model":"G.Skill F5-6000J2836G16GX2-TR5NS","manufacturer":"G.Skill","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["F5-6000J2836G16GX2-TR5NS","Trident Z5 Royal Neo Silver 32GB 6000 CL28"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=F5-6000J2836G16GX2-TR5NS","newegg":"https://www.newegg.com/p/pl?d=F5-6000J2836G16GX2-TR5NS"},"notes":"Aesthetic/interim alternative. <=$500 buy; <=$450 excellent; <=$400 exceptional.","kind":"component","price_source":"search","attrs":{"capacity_gb":32,"dimm_count":2,"speed_mt_s":6000,"cl":28}},
-  {"id":"ram-64gb-alt","category":"RAM","label":"RAM — 64GB 2x32 DDR5-6000 CL30/32 White EXPO alternatives","model":"64GB 2x32GB DDR5-6000 AMD EXPO white/RGB","manufacturer":"Multiple","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["64GB 2x32 DDR5 6000 CL30 EXPO white","64GB 2x32 DDR5 6000 CL32 EXPO white"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=64GB+DDR5+6000+CL30+EXPO","newegg":"https://www.newegg.com/p/pl?d=64GB+DDR5+6000+CL30+EXPO+white"},"notes":"Value route: Corsair Dominator Titanium/Vengeance RGB, TeamGroup Delta RGB, G.Skill Neo RGB. Strong target roughly $250-$350.","kind":"alternative_component","price_source":"search","attrs":{"capacity_gb":64,"dimm_count":2,"speed_mt_s":6000}},
-  {"id":"cooler-hydroshift-ii","category":"CPU Cooler","label":"AIO — Lian Li HydroShift II OLED Curved 360 P28 White","model":"Lian Li HydroShift II OLED Curved 360 P28 White","manufacturer":"Lian Li","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["Lian Li HydroShift II OLED Curved 360 P28 White"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=HydroShift+II+OLED+Curved+360+P28+White","newegg":"https://www.newegg.com/p/pl?d=Lian+Li+HydroShift+II+OLED+Curved+360+White"},"notes":"Preferred AIO. Below $270 strong; <=$250 exceptional.","kind":"component","price_source":"search","attrs":{"radiator_mm":360}},
-  {"id":"cooler-tryx-panorama-se","category":"CPU Cooler","label":"AIO alternative — TRYX Panorama SE 360 ARGB White","model":"TRYX Panorama SE 360 ARGB White L-P360L-AM3M-G0W","manufacturer":"TRYX","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["TRYX Panorama SE 360 ARGB White L-P360L-AM3M-G0W"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=TRYX+Panorama+SE+360+White"},"notes":"Alternative only when materially cheaper than HydroShift; manual observation $249.99 is reference, not current-live proof.","kind":"alternative_component","price_source":"search","attrs":{"radiator_mm":360}},
-  {"id":"psu-lianli-rs1200","category":"PSU","label":"PSU — Lian Li RS1200G/RS1200W 1200W White ATX 3.1","model":"Lian Li RS Series 1200W White ATX 3.1 with Hub","manufacturer":"Lian Li","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["Lian Li RS1200G White 1200W","Lian Li RS1200W White 1200W ATX 3.1"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+RS1200","newegg":"https://www.newegg.com/p/pl?d=Lian+Li+RS1200"},"notes":"Preferred current single-GPU PSU. <=$140 buy. Reassess 1500-1600W only if a high-power second GPU is actually committed.","kind":"component","price_source":"search","attrs":{"watts":1200,"atx_31":true}},
-  {"id":"fans-lianli-tl120-reverse","category":"Case Fans","label":"Fans — 6x Lian Li UNI FAN TL 120 Reverse White","model":"Lian Li UNI FAN TL 120 Reverse Blade White","manufacturer":"Lian Li","qty":6,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["Lian Li UNI FAN TL 120 Reverse White 3 pack","Lian Li TL120 Reverse White"],"retailer_search_urls":{"microcenter":"https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+TL120+Reverse+White","newegg":"https://www.newegg.com/p/pl?d=Lian+Li+TL120+Reverse+White"},"notes":"Premium fan target for side + bottom intake. Secondary-market six-fan bundle target roughly $100-$150 with controller/cables; <=$120 is strong.","kind":"component","price_source":"search","attrs":{"size_mm":120,"reverse_blade":true}},
-  {"id":"fans-value-reverse","category":"Case Fans","label":"Fans alternative — 6x white 120mm reverse-blade ARGB","model":"White 120mm reverse-blade ARGB fans, 2x 3-pack","manufacturer":"Multiple","qty":6,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["white reverse blade 120mm ARGB fan 3 pack Thermalright","white reverse blade 120mm fan 3 pack"],"retailer_search_urls":{"newegg":"https://www.newegg.com/p/pl?d=white+reverse+blade+120mm+fan+3+pack","walmart":"https://www.walmart.com/search?q=white+reverse+blade+120mm+fan+3+pack"},"notes":"Value route if premium Lian Li fan pricing is excessive.","kind":"alternative_component","price_source":"search","attrs":{"size_mm":120,"reverse_blade":true}},
-  {"id":"nvme-nm790-4tb","category":"Storage","label":"Storage — Lexar NM790 4TB TLC Gen4 NVMe","model":"Lexar NM790 4TB","manufacturer":"Lexar","qty":1,"in_build":true,"search_enabled":true,"watch_urls":[],"search_terms":["Lexar NM790 4TB"],"retailer_search_urls":{"amazon":"https://www.amazon.com/s?k=Lexar+NM790+4TB","newegg":"https://www.newegg.com/p/pl?d=Lexar+NM790+4TB"},"notes":"One purchased for $499.99; track exact second matching drive for future mirror.","kind":"component","price_source":"search","attrs":{"capacity_tb":4,"interface":"PCIe 4.0 x4","nand":"TLC"}},
-  {"id":"boot-os-nvme-1tb","category":"Storage","label":"Optional OS SSD — reputable ~1TB NVMe","model":"~1TB NVMe OS/boot SSD","manufacturer":"Multiple","qty":1,"in_build":false,"search_enabled":false,"watch_urls":[],"search_terms":["1TB NVMe SSD TLC"],"retailer_search_urls":{"newegg":"https://www.newegg.com/p/pl?d=1TB+NVMe+TLC"},"notes":"Architecturally recommended but explicitly not on deal watch yet.","kind":"optional_component","price_source":"search","attrs":{"capacity_tb":1}},
-  {"id":"optical-uhd","category":"Optical","label":"Optical drive — Blu-ray/DVD, UHD-capable preferred","model":"Blu-ray/DVD optical drive with UHD capability preferred","manufacturer":"Multiple","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["UHD Blu-ray drive PC","Blu-ray writer UHD friendly drive"],"retailer_search_urls":{"amazon":"https://www.amazon.com/s?k=UHD+Blu-ray+drive+PC","newegg":"https://www.newegg.com/p/pl?d=UHD+Blu-ray+drive"},"notes":"Needed for owned physical-media ingest; exact model/legal workflow evaluated before purchase/use.","kind":"component","price_source":"search"},
-  {"id":"gpu-3090","category":"Future AI GPU","label":"Interim AI GPU — RTX 3090 24GB air-cooled","model":"NVIDIA GeForce RTX 3090 24GB","manufacturer":"NVIDIA","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["RTX 3090 24GB"],"retailer_search_urls":{"ebay":"https://www.ebay.com/sch/i.html?_nkw=RTX+3090+24GB"},"notes":"Opportunistic interim AI card. <=$700 interesting/buy territory; <=$600 very strong. Prefer original air cooler and require testing/buyer protection.","kind":"future_component","price_source":"search","attrs":{"vram_gb":24}},
-  {"id":"gpu-5090","category":"Future AI GPU","label":"Future AI GPU — RTX 5090 32GB","model":"NVIDIA GeForce RTX 5090 32GB","manufacturer":"NVIDIA","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["NVIDIA RTX 5090 32GB"],"retailer_search_urls":{"bestbuy":"https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5090","newegg":"https://www.newegg.com/p/pl?d=RTX+5090"},"notes":"Fallback/value future heavy-AI candidate. Around <=$3000 serious; <=$2500 especially compelling.","kind":"future_component","price_source":"search","attrs":{"vram_gb":32}},
-  {"id":"gpu-pro5000-blackwell-48gb","category":"Future AI GPU","label":"Future AI GPU — RTX PRO 5000 Blackwell 48GB ECC","model":"NVIDIA RTX PRO 5000 Blackwell 48GB ECC","manufacturer":"NVIDIA","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["NVIDIA RTX PRO 5000 Blackwell 48GB"],"retailer_search_urls":{"bh":"https://www.bhphotovideo.com/c/search?Ntt=RTX%20PRO%205000%20Blackwell%2048GB&N=0&InitialSearch=yes","newegg":"https://www.newegg.com/p/pl?d=RTX+PRO+5000+Blackwell+48GB"},"notes":"Preferred long-term 48GB class target; around <=$5000 becomes meaningful.","kind":"future_component","price_source":"search","attrs":{"vram_gb":48,"ecc":true}},
-  {"id":"gpu-a6000-48gb","category":"Future AI GPU","label":"Future AI GPU — RTX A6000 48GB ECC","model":"NVIDIA RTX A6000 48GB ECC","manufacturer":"NVIDIA","qty":1,"in_build":false,"search_enabled":true,"watch_urls":[],"search_terms":["NVIDIA RTX A6000 48GB"],"retailer_search_urls":{"ebay":"https://www.ebay.com/sch/i.html?_nkw=NVIDIA+RTX+A6000+48GB"},"notes":"Used/value 48GB target. <=$3500 attention; <=$3200 strong; <=$3000 exceptional.","kind":"future_component","price_source":"search","attrs":{"vram_gb":48,"ecc":true}},
-  {"id":"gpu-pro6000-blackwell-96gb","category":"Future AI GPU","label":"Wildcard AI GPU — RTX PRO 6000 Blackwell 96GB ECC","model":"NVIDIA RTX PRO 6000 Blackwell 96GB ECC","manufacturer":"NVIDIA","qty":1,"in_build":false,"search_enabled":false,"watch_urls":[],"search_terms":["NVIDIA RTX PRO 6000 Blackwell 96GB"],"retailer_search_urls":{"bh":"https://www.bhphotovideo.com/c/search?Ntt=RTX%20PRO%206000%20Blackwell%2096GB&N=0&InitialSearch=yes"},"notes":"Aspirational wildcard. Keep out of routine quota rotation unless pricing materially changes.","kind":"future_component","price_source":"search","attrs":{"vram_gb":96,"ecc":true}},
-  {"id":"ups","category":"UPS","label":"UPS — high-capacity pure-sine unit, later","model":"UPS sized after final system power envelope","manufacturer":"Multiple","qty":1,"in_build":false,"search_enabled":false,"watch_urls":[],"search_terms":["pure sine UPS 1500W"],"retailer_search_urls":{"amazon":"https://www.amazon.com/s?k=pure+sine+UPS+1500W"},"notes":"Deferred until final PSU/GPU power envelope is settled.","kind":"deferred_component","price_source":"search"}
+  {
+    "id": "cpu-9950x3d",
+    "category": "CPU",
+    "label": "CPU \u2014 AMD Ryzen 9 9950X3D",
+    "model": "AMD Ryzen 9 9950X3D",
+    "manufacturer": "AMD",
+    "qty": 1,
+    "in_build": true,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "AMD Ryzen 9 9950X3D"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=AMD+Ryzen+9+9950X3D",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=AMD+Ryzen+9+9950X3D",
+      "newegg": "https://www.newegg.com/p/pl?d=AMD+Ryzen+9+9950X3D"
+    },
+    "notes": "Purchased Sep 2 2026 for $619.99; continue tracking for price protection below purchase price.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "cores": 16,
+      "threads": 32
+    }
+  },
+  {
+    "id": "motherboard-taichi-white",
+    "category": "Motherboard",
+    "label": "Motherboard \u2014 ASRock X870E Taichi White",
+    "model": "ASRock X870E Taichi White",
+    "manufacturer": "ASRock",
+    "qty": 1,
+    "in_build": true,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "ASRock X870E Taichi White"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=ASRock+X870E+Taichi+White"
+    },
+    "notes": "Purchased; four M.2 slots, 10GbE, Wi-Fi 7, USB4. Do not apply the old ProArt M.2 lane-sharing assumption.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "m2_slots": 4,
+      "ten_gbe": true,
+      "usb4": true
+    }
+  },
+  {
+    "id": "gpu-frieren-5070ti",
+    "category": "GPU / Gaming",
+    "label": "GPU \u2014 MSI RTX 5070 Ti Frieren Edition 16GB",
+    "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB",
+    "manufacturer": "MSI",
+    "qty": 1,
+    "in_build": true,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "MSI RTX 5070 Ti Frieren Edition 16GB"
+    ],
+    "retailer_search_urls": {
+      "newegg": "https://www.newegg.com/p/pl?d=MSI+RTX+5070+Ti+Frieren"
+    },
+    "notes": "Purchased; visual centerpiece. Future GPU #2 must not force this card to be hidden or visually subordinated.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 16
+    }
+  },
+  {
+    "id": "case-o11-evo-rgb-white",
+    "category": "Case",
+    "label": "Case \u2014 Lian Li O11 Dynamic EVO RGB White",
+    "model": "Lian Li O11 Dynamic EVO RGB White",
+    "manufacturer": "Lian Li",
+    "qty": 1,
+    "in_build": true,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "Lian Li O11 Dynamic EVO RGB White"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+O11+Dynamic+EVO+RGB+White"
+    },
+    "notes": "Purchased Sep 2 2026 for $139.99.",
+    "kind": "component",
+    "price_source": "search"
+  },
+  {
+    "id": "ram-royal-neo-64",
+    "category": "RAM",
+    "label": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 64GB DDR5-6000 CL30",
+    "model": "G.Skill F5-6000J3036G32GX2-TR5NS",
+    "manufacturer": "G.Skill",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "F5-6000J3036G32GX2-TR5NS",
+      "Trident Z5 Royal Neo Silver 64GB 6000 CL30"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=F5-6000J3036G32GX2-TR5NS",
+      "newegg": "https://www.newegg.com/p/pl?d=F5-6000J3036G32GX2-TR5NS"
+    },
+    "notes": "Preferred final capacity: 2x32GB, AMD EXPO. <=$700 excellent; <=$800 buy territory subject to live verification.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "capacity_gb": 64,
+      "dimm_count": 2,
+      "speed_mt_s": 6000,
+      "cl": 30
+    }
+  },
+  {
+    "id": "ram-royal-neo-32",
+    "category": "RAM",
+    "label": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 32GB DDR5-6000 CL28",
+    "model": "G.Skill F5-6000J2836G16GX2-TR5NS",
+    "manufacturer": "G.Skill",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "F5-6000J2836G16GX2-TR5NS",
+      "Trident Z5 Royal Neo Silver 32GB 6000 CL28"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=F5-6000J2836G16GX2-TR5NS",
+      "newegg": "https://www.newegg.com/p/pl?d=F5-6000J2836G16GX2-TR5NS"
+    },
+    "notes": "Aesthetic/interim alternative. <=$500 buy; <=$450 excellent; <=$400 exceptional.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "capacity_gb": 32,
+      "dimm_count": 2,
+      "speed_mt_s": 6000,
+      "cl": 28
+    }
+  },
+  {
+    "id": "ram-64gb-alt",
+    "category": "RAM",
+    "label": "RAM \u2014 64GB 2x32 DDR5-6000 CL30/32 White EXPO alternatives",
+    "model": "64GB 2x32GB DDR5-6000 AMD EXPO white/RGB",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "64GB 2x32 DDR5 6000 CL30 EXPO white",
+      "64GB 2x32 DDR5 6000 CL32 EXPO white"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=64GB+DDR5+6000+CL30+EXPO",
+      "newegg": "https://www.newegg.com/p/pl?d=64GB+DDR5+6000+CL30+EXPO+white"
+    },
+    "notes": "Value route: Corsair Dominator Titanium/Vengeance RGB, TeamGroup Delta RGB, G.Skill Neo RGB. Strong target roughly $250-$350.",
+    "kind": "alternative_component",
+    "price_source": "search",
+    "attrs": {
+      "capacity_gb": 64,
+      "dimm_count": 2,
+      "speed_mt_s": 6000
+    }
+  },
+  {
+    "id": "cooler-hydroshift-ii",
+    "category": "CPU Cooler",
+    "label": "AIO \u2014 Lian Li HydroShift II OLED Curved 360 P28 White",
+    "model": "Lian Li HydroShift II OLED Curved 360 P28 White",
+    "manufacturer": "Lian Li",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Lian Li HydroShift II OLED Curved 360 P28 White"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=HydroShift+II+OLED+Curved+360+P28+White",
+      "newegg": "https://www.newegg.com/p/pl?d=Lian+Li+HydroShift+II+OLED+Curved+360+White"
+    },
+    "notes": "Preferred AIO. Below $270 strong; <=$250 exceptional.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "radiator_mm": 360
+    }
+  },
+  {
+    "id": "cooler-tryx-panorama-se",
+    "category": "CPU Cooler",
+    "label": "AIO alternative \u2014 TRYX Panorama SE 360 ARGB White",
+    "model": "TRYX Panorama SE 360 ARGB White L-P360L-AM3M-G0W",
+    "manufacturer": "TRYX",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "TRYX Panorama SE 360 ARGB White L-P360L-AM3M-G0W"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=TRYX+Panorama+SE+360+White"
+    },
+    "notes": "Alternative only when materially cheaper than HydroShift; manual observation $249.99 is reference, not current-live proof.",
+    "kind": "alternative_component",
+    "price_source": "search",
+    "attrs": {
+      "radiator_mm": 360
+    }
+  },
+  {
+    "id": "psu-lianli-rs1200",
+    "category": "PSU",
+    "label": "PSU \u2014 Lian Li RS1200G/RS1200W 1200W White ATX 3.1",
+    "model": "Lian Li RS Series 1200W White ATX 3.1 with Hub",
+    "manufacturer": "Lian Li",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Lian Li RS1200G White 1200W",
+      "Lian Li RS1200W White 1200W ATX 3.1"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+RS1200",
+      "newegg": "https://www.newegg.com/p/pl?d=Lian+Li+RS1200"
+    },
+    "notes": "Preferred current single-GPU PSU. <=$140 buy. Reassess 1500-1600W only if a high-power second GPU is actually committed.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "watts": 1200,
+      "atx_31": true
+    }
+  },
+  {
+    "id": "fans-lianli-tl120-reverse",
+    "category": "Case Fans",
+    "label": "Fans \u2014 6x Lian Li UNI FAN TL 120 Reverse White",
+    "model": "Lian Li UNI FAN TL 120 Reverse Blade White",
+    "manufacturer": "Lian Li",
+    "qty": 6,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Lian Li UNI FAN TL 120 Reverse White 3 pack",
+      "Lian Li TL120 Reverse White"
+    ],
+    "retailer_search_urls": {
+      "microcenter": "https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+TL120+Reverse+White",
+      "newegg": "https://www.newegg.com/p/pl?d=Lian+Li+TL120+Reverse+White"
+    },
+    "notes": "Premium fan target for side + bottom intake. Secondary-market six-fan bundle target roughly $100-$150 with controller/cables; <=$120 is strong.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "size_mm": 120,
+      "reverse_blade": true
+    }
+  },
+  {
+    "id": "fans-value-reverse",
+    "category": "Case Fans",
+    "label": "Fans alternative \u2014 6x white 120mm reverse-blade ARGB",
+    "model": "White 120mm reverse-blade ARGB fans, 2x 3-pack",
+    "manufacturer": "Multiple",
+    "qty": 6,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "white reverse blade 120mm ARGB fan 3 pack Thermalright",
+      "white reverse blade 120mm fan 3 pack"
+    ],
+    "retailer_search_urls": {
+      "newegg": "https://www.newegg.com/p/pl?d=white+reverse+blade+120mm+fan+3+pack",
+      "walmart": "https://www.walmart.com/search?q=white+reverse+blade+120mm+fan+3+pack"
+    },
+    "notes": "Value route if premium Lian Li fan pricing is excessive.",
+    "kind": "alternative_component",
+    "price_source": "search",
+    "attrs": {
+      "size_mm": 120,
+      "reverse_blade": true
+    }
+  },
+  {
+    "id": "nvme-nm790-4tb",
+    "category": "Storage",
+    "label": "Storage \u2014 Lexar NM790 4TB TLC Gen4 NVMe",
+    "model": "Lexar NM790 4TB",
+    "manufacturer": "Lexar",
+    "qty": 1,
+    "in_build": true,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "Lexar NM790 4TB"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=Lexar+NM790+4TB",
+      "newegg": "https://www.newegg.com/p/pl?d=Lexar+NM790+4TB"
+    },
+    "notes": "One purchased for $499.99; track exact second matching drive for future mirror.",
+    "kind": "component",
+    "price_source": "search",
+    "attrs": {
+      "capacity_tb": 4,
+      "interface": "PCIe 4.0 x4",
+      "nand": "TLC"
+    }
+  },
+  {
+    "id": "boot-os-nvme-1tb",
+    "category": "Storage",
+    "label": "Optional OS SSD \u2014 reputable ~1TB NVMe",
+    "model": "~1TB NVMe OS/boot SSD",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "1TB NVMe SSD TLC"
+    ],
+    "retailer_search_urls": {
+      "newegg": "https://www.newegg.com/p/pl?d=1TB+NVMe+TLC"
+    },
+    "notes": "Architecturally recommended but explicitly not on deal watch yet.",
+    "kind": "optional_component",
+    "price_source": "search",
+    "attrs": {
+      "capacity_tb": 1
+    }
+  },
+  {
+    "id": "optical-uhd",
+    "category": "Optical",
+    "label": "Optical drive \u2014 Blu-ray/DVD, UHD-capable preferred",
+    "model": "Blu-ray/DVD optical drive with UHD capability preferred",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "UHD Blu-ray drive PC",
+      "Blu-ray writer UHD friendly drive"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=UHD+Blu-ray+drive+PC",
+      "newegg": "https://www.newegg.com/p/pl?d=UHD+Blu-ray+drive"
+    },
+    "notes": "Needed for owned physical-media ingest; exact model/legal workflow evaluated before purchase/use.",
+    "kind": "component",
+    "price_source": "search"
+  },
+  {
+    "id": "gpu-3090",
+    "category": "Future AI GPU",
+    "label": "Interim AI GPU \u2014 RTX 3090 24GB air-cooled",
+    "model": "NVIDIA GeForce RTX 3090 24GB",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "RTX 3090 24GB"
+    ],
+    "retailer_search_urls": {
+      "ebay": "https://www.ebay.com/sch/i.html?_nkw=RTX+3090+24GB"
+    },
+    "notes": "Opportunistic interim AI card. <=$700 interesting/buy territory; <=$600 very strong. Prefer original air cooler and require testing/buyer protection.",
+    "kind": "future_component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 24
+    }
+  },
+  {
+    "id": "gpu-5090",
+    "category": "Future AI GPU",
+    "label": "Future AI GPU \u2014 RTX 5090 32GB",
+    "model": "NVIDIA GeForce RTX 5090 32GB",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "NVIDIA RTX 5090 32GB"
+    ],
+    "retailer_search_urls": {
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5090",
+      "newegg": "https://www.newegg.com/p/pl?d=RTX+5090"
+    },
+    "notes": "Fallback/value future heavy-AI candidate. Around <=$3000 serious; <=$2500 especially compelling.",
+    "kind": "future_component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 32
+    }
+  },
+  {
+    "id": "gpu-pro5000-blackwell-48gb",
+    "category": "Future AI GPU",
+    "label": "Future AI GPU \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "NVIDIA RTX PRO 5000 Blackwell 48GB"
+    ],
+    "retailer_search_urls": {
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=RTX%20PRO%205000%20Blackwell%2048GB&N=0&InitialSearch=yes",
+      "newegg": "https://www.newegg.com/p/pl?d=RTX+PRO+5000+Blackwell+48GB"
+    },
+    "notes": "Preferred long-term 48GB class target; around <=$5000 becomes meaningful.",
+    "kind": "future_component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 48,
+      "ecc": true
+    }
+  },
+  {
+    "id": "gpu-a6000-48gb",
+    "category": "Future AI GPU",
+    "label": "Future AI GPU \u2014 RTX A6000 48GB ECC",
+    "model": "NVIDIA RTX A6000 48GB ECC",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": true,
+    "watch_urls": [],
+    "search_terms": [
+      "NVIDIA RTX A6000 48GB"
+    ],
+    "retailer_search_urls": {
+      "ebay": "https://www.ebay.com/sch/i.html?_nkw=NVIDIA+RTX+A6000+48GB"
+    },
+    "notes": "Used/value 48GB target. <=$3500 attention; <=$3200 strong; <=$3000 exceptional.",
+    "kind": "future_component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 48,
+      "ecc": true
+    }
+  },
+  {
+    "id": "gpu-pro6000-blackwell-96gb",
+    "category": "Future AI GPU",
+    "label": "Wildcard AI GPU \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC",
+    "manufacturer": "NVIDIA",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "NVIDIA RTX PRO 6000 Blackwell 96GB"
+    ],
+    "retailer_search_urls": {
+      "bh": "https://www.bhphotovideo.com/c/search?Ntt=RTX%20PRO%206000%20Blackwell%2096GB&N=0&InitialSearch=yes"
+    },
+    "notes": "Aspirational wildcard. Keep out of routine quota rotation unless pricing materially changes.",
+    "kind": "future_component",
+    "price_source": "search",
+    "attrs": {
+      "vram_gb": 96,
+      "ecc": true
+    }
+  },
+  {
+    "id": "ups",
+    "category": "UPS",
+    "label": "UPS \u2014 high-capacity pure-sine unit, later",
+    "model": "UPS sized after final system power envelope",
+    "manufacturer": "Multiple",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "pure sine UPS 1500W"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=pure+sine+UPS+1500W"
+    },
+    "notes": "Deferred until final PSU/GPU power envelope is settled.",
+    "kind": "deferred_component",
+    "price_source": "search"
+  }
 ]

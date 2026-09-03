@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future AI GPU \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA GeForce RTX Pro 4500 Blackwell Single-Fan AI & Workstation Graphics Card",
+    "condition": null,
+    "seller": "B&H Photo-Video-Audio",
+    "delivery": "Free delivery by Tue",
+    "retailer": "bh",
+    "price": 4799.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=catalogid:2494433655135240117,productid:9056478443960174559,headlineOfferDocid:8869417790095129558,imageDocid:18111526105876537710,rds:PC_1444313868275301662|PROD_PC_1444313868275301662,gpcid:1444313868275301662,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "different model/variant"
+  }
+]

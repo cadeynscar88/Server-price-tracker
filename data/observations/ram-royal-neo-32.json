@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "ram-royal-neo-32",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 32GB DDR5-6000 CL28",
+    "model": "TeamGroup 16GB DDR5 6000 Desktop Memory Kit flbd516g6000hc38adc01",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 239.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=F5-6000J2836G16GX2-TR5NS&prds=catalogid:8052004494400945339,productid:4394879205382913915,headlineOfferDocid:7719666778303207194,imageDocid:11329703453698334629,rds:PC_8794137409519407230|PROD_PC_8794137409519407230,gpcid:8794137409519407230,mid:576462898583475333,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "required exact-model terms missing"
+  }
+]

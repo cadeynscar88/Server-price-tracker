@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future AI GPU \u2014 RTX A6000 48GB ECC",
+    "model": "Dell Chtg8 Nvidia Rtx A6000 Gpu 48gb 10752 Cuda Cores Graphics Card",
+    "condition": null,
+    "seller": "eBay - teksavers",
+    "delivery": "Free delivery",
+    "retailer": "ebay",
+    "price": 4117.07,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:1288431393984278211,headlineOfferDocid:1288431393984278211,imageDocid:18108636649901850233,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "RTX A6000 48GB + sane price"
+  }
+]

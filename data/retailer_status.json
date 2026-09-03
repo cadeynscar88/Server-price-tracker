@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:36:13.083769+00:00",
+  "generated_at": "2026-09-03T19:39:36.594773+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -13,29 +13,29 @@
     {
       "id": "newegg",
       "name": "Newegg",
-      "state": "gray",
-      "status": "no trusted verified price",
-      "last_verified_at": null,
-      "last_verified_price": null,
-      "latest_check_status": "rejected"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
+      "last_verified_price": 699.0,
+      "latest_check_status": "verified"
     },
     {
       "id": "walmart",
       "name": "Walmart",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 5319.05,
+      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
+      "last_verified_price": 30.99,
       "latest_check_status": "verified"
     },
     {
       "id": "bestbuy",
       "name": "Best Buy",
-      "state": "gray",
-      "status": "no trusted verified price",
-      "last_verified_at": null,
-      "last_verified_price": null,
-      "latest_check_status": "rejected"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
+      "last_verified_price": 699.0,
+      "latest_check_status": "verified"
     },
     {
       "id": "bh",

@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "ram-royal-neo-64",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 64GB DDR5-6000 CL30",
+    "model": "G.Skill Trident Z5 Neo Series 32GB 288-Pin PC RAM DDR5 6000 Desktop Memory Model F5-6000J3036F16GX2-TZ5NRW",
+    "condition": null,
+    "seller": "Walmart - Newegg Inc.",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 619.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Trident Z5 Royal Neo Silver 64GB 6000 CL30&prds=catalogid:6496215821510807107,productid:5834499037783144641,headlineOfferDocid:13261647265046376720,imageDocid:11321719346760912564,rds:PC_7733733037902735162|PROD_PC_7733733037902735162,gpcid:7733733037902735162,mid:576462892322772987,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-03T19:38:02.762600+00:00",
+    "notes": "required exact-model terms missing"
+  }
+]
