@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-03T19:34:13.837799+00:00",
+  "generated": "2026-09-03T19:36:13.053565+00:00",
   "last_check": "2026-08-29T02:37:22.107045+00:00",
-  "tracker_version": "2.9.0",
+  "tracker_version": "2.10.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-03",
   "confirmed_build": {
@@ -70,6 +70,79 @@
   },
   "confirmed_hardware_subtotal_ex_tax_usd": 3084.93,
   "remaining_budget_to_target_usd": 915.07,
+  "completion_cost_models": {
+    "project_completion": {
+      "label": "Project Completion",
+      "description": "Core Frieren tower complete and usable. Excludes deferred server infrastructure and future Heavy AI GPU.",
+      "base_confirmed_usd": 3084.93,
+      "estimated_remaining": [
+        {
+          "item": "64GB DDR5-6000 CL30 EXPO RAM",
+          "low_usd": 400,
+          "high_usd": 500
+        },
+        {
+          "item": "360mm premium white AIO",
+          "low_usd": 250,
+          "high_usd": 300
+        },
+        {
+          "item": "1200W ATX 3.1 PSU",
+          "low_usd": 140,
+          "high_usd": 140
+        },
+        {
+          "item": "6x white 120mm case fans",
+          "low_usd": 60,
+          "high_usd": 100
+        }
+      ],
+      "estimated_total_low_usd": 3934.93,
+      "estimated_total_high_usd": 4124.93,
+      "budget_target_usd": 4000
+    },
+    "server_completion": {
+      "label": "Server Completion",
+      "description": "Project Completion plus planned server extras: separate OS SSD, optical ingest, UPS, two security keys, second NM790 mirror drive, and long-term Heavy AI GPU. Prices are planning estimates until exact SKUs/live offers are selected.",
+      "inherits": "project_completion",
+      "extras": [
+        {
+          "item": "~1TB OS/hypervisor NVMe",
+          "low_usd": 50,
+          "high_usd": 80
+        },
+        {
+          "item": "Blu-ray/DVD optical ingest drive",
+          "low_usd": 80,
+          "high_usd": 150
+        },
+        {
+          "item": "UPS sized after final power envelope",
+          "low_usd": 300,
+          "high_usd": 500
+        },
+        {
+          "item": "2x FIDO2/WebAuthn security keys",
+          "low_usd": 116,
+          "high_usd": 130
+        },
+        {
+          "item": "Second matching Lexar NM790 4TB mirror drive",
+          "low_usd": 400,
+          "high_usd": 500
+        },
+        {
+          "item": "Heavy AI GPU planning allowance \u2014 RTX PRO 5000 Blackwell 48GB preferred",
+          "low_usd": 4500,
+          "high_usd": 5000,
+          "note": "Planning allowance only; tracked alternatives include used A6000 48GB, RTX 5090 32GB, opportunistic RTX 3090 24GB, and PRO 6000 96GB wildcard."
+        }
+      ],
+      "estimated_total_low_usd": 9380.93,
+      "estimated_total_high_usd": 10484.93,
+      "heavy_gpu_included": true
+    }
+  },
   "ram_strategy": {
     "required": true,
     "initial_strategy": "Prefer 64GB 2x32 DDR5-6000 CL30 EXPO; 32GB Royal Neo remains acceptable aesthetic/interim path.",

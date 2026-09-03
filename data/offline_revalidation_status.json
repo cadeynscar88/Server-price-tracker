@@ -1,8 +1,8 @@
 {
-  "revalidated_at": "2026-09-03T19:34:13.781444+00:00",
+  "revalidated_at": "2026-09-03T19:36:12.998252+00:00",
   "api_calls": 0,
   "quota_consumed": 0,
-  "changed": 12,
+  "changed": 0,
   "trusted_rows": 3,
   "rejected_rows": 9,
   "review_rows": 0,
