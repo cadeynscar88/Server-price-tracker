@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T19:30:16.501216+00:00",
+  "generated": "2026-09-03T19:34:13.837799+00:00",
   "last_check": "2026-08-29T02:37:22.107045+00:00",
   "tracker_version": "2.9.0",
   "target_budget": 4000,
@@ -206,8 +206,8 @@
         "match_status": "strong",
         "timestamp": "2026-08-29T02:37:22.107045+00:00",
         "notes": "exact model match",
-        "validation_version": "2.7",
-        "validation_reason": "exact model/condition + sane price"
+        "validation_version": "2.9",
+        "validation_reason": "RTX 5090 32GB + sane price"
       },
       "min": 5319.05,
       "max": 5319.05,
