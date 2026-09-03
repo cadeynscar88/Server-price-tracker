@@ -1,0 +1,16 @@
+{
+  "updated":"2026-09-03",
+  "purpose":"Manual observations from the Frieren PC deal-watch conversation. These are reference observations, not claims of current live availability unless explicitly marked verified_live.",
+  "observations":[
+    {"category":"RAM","model":"G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28","mpn":"F5-6000J2836G16GX2-TR5NS","observed_price_usd":604.68,"source":"user screenshot","date":"2026-09-03","verdict":"WAIT/SKIP","verified_live":false,"thresholds":{"buy_lte":500,"excellent_lte":450,"exceptional_lte":400}},
+    {"category":"RAM","model":"G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28","mpn":"F5-6000J2836G16GX2-TR5NS","observed_price_usd":529.99,"source":"Micro Center Houston prior observation","date":"2026-09-02","availability":"sold out at observation","verdict":"WAIT","verified_live":false},
+    {"category":"AIO","model":"TRYX Panorama SE 360 ARGB White","mpn":"L-P360L-AM3M-G0W","observed_price_usd":249.99,"source":"Micro Center screenshot","verdict":"GOOD/WAIT versus preferred HydroShift","verified_live":false},
+    {"category":"PSU","model":"Lian Li RS1200G/RS1200W 1200W White ATX 3.1","observed_price_usd":139.99,"source":"prior live cart observation","verdict":"BUY at this level","verified_live":false,"thresholds":{"buy_lte":140}},
+    {"category":"SSD","model":"Lexar NM790 4TB TLC Gen4 NVMe","observed_price_usd":499.99,"source":"confirmed purchase","verdict":"OWNED; reference for second matching mirror","verified_live":false},
+    {"category":"SSD","model":"Samsung 990 EVO Plus 4TB","observed_price_usd":500,"source":"user marketplace screenshot","date":"2026-09-03","verdict":"SKIP","verified_live":false,"reconsider_lte_range_usd":[350,400]},
+    {"category":"GPU","model":"ASUS TUF RTX 4090 OC 24GB","observed_price_usd":800,"source":"OfferUp Foley AL listing/user screenshots","date":"2026-09-03","verdict":"REJECT AS VIABLE DEAL pending strong verification; suspicious seller/listing signals","verified_live":false},
+    {"category":"GPU bundle","model":"Gigabyte RTX 3090 OC 24GB + Minisforum eGPU dock + Gigabyte 750W PSU","observed_price_usd":1200,"source":"user marketplace screenshot","date":"2026-09-03","verdict":"SKIP; no separate deals; included PSU not useful as main system PSU","verified_live":false,"reconsider_bundle_range_usd":[850,950]},
+    {"category":"Fans","model":"Lian Li 120mm TL UNI lot","quantity":6,"source":"user marketplace screenshot","date":"2026-09-03","verdict":"GOOD LEAD only if correct blade orientation/controller/cables; ask seller","verified_live":false,"target_bundle_range_usd":[100,150],"buy_lte_usd":120},
+    {"category":"CPU","model":"AMD Ryzen 9 9950X3D","observed_price_usd":619.99,"source":"confirmed Micro Center Houston purchase","date":"2026-09-02","verdict":"OWNED; price-protection reference","verified_live":false}
+  ]
+}
