@@ -12,7 +12,7 @@ status={
   'api_calls':0,
   'quota_consumed':0,
   **result,
-  'validation_version':'2.3',
+  'validation_version':'2.7',
   'note':'Historical observations were reclassified locally. No SerpApi request was made.'
 }
 (DATA/'offline_revalidation_status.json').write_text(json.dumps(status,indent=2))
