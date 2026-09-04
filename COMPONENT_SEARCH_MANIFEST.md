@@ -1,132 +1,198 @@
 # Server Price Tracker — Canonical Component Search Manifest
 
-This file is the human-readable recovery list for the tracker. If product data, search terms, or app state are ever lost, rebuild the tracked component list from this document.
+This file is the human-readable recovery list for the current tracker. If product data, search terms, or app state are ever lost, rebuild the tracked component list from this document.
 
-Last architecture consolidation: 2026-08-28
-Tracker schema: v2.1
-Target Stage-1 budget: $2,400 all-in where practical.
+Last architecture consolidation: 2026-09-04  
+Tracker schema: v2.11  
+Project: Frieren gaming PC / private-server hybrid  
+Aesthetic: white / black / champagne-gold. **Frieren is only the nickname for the MSI RTX 5070 Ti Frieren Edition GPU. The overall PC is not Frieren-themed, and the factory anime artwork is being covered by a custom marble backplate.**
 
-## Stage 1 — actively searched / dynamically selected
+## Confirmed / purchased / ordered hardware
 
-### Fixed core
-- CPU: AMD Ryzen 9 9950X
-- Motherboard: ASUS ProArt X870E-CREATOR WIFI
-- Case: Lian Li LANCOOL 217 Black
-- Boot SSD: one approved 500/512GB 2.5-inch SATA TLC SSD; never consume an M.2 slot for boot.
+- CPU: AMD Ryzen 9 9950X3D — purchased Sep 2 2026. Receipt-confirmed project record: $679.99.
+- Motherboard: ASRock X870E Taichi White — purchased $429.99.
+- Motherboard protection plan: $74.99.
+- Gaming / Light GPU: MSI GeForce RTX 5070 Ti Frieren Edition 16GB — currently returnable; treat $1,300 as current refundable purchase value.
+- Case: Lian Li O11 Dynamic EVO RGB White — purchased $139.99.
+- Main data SSD: Lexar NM790 4TB TLC Gen4 — one purchased at $499.99; continue watching exact second matching drive for future mirror.
+- PSU: ASRock Phantom Gaming PG-1600G 1600W — ordered from Newegg for $199.99, currently backordered/pending receipt. ATX 3.1 / PCIe 5.1, fully modular, dual native 12V-2x6, 10-year warranty.
 
-### RAM — dynamic
-- 96GB DDR5 2x48GB non-ECC — optimal/base target
-- 96GB DDR5 true ECC UDIMM 2x48GB — ECC branch
-- 128GB DDR5 2x64GB non-ECC — upgrade target
-- 128GB DDR5 true ECC UDIMM 2x64GB — ECC upgrade branch
-- 64GB DDR5 2x32GB — budget fallback
-- Prefer low-profile, stability-oriented kits. Favor 128GB when <=25% premium over comparable 96GB. Favor true ECC UDIMM when <=20% premium over comparable non-ECC. ECC and non-ECC are tracked as separate branches so the collector cannot silently discard the ECC premium.
+Current refundable hardware subtotal excluding the already-owned/purchased NM790: $2,824.95.  
+Current confirmed hardware including the NM790: $3,324.94.
 
-### GPU / local AI — dynamic
-- NVIDIA GeForce RTX 5070 Ti 16GB — budget/value
-- NVIDIA RTX PRO 4000 Blackwell 24GB — preferred 24GB class reference
-- NVIDIA GeForce RTX 5090 32GB — optimal class when price is sane
-- NVIDIA RTX PRO 4500 Blackwell 32GB — workstation alternative
-- Two RTX 5070 Ti 16GB cards — explicit scenario only when exact physical fit, PCIe lanes, PSU cabling, UPS load, thermals and total-system economics pass
-- Hard GPU price ceiling: $3,000 unless manually overridden.
+## Frieren return-window / RTX 4090 watch
 
-### Primary NVMe — approved TLC families
-4TB pool, buy two matching drives for preferred mirror:
-- Lexar NM790 4TB
-- WD_BLACK SN850X 4TB
-- Kingston KC3000 4TB
-- Crucial T500 4TB
-- Samsung 990 PRO 4TB — deal-only premium
+Frieren was likely purchased Sunday Aug 30 2026; receipt date still needs final verification. Until then use **Sep 28 2026 as the safe internal decision deadline**.
 
-2TB pool, buy four matching drives only when economics justify it:
-- Lexar NM790 2TB
-- WD_BLACK SN850X 2TB
-- Kingston KC3000 2TB
-- Crucial T500 2TB
-- Samsung 990 PRO 2TB — deal-only premium
+Default outcome: **KEEP FRIEREN** unless a genuinely compelling RTX 4090 appears.
 
-2x4TB remains preferred. Recommend 4x2TB only when it saves at least about $200; require about $250 savings when a second GPU is actually selected. TLC required.
+### RTX 4090 thresholds
+- <= $1,950: exceptional / BUY NOW territory after verification.
+- $1,950–$2,100: BUY territory.
+- $2,100–$2,200: only for an unusually strong example with excellent condition/history/protection.
+- > $2,200: WAIT / keep Frieren for this project.
 
-### Boot SSD — SATA only
-- Samsung 870 EVO 500GB
-- Crucial MX500 500GB
-- Kingston KC600 512GB
-- 500/512GB target; 250GB allowed if substantially cheaper; 1TB allowed if within roughly $10–15 of comparable 500GB.
-- Do not use an M.2 boot SSD. All four motherboard M.2 positions remain available for primary data storage.
+### RTX 4090 requirements
+- Healthy, functioning card.
+- Buyer protection / returns strongly preferred because the current PC is not yet assembled for immediate personal testing.
+- Exact model and PCB must be identified.
+- Confirm compatible full-cover waterblock before purchase if water conversion is planned.
+- Original air cooler strongly preferred and should be retained for reversibility/resale.
+- Do not accept parts-only, repaired, or no-protection cards merely to hit a price target.
 
-### CPU cooler — dynamic
-- Noctua NH-D15 G2 — premium/reliability reference
-- Thermalright Phantom Spirit 120 EVO — value reference
-- Favor Noctua when premium is roughly $60 or less; otherwise Thermalright can win.
-- Final selection must pass RAM-height clearance in LANCOOL 217.
+### RTX 4090 market history/reference added Sep 4 2026
+- Jawa 12-month average sale price: $2,144 across 90 sales; 12-month range $1,700–$3,000; 15% volatility.
+- eBay sold ASUS ROG Strix RTX 4090 B-grade: $1,999.99 on Jun 13 2026.
+- OfferUp sold RTX 4090 FE example: $2,000.
+- Current Jawa visible listing floor at research time: about $2,800 — PASS for this project.
 
-### PSU — dynamic and GPU-dependent
-1000W baseline:
-- Corsair RM1000x ATX 3.1
-- MSI MAG A1000GL PCIE5 / current ATX 3.1 revision
-1200W upgrade:
-- Seasonic VERTEX GX-1200 ATX 3.1
-Requirements: reputable platform, fully modular, native 12V-2x6 when selected GPU requires it, correct independent cabling for every GPU. Favor 1200W when premium is <=$75 or required by selected GPU configuration.
+## RAM — primary target is now 96GB
 
-### UPS — dynamic and calculated-load-dependent
-- CyberPower CP1500PFCLCD — 1500VA / 1000W pure-sine baseline
-- CyberPower PR1500LCD — 1500VA / 1500W higher-output fallback
-- Apply 20% output headroom to estimated server peak. If the baseline 1000W UPS cannot satisfy that margin, the 1500W branch is selected.
-- UPS purpose is graceful shutdown, not prolonged runtime.
-- Must support server-visible shutdown signaling and built-in surge protection.
+### Primary exact kit
+**G.Skill Trident Z5 Royal Neo Silver 96GB (2x48GB) DDR5-6000 CL28**  
+MPN: **F5-6000J2836F48GX2-TR5NS**
 
-### Offline Stage-1 backup
-- One approved 2TB TLC SSD, derived from the same approved 2TB pool instead of spending another SerpApi search.
-- Removable/offline except during deliberate backup operations.
-- May be repurposed into Stage-2 vault storage if health/endurance check passes.
-- Health Check must flag insufficient backup capacity before protected data outgrows the device.
+Exact specs:
+- 96GB total, 2x48GB.
+- DDR5-6000.
+- CL28-36-36-96.
+- 1.35V.
+- AMD EXPO.
+- Silver mirror / white-build-compatible finish.
+- G.Skill QVL includes ASRock X870E Taichi-class boards; final BIOS/QVL validation still required before purchase.
 
-## Full-system scenarios evaluated by the tracker
-- 1x RTX 5070 Ti 16GB
-- 2x RTX 5070 Ti 16GB
-- 1x RTX PRO 4000 Blackwell 24GB
-- 1x RTX 5090 32GB
-- 1x RTX PRO 4500 Blackwell 32GB
+### Current pricing Sep 4 2026
+- Amazon user screenshot: **$1,959.99**, in stock.
+- Newegg user screenshot + independent web revalidation: **$2,099.99**, in stock.
 
-Each scenario dynamically selects RAM, cooler, storage layout, PSU and UPS before calculating its total. A component is not considered a deal if supporting hardware makes the full system a worse value.
+Verdict at current pricing: WAIT / PASS.
 
-## Stage 1 — required but not price searched
-- LANCOOL 217 factory fans: use included 2x170mm front, 2x120mm GPU/shroud and 1x140mm rear initially. Additional case fan cost = $0 unless testing/failure justifies replacement.
-- SD/microSD/USB/USB-C/Ethernet dongle: already owned; dedicated UHS-II reader optional later.
-- Optical drive: user-supplied / local purchase if needed; not worth tracker complexity.
-- Integrated 10GbE: provided by ASUS ProArt X870E-CREATOR WIFI.
-- Integrated USB4: provided by motherboard.
+### Buy thresholds
+- <= $1,600: alert and investigate.
+- $1,400–$1,500: strong BUY territory if exact SKU/seller/warranty verify.
+- <= $1,300: exceptional / BUY NOW territory.
 
-## Security / production requirements
-- Primary data encrypted at rest.
-- Removable backup encrypted independently.
-- Remote traffic encrypted in transit.
-- Read-only operations do NOT require physical security key: browse, stream, download, search, AI analysis.
-- Any operation that changes server data DOES require FIDO2/WebAuthn hardware-key authorization: upload, edit, overwrite, rename, move, delete, create/delete folders, server-stored metadata changes.
-- Admin/security changes require hardware key plus stronger authentication.
-- Normal write authorization must not permit deletion of protected snapshots/backups.
-- Enroll two hardware security keys before production: primary + recovery.
-- Keep separate break-glass encryption recovery material.
+### Historical exact-SKU pricing
+Pangoly exact-SKU history for F5-6000J2836F48GX2-TR5NS:
+- All-time tracked low: $429.99 at Newegg, May 15 2025.
+- Tracked historical average: about $852.
+- Prior Newegg level immediately before Jul 27 2026 increase: $999.99.
+- Best Buy: $1,799.99 Jul 28 2026.
+- Best Buy: $1,899.99 Jul 31 2026.
+- Newegg: $2,099.99 Sep 2 2026.
+- Best Buy: $2,099.99 Sep 3 2026.
 
-## Motherboard lane / storage sanity rule
-- Preferred 2x4TB mirror: M.2_1 + M.2_3.
-- Keep M.2_2 empty when practical because it shares bandwidth with PCIEX16(G5)_2.
-- M.2_4 remains free in the preferred layout.
-- 4x2TB is valid and intentionally supported; it occupies all four M.2 slots and accepts the associated second-GPU lane tradeoff.
+These historical values are context only; they do not automatically trigger BUY NOW without live verification.
 
-## Deferred until after initial server startup/hardening
-- Remote backup vault computer + vault SSD
-- Protectli/OPNsense firewall purchase
-- Wi-Fi access point
-These must not block Stage-1 tracker readiness or contaminate Stage-1 build totals.
+### 96GB alternatives
+Search premium white/silver/gold 2x48GB DDR5-6000 CL30 alternatives from G.Skill, Corsair Dominator Titanium/Vengeance, TeamGroup and other reputable vendors. Prefer AMD EXPO or proven AM5 compatibility. Do not default back to 32GB. 64GB 2x32 remains fallback only if 96GB availability/compatibility changes or pricing becomes extraordinarily compelling.
 
-## Tracker trust and preflight rules
+Avoid 4-DIMM 96/128GB arrangements when a suitable 2-DIMM kit exists unless there is a specific reason.
+
+## CPU cooler
+
+Primary: **Lian Li HydroShift II OLED Curved 360 P28 White**.
+- Below $270: strong.
+- <= $250: exceptional.
+
+Alternative: **TRYX Panorama SE 360 ARGB White** when materially cheaper or otherwise unusually compelling.
+
+CPU cooling remains an independent premium 360mm AIO. Do not combine CPU and GPU into one custom loop by default.
+
+## Case fans
+
+Primary visual/performance direction: 6x white 120mm reverse-blade intake fans for side + bottom, preferably Lian Li UNI FAN TL Reverse White. Secondary-market six-fan bundle target roughly $100–$150 with controller/cables; <=$120 is strong.
+
+## Storage
+
+Current architecture:
+- Separate OS/apps NVMe, roughly 1TB, inexpensive but reputable. Windows 11 Pro bare metal first.
+- Existing Lexar NM790 4TB = persistent server data.
+- Future second exact NM790 4TB = mirror partner.
+- Keep remaining M.2 capacity for expansion.
+
+Black Friday storage deals are preferred where practical. If later storage deals make a different drive allocation compelling, preserve the architectural rule that OS/apps and persistent server data remain logically separated.
+
+## Motherboard / dual-GPU architecture
+
+Authoritative motherboard: **ASRock X870E Taichi White**.
+
+Relevant traits:
+- Two CPU-connected PCIe 5.0 x16 physical slots.
+- Ryzen 9000/7000 supports x16 single or x8/x8 dual.
+- 10GbE.
+- Wi-Fi 7.
+- Two rear USB4 40Gbps Type-C.
+- Four M.2 slots.
+- Up to 256GB RAM.
+
+Do not carry forward old ASUS ProArt or LANCOOL lane/storage assumptions.
+
+## Light / Heavy GPU roles
+
+### Light / gaming GPU
+Until Heavy is purchased, the Light GPU is primarily a gaming GPU and also runs the two Mid/Light local models when available.
+
+Current default: MSI RTX 5070 Ti Frieren Edition 16GB.  
+Possible upgrade only if compelling: RTX 4090 24GB.
+
+Do not overbuild Light solely for AI. Heavy will eventually absorb the serious high-VRAM AI role.
+
+### Heavy GPU
+Heavy exact model is intentionally **not committed** and is expected roughly 1–2 years out. Continue watching:
+- NVIDIA RTX PRO 5000 Blackwell 48GB ECC — attention around <=$5,000.
+- Used NVIDIA RTX A6000 48GB ECC — <=$3,500 attention, <=$3,200 strong, <=$3,000 exceptional.
+- RTX 5090 32GB — roughly <=$3,000 attention, <=$2,500 especially compelling.
+- RTX PRO 6000 Blackwell 96GB ECC — wildcard only if an extraordinary legitimate deal appears.
+
+The future Heavy should ideally be physically compact / true dual-slot-class where practical. Final PSU and electrical headroom must be revalidated once Heavy is actually selected.
+
+## PSU
+
+Current PSU is no longer dynamic: **ASRock Phantom Gaming PG-1600G 1600W** ordered for $199.99 and backordered.
+
+Recent Pangoly history:
+- $199.99 Aug 23 2026.
+- $215.99 Aug 25 / Aug 27.
+- $245.03 Aug 30.
+
+Do not routinely search replacement PSUs unless a future Heavy GPU materially changes the architecture.
+
+## Water-cooling / show-build direction
+
+The PC should remain showy rather than utilitarian while preserving reliability:
+- Clear coolant.
+- Clear visible tubing / hardline where practical.
+- White D5 pump/reservoir with RGB; LCD option attractive.
+- Gold/chrome/champagne fittings and rotaries.
+- Visible flow/temperature monitoring.
+- White radiator.
+- Warm white/champagne normal lighting with full RGB capability.
+- Avoid opaque coolant.
+- Do not mix aluminum into a copper/nickel coolant path.
+
+Preferred case loop layout if a custom GPU loop is used:
+- Top 360mm CPU AIO exhaust.
+- Side 360mm GPU radiator.
+- Bottom intake fans.
+- Rear exhaust.
+
+## Deal-search rules
+
+For every serious deal:
+- Verify live listing, exact model/SKU, seller, condition, warranty/returns, shipping/local pickup, and actual availability.
+- Search broad U.S. retail plus reputable used/open-box/refurbished sources.
+- Prioritize Micro Center Houston where relevant.
+- Search Houston/Humble/North Houston local opportunities and separate Mississippi Gulf Coast / Mobile-area opportunities.
+- Search eBay, Facebook Marketplace when searchable, OfferUp, Mercari, Jawa, MBPC.gg, ShopGoodwill, GovDeals, HiBid, Craigslist and reputable local sellers.
+- Search snippets and price trackers are leads, not proof of a live deal.
+- Do not infer blocked retailer prices.
+- BUY NOW requires unusually strong pricing **and** strong verification.
+
+## Tracker trust rules
+
 - Never fabricate a price.
-- Only exact/strong product matches may affect totals.
-- SerpApi observations count only when status=verified and match_status=strong.
-- Ambiguous results are manual_review and excluded from totals.
-- Reject used, refurbished, renewed, pre-owned, open-box and obvious accessory/system-result contamination.
-- ECC RAM results must explicitly confirm ECC UDIMM/unbuffered and are kept separate from non-ECC branches.
-- Derived backup pricing consumes no API search quota.
-- Before any SerpApi call, scripts/validate_tracker.py must pass. It checks product IDs, dynamic-group references, storage capacity, four-M.2 architecture, SATA boot policy, FIDO2 write policy and the API run cap.
-- Exact GPU dimensions, slot thickness, TGP and connectors still require final exact-SKU sanity review before purchase.
+- Manual user screenshots can be stored as verified observations when exact item/retailer/price are visible.
+- Historical price records must be labeled historical/reference and must not masquerade as live prices.
+- Current purchased/ordered hardware supersedes retired target components.
+- Preserve exact product IDs across `data/products.json`, `data/config.json`, `data/reference_prices.json`, and per-item observation history.
