@@ -1,0 +1,22 @@
+[
+  {
+    "component_id":"psu-asrock-pg1600g",
+    "component":"PSU — ASRock Phantom Gaming PG-1600G 1600W",
+    "model":"ASRock Phantom Gaming PG-1600G",
+    "condition":"New",
+    "seller":"Newegg",
+    "retailer":"newegg",
+    "price":199.99,
+    "currency":"USD",
+    "source_url":"https://www.newegg.com/p/pl?d=ASRock+PG-1600G",
+    "availability":"Ordered; backordered/pending receipt",
+    "status":"verified",
+    "method":"confirmed_purchase_plus_web_research",
+    "match_status":"verified",
+    "validation_version":"2.11",
+    "validation_reason":"Exact PG-1600G model and confirmed order price. Independent current web references also surfaced $199.99-level pricing.",
+    "query_kind":"exact_sku_purchase",
+    "timestamp":"2026-09-04T21:35:00+00:00",
+    "notes":"Ordered for $199.99. Recent Pangoly history: $199.99 Aug 23, $215.99 Aug 25/27, $245.03 Aug 30. ATX 3.1 / PCIe 5.1, fully modular, dual native 12V-2x6, 10-year warranty."
+  }
+]
