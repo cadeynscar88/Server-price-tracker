@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:39:36.594773+00:00",
+  "generated_at": "2026-09-04T06:29:18.730460+00:00",
   "retailers": [
     {
       "id": "amazon",
@@ -15,16 +15,16 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
-      "last_verified_price": 699.0,
-      "latest_check_status": "verified"
+      "last_verified_at": "2026-09-04T06:28:28.583298+00:00",
+      "last_verified_price": 35.9,
+      "latest_check_status": "rejected"
     },
     {
       "id": "walmart",
       "name": "Walmart",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
+      "last_verified_at": "2026-09-04T06:28:28.583298+00:00",
       "last_verified_price": 30.99,
       "latest_check_status": "verified"
     },
@@ -33,8 +33,8 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-09-03T19:38:02.762600+00:00",
-      "last_verified_price": 699.0,
+      "last_verified_at": "2026-09-04T06:28:28.583298+00:00",
+      "last_verified_price": 667.0,
       "latest_check_status": "verified"
     },
     {
@@ -49,11 +49,11 @@
     {
       "id": "microcenter",
       "name": "Micro Center",
-      "state": "red",
+      "state": "gray",
       "status": "no trusted verified price",
       "last_verified_at": null,
       "last_verified_price": null,
-      "latest_check_status": "not_found"
+      "latest_check_status": "rejected"
     }
   ],
   "freshness_policy": {

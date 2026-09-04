@@ -19,5 +19,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-03T19:38:02.762600+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "ram-royal-neo-64",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 64GB DDR5-6000 CL30",
+    "model": "G.SKILL Flare X5 16GB 288-Pin PC RAM DDR5 6000 Desktop Memory Model F5-6000j3038f8gh2-fx5",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 264.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=F5-6000J3036G32GX2-TR5NS&prds=catalogid:3736959846228652933,productid:478516403972837157,headlineOfferDocid:13057719005510580456,imageDocid:16827033899829258250,rds:PC_16887617988404009154|PROD_PC_16887617988404009154,gpcid:16887617988404009154,mid:576462895434257415,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-04T06:28:28.583298+00:00",
+    "notes": "required exact-model terms missing"
   }
 ]

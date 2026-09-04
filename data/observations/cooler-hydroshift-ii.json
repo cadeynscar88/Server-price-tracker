@@ -19,5 +19,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-03T19:38:02.762600+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360 P28 White",
+    "model": "Lian Li Hydroshift II-S 360 CL ARGB Liquid CPU Cooler 360mm AIO",
+    "condition": null,
+    "seller": "Walmart - Newegg Inc.",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 179.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li HydroShift II OLED Curved 360 P28 White&prds=catalogid:7129275476078990851,productid:1289986089078314280,headlineOfferDocid:7138189535367894359,imageDocid:7276290890191555594,rds:PC_6127148096731835471|PROD_PC_6127148096731835471,gpcid:16379152318297081254,mid:576462896358975874,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-04T06:28:28.583298+00:00",
+    "notes": "required exact-model terms missing"
   }
 ]

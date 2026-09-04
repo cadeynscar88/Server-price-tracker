@@ -19,5 +19,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-03T19:38:02.762600+00:00",
     "notes": "RTX 3090 24GB candidate + sane price"
+  },
+  {
+    "component_id": "gpu-3090",
+    "component": "Interim AI GPU \u2014 RTX 3090 24GB air-cooled",
+    "model": "Gigabyte GeForce RTX 3090 Gaming OC 24gb GDDR6X Graphics Card",
+    "condition": null,
+    "seller": "eBay",
+    "delivery": "Free delivery",
+    "retailer": "ebay",
+    "price": 599.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=RTX 3090 24GB&prds=catalogid:15046220606730496232,productid:7005675364388771622,headlineOfferDocid:9864937206076353578,imageDocid:1875204377880485961,rds:PC_5746897419086648451|PROD_PC_5746897419086648451,gpcid:5746897419086648451,mid:576462391503468739,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX 3090 24GB candidate + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-04T06:28:28.583298+00:00",
+    "notes": "RTX 3090 24GB candidate + sane price"
   }
 ]

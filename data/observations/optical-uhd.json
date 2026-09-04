@@ -19,5 +19,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-03T19:38:02.762600+00:00",
     "notes": "UHD/4K Blu-ray drive + sane price"
+  },
+  {
+    "component_id": "optical-uhd",
+    "component": "Optical drive \u2014 Blu-ray/DVD, UHD-capable preferred",
+    "model": "3D Blu-ray DVD Player Writer External USB3.0 Interface 4K Blu Ray Drive for PC Desktop Application",
+    "condition": null,
+    "seller": "Newegg.com - PixelCore",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 146.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Blu-ray writer UHD friendly drive&prds=productid:14271856358032324596,headlineOfferDocid:14271856358032324596,imageDocid:3046234563744636718,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "UHD/4K Blu-ray drive + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-04T06:28:28.583298+00:00",
+    "notes": "UHD/4K Blu-ray drive + sane price"
   }
 ]
