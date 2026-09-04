@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-09-04",
+  "scope": "US high-end 1500-1650W PSU market relevant to final 9950X3D + RTX 5070 Ti Frieren + future RTX 5090 configuration",
+  "methodology": "Dated retail observations only. Exact recommended SKUs are used where they existed; older Corsair HX1500i revisions are retained as same-family market context. AX1600i is used only as a clearly marked 2021 predecessor-class proxy because HX1500i did not launch until July 2022. No missing quarterly prices are invented.",
+  "recommendations": [
+    {"rank":1,"id":"psu-hx1500i-2025","model":"Corsair HX1500i 2025","watts":1500,"efficiency":"Platinum","standard":"ATX 3.1 / PCIe 5.1","current_price":349.99,"buy_at_or_below":350,"good_to":390,"notes":"Primary recommendation; dual 12V-2x6, strong white/sleeved cable ecosystem, 200mm case-compatible length."},
+    {"rank":2,"id":"psu-tf3-1650","model":"Thermaltake Toughpower TF3 1650W","watts":1650,"efficiency":"Titanium","standard":"ATX 3.1 / PCIe 5.1","current_price":409.99,"buy_at_or_below":400,"good_to":425,"notes":"Maximum headroom/value alternative; current Thermaltake direct price is $409.99 but sold out at research time."},
+    {"rank":3,"id":"psu-ai1600t","model":"MSI MEG Ai1600T PCIE5","watts":1600,"efficiency":"Titanium","standard":"ATX 3.1 / PCIe 5.1","current_price":619.99,"buy_at_or_below":500,"good_to":550,"notes":"Premium electrical option; current competitive street listing around $619.99, MSI direct $769.99."}
+  ],
+  "history": [
+    {"date":"2021-07-15","price":599.00,"model":"Corsair AX1600i","seller":"Micro Center reported local retail","kind":"predecessor_proxy","confidence":"medium","source":"Reddit contemporaneous report","note":"Pre-HX1500i 1600W Titanium market proxy; not an HX1500i price."},
+    {"date":"2021-07-15","price":550.00,"model":"Corsair AX1600i","seller":"Newegg reported typical new price","kind":"predecessor_proxy","confidence":"medium","source":"Reddit contemporaneous report","note":"Pre-HX1500i proxy; community-reported typical new Newegg price."},
+    {"date":"2022-07-12","price":399.99,"model":"Corsair HX1500i 2022","seller":"MSRP/launch context","kind":"family_history","confidence":"high","source":"Corsair launch + 2024 NZXT comparison sheet","note":"HX1500i family launch generation; later ATX revisions differ from 2025 recommendation."},
+    {"date":"2022-10-14","price":380.00,"model":"Corsair HX1500i 2022","seller":"Newegg","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
+    {"date":"2022-12-19","price":319.00,"model":"Corsair HX1500i 2022","seller":"Newegg","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
+    {"date":"2023-02-05","price":399.99,"model":"Corsair HX1500i","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded high"},
+    {"date":"2023-09-27","price":229.99,"model":"Corsair HX1500i","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2023-12-02","price":240.00,"model":"Corsair HX1500i","seller":"Amazon","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
+    {"date":"2024-01-01","price":224.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2025-08-18","price":239.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
+    {"date":"2025-08-25","price":249.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
+    {"date":"2025-09-04","price":279.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
+    {"date":"2026-03-21","price":325.49,"model":"Corsair HX1500i 2025","seller":"Amazon tracked","kind":"exact_recommendation","confidence":"high","source":"PriceHistory.app recorded low"},
+    {"date":"2026-08-27","price":581.31,"model":"MSI MEG Ai1600T","seller":"Newegg Sellers","kind":"exact_recommendation","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2026-08-28","price":349.99,"model":"Corsair HX1500i 2025","seller":"US retail","kind":"exact_recommendation","confidence":"high","source":"Corsair/Pangoly"},
+    {"date":"2026-09-04","price":349.99,"model":"Corsair HX1500i 2025","seller":"Corsair","kind":"exact_recommendation","confidence":"high","source":"Corsair official"},
+    {"date":"2026-09-04","price":409.99,"model":"Thermaltake Toughpower TF3 1650W","seller":"Thermaltake","kind":"exact_recommendation","confidence":"high","source":"Thermaltake official","note":"Sold out at research time."},
+    {"date":"2026-09-04","price":619.99,"model":"MSI MEG Ai1600T","seller":"competitive street listing","kind":"exact_recommendation","confidence":"high","source":"Pangoly/Best Buy market observation"}
+  ],
+  "coverage_note": "A strict three-points-per-year five-year series cannot be produced honestly for the exact 2025/2026 recommended SKUs because they did not exist for most of the requested period and defensible US retail snapshots are sparse in 2024. The tracker therefore stores every defensible dated observation found rather than fabricating quarterly points."
+}
