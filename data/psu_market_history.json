@@ -1,12 +1,57 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "research_date": "2026-09-04",
-  "scope": "US high-end 1500-1650W PSU market relevant to final 9950X3D + RTX 5070 Ti Frieren + future RTX 5090 configuration",
-  "methodology": "Dated retail observations only. Exact recommended SKUs are used where they existed; older Corsair HX1500i revisions are retained as same-family market context. AX1600i is used only as a clearly marked 2021 predecessor-class proxy because HX1500i did not launch until July 2022. No missing quarterly prices are invented.",
+  "scope": "US high-end 1500-1650W PSU market relevant to the Frieren 9950X3D system, with a future single Heavy GPU selected by value/VRAM rather than a fixed GPU model.",
+  "methodology": "Dated retail observations only. Exact recommended SKUs are used where they existed. Older revisions/families are retained only as clearly marked context. Store-specific Micro Center pricing is labeled as such. No missing quarterly prices are invented.",
   "recommendations": [
-    {"rank":1,"id":"psu-hx1500i-2025","model":"Corsair HX1500i 2025","watts":1500,"efficiency":"Platinum","standard":"ATX 3.1 / PCIe 5.1","current_price":349.99,"buy_at_or_below":350,"good_to":390,"notes":"Primary recommendation; dual 12V-2x6, strong white/sleeved cable ecosystem, 200mm case-compatible length."},
-    {"rank":2,"id":"psu-tf3-1650","model":"Thermaltake Toughpower TF3 1650W","watts":1650,"efficiency":"Titanium","standard":"ATX 3.1 / PCIe 5.1","current_price":409.99,"buy_at_or_below":400,"good_to":425,"notes":"Maximum headroom/value alternative; current Thermaltake direct price is $409.99 but sold out at research time."},
-    {"rank":3,"id":"psu-ai1600t","model":"MSI MEG Ai1600T PCIE5","watts":1600,"efficiency":"Titanium","standard":"ATX 3.1 / PCIe 5.1","current_price":619.99,"buy_at_or_below":500,"good_to":550,"notes":"Premium electrical option; current competitive street listing around $619.99, MSI direct $769.99."}
+    {
+      "rank": 1,
+      "id": "psu-tf3-1650",
+      "model": "Thermaltake Toughpower TF3 1650W",
+      "watts": 1650,
+      "efficiency": "Titanium",
+      "standard": "ATX 3.1 / PCIe 5.1",
+      "current_price": 409.99,
+      "buy_at_or_below": 410,
+      "good_to": 435,
+      "notes": "Best current end-state headroom/value balance. Thermaltake direct $409.99 sale, sold out at research time. Two native high-power GPU connections. Aftermarket direct-modular cables are available made-to-order; PSU-specific pinout verification required."
+    },
+    {
+      "rank": 2,
+      "id": "psu-hx1500i-2025",
+      "model": "Corsair HX1500i 2025",
+      "watts": 1500,
+      "efficiency": "Platinum",
+      "standard": "ATX 3.1 / PCIe 5.1",
+      "current_price": 349.99,
+      "buy_at_or_below": 350,
+      "good_to": 370,
+      "notes": "Best cable ecosystem and lowest current cost among the top four. Dual 12V-2x6, 10-year warranty, and extensive official Corsair Type-4 white sleeved cable support including a white 600W 12V-2x6 cable."
+    },
+    {
+      "rank": 3,
+      "id": "psu-tc-1650t",
+      "model": "ASRock Taichi TC-1650T",
+      "watts": 1650,
+      "efficiency": "Titanium",
+      "standard": "ATX 3.1 / PCIe 5.1",
+      "current_price": 399.99,
+      "buy_at_or_below": 370,
+      "good_to": 400,
+      "notes": "Excellent 1650W Titanium option with 10-year warranty, 180mm depth, up to 235% excursion support and TempGuard on native 12V-2x6. A $369.99 market listing was observed on 2026-09-04; mainstream listings were $399.99. Custom direct-modular cabling is available from made-to-order vendors, but no broad official white/gold kit ecosystem was found."
+    },
+    {
+      "rank": 4,
+      "id": "psu-leadex-ti-1600-atx31",
+      "model": "Super Flower Leadex Titanium 1600W ATX 3.1",
+      "watts": 1600,
+      "efficiency": "Titanium",
+      "standard": "ATX 3.1",
+      "current_price": 399.99,
+      "buy_at_or_below": 350,
+      "good_to": 400,
+      "notes": "1600W Titanium, two 16-pin PCIe cables, 10-year warranty, 220mm depth. Micro Center has shown aggressive store-specific discounts below list price; availability varies by store. Custom PSU-specific direct-modular cabling is available made-to-order."
+    }
   ],
   "history": [
     {"date":"2021-07-15","price":599.00,"model":"Corsair AX1600i","seller":"Micro Center reported local retail","kind":"predecessor_proxy","confidence":"medium","source":"Reddit contemporaneous report","note":"Pre-HX1500i 1600W Titanium market proxy; not an HX1500i price."},
@@ -15,18 +60,34 @@
     {"date":"2022-10-14","price":380.00,"model":"Corsair HX1500i 2022","seller":"Newegg","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
     {"date":"2022-12-19","price":319.00,"model":"Corsair HX1500i 2022","seller":"Newegg","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
     {"date":"2023-02-05","price":399.99,"model":"Corsair HX1500i","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded high"},
+    {"date":"2023-02-07","price":799.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg Sellers","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium 1600W family context; not the current ATX 3.1 revision."},
     {"date":"2023-09-27","price":229.99,"model":"Corsair HX1500i","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded low"},
     {"date":"2023-12-02","price":240.00,"model":"Corsair HX1500i","seller":"Amazon","kind":"family_history","confidence":"high","source":"Slickdeals dated price table"},
     {"date":"2024-01-01","price":224.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2024-04-29","price":289.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly recorded low","note":"Older Leadex Titanium family proxy, not ATX 3.1 SKU."},
+    {"date":"2024-08-03","price":289.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium family proxy."},
+    {"date":"2024-10-07","price":289.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium family proxy."},
+    {"date":"2024-11-21","price":329.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium family proxy."},
+    {"date":"2025-01-16","price":329.95,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg Sellers","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium family proxy."},
+    {"date":"2025-01-21","price":699.99,"model":"Super Flower Leadex Titanium 1600W family","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly","note":"Older Leadex Titanium family proxy; illustrates large seller/availability swings."},
     {"date":"2025-08-18","price":239.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
     {"date":"2025-08-25","price":249.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
     {"date":"2025-09-04","price":279.99,"model":"Corsair HX1500i 2023","seller":"Newegg","kind":"family_history","confidence":"high","source":"Pangoly price change"},
+    {"date":"2025-11-01","price":399.99,"model":"ASRock Taichi TC-1650T","seller":"Newegg","kind":"exact_recommendation","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2025-12-15","price":735.22,"model":"ASRock Taichi TC-1650T","seller":"Best Buy marketplace","kind":"exact_recommendation","confidence":"high","source":"Pangoly recorded high"},
+    {"date":"2026-03-19","price":431.99,"model":"ASRock Taichi TC-1650T","seller":"Best Buy marketplace","kind":"exact_recommendation","confidence":"high","source":"Pangoly price change"},
     {"date":"2026-03-21","price":325.49,"model":"Corsair HX1500i 2025","seller":"Amazon tracked","kind":"exact_recommendation","confidence":"high","source":"PriceHistory.app recorded low"},
-    {"date":"2026-08-27","price":581.31,"model":"MSI MEG Ai1600T","seller":"Newegg Sellers","kind":"exact_recommendation","confidence":"high","source":"Pangoly recorded low"},
+    {"date":"2026-05-04","price":429.99,"model":"ASRock Taichi TC-1650T","seller":"Newegg","kind":"exact_recommendation","confidence":"high","source":"Pangoly price change"},
+    {"date":"2026-06-15","price":399.99,"model":"ASRock Taichi TC-1650T","seller":"Newegg","kind":"exact_recommendation","confidence":"high","source":"Pangoly price change"},
     {"date":"2026-08-28","price":349.99,"model":"Corsair HX1500i 2025","seller":"US retail","kind":"exact_recommendation","confidence":"high","source":"Corsair/Pangoly"},
-    {"date":"2026-09-04","price":349.99,"model":"Corsair HX1500i 2025","seller":"Corsair","kind":"exact_recommendation","confidence":"high","source":"Corsair official"},
-    {"date":"2026-09-04","price":409.99,"model":"Thermaltake Toughpower TF3 1650W","seller":"Thermaltake","kind":"exact_recommendation","confidence":"high","source":"Thermaltake official","note":"Sold out at research time."},
-    {"date":"2026-09-04","price":619.99,"model":"MSI MEG Ai1600T","seller":"competitive street listing","kind":"exact_recommendation","confidence":"high","source":"Pangoly/Best Buy market observation"}
+    {"date":"2026-09-04","price":349.99,"model":"Corsair HX1500i 2025","seller":"Corsair / Best Buy","kind":"exact_recommendation","confidence":"high","source":"Corsair official + Best Buy"},
+    {"date":"2026-09-04","price":409.99,"model":"Thermaltake Toughpower TF3 1650W","seller":"Thermaltake","kind":"exact_recommendation","confidence":"high","source":"Thermaltake official","note":"Sale price; sold out at research time."},
+    {"date":"2026-09-04","price":399.99,"model":"ASRock Taichi TC-1650T","seller":"Newegg / Best Buy marketplace","kind":"exact_recommendation","confidence":"high","source":"Best Buy + Pangoly"},
+    {"date":"2026-09-04","price":369.99,"model":"ASRock Taichi TC-1650T","seller":"market listing","kind":"exact_recommendation","confidence":"medium","source":"UFDForge price check","note":"Observed lower market listing; verify seller/stock before purchase."},
+    {"date":"2026-09-04","price":399.99,"model":"Super Flower Leadex Titanium 1600W ATX 3.1","seller":"Micro Center list price","kind":"exact_recommendation","confidence":"high","source":"Micro Center","note":"Exact ATX 3.1 SKU SF-1600F14HT AT; store-specific discounts have been observed below this price."},
+    {"date":"2026-09-04","price":359.99,"model":"Super Flower Leadex Titanium 1600W ATX 3.1","seller":"Micro Center store-specific observation","kind":"exact_recommendation","confidence":"medium","source":"Micro Center indexed store result","note":"In-store-only promotional price; availability/store dependent."},
+    {"date":"2026-09-04","price":323.99,"model":"Super Flower Leadex Titanium 1600W ATX 3.1","seller":"Micro Center store-specific observation","kind":"exact_recommendation","confidence":"medium","source":"Micro Center indexed store result","note":"In-store-only promotional price; availability/store dependent."},
+    {"date":"2026-09-04","price":259.19,"model":"Super Flower Leadex Titanium 1600W ATX 3.1","seller":"Micro Center store-specific observation","kind":"exact_recommendation","confidence":"medium","source":"Micro Center indexed store result","note":"Exceptional in-store-only promotional observation; do not treat as national/current price without store verification."}
   ],
-  "coverage_note": "A strict three-points-per-year five-year series cannot be produced honestly for the exact 2025/2026 recommended SKUs because they did not exist for most of the requested period and defensible US retail snapshots are sparse in 2024. The tracker therefore stores every defensible dated observation found rather than fabricating quarterly points."
+  "coverage_note": "The top four current candidates are now tracked. Exact-model history is sparse because TF3 and the current ATX 3.1 Leadex revision are new; Corsair older HX1500i revisions and older Leadex Titanium 1600W models are shown only as labeled family context. ASRock TC-1650T has exact-model history from late 2025 onward. No synthetic quarterly history is used."
 }
