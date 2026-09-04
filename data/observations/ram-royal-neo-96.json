@@ -1,0 +1,42 @@
+[
+  {
+    "component_id":"ram-royal-neo-96",
+    "component":"RAM — G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model":"G.Skill F5-6000J2836F48GX2-TR5NS",
+    "condition":"New",
+    "seller":"Amazon",
+    "retailer":"amazon",
+    "price":1959.99,
+    "currency":"USD",
+    "source_url":"https://www.amazon.com/s?k=F5-6000J2836F48GX2-TR5NS",
+    "availability":"In stock in user screenshot",
+    "status":"verified",
+    "method":"manual_screenshot",
+    "match_status":"verified",
+    "validation_version":"2.11",
+    "validation_reason":"Exact product title, 96GB 2x48GB, DDR5-6000 CL28 and retailer price visible in user screenshot; exact MPN independently matched to G.Skill specification.",
+    "query_kind":"exact_sku_manual",
+    "timestamp":"2026-09-04T21:30:00+00:00",
+    "notes":"User screenshot showed Amazon $1,959.99. Current verdict WAIT/PASS at this level; alert below $1,600, strong BUY $1,400-$1,500, exceptional <=$1,300."
+  },
+  {
+    "component_id":"ram-royal-neo-96",
+    "component":"RAM — G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model":"G.Skill F5-6000J2836F48GX2-TR5NS",
+    "condition":"New",
+    "seller":"Newegg",
+    "retailer":"newegg",
+    "price":2099.99,
+    "currency":"USD",
+    "source_url":"https://www.newegg.com/p/pl?d=F5-6000J2836F48GX2-TR5NS",
+    "availability":"In stock in user screenshot and independently surfaced by Newegg search",
+    "status":"verified",
+    "method":"manual_screenshot_plus_web_revalidation",
+    "match_status":"verified",
+    "validation_version":"2.11",
+    "validation_reason":"Exact SKU F5-6000J2836F48GX2-TR5NS, 96GB 2x48GB, DDR5-6000 CL28-36-36-96 matched.",
+    "query_kind":"exact_sku_manual",
+    "timestamp":"2026-09-04T21:30:00+00:00",
+    "notes":"User screenshot showed Newegg $2,099.99; web revalidation also surfaced $2,099.99."
+  }
+]
