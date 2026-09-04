@@ -1,0 +1,22 @@
+[
+  {
+    "component_id":"gpu-4090",
+    "component":"Return-window upgrade — RTX 4090 24GB",
+    "model":"NVIDIA GeForce RTX 4090 24GB market",
+    "condition":"Mixed current listings",
+    "seller":"Jawa marketplace aggregate/current listings",
+    "retailer":"jawa",
+    "price":2800.00,
+    "currency":"USD",
+    "source_url":"https://www.jawa.gg/parts/gpus/geforce-rtx-4090-2d21ec",
+    "availability":"Current visible listing floor at research time",
+    "status":"verified",
+    "method":"web_research",
+    "match_status":"market_reference",
+    "validation_version":"2.11",
+    "validation_reason":"Jawa RTX 4090 market page explicitly lists current cards and 12-month sales history.",
+    "query_kind":"market_reference",
+    "timestamp":"2026-09-04T21:35:00+00:00",
+    "notes":"Current Jawa floor is too high for this project. Jawa reports $2,144 12-month average sale price across 90 sales, range $1,700-$3,000. Project thresholds remain <=$1,950 exceptional, <=$2,100 BUY, $2,100-$2,200 conditional for an unusually strong protected example."
+  }
+]
