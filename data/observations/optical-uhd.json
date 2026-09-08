@@ -40,5 +40,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-04T06:28:28.583298+00:00",
     "notes": "UHD/4K Blu-ray drive + sane price"
+  },
+  {
+    "component_id": "optical-uhd",
+    "component": "Optical drive \u2014 Blu-ray/DVD, UHD-capable preferred",
+    "model": "Pioneer Blu-ray playback burning optical drive supports 4K UHD BDR-S11JX.",
+    "condition": null,
+    "seller": "Newegg.com - JustFirst Store",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 149.5,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Blu-ray writer UHD friendly drive&prds=productid:1070670770122836924,headlineOfferDocid:1070670770122836924,imageDocid:16485583253137189480,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "UHD/4K Blu-ray drive + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-08T11:12:49.425134+00:00",
+    "notes": "UHD/4K Blu-ray drive + sane price"
   }
 ]

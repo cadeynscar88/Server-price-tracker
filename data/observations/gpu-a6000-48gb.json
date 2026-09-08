@@ -40,5 +40,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-04T06:28:28.583298+00:00",
     "notes": "RTX A6000 48GB + sane price"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future AI GPU \u2014 RTX A6000 48GB ECC",
+    "model": "PNY NVIDIA Quadro RTX A6000 48GB GDDR6 Graphics Card VCNRTXA6000-PB",
+    "condition": null,
+    "seller": "eBay - egoods.supply",
+    "delivery": "Free delivery",
+    "retailer": "ebay",
+    "price": 4490.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:3898347289329087915,productid:269715125839778782,headlineOfferDocid:8609981066353396225,imageDocid:4647855416855421588,rds:PC_9629569400932200199|PROD_PC_9629569400932200199,gpcid:9629569400932200199,mid:576462898002344933,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-08T11:12:49.425134+00:00",
+    "notes": "RTX A6000 48GB + sane price"
   }
 ]

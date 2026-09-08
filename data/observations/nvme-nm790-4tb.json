@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "nvme-nm790-4tb",
+    "component": "Storage \u2014 Lexar NM790 4TB TLC Gen4 NVMe",
+    "model": "Lexar Armor 700 4TB USB 3.2 Gen 2 Type-C Portable External SSD",
+    "condition": null,
+    "seller": "newegg.com",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 828.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lexar NM790 4TB&prds=productid:17842377617908100980,headlineOfferDocid:17842377617908100980,imageDocid:15258626954727116747,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-08T11:12:49.425134+00:00",
+    "notes": "required exact-model terms missing"
+  }
+]
