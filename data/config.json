@@ -1,85 +1,318 @@
 {
-  "app":"Private Server Price Tracker",
-  "version":"2.11.0",
-  "target_budget":4000,
-  "currency":"USD",
-  "storage_requirement_tb":4,
-  "stale_after_hours":168,
-  "build_state_updated":"2026-09-04",
-  "purchased_components":{
-    "cpu":{"status":"purchased","model":"AMD Ryzen 9 9950X3D","purchase_price_usd":679.99,"purchase_date":"2026-09-02","retailer":"Micro Center Houston","track_price":true,"track_reason":"Price protection during the plausible adjustment/return window."},
-    "motherboard":{"status":"purchased","model":"ASRock X870E Taichi White","purchase_price_usd":429.99,"protection_plan_usd":74.99,"purchase_date":"2026-09-02","retailer":"Micro Center Houston","track_price":false},
-    "gaming_gpu":{"status":"purchased_returnable","model":"MSI GeForce RTX 5070 Ti Frieren Edition 16GB","purchase_refund_value_usd":1300.00,"estimated_purchase_date":"2026-08-30","safe_internal_return_decision_date":"2026-09-28","track_price":false,"replacement_watch":"RTX 4090 24GB only if compelling"},
-    "main_storage_1":{"status":"purchased","model":"Lexar NM790 4TB TLC Gen4 NVMe","purchase_price_usd":499.99,"track_price":true,"track_reason":"Watch for second matching 4TB mirror drive."},
-    "case":{"status":"purchased","model":"Lian Li O11 Dynamic EVO RGB White","purchase_price_usd":139.99,"purchase_date":"2026-09-02","track_price":false},
-    "psu":{"status":"ordered_backordered","model":"ASRock Phantom Gaming PG-1600G 1600W","purchase_price_usd":199.99,"retailer":"Newegg","track_price":false,"specs":{"atx":"3.1","pcie":"5.1","fully_modular":true,"native_12v_2x6":2,"warranty_years":10}}
-  },
-  "returned_components":{"motherboard_previous":{"model":"Gigabyte X870 AORUS Tachyon ICE","returned":"2026-09-02","refund_usd":383.99,"protection_refund_usd":54.99}},
-  "confirmed_refundable_hardware_excluding_owned_storage_usd":2824.95,
-  "confirmed_hardware_including_nm790_usd":3324.94,
-  "completion_cost_models":{
-    "project_completion":{
-      "label":"Project Completion",
-      "description":"Core tower complete and usable. Heavy AI GPU remains deferred.",
-      "base_confirmed_usd":3324.94,
-      "estimated_remaining":[
-        {"item":"96GB 2x48 DDR5-6000 CL28/30 premium RAM","low_usd":1300,"high_usd":1600,"note":"Royal Neo primary target; cheaper premium alternatives allowed."},
-        {"item":"360mm premium white AIO","low_usd":250,"high_usd":300},
-        {"item":"6x white premium/reverse-blade case fans","low_usd":100,"high_usd":150}
-      ],
-      "estimated_total_low_usd":4974.94,
-      "estimated_total_high_usd":5374.94,
-      "note":"These figures exclude a 4090 swap. If Frieren is returned for a 4090, use net GPU transition cost rather than double-counting both GPUs."
+  "app": "Private Server Price Tracker",
+  "version": "3.0.0",
+  "target_budget": 4000,
+  "currency": "USD",
+  "storage_requirement_tb": 4,
+  "stale_after_hours": 168,
+  "build_state_updated": "2026-09-11",
+  "purchased_components": {
+    "cpu": {
+      "status": "purchased",
+      "model": "AMD Ryzen 9 9950X3D",
+      "purchase_price_usd": 619.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center",
+      "track_price": true,
+      "track_reason": "Price protection during the plausible adjustment/return window."
     },
-    "server_completion":{
-      "label":"Server Completion",
-      "description":"Project Completion plus separate OS SSD, optical ingest, UPS, second NM790 mirror drive and long-term Heavy AI GPU.",
-      "inherits":"project_completion",
-      "extras":[
-        {"item":"~1TB OS/apps NVMe","low_usd":50,"high_usd":100},
-        {"item":"Blu-ray/DVD optical ingest drive","low_usd":80,"high_usd":150},
-        {"item":"UPS sized after final Heavy GPU/power envelope","low_usd":300,"high_usd":700},
-        {"item":"Second matching Lexar NM790 4TB mirror drive","low_usd":350,"high_usd":500},
-        {"item":"Future Heavy AI GPU","low_usd":3000,"high_usd":10000,"note":"Exact Heavy GPU intentionally open for the expected 1-2 year horizon."}
-      ],
-      "heavy_gpu_included":true
+    "motherboard": {
+      "status": "purchased",
+      "model": "ASRock X870E Taichi White",
+      "purchase_price_usd": 429.99,
+      "protection_plan_usd": 74.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center",
+      "track_price": false
+    },
+    "gaming_gpu": {
+      "status": "purchased",
+      "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB",
+      "purchase_price_usd": 1179.99,
+      "protection_plan_usd": 139.99,
+      "track_price": false
+    },
+    "ram": {
+      "status": "purchased",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48GB DDR5-6000 CL28",
+      "reported_after_tax_usd_approx": 1633,
+      "track_price": false
+    },
+    "main_storage_1": {
+      "status": "purchased",
+      "model": "Lexar NM790 4TB TLC Gen4 NVMe",
+      "purchase_price_usd": 499.99,
+      "track_price": false,
+      "track_reason": "Persistent server-data SSD; no second mirror drive is assumed at this stage."
+    },
+    "case": {
+      "status": "purchased",
+      "model": "Lian Li O11 Dynamic EVO RGB White",
+      "purchase_price_usd": 139.99,
+      "purchase_date": "2026-09-02",
+      "track_price": false
+    },
+    "psu": {
+      "status": "ordered",
+      "model": "ASRock Phantom Gaming PG-1600G 1600W",
+      "purchase_price_usd": 199.99,
+      "retailer": "Newegg",
+      "track_price": false,
+      "specs": {
+        "atx": "3.1",
+        "pcie": "5.1",
+        "fully_modular": true,
+        "native_12v_2x6": 2,
+        "warranty_years": 10
+      }
     }
   },
-  "current_build_plan":{
-    "cpu":"AMD Ryzen 9 9950X3D — purchased",
-    "motherboard":"ASRock X870E Taichi White — purchased",
-    "gaming_gpu":"MSI RTX 5070 Ti Frieren Edition 16GB — purchased/returnable; keep by default unless compelling 4090",
-    "case":"Lian Li O11 Dynamic EVO RGB White — purchased",
-    "ram_primary_target":"G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28 F5-6000J2836F48GX2-TR5NS",
-    "ram_value_alternative":"96GB 2x48 DDR5-6000 CL30 premium white/silver AMD-compatible kit",
-    "cpu_cooler":"Lian Li HydroShift II OLED Curved 360 P28 White",
-    "psu":"ASRock Phantom Gaming PG-1600G 1600W — ordered/backordered",
-    "fans":"6x 120mm white reverse-blade intake fans for side + bottom",
-    "main_storage":"Lexar NM790 4TB purchased; second exact NM790 4TB later for mirror",
-    "os_ssd":"Separate reputable ~1TB NVMe for Windows/OS/apps; Black Friday storage deals preferred",
-    "optical":"Blu-ray/DVD drive; UHD capability preferred if cost-effective",
-    "ups":"Later, after final Heavy GPU/power envelope is settled",
-    "aesthetic":"Overall build is white / black / champagne-gold. Frieren is only the GPU nickname; do not design the PC around its factory anime artwork."
+  "returned_components": {
+    "motherboard_previous": {
+      "model": "Gigabyte X870 AORUS Tachyon ICE",
+      "returned": "2026-09-02",
+      "refund_usd": 383.99,
+      "protection_refund_usd": 54.99
+    }
   },
-  "fixed_build":["cpu-9950x3d","motherboard-taichi-white","gpu-frieren-5070ti","case-o11-evo-rgb-white","nvme-nm790-4tb","psu-asrock-pg1600g"],
-  "cpu_policy":{"primary":"AMD Ryzen 9 9950X3D","reference_purchase_price_usd":679.99,"retail_preferred":true,"price_protection":true},
-  "dynamic_groups":{
-    "ram":{"required":true,"initial_strategy":"Primary target is 96GB 2x48 DDR5-6000 CL28/30; retain 64GB only as fallback.","candidates":["ram-royal-neo-96","ram-96gb-alt","ram-royal-neo-64","ram-64gb-alt"],"rules":{"initial":"ram-royal-neo-96","preferred_dimm_count":2,"avoid_4_dimm_upgrade_by_default":true,"royal_neo_96_exact":"F5-6000J2836F48GX2-TR5NS","alert_lte_usd":1600,"strong_buy_range_usd":[1400,1500],"exceptional_buy_now_lte_usd":1300,"current_observed_amazon_usd":1959.99,"current_observed_newegg_usd":2099.99}},
-    "cooler":{"required":true,"candidates":["cooler-hydroshift-ii","cooler-tryx-panorama-se"],"rules":{"preferred":"cooler-hydroshift-ii","strong_deal_below_usd":270,"exceptional_deal_lte_usd":250}},
-    "psu":{"required":false,"candidates":["psu-asrock-pg1600g"],"rules":{"status":"ordered_backordered","purchase_price_usd":199.99}},
-    "fans":{"required":true,"candidates":["fans-lianli-tl120-reverse","fans-value-reverse"],"rules":{"count":6,"size_mm":120,"reverse_blade_preferred":true}},
-    "gpu":{"required":false,"role":"temporary 4090 return-window hunt plus future Heavy AI GPU","candidates":["gpu-4090","gpu-pro5000-blackwell-48gb","gpu-a6000-48gb","gpu-5090","gpu-pro6000-blackwell-96gb"],"rules":{"light_gpu_primary_use_until_heavy":"gaming","heavy_exact_model_open":true,"heavy_expected_horizon_years":"1-2","verify_slot_thickness_for_dual_gpu":true}},
-    "ups":{"required":false,"candidates":["ups"],"rules":{"deferred":true}}
+  "completion_cost_models": {
+    "stage_1_cooling": {
+      "label": "Stage 1 cooling",
+      "description": "Permanent minimum cooling configuration for normal use and commissioning.",
+      "items": [
+        {"product_id": "cooler-hydroshift-ii", "baseline_usd": 339.99},
+        {"product_id": "fans-sl-inf-flex-reverse-3pack", "baseline_usd": 104.99}
+      ],
+      "baseline_total_usd": 444.98
+    },
+    "stage_2_cooling": {
+      "label": "Stage 2 cooling",
+      "description": "Side display intake bank plus rear exhaust.",
+      "items": [
+        {"product_id": "fans-tl-lcd-flex-reverse-3pack", "baseline_usd": 134.99},
+        {"product_id": "fans-tl-flex-standard-single", "baseline_usd": 30.99}
+      ],
+      "baseline_total_usd": 165.98
+    }
   },
-  "frieren_return_window":{"estimated_purchase_date":"2026-08-30","standard_return_window_days":30,"safe_internal_decision_date":"2026-09-28","receipt_date_not_yet_verified":true,"default_outcome":"KEEP FRIEREN if no compelling 4090 appears"},
-  "gpu_4090_watch":{"enabled":true,"temporary_priority":"high","reason":"Only identified current-generation-ish upgrade that improves both gaming and AI capacity without 5090 pricing.","thresholds":{"buy_now_lte_usd":1950,"buy_lte_usd":2100,"conditional_buy_high_usd":2200},"requirements":["healthy functioning card","buyer protection or credible returns","exact model/PCB identified","compatible full-cover waterblock available","original air cooler preferred","avoid parts-only/repaired/no-protection cards solely to hit price"]},
-  "future_gpu_watch":{"enabled":true,"manual_plus_automation":true,"primary_candidates":[{"product_id":"gpu-pro5000-blackwell-48gb","model":"NVIDIA RTX PRO 5000 Blackwell 48GB ECC","attention_price_usd":5000},{"product_id":"gpu-a6000-48gb","model":"NVIDIA RTX A6000 48GB ECC","attention_price_usd":3500,"strong_price_usd":3200,"exceptional_price_usd":3000},{"product_id":"gpu-5090","model":"NVIDIA GeForce RTX 5090 32GB","attention_price_usd":3000,"especially_compelling_price_usd":2500}],"wildcard":{"product_id":"gpu-pro6000-blackwell-96gb","model":"NVIDIA RTX PRO 6000 Blackwell 96GB ECC","note":"Do not commit Heavy this early."}},
-  "deal_search_policy":{"active_ids":["cpu-9950x3d","gpu-4090","ram-royal-neo-96","ram-96gb-alt","cooler-hydroshift-ii","cooler-tryx-panorama-se","fans-lianli-tl120-reverse","fans-value-reverse","nvme-nm790-4tb","optical-uhd","gpu-5090","gpu-pro5000-blackwell-48gb","gpu-a6000-48gb"],"excluded_purchased_ids":["motherboard-taichi-white","gpu-frieren-5070ti","case-o11-evo-rgb-white","psu-asrock-pg1600g"],"open_box_requires_condition_evidence":true,"do_not_auto_buy_from_deal_feed":true,"verification_required":["exact_model_or_system_specs","seller","condition","warranty_or_buyer_protection","return_window","testability_when_possible"]},
-  "purchase_sequence":{"principle":"A deal is not a BUY until exact SKU/condition/seller/returns and practical compatibility are verified.","already_purchased_or_ordered":["AMD Ryzen 9 9950X3D","ASRock X870E Taichi White","MSI RTX 5070 Ti Frieren Edition 16GB","Lexar NM790 4TB","Lian Li O11 Dynamic EVO RGB White","ASRock Phantom Gaming PG-1600G 1600W"],"remaining":["96GB RAM","AIO","6 case fans","OS SSD","optical drive"],"optional":["RTX 4090 swap during Frieren return window","UPS","second NM790 4TB","future Heavy AI GPU"]},
-  "open_box_policy":{"enabled":true,"home_search_area":"North Houston, Texas","secondary_region":"Mississippi Gulf Coast: Biloxi, D'Iberville, Gulfport plus practical Mobile/Foley/Eastern Shore AL drive","used_online_sources":["MBPC.gg","eBay","Jawa","Mercari","OfferUp","r/hardwareswap","Facebook Marketplace when searchable","PayMore","ShopGoodwill","GovDeals","Craigslist","local auction/liquidation sellers"],"component_rules":{"ram":"New preferred for final 96GB kit; secondary-market only with exact label and buyer protection.","gpu":"Protected purchase strongly preferred because the user does not yet have a built PC for immediate testing.","nvme":"Prefer new; track second exact NM790 4TB.","psu":"Already ordered; no replacement hunt."}},
-  "storage_configs":{"A":{"label":"2 x Lexar NM790 4TB","product_id":"nvme-nm790-4tb","qty":2,"usable_tb":4,"scheme":"mirror","preferred":true}},
-  "storage_rules":{"preferred_exact_4tb_model":"Lexar NM790 4TB","first_drive_purchased":true,"first_drive_purchase_price_usd":499.99,"second_matching_drive_needed":true,"m2_assignment_current":{"M.2_1":"OS/apps or future Gen5 depending final design","M.2_2":"Lexar NM790 4TB purchased","M.2_3":"Future matching NM790 mirror","M.2_4":"Free"}},
-  "gpu_scenarios":[{"id":"return-window-4090","label":"Replace Frieren only for compelling RTX 4090 24GB","product_id":"gpu-4090","qty":1,"vram_gb":24,"estimated_board_power_w":450,"physical_fit":"Waterblock conversion preferred for future dual-GPU packaging; exact PCB/block fit required."},{"id":"future-pro5000","label":"Future RTX PRO 5000 48GB Heavy candidate","product_id":"gpu-pro5000-blackwell-48gb","qty":1,"vram_gb":48,"physical_fit":"Exact-card fit and power revalidation required when Heavy is selected."}],
-  "security_policy":{"encryption_at_rest":true,"encrypted_remote_access":true,"write_requires_fido2":true,"read_stream_download_requires_fido2":false,"protected_snapshot_deletion":"admin-only"},
-  "preflight":{"validate_before_api":true,"required_m2_slots":4,"max_serpapi_searches_per_run":24,"retailer_fallback_searches_per_run":1,"serpapi_monthly_limit":250,"serpapi_reserve":10,"serpapi_monthly_budget":240}
+  "current_build_plan": {
+    "cpu": "AMD Ryzen 9 9950X3D — purchased at $619.99",
+    "motherboard": "ASRock X870E Taichi White — purchased",
+    "gaming_gpu": "MSI RTX 5070 Ti Frieren Edition 16GB — purchased and retained",
+    "case": "Lian Li O11 Dynamic EVO RGB White — purchased",
+    "ram": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28 — purchased/final; customization deferred",
+    "cpu_cooler": "Lian Li HydroShift II OLED Curved 360TL White",
+    "psu": "ASRock Phantom Gaming PG-1600G 1600W — ordered at $199.99",
+    "fans_stage_1": "Top: 3x white TL FLEX Standard included with HydroShift 360TL; bottom: 3x white SL-INF FLEX Reverse intake",
+    "fans_stage_2": "Side: 3x white TL LCD FLEX Reverse intake; rear: 1x white TL FLEX Standard exhaust",
+    "main_storage": "Lexar NM790 4TB purchased for persistent server data",
+    "os_ssd": "Separate 2TB TLC Gen4 baseline; 4TB preferred opportunistically when same-family premium is roughly $200-$225 or less",
+    "storage_boundary": "Logically separate untrusted INGESTION/STAGING from encrypted authoritative SERVER_DATA; do not infer a separate physical staging SSD or repartitioning yet",
+    "psu_cabling": "Track ASRock CB-FKITWT full white kit and CB-12V2X6L600W/W white TempGuard cable; preserve exact PSU compatibility and NTC/TempGuard functionality",
+    "aesthetic": "White / black / champagne-gold. Frieren refers only to the MSI GPU, not the overall build theme."
+  },
+  "fixed_build": [
+    "cpu-9950x3d",
+    "motherboard-taichi-white",
+    "gpu-frieren-5070ti",
+    "case-o11-evo-rgb-white",
+    "ram-royal-neo-96",
+    "nvme-nm790-4tb",
+    "psu-asrock-pg1600g"
+  ],
+  "cpu_policy": {
+    "primary": "AMD Ryzen 9 9950X3D",
+    "reference_purchase_price_usd": 619.99,
+    "retail_preferred": true,
+    "price_protection": true
+  },
+  "dynamic_groups": {
+    "ram": {
+      "required": false,
+      "candidates": ["ram-royal-neo-96"],
+      "rules": {
+        "initial": "ram-royal-neo-96",
+        "preferred_dimm_count": 2,
+        "purchased_final": true,
+        "customization_deferred": true
+      }
+    },
+    "cooler": {
+      "required": true,
+      "candidates": ["cooler-hydroshift-ii"],
+      "rules": {"preferred": "cooler-hydroshift-ii", "exact_model": "HS2OLDC36TW"}
+    },
+    "psu": {
+      "required": false,
+      "candidates": ["psu-asrock-pg1600g"],
+      "rules": {"status": "ordered", "purchase_price_usd": 199.99}
+    },
+    "fans": {
+      "required": true,
+      "candidates": [
+        "fans-sl-inf-flex-reverse-3pack",
+        "fans-tl-lcd-flex-reverse-3pack",
+        "fans-tl-flex-standard-single"
+      ],
+      "rules": {
+        "stage_1": ["fans-sl-inf-flex-reverse-3pack"],
+        "stage_2": ["fans-tl-lcd-flex-reverse-3pack", "fans-tl-flex-standard-single"],
+        "top_radiator_fans_included_with_aio": true
+      }
+    },
+    "storage": {
+      "required": true,
+      "candidates": ["os-ssd-mp44-2tb", "os-ssd-mp44-4tb"],
+      "rules": {
+        "baseline_capacity_tb": 2,
+        "opportunistic_capacity_tb": 4,
+        "four_tb_max_same_family_premium_usd": 225,
+        "prefer_tlc_gen4": true
+      }
+    },
+    "cabling": {
+      "required": false,
+      "candidates": ["cable-asrock-full-white-kit", "cable-asrock-tempguard-white"],
+      "rules": {
+        "full_white_kit_availability_is_actionable": true,
+        "require_pg1600g_compatibility": true,
+        "preserve_tempguard_ntc": true
+      }
+    },
+    "gpu": {
+      "required": false,
+      "role": "future Heavy AI GPU",
+      "candidates": ["gpu-pro5000-blackwell-48gb", "gpu-a6000-48gb", "gpu-5090", "gpu-pro6000-blackwell-96gb"],
+      "rules": {
+        "heavy_exact_model_open": true,
+        "expected_horizon": "late 2027/2028",
+        "verify_slot_thickness_for_dual_gpu": true
+      }
+    }
+  },
+  "future_gpu_watch": {
+    "enabled": true,
+    "manual_plus_automation": true,
+    "primary_candidates": [
+      {"product_id": "gpu-pro5000-blackwell-48gb", "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC"},
+      {"product_id": "gpu-a6000-48gb", "model": "NVIDIA RTX A6000 48GB ECC"},
+      {"product_id": "gpu-5090", "model": "NVIDIA GeForce RTX 5090 32GB"}
+    ],
+    "wildcard": {
+      "product_id": "gpu-pro6000-blackwell-96gb",
+      "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC",
+      "note": "Exceptional-value wildcard only; do not commit Heavy this early."
+    }
+  },
+  "deal_search_policy": {
+    "active_ids": [
+      "cpu-9950x3d",
+      "cooler-hydroshift-ii",
+      "gpu-5090",
+      "gpu-pro5000-blackwell-48gb",
+      "gpu-a6000-48gb"
+    ],
+    "manual_graph_ids": [
+      "fans-sl-inf-flex-reverse-3pack",
+      "fans-tl-lcd-flex-reverse-3pack",
+      "fans-tl-flex-standard-single",
+      "cable-asrock-full-white-kit",
+      "cable-asrock-tempguard-white",
+      "os-ssd-mp44-2tb",
+      "os-ssd-mp44-4tb",
+      "gpu-pro6000-blackwell-96gb"
+    ],
+    "excluded_purchased_ids": [
+      "motherboard-taichi-white",
+      "gpu-frieren-5070ti",
+      "case-o11-evo-rgb-white",
+      "ram-royal-neo-96",
+      "nvme-nm790-4tb",
+      "psu-asrock-pg1600g"
+    ],
+    "open_box_requires_condition_evidence": true,
+    "do_not_auto_buy_from_deal_feed": true,
+    "verification_required": [
+      "exact_model_or_system_specs",
+      "seller",
+      "condition",
+      "warranty_or_buyer_protection",
+      "return_window",
+      "testability_when_possible"
+    ]
+  },
+  "purchase_sequence": {
+    "principle": "A deal is not a BUY because it carries a sale label; exact SKU, live value, seller, condition, returns and compatibility control the verdict.",
+    "already_purchased_or_ordered": [
+      "AMD Ryzen 9 9950X3D",
+      "ASRock X870E Taichi White",
+      "MSI RTX 5070 Ti Frieren Edition 16GB",
+      "G.Skill Trident Z5 Royal Neo 96GB",
+      "Lexar NM790 4TB",
+      "Lian Li O11 Dynamic EVO RGB White",
+      "ASRock Phantom Gaming PG-1600G 1600W"
+    ],
+    "remaining_stage_1": ["HydroShift II OLED Curved 360TL White", "3x SL-INF FLEX Reverse White bottom intake"],
+    "remaining_stage_2": ["3x TL LCD FLEX Reverse White side intake", "1x TL FLEX Standard White rear exhaust"],
+    "remaining_storage": ["2TB or opportunistic 4TB TLC Gen4 OS/application SSD"],
+    "optional": ["ASRock factory white cable kit", "ASRock white TempGuard 12V-2x6 cable", "future Heavy AI GPU"]
+  },
+  "open_box_policy": {
+    "enabled": true,
+    "home_search_area": "Use the user's current location when a local search is explicitly performed; otherwise search nationally in the U.S.",
+    "used_online_sources": ["MBPC.gg", "eBay", "Jawa", "Mercari", "OfferUp", "Facebook Marketplace when searchable", "ShopGoodwill", "HiBid", "local auction/liquidation sellers"],
+    "component_rules": {
+      "gpu": "Protected purchase strongly preferred.",
+      "nvme": "Prefer new with strong warranty/buyer protection.",
+      "psu": "Already ordered; no replacement hunt."
+    }
+  },
+  "storage_configs": {
+    "A": {
+      "label": "Current persistent server data",
+      "product_id": "nvme-nm790-4tb",
+      "qty": 1,
+      "usable_tb": 4,
+      "scheme": "single persistent data SSD; logical trust separation handled by implementation",
+      "preferred": true
+    }
+  },
+  "storage_rules": {
+    "persistent_data_model": "Lexar NM790 4TB",
+    "persistent_data_drive_purchased": true,
+    "persistent_data_purchase_price_usd": 499.99,
+    "second_matching_drive_needed": false,
+    "os_application_baseline_tb": 2,
+    "os_application_opportunistic_tb": 4,
+    "four_tb_same_family_premium_target_usd": "<=200-225",
+    "physical_staging_ssd_required": false,
+    "repartition_existing_nm790_authorized": false,
+    "trust_boundary": "INGESTION/STAGING must remain logically separated from encrypted authoritative SERVER_DATA"
+  },
+  "gpu_scenarios": [
+    {
+      "id": "future-pro5000",
+      "label": "Future RTX PRO 5000 48GB Heavy candidate",
+      "product_id": "gpu-pro5000-blackwell-48gb",
+      "qty": 1,
+      "vram_gb": 48,
+      "physical_fit": "Exact-card fit and power revalidation required when Heavy is selected."
+    }
+  ],
+  "security_policy": {
+    "encryption_at_rest": true,
+    "encrypted_remote_access": true,
+    "write_requires_fido2": true,
+    "read_stream_download_requires_fido2": false,
+    "protected_snapshot_deletion": "admin-only"
+  },
+  "preflight": {
+    "validate_before_api": true,
+    "required_m2_slots": 4,
+    "max_serpapi_searches_per_run": 24,
+    "retailer_fallback_searches_per_run": 1,
+    "serpapi_monthly_limit": 250,
+    "serpapi_reserve": 10,
+    "serpapi_monthly_budget": 240
+  }
 }
