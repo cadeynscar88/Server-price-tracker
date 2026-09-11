@@ -1,11 +1,11 @@
 {
-  "revalidated_at": "2026-09-03T19:36:12.998252+00:00",
+  "revalidated_at": "2026-09-11T16:07:28.596086+00:00",
   "api_calls": 0,
   "quota_consumed": 0,
   "changed": 0,
-  "trusted_rows": 3,
-  "rejected_rows": 9,
-  "review_rows": 0,
+  "trusted_rows": 16,
+  "rejected_rows": 18,
+  "review_rows": 2,
   "validation_version": "2.7",
   "note": "Historical observations were reclassified locally. No SerpApi request was made."
 }

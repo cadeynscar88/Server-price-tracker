@@ -1,63 +1,655 @@
 {
-  "generated": "2026-09-11T15:46:00+00:00",
-  "last_check": "2026-09-11T15:46:00+00:00",
+  "generated": "2026-09-11T16:07:28.636637+00:00",
+  "last_check": "2026-09-11T11:15:56.569325+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
   "confirmed_build": {
-    "cpu": "AMD Ryzen 9 9950X3D — purchased at $619.99",
-    "motherboard": "ASRock X870E Taichi White — purchased",
-    "gaming_gpu": "MSI RTX 5070 Ti Frieren Edition 16GB — purchased and retained",
-    "case": "Lian Li O11 Dynamic EVO RGB White — purchased",
-    "ram": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28 — purchased/final; customization deferred",
+    "cpu": "AMD Ryzen 9 9950X3D \u2014 purchased at $619.99",
+    "motherboard": "ASRock X870E Taichi White \u2014 purchased",
+    "gaming_gpu": "MSI RTX 5070 Ti Frieren Edition 16GB \u2014 purchased and retained",
+    "case": "Lian Li O11 Dynamic EVO RGB White \u2014 purchased",
+    "ram": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28 \u2014 purchased/final; customization deferred",
     "cpu_cooler": "Lian Li HydroShift II OLED Curved 360TL White",
-    "psu": "ASRock Phantom Gaming PG-1600G 1600W — ordered at $199.99",
+    "psu": "ASRock Phantom Gaming PG-1600G 1600W \u2014 ordered at $199.99",
     "fans_stage_1": "Top: 3x white TL FLEX Standard included with HydroShift 360TL; bottom: 3x white SL-INF FLEX Reverse intake",
     "fans_stage_2": "Side: 3x white TL LCD FLEX Reverse intake; rear: 1x white TL FLEX Standard exhaust",
     "main_storage": "Lexar NM790 4TB purchased for persistent server data",
     "os_ssd": "Separate 2TB TLC Gen4 baseline; 4TB preferred opportunistically when same-family premium is roughly $200-$225 or less",
-    "psu_cabling": "Track ASRock CB-FKITWT full white kit and CB-12V2X6L600W/W white TempGuard cable"
+    "storage_boundary": "Logically separate untrusted INGESTION/STAGING from encrypted authoritative SERVER_DATA; do not infer a separate physical staging SSD or repartitioning yet",
+    "psu_cabling": "Track ASRock CB-FKITWT full white kit and CB-12V2X6L600W/W white TempGuard cable; preserve exact PSU compatibility and NTC/TempGuard functionality",
+    "aesthetic": "White / black / champagne-gold. Frieren refers only to the MSI GPU, not the overall build theme."
   },
   "purchased_components": {
-    "cpu": {"status": "purchased", "model": "AMD Ryzen 9 9950X3D", "purchase_price_usd": 619.99, "track_price": true},
-    "motherboard": {"status": "purchased", "model": "ASRock X870E Taichi White", "purchase_price_usd": 429.99, "protection_plan_usd": 74.99, "track_price": false},
-    "gaming_gpu": {"status": "purchased", "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB", "purchase_price_usd": 1179.99, "protection_plan_usd": 139.99, "track_price": false},
-    "ram": {"status": "purchased", "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48GB DDR5-6000 CL28", "purchase_price_usd": 1500.0, "reported_after_tax_usd_approx": 1633, "track_price": false},
-    "main_storage_1": {"status": "purchased", "model": "Lexar NM790 4TB TLC Gen4 NVMe", "purchase_price_usd": 499.99, "track_price": false},
-    "case": {"status": "purchased", "model": "Lian Li O11 Dynamic EVO RGB White", "purchase_price_usd": 139.99, "track_price": false},
-    "psu": {"status": "ordered", "model": "ASRock Phantom Gaming PG-1600G 1600W", "purchase_price_usd": 199.99, "track_price": false}
+    "cpu": {
+      "status": "purchased",
+      "model": "AMD Ryzen 9 9950X3D",
+      "purchase_price_usd": 619.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center",
+      "track_price": true,
+      "track_reason": "Price protection during the plausible adjustment/return window."
+    },
+    "motherboard": {
+      "status": "purchased",
+      "model": "ASRock X870E Taichi White",
+      "purchase_price_usd": 429.99,
+      "protection_plan_usd": 74.99,
+      "purchase_date": "2026-09-02",
+      "retailer": "Micro Center",
+      "track_price": false
+    },
+    "gaming_gpu": {
+      "status": "purchased",
+      "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB",
+      "purchase_price_usd": 1179.99,
+      "protection_plan_usd": 139.99,
+      "track_price": false
+    },
+    "ram": {
+      "status": "purchased",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48GB DDR5-6000 CL28",
+      "reported_after_tax_usd_approx": 1633,
+      "track_price": false
+    },
+    "main_storage_1": {
+      "status": "purchased",
+      "model": "Lexar NM790 4TB TLC Gen4 NVMe",
+      "purchase_price_usd": 499.99,
+      "track_price": false,
+      "track_reason": "Persistent server-data SSD; no second mirror drive is assumed at this stage."
+    },
+    "case": {
+      "status": "purchased",
+      "model": "Lian Li O11 Dynamic EVO RGB White",
+      "purchase_price_usd": 139.99,
+      "purchase_date": "2026-09-02",
+      "track_price": false
+    },
+    "psu": {
+      "status": "ordered",
+      "model": "ASRock Phantom Gaming PG-1600G 1600W",
+      "purchase_price_usd": 199.99,
+      "retailer": "Newegg",
+      "track_price": false,
+      "specs": {
+        "atx": "3.1",
+        "pcie": "5.1",
+        "fully_modular": true,
+        "native_12v_2x6": 2,
+        "warranty_years": 10
+      }
+    }
   },
   "returned_components": {
-    "motherboard_previous": {"model": "Gigabyte X870 AORUS Tachyon ICE", "returned": "2026-09-02", "refund_usd": 383.99, "protection_refund_usd": 54.99}
+    "motherboard_previous": {
+      "model": "Gigabyte X870 AORUS Tachyon ICE",
+      "returned": "2026-09-02",
+      "refund_usd": 383.99,
+      "protection_refund_usd": 54.99
+    }
   },
-  "confirmed_hardware_subtotal_ex_tax_usd": 4784.92,
-  "remaining_budget_to_target_usd": -784.92,
+  "confirmed_hardware_subtotal_ex_tax_usd": 3284.92,
+  "remaining_budget_to_target_usd": 715.08,
+  "separate_spending": {
+    "ram": {
+      "label": "RAM \u2014 separate from core build budget",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48GB DDR5-6000 CL28",
+      "amount_usd_approx": 1633.0,
+      "basis": "reported after-tax amount",
+      "included_in_core_budget": false
+    }
+  },
+  "separate_spending_total_usd_approx": 1633.0,
+  "all_recorded_spending_usd_approx": 4917.92,
+  "budget_note": "RAM spending is intentionally excluded from the $4,000 core-build soft ceiling and displayed separately.",
   "completion_cost_models": {
-    "stage_1_cooling": {"baseline_total_usd": 444.98},
-    "stage_2_cooling": {"baseline_total_usd": 165.98}
+    "stage_1_cooling": {
+      "label": "Stage 1 cooling",
+      "description": "Permanent minimum cooling configuration for normal use and commissioning.",
+      "items": [
+        {
+          "product_id": "cooler-hydroshift-ii",
+          "baseline_usd": 339.99
+        },
+        {
+          "product_id": "fans-sl-inf-flex-reverse-3pack",
+          "baseline_usd": 104.99
+        }
+      ],
+      "baseline_total_usd": 444.98
+    },
+    "stage_2_cooling": {
+      "label": "Stage 2 cooling",
+      "description": "Side display intake bank plus rear exhaust.",
+      "items": [
+        {
+          "product_id": "fans-tl-lcd-flex-reverse-3pack",
+          "baseline_usd": 134.99
+        },
+        {
+          "product_id": "fans-tl-flex-standard-single",
+          "baseline_usd": 30.99
+        }
+      ],
+      "baseline_total_usd": 165.98
+    }
   },
-  "ram_strategy": {"required": false, "candidates": ["ram-royal-neo-96"], "rules": {"initial": "ram-royal-neo-96", "purchased_final": true}},
-  "cooler_strategy": {"required": true, "candidates": ["cooler-hydroshift-ii"], "rules": {"preferred": "cooler-hydroshift-ii", "exact_model": "HS2OLDC36TW"}},
-  "psu_strategy": {"required": false, "candidates": ["psu-asrock-pg1600g"], "rules": {"status": "ordered", "purchase_price_usd": 199.99}},
+  "ram_strategy": {
+    "required": false,
+    "candidates": [
+      "ram-royal-neo-96"
+    ],
+    "rules": {
+      "initial": "ram-royal-neo-96",
+      "preferred_dimm_count": 2,
+      "purchased_final": true,
+      "customization_deferred": true
+    }
+  },
+  "cooler_strategy": {
+    "required": true,
+    "candidates": [
+      "cooler-hydroshift-ii"
+    ],
+    "rules": {
+      "preferred": "cooler-hydroshift-ii",
+      "exact_model": "HS2OLDC36TW"
+    }
+  },
+  "psu_strategy": {
+    "required": false,
+    "candidates": [
+      "psu-asrock-pg1600g"
+    ],
+    "rules": {
+      "status": "ordered",
+      "purchase_price_usd": 199.99
+    }
+  },
   "future_gpu_watch": {
     "enabled": true,
+    "manual_plus_automation": true,
     "primary_candidates": [
-      {"product_id": "gpu-pro5000-blackwell-48gb", "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC"},
-      {"product_id": "gpu-a6000-48gb", "model": "NVIDIA RTX A6000 48GB ECC"},
-      {"product_id": "gpu-5090", "model": "NVIDIA GeForce RTX 5090 32GB"}
+      {
+        "product_id": "gpu-pro5000-blackwell-48gb",
+        "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC"
+      },
+      {
+        "product_id": "gpu-a6000-48gb",
+        "model": "NVIDIA RTX A6000 48GB ECC"
+      },
+      {
+        "product_id": "gpu-5090",
+        "model": "NVIDIA GeForce RTX 5090 32GB"
+      }
     ],
-    "wildcard": {"product_id": "gpu-pro6000-blackwell-96gb", "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC"}
+    "wildcard": {
+      "product_id": "gpu-pro6000-blackwell-96gb",
+      "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC",
+      "note": "Exceptional-value wildcard only; do not commit Heavy this early."
+    }
   },
   "storage_rules": {
     "persistent_data_model": "Lexar NM790 4TB",
     "persistent_data_drive_purchased": true,
+    "persistent_data_purchase_price_usd": 499.99,
+    "second_matching_drive_needed": false,
     "os_application_baseline_tb": 2,
     "os_application_opportunistic_tb": 4,
     "four_tb_same_family_premium_target_usd": "<=200-225",
-    "second_matching_drive_needed": false,
-    "physical_staging_ssd_required": false
+    "physical_staging_ssd_required": false,
+    "repartition_existing_nm790_authorized": false,
+    "trust_boundary": "INGESTION/STAGING must remain logically separated from encrypted authoritative SERVER_DATA"
   },
-  "component_price_stats": {},
-  "manual_price_crossover": [],
-  "verification_policy": "Current display uses verified live/manual-web observations and exact-model retailer checks; sale labels do not determine BUY status."
+  "component_price_stats": {
+    "cpu-9950x3d": {
+      "n": 6,
+      "cur": 699.0,
+      "curObs": {
+        "component_id": "cpu-9950x3d",
+        "component": "CPU \u2014 AMD Ryzen 9 9950X3D",
+        "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
+        "condition": null,
+        "seller": "Best Buy",
+        "delivery": "Free delivery by Sun",
+        "retailer": "bestbuy",
+        "price": 699.0,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "validation_version": "2.9",
+        "validation_reason": "exact 9950X3D + sane price",
+        "query_kind": "generic",
+        "timestamp": "2026-09-11T11:15:56.569325+00:00",
+        "notes": "exact 9950X3D + sane price"
+      },
+      "min": 667.0,
+      "max": 729.0,
+      "avg": 698.6666666666666,
+      "median": 699.0
+    },
+    "motherboard-taichi-white": null,
+    "gpu-frieren-5070ti": null,
+    "case-o11-evo-rgb-white": null,
+    "ram-royal-neo-96": {
+      "n": 2,
+      "cur": 1959.99,
+      "curObs": {
+        "component_id": "ram-royal-neo-96",
+        "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+        "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
+        "condition": "New",
+        "seller": "Amazon",
+        "retailer": "amazon",
+        "price": 1959.99,
+        "currency": "USD",
+        "source_url": "https://www.amazon.com/s?k=F5-6000J2836F48GX2-TR5NS",
+        "availability": "In stock in user screenshot",
+        "status": "verified",
+        "method": "manual_screenshot",
+        "match_status": "verified",
+        "validation_version": "2.11",
+        "validation_reason": "Exact product title, 96GB 2x48GB, DDR5-6000 CL28 and retailer price visible in user screenshot; exact MPN independently matched to G.Skill specification.",
+        "query_kind": "exact_sku_manual",
+        "timestamp": "2026-09-04T21:30:00+00:00",
+        "notes": "User screenshot showed Amazon $1,959.99. Current verdict WAIT/PASS at this level; alert below $1,600, strong BUY $1,400-$1,500, exceptional <=$1,300."
+      },
+      "min": 1959.99,
+      "max": 2099.99,
+      "avg": 2029.9899999999998,
+      "median": 2029.9899999999998
+    },
+    "psu-asrock-pg1600g": {
+      "n": 1,
+      "cur": 199.99,
+      "curObs": {
+        "component_id": "psu-asrock-pg1600g",
+        "component": "PSU \u2014 ASRock Phantom Gaming PG-1600G 1600W",
+        "model": "ASRock Phantom Gaming PG-1600G",
+        "condition": "New",
+        "seller": "Newegg",
+        "retailer": "newegg",
+        "price": 199.99,
+        "currency": "USD",
+        "source_url": "https://www.newegg.com/p/pl?d=ASRock+PG-1600G",
+        "availability": "Ordered; backordered/pending receipt",
+        "status": "verified",
+        "method": "confirmed_purchase_plus_web_research",
+        "match_status": "verified",
+        "validation_version": "2.11",
+        "validation_reason": "Exact PG-1600G model and confirmed order price. Independent current web references also surfaced $199.99-level pricing.",
+        "query_kind": "exact_sku_purchase",
+        "timestamp": "2026-09-04T21:35:00+00:00",
+        "notes": "Ordered for $199.99. Recent Pangoly history: $199.99 Aug 23, $215.99 Aug 25/27, $245.03 Aug 30. ATX 3.1 / PCIe 5.1, fully modular, dual native 12V-2x6, 10-year warranty."
+      },
+      "min": 199.99,
+      "max": 199.99,
+      "avg": 199.99,
+      "median": 199.99
+    },
+    "nvme-nm790-4tb": {
+      "n": 1,
+      "cur": 780.99,
+      "curObs": {
+        "component_id": "nvme-nm790-4tb",
+        "component": "Storage \u2014 Lexar NM790 4TB TLC Gen4 NVMe",
+        "model": "Lexar 4TB NM790 SSD PCIe Gen4 NVMe M.2 2280 Internal Solid State Drive, Up to 7400/6500 MB/s Read/Write, Compatible with PS5, for Gamers and Creators,",
+        "condition": null,
+        "seller": "Newegg.com - Aptly Tech",
+        "delivery": null,
+        "retailer": "newegg",
+        "price": 780.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Lexar NM790 4TB&prds=productid:2823873597772323033,headlineOfferDocid:2823873597772323033,imageDocid:11977699058677631334,rds:PC_18270114968551200334|PROD_PC_18270114968551200334,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "validation_version": "2.9",
+        "validation_reason": "exact Lexar NM790 4TB + sane price",
+        "query_kind": "generic",
+        "timestamp": "2026-09-11T11:15:56.569325+00:00",
+        "notes": "exact Lexar NM790 4TB + sane price"
+      },
+      "min": 780.99,
+      "max": 780.99,
+      "avg": 780.99,
+      "median": 780.99
+    },
+    "cooler-hydroshift-ii": {
+      "n": 1,
+      "cur": 339.99,
+      "curObs": {
+        "component_id": "cooler-hydroshift-ii",
+        "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+        "model": "Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW",
+        "condition": "New",
+        "seller": "LIAN LI",
+        "retailer": "newegg",
+        "price": 339.99,
+        "currency": "USD",
+        "source_url": "https://www.newegg.com/lian-li-liquid-cooling-system-hydroshift-ii-radiator-size-15-75-4-80-0-94-inches-white/p/2YM-002Y-00059",
+        "availability": "Add to cart; sold by LIAN LI and shipped by Newegg",
+        "status": "verified",
+        "method": "web_research",
+        "match_status": "verified",
+        "validation_version": "3.0",
+        "validation_reason": "Exact white 360TL model HS2OLDC36TW verified on live retailer listing.",
+        "query_kind": "exact_sku_manual_web",
+        "timestamp": "2026-09-11T15:46:00+00:00",
+        "notes": "Current verified baseline after cooler decision changed from the older P28 target to 360TL."
+      },
+      "min": 339.99,
+      "max": 339.99,
+      "avg": 339.99,
+      "median": 339.99
+    },
+    "fans-sl-inf-flex-reverse-3pack": {
+      "n": 1,
+      "cur": 104.99,
+      "curObs": {
+        "component_id": "fans-sl-inf-flex-reverse-3pack",
+        "component": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
+        "model": "Lian Li UNI FAN SL-INF FLEX Reverse Blade 120mm White 3-Pack",
+        "condition": "New",
+        "seller": "Micro Center",
+        "retailer": "microcenter",
+        "price": 104.99,
+        "currency": "USD",
+        "source_url": "https://www.microcenter.com/product/709947/lian-li-uni-fan-sl-inf-flex-reverse-blade-120mm-fluid-dynamic-case-fan-white-%283-pack%29",
+        "availability": "Usually ships in 5-7 business days; add to cart",
+        "status": "verified",
+        "method": "web_research",
+        "match_status": "verified",
+        "validation_version": "3.0",
+        "validation_reason": "Exact white reverse-blade SL-INF FLEX 3-pack verified on live retailer page.",
+        "query_kind": "exact_model_manual_web",
+        "timestamp": "2026-09-11T15:46:00+00:00",
+        "notes": "Stage-1 bottom intake baseline."
+      },
+      "min": 104.99,
+      "max": 104.99,
+      "avg": 104.99,
+      "median": 104.99
+    },
+    "fans-tl-lcd-flex-reverse-3pack": {
+      "n": 1,
+      "cur": 134.99,
+      "curObs": {
+        "component_id": "fans-tl-lcd-flex-reverse-3pack",
+        "component": "Side intake \u2014 3x Lian Li TL LCD FLEX Reverse White",
+        "model": "Lian Li UNI FAN TL LCD FLEX Reverse Blade 120mm White 3-Pack",
+        "condition": "New",
+        "seller": "Micro Center",
+        "retailer": "microcenter",
+        "price": 134.99,
+        "currency": "USD",
+        "source_url": "https://www.microcenter.com/product/709939/lian-li-uni-fan-tl-lcd-flex-reverse-blade-120mm-fluid-dynamic-case-fan-white-%283-pack%29",
+        "availability": "Live retailer listing; in-stock locations vary",
+        "status": "verified",
+        "method": "web_research",
+        "match_status": "verified",
+        "validation_version": "3.0",
+        "validation_reason": "Exact white reverse-blade TL LCD FLEX 3-pack verified on live retailer page.",
+        "query_kind": "exact_model_manual_web",
+        "timestamp": "2026-09-11T15:46:00+00:00",
+        "notes": "Stage-2 side intake/display baseline."
+      },
+      "min": 134.99,
+      "max": 134.99,
+      "avg": 134.99,
+      "median": 134.99
+    },
+    "fans-tl-flex-standard-single": null,
+    "cable-asrock-full-white-kit": null,
+    "cable-asrock-tempguard-white": {
+      "n": 1,
+      "cur": 44.99,
+      "curObs": {
+        "component_id": "cable-asrock-tempguard-white",
+        "component": "White TempGuard GPU cable \u2014 ASRock CB-12V2X6L600W/W",
+        "model": "ASRock CB-12V2X6L600W/W 600W 12V-2x6 White",
+        "condition": "New",
+        "seller": "Newegg",
+        "retailer": "newegg",
+        "price": 44.99,
+        "currency": "USD",
+        "source_url": "https://www.newegg.com/p/pl?d=CB-12V2X6L600W%2FW",
+        "availability": "Add to cart; free shipping",
+        "status": "verified",
+        "method": "web_research",
+        "match_status": "verified",
+        "validation_version": "3.0",
+        "validation_reason": "Exact ASRock model CB-12V2X6L600W/W verified on live Newegg results.",
+        "query_kind": "exact_sku_manual_web",
+        "timestamp": "2026-09-11T15:46:00+00:00",
+        "notes": "Current factory white TempGuard cable baseline."
+      },
+      "min": 44.99,
+      "max": 44.99,
+      "avg": 44.99,
+      "median": 44.99
+    },
+    "os-ssd-mp44-2tb": null,
+    "os-ssd-mp44-4tb": {
+      "n": 1,
+      "cur": 516.66,
+      "curObs": {
+        "component_id": "os-ssd-mp44-4tb",
+        "component": "OS SSD \u2014 TeamGroup MP44 4TB TLC Gen4",
+        "model": "TeamGroup MP44 4TB TM8FPW004T0C101",
+        "condition": "New",
+        "seller": "Newegg",
+        "retailer": "newegg",
+        "price": 516.66,
+        "currency": "USD",
+        "source_url": "https://www.newegg.com/team-group-4tb-mp44-nvme/p/N82E16820985038",
+        "availability": "Add to cart; sold and shipped by Newegg; free shipping",
+        "status": "verified",
+        "method": "web_research",
+        "match_status": "verified",
+        "validation_version": "3.0",
+        "validation_reason": "Exact MP44 4TB model TM8FPW004T0C101 verified on live Newegg listing.",
+        "query_kind": "exact_sku_manual_web",
+        "timestamp": "2026-09-11T15:46:00+00:00",
+        "notes": "Current 4TB OS/application candidate baseline."
+      },
+      "min": 516.66,
+      "max": 516.66,
+      "avg": 516.66,
+      "median": 516.66
+    },
+    "gpu-5090": {
+      "n": 6,
+      "cur": 5319.05,
+      "curObs": {
+        "component_id": "gpu-5090",
+        "component": "GPU \u2014 RTX 5090 32GB",
+        "model": "NVIDIA GeForce RTX 5090 32GB GDDR7 Founders Edition Graphics Card",
+        "retailer": "walmart",
+        "price": 5319.05,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:16307418470740744792,productid:6165440785703355885,headlineOfferDocid:4196310376588596998,imageDocid:13501171239043188371,rds:PC_2385207965282513539|PROD_PC_2385207965282513539,gpcid:2385207965282513539,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "timestamp": "2026-08-29T02:37:22.107045+00:00",
+        "notes": "exact model match",
+        "validation_version": "2.9",
+        "validation_reason": "RTX 5090 32GB + sane price"
+      },
+      "min": 5299.99,
+      "max": 5499.99,
+      "avg": 5342.8533333333335,
+      "median": 5319.05
+    },
+    "gpu-pro5000-blackwell-48gb": null,
+    "gpu-a6000-48gb": {
+      "n": 3,
+      "cur": 4490.0,
+      "curObs": {
+        "component_id": "gpu-a6000-48gb",
+        "component": "Future AI GPU \u2014 RTX A6000 48GB ECC",
+        "model": "PNY NVIDIA Quadro RTX A6000 48GB GDDR6 Graphics Card VCNRTXA6000-PB",
+        "condition": null,
+        "seller": "eBay - egoods.supply",
+        "delivery": "Free delivery",
+        "retailer": "ebay",
+        "price": 4490.0,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:3898347289329087915,productid:269715125839778782,headlineOfferDocid:8609981066353396225,imageDocid:4647855416855421588,rds:PC_9629569400932200199|PROD_PC_9629569400932200199,gpcid:9629569400932200199,mid:576462898002344933,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping",
+        "status": "verified",
+        "method": "serpapi_google_shopping",
+        "match_status": "strong",
+        "validation_version": "2.9",
+        "validation_reason": "RTX A6000 48GB + sane price",
+        "query_kind": "generic",
+        "timestamp": "2026-09-08T11:12:49.425134+00:00",
+        "notes": "RTX A6000 48GB + sane price"
+      },
+      "min": 4117.07,
+      "max": 4490.0,
+      "avg": 4241.38,
+      "median": 4117.07
+    },
+    "gpu-pro6000-blackwell-96gb": null
+  },
+  "manual_price_crossover": [
+    {
+      "category": "RAM",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836F48GX2-TR5NS",
+      "observed_price_usd": 1959.99,
+      "source": "user screenshot \u2014 Amazon",
+      "date": "2026-09-04",
+      "verdict": "WAIT/PASS",
+      "verified_live": true,
+      "thresholds": {
+        "alert_lte": 1600,
+        "strong_buy_low": 1400,
+        "strong_buy_high": 1500,
+        "exceptional_lte": 1300
+      }
+    },
+    {
+      "category": "RAM",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836F48GX2-TR5NS",
+      "observed_price_usd": 2099.99,
+      "source": "user screenshot + Newegg web revalidation",
+      "date": "2026-09-04",
+      "verdict": "PASS",
+      "verified_live": true
+    },
+    {
+      "category": "RAM history",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 96GB 2x48 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836F48GX2-TR5NS",
+      "observed_price_usd": 999.99,
+      "source": "Pangoly exact-SKU history \u2014 prior Newegg level before Jul 27 jump",
+      "date": "2026-07-27",
+      "verdict": "HISTORICAL REFERENCE",
+      "verified_live": false
+    },
+    {
+      "category": "GPU",
+      "model": "RTX 4090 24GB \u2014 Jawa 12-month average sale",
+      "observed_price_usd": 2144.0,
+      "source": "Jawa market history, 90 sales",
+      "date": "2026-09-04",
+      "verdict": "MARKET REFERENCE",
+      "verified_live": false,
+      "thresholds": {
+        "buy_now_lte": 1950,
+        "buy_lte": 2100,
+        "conditional_high": 2200
+      }
+    },
+    {
+      "category": "GPU",
+      "model": "RTX 4090 24GB \u2014 current Jawa visible floor",
+      "observed_price_usd": 2800.0,
+      "source": "Jawa current listings",
+      "date": "2026-09-04",
+      "verdict": "PASS",
+      "verified_live": true
+    },
+    {
+      "category": "GPU history",
+      "model": "ASUS ROG Strix RTX 4090 OC 24GB B Grade",
+      "observed_price_usd": 1999.99,
+      "source": "eBay completed sale",
+      "date": "2026-06-13",
+      "verdict": "HISTORICAL BUY-RANGE REFERENCE",
+      "verified_live": false
+    },
+    {
+      "category": "PSU",
+      "model": "ASRock Phantom Gaming PG-1600G 1600W",
+      "observed_price_usd": 199.99,
+      "source": "confirmed Newegg order",
+      "date": "2026-09-04",
+      "availability": "backordered/pending receipt",
+      "verdict": "ORDERED",
+      "verified_live": true
+    },
+    {
+      "category": "RAM legacy",
+      "model": "G.Skill Trident Z5 Royal Neo Silver 32GB 2x16 DDR5-6000 CL28",
+      "mpn": "F5-6000J2836G16GX2-TR5NS",
+      "observed_price_usd": 529.99,
+      "source": "Micro Center prior observation",
+      "date": "2026-09-02",
+      "availability": "sold out at observation",
+      "verdict": "LEGACY / NO LONGER PRIORITY",
+      "verified_live": false
+    },
+    {
+      "category": "AIO",
+      "model": "TRYX Panorama SE 360 ARGB White",
+      "mpn": "L-P360L-AM3M-G0W",
+      "observed_price_usd": 249.99,
+      "source": "Micro Center screenshot",
+      "verdict": "GOOD/WAIT versus preferred HydroShift",
+      "verified_live": false
+    },
+    {
+      "category": "SSD",
+      "model": "Lexar NM790 4TB TLC Gen4 NVMe",
+      "observed_price_usd": 499.99,
+      "source": "confirmed purchase",
+      "verdict": "OWNED; reference for second matching mirror",
+      "verified_live": false
+    },
+    {
+      "category": "Fans",
+      "model": "Lian Li 120mm TL UNI lot",
+      "quantity": 6,
+      "source": "user marketplace screenshot",
+      "date": "2026-09-03",
+      "verdict": "GOOD LEAD only if correct blade orientation/controller/cables",
+      "verified_live": false,
+      "target_bundle_range_usd": [
+        100,
+        150
+      ],
+      "buy_lte_usd": 120
+    },
+    {
+      "category": "CPU",
+      "model": "AMD Ryzen 9 9950X3D",
+      "observed_price_usd": 679.99,
+      "source": "receipt-confirmed project purchase record",
+      "date": "2026-09-02",
+      "verdict": "OWNED; price-protection reference",
+      "verified_live": false
+    }
+  ],
+  "verification_policy": "Manual crossover rows are historical/reference observations unless verified_live=true. Automated prices count only when tracker verification rules pass."
 }
