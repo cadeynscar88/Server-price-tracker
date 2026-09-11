@@ -1,0 +1,22 @@
+[
+  {
+    "component_id": "cable-asrock-tempguard-white",
+    "component": "White TempGuard GPU cable — ASRock CB-12V2X6L600W/W",
+    "model": "ASRock CB-12V2X6L600W/W 600W 12V-2x6 White",
+    "condition": "New",
+    "seller": "Newegg",
+    "retailer": "newegg",
+    "price": 44.99,
+    "currency": "USD",
+    "source_url": "https://www.newegg.com/p/pl?d=CB-12V2X6L600W%2FW",
+    "availability": "Add to cart; free shipping",
+    "status": "verified",
+    "method": "web_research",
+    "match_status": "verified",
+    "validation_version": "3.0",
+    "validation_reason": "Exact ASRock model CB-12V2X6L600W/W verified on live Newegg results.",
+    "query_kind": "exact_sku_manual_web",
+    "timestamp": "2026-09-11T15:46:00+00:00",
+    "notes": "Current factory white TempGuard cable baseline."
+  }
+]
