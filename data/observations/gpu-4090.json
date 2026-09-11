@@ -60,5 +60,53 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "no strong rule for this item"
+  },
+  {
+    "component_id": "gpu-4090",
+    "component": "Return-window upgrade \u2014 RTX 4090 24GB",
+    "model": "NVIDIA GeForce RTX 4090 24GB",
+    "retailer": "ebay",
+    "source_url": "https://www.ebay.com/sch/i.html?_nkw=RTX+4090+24GB",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-4090",
+    "component": "Return-window upgrade \u2014 RTX 4090 24GB",
+    "model": "NVIDIA GeForce RTX 4090 24GB",
+    "retailer": "jawa",
+    "source_url": "https://www.jawa.gg/parts/gpus/geforce-rtx-4090-2d21ec",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-4090",
+    "component": "Return-window upgrade \u2014 RTX 4090 24GB",
+    "model": "NVIDIA GeForce RTX 4090 24GB",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+4090",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-4090",
+    "component": "Return-window upgrade \u2014 RTX 4090 24GB",
+    "model": "NVIDIA GeForce RTX 4090 24GB",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=RTX+4090",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

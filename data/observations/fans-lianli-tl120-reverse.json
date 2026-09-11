@@ -124,5 +124,29 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "reverse-blade identity not confirmed"
+  },
+  {
+    "component_id": "fans-lianli-tl120-reverse",
+    "component": "Fans \u2014 6x Lian Li UNI FAN TL 120 Reverse White",
+    "model": "Lian Li UNI FAN TL 120 Reverse Blade White",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=Lian+Li+TL120+Reverse+White",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "fans-lianli-tl120-reverse",
+    "component": "Fans \u2014 6x Lian Li UNI FAN TL 120 Reverse White",
+    "model": "Lian Li UNI FAN TL 120 Reverse Blade White",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=Lian+Li+TL120+Reverse+White",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

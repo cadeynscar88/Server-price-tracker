@@ -19,5 +19,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "nvme-nm790-4tb",
+    "component": "Storage \u2014 Lexar NM790 4TB TLC Gen4 NVMe",
+    "model": "Lexar 4TB NM790 SSD PCIe Gen4 NVMe M.2 2280 Internal Solid State Drive, Up to 7400/6500 MB/s Read/Write, Compatible with PS5, for Gamers and Creators,",
+    "condition": null,
+    "seller": "Newegg.com - Aptly Tech",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 780.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lexar NM790 4TB&prds=productid:2823873597772323033,headlineOfferDocid:2823873597772323033,imageDocid:11977699058677631334,rds:PC_18270114968551200334|PROD_PC_18270114968551200334,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "exact Lexar NM790 4TB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "exact Lexar NM790 4TB + sane price"
   }
 ]

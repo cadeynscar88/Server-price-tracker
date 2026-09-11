@@ -124,5 +124,29 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "120mm white reverse-blade fan + sane price"
+  },
+  {
+    "component_id": "fans-value-reverse",
+    "component": "Fans alternative \u2014 6x white 120mm reverse-blade ARGB",
+    "model": "White 120mm reverse-blade ARGB fans, 2x 3-pack",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=white+reverse+blade+120mm+fan+3+pack",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "fans-value-reverse",
+    "component": "Fans alternative \u2014 6x white 120mm reverse-blade ARGB",
+    "model": "White 120mm reverse-blade ARGB fans, 2x 3-pack",
+    "retailer": "walmart",
+    "source_url": "https://www.walmart.com/search?q=white+reverse+blade+120mm+fan+3+pack",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

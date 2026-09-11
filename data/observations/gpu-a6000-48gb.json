@@ -61,5 +61,17 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "RTX A6000 48GB + sane price"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future AI GPU \u2014 RTX A6000 48GB ECC",
+    "model": "NVIDIA RTX A6000 48GB ECC",
+    "retailer": "ebay",
+    "source_url": "https://www.ebay.com/sch/i.html?_nkw=NVIDIA+RTX+A6000+48GB",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

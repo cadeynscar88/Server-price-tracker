@@ -1,59 +1,59 @@
 {
-  "generated_at": "2026-09-08T11:13:41.568994+00:00",
+  "generated_at": "2026-09-11T11:22:29.712803+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
-      "state": "green",
-      "status": "fresh trusted price",
+      "state": "red",
+      "status": "missing from latest search",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
-      "latest_check_status": "verified"
+      "latest_check_status": "check_failed"
     },
     {
       "id": "newegg",
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-09-08T11:12:49.425134+00:00",
-      "last_verified_price": 35.9,
-      "latest_check_status": "rejected"
+      "last_verified_at": "2026-09-11T11:15:56.569325+00:00",
+      "last_verified_price": 729.0,
+      "latest_check_status": "verified"
     },
     {
       "id": "walmart",
       "name": "Walmart",
-      "state": "green",
-      "status": "fresh trusted price",
+      "state": "red",
+      "status": "missing from latest search",
       "last_verified_at": "2026-09-08T11:12:49.425134+00:00",
       "last_verified_price": 30.99,
-      "latest_check_status": "verified"
+      "latest_check_status": "check_failed"
     },
     {
       "id": "bestbuy",
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-09-08T11:12:49.425134+00:00",
+      "last_verified_at": "2026-09-11T11:15:56.569325+00:00",
       "last_verified_price": 699.0,
       "latest_check_status": "verified"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
-      "state": "gray",
+      "state": "red",
       "status": "no trusted verified price",
       "last_verified_at": null,
       "last_verified_price": null,
-      "latest_check_status": "rejected"
+      "latest_check_status": "check_failed"
     },
     {
       "id": "microcenter",
       "name": "Micro Center",
-      "state": "gray",
+      "state": "red",
       "status": "no trusted verified price",
       "last_verified_at": null,
       "last_verified_price": null,
-      "latest_check_status": "rejected"
+      "latest_check_status": "check_failed"
     }
   ],
   "freshness_policy": {

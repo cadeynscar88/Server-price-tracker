@@ -61,5 +61,29 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360 P28 White",
+    "model": "Lian Li HydroShift II OLED Curved 360 P28 White",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=HydroShift+II+OLED+Curved+360+P28+White",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360 P28 White",
+    "model": "Lian Li HydroShift II OLED Curved 360 P28 White",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=Lian+Li+HydroShift+II+OLED+Curved+360+White",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

@@ -80,5 +80,53 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "no strong rule for this item"
+  },
+  {
+    "component_id": "ram-royal-neo-96",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=F5-6000J2836F48GX2-TR5NS",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "ram-royal-neo-96",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=F5-6000J2836F48GX2-TR5NS",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "ram-royal-neo-96",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=F5-6000J2836F48GX2-TR5NS",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "ram-royal-neo-96",
+    "component": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=F5-6000J2836F48GX2-TR5NS",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]

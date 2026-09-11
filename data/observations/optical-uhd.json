@@ -61,5 +61,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "UHD/4K Blu-ray drive + sane price"
+  },
+  {
+    "component_id": "optical-uhd",
+    "component": "Optical drive \u2014 Blu-ray/DVD, UHD-capable preferred",
+    "model": "Liteon Lite-On EB1 Ultra Slim External Blu-Ray UHD",
+    "condition": null,
+    "seller": "Newegg.com - Qixingitech",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 119.06,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UHD Blu-ray drive PC&prds=catalogid:6714085590482637431,productid:1291260407435828468,headlineOfferDocid:14267194840374085554,imageDocid:15149191478708766682,rds:PC_10560774416384627882|PROD_PC_10560774416384627882,gpcid:10560774416384627882,mid:576462751590129217,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "UHD/4K Blu-ray drive + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "UHD/4K Blu-ray drive + sane price"
   }
 ]

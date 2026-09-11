@@ -19,5 +19,41 @@
     "query_kind": "generic",
     "timestamp": "2026-09-08T11:12:49.425134+00:00",
     "notes": "no strong rule for this item"
+  },
+  {
+    "component_id": "ram-96gb-alt",
+    "component": "RAM alternative \u2014 96GB 2x48 DDR5-6000 CL30 premium white/silver",
+    "model": "96GB 2x48GB DDR5-6000 CL30 premium white/silver",
+    "retailer": "amazon",
+    "source_url": "https://www.amazon.com/s?k=96GB+2x48+DDR5+6000+CL30+white",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "ram-96gb-alt",
+    "component": "RAM alternative \u2014 96GB 2x48 DDR5-6000 CL30 premium white/silver",
+    "model": "96GB 2x48GB DDR5-6000 CL30 premium white/silver",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=96GB+DDR5+6000+CL30",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "ram-96gb-alt",
+    "component": "RAM alternative \u2014 96GB 2x48 DDR5-6000 CL30 premium white/silver",
+    "model": "96GB 2x48GB DDR5-6000 CL30 premium white/silver",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=96GB+2x48+DDR5+6000+CL30+white",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-11T11:15:56.569325+00:00",
+    "notes": "The read operation timed out"
   }
 ]
