@@ -2,7 +2,7 @@
 """Collect exact-model prices for current graph targets not covered by the legacy matcher."""
 import json, os, re
 from pathlib import Path
-from scripts import check_prices as cp
+import check_prices as cp
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data'
