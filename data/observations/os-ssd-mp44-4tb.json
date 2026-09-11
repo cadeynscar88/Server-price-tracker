@@ -1,0 +1,22 @@
+[
+  {
+    "component_id": "os-ssd-mp44-4tb",
+    "component": "OS SSD — TeamGroup MP44 4TB TLC Gen4",
+    "model": "TeamGroup MP44 4TB TM8FPW004T0C101",
+    "condition": "New",
+    "seller": "Newegg",
+    "retailer": "newegg",
+    "price": 516.66,
+    "currency": "USD",
+    "source_url": "https://www.newegg.com/team-group-4tb-mp44-nvme/p/N82E16820985038",
+    "availability": "Add to cart; sold and shipped by Newegg; free shipping",
+    "status": "verified",
+    "method": "web_research",
+    "match_status": "verified",
+    "validation_version": "3.0",
+    "validation_reason": "Exact MP44 4TB model TM8FPW004T0C101 verified on live Newegg listing.",
+    "query_kind": "exact_sku_manual_web",
+    "timestamp": "2026-09-11T15:46:00+00:00",
+    "notes": "Current 4TB OS/application candidate baseline."
+  }
+]
