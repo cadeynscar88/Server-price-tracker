@@ -1,0 +1,22 @@
+[
+  {
+    "component_id": "fans-sl-inf-flex-reverse-3pack",
+    "component": "Bottom intake — 3x Lian Li SL-INF FLEX Reverse White",
+    "model": "Lian Li UNI FAN SL-INF FLEX Reverse Blade 120mm White 3-Pack",
+    "condition": "New",
+    "seller": "Micro Center",
+    "retailer": "microcenter",
+    "price": 104.99,
+    "currency": "USD",
+    "source_url": "https://www.microcenter.com/product/709947/lian-li-uni-fan-sl-inf-flex-reverse-blade-120mm-fluid-dynamic-case-fan-white-%283-pack%29",
+    "availability": "Usually ships in 5-7 business days; add to cart",
+    "status": "verified",
+    "method": "web_research",
+    "match_status": "verified",
+    "validation_version": "3.0",
+    "validation_reason": "Exact white reverse-blade SL-INF FLEX 3-pack verified on live retailer page.",
+    "query_kind": "exact_model_manual_web",
+    "timestamp": "2026-09-11T15:46:00+00:00",
+    "notes": "Stage-1 bottom intake baseline."
+  }
+]
