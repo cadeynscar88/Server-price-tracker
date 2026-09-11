@@ -36,7 +36,24 @@ def main():
     except Exception: manual={'observations':[]}
     component_stats={p['id']:stats(p['id']) for p in products if p.get('price_source','search')=='search'}
     purchased=config.get('purchased_components',{})
-    purchase_total=round(sum(float(v.get('purchase_price_usd',0) or 0)+float(v.get('protection_plan_usd',0) or 0) for v in purchased.values()),2)
+
+    # RAM is intentionally tracked as a separate spending bucket and does not
+    # consume the $4,000 core-build soft ceiling. Keep its reported after-tax
+    # amount separate rather than mixing unlike pre-tax/core-budget figures.
+    core_purchased={k:v for k,v in purchased.items() if k!='ram'}
+    core_purchase_total=round(sum(float(v.get('purchase_price_usd',0) or 0)+float(v.get('protection_plan_usd',0) or 0) for v in core_purchased.values()),2)
+    ram=purchased.get('ram',{})
+    ram_spend=ram.get('reported_after_tax_usd_approx')
+    separate_spending={}
+    if isinstance(ram_spend,(int,float)):
+        separate_spending['ram']={
+          'label':'RAM — separate from core build budget',
+          'model':ram.get('model'),
+          'amount_usd_approx':float(ram_spend),
+          'basis':'reported after-tax amount',
+          'included_in_core_budget':False
+        }
+
     summary={
       'generated':datetime.now(timezone.utc).isoformat(),
       'last_check':collector.get('checked_at'),
@@ -46,8 +63,12 @@ def main():
       'confirmed_build':config.get('current_build_plan',{}),
       'purchased_components':purchased,
       'returned_components':config.get('returned_components',{}),
-      'confirmed_hardware_subtotal_ex_tax_usd':config.get('confirmed_hardware_subtotal_ex_tax_usd',purchase_total),
-      'remaining_budget_to_target_usd':round(config.get('target_budget',0)-config.get('confirmed_hardware_subtotal_ex_tax_usd',purchase_total),2),
+      'confirmed_hardware_subtotal_ex_tax_usd':core_purchase_total,
+      'remaining_budget_to_target_usd':round(config.get('target_budget',0)-core_purchase_total,2),
+      'separate_spending':separate_spending,
+      'separate_spending_total_usd_approx':round(sum(v.get('amount_usd_approx',0) for v in separate_spending.values()),2),
+      'all_recorded_spending_usd_approx':round(core_purchase_total+sum(v.get('amount_usd_approx',0) for v in separate_spending.values()),2),
+      'budget_note':'RAM spending is intentionally excluded from the $4,000 core-build soft ceiling and displayed separately.',
       'completion_cost_models':config.get('completion_cost_models',{}),
       'ram_strategy':config.get('dynamic_groups',{}).get('ram',{}),
       'cooler_strategy':config.get('dynamic_groups',{}).get('cooler',{}),
