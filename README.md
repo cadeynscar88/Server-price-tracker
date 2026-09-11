@@ -1,154 +1,106 @@
 # Private Server Price Tracker
 
-This repository hosts the iPhone-first GitHub Pages tracker for the Frieren gaming-PC/private-server hybrid build.
+This repository hosts the iPhone-first GitHub Pages price tracker for the user's Frieren gaming-PC/private-server build.
 
-## Architecture
+## Current tracker state — Sep 11 2026
 
-- The browser/PWA is **read-only with respect to GitHub**. It never stores a GitHub PAT or the SerpApi key.
-- Automated price discovery uses **SerpApi Google Shopping** from GitHub Actions.
-- `SERPAPI_API_KEY` exists only as a GitHub Actions Secret.
-- One Google Shopping search can return offers from multiple retailers for the same item.
-- The scheduled collector currently runs **twice per week, Tuesdays and Fridays**, rotating tracked products within the configured quota budget.
-- Separate ChatGPT deal-watch automation may run more frequently; that is independent of the GitHub SerpApi schedule.
-- If a retailer is absent from the latest automated result, the prior verified price is retained and freshness is downgraded rather than guessed.
+The repository is aligned to the current hardware plan rather than the older RAM/4090/1TB-SSD search.
 
-## Freshness colors
+### Purchased / fixed
 
-- **Green** — verified retailer price is 7 days old or newer and the latest applicable check returned the retailer.
-- **Yellow** — last verified price is more than 7 days old.
-- **Red** — latest check did not return the retailer, or the API check failed.
-- **Gray** — retailer/item combination has not produced a verified observation yet.
+- AMD Ryzen 9 9950X3D — purchased at $619.99; retained on price-protection watch only.
+- ASRock X870E Taichi White — purchased.
+- MSI GeForce RTX 5070 Ti Frieren Edition 16GB — purchased and retained as gaming/Mid-AI GPU.
+- G.Skill Trident Z5 Royal Neo Silver 96GB (2x48GB) DDR5-6000 CL28 — purchased/final; routine RAM shopping is closed and RAM customization is deferred.
+- Lian Li O11 Dynamic EVO RGB White — purchased.
+- Lexar NM790 4TB TLC Gen4 NVMe — purchased for persistent server data.
+- ASRock Phantom Gaming PG-1600G 1600W — ordered at $199.99.
 
-## Screenshot correction workflow
+`Frieren` refers only to the MSI GPU. The overall build is white / black / champagne-gold, not Frieren-themed.
 
-If an automated price is missing or stale:
+## Active completion targets
 
-1. Open the tracker on iPhone.
-2. Tap the retailer under the item.
-3. Take a screenshot clearly showing retailer, exact item/model and price.
-4. Send the screenshot in the ChatGPT project conversation.
-5. After validation, add it to `data/observations/<item>.json` as a verified `manual_screenshot` observation.
+### CPU cooling / fans
 
-This preserves the security model: the PWA itself has no credential capable of writing to GitHub.
+Stage 1:
+- Lian Li HydroShift II OLED Curved 360TL White (`HS2OLDC36TW`).
+- The AIO includes 3x white TL FLEX Standard fans for top-radiator exhaust.
+- 3x white Lian Li SL-INF FLEX Reverse fans for bottom intake.
 
-## Repository layout
+Stage 2:
+- 3x white Lian Li TL LCD FLEX Reverse fans for side intake.
+- 1x white Lian Li TL FLEX Standard fan for rear exhaust.
 
-- `index.html` — GitHub Pages app and retailer/freshness display
-- `data/config.json` — current build state, thresholds and architecture
-- `data/products.json` — tracked components and alternatives
-- `data/reference_prices.json` — purchased/manual/planning fallback references
-- `data/historical_baselines.json` — explicitly historical pricing context
-- `data/manual_price_crossover.json` — manually reviewed observations
-- `data/observations/` — per-item current/API/manual history
-- `data/summary.json` — current displayed build summary
-- `data/retailer_status.json` — aggregate retailer freshness/health
-- `scripts/check_prices.py` — SerpApi collector
-- `scripts/build_summary.py` — summary generation
-- `scripts/build_retailer_status.py` — freshness/missing-result flags
-- `scripts/validate_tracker.py` — preflight consistency checks
-- `.github/workflows/price-check.yml` / related workflow files — scheduled/manual checks
+### OS/application SSD
 
-## Current build state — Sep 4 2026
+- Separate 2TB high-quality TLC Gen4 NVMe is the baseline.
+- 4TB is an opportunistic value upgrade when the premium over a directly comparable 2TB model is about $200-$225 or less, especially when $/TB improves materially.
+- The existing Lexar NM790 4TB remains persistent server-data storage.
+- Do **not** assume a second physical ingestion/staging SSD, a second NM790 mirror drive, or repartitioning of the existing NM790 at this stage.
+- Implementation requires logical separation between untrusted `INGESTION/STAGING` and encrypted authoritative `SERVER_DATA`.
 
-Confirmed or ordered:
+### ASRock white factory cabling
 
-- AMD Ryzen 9 9950X3D
-- ASRock X870E Taichi White
-- MSI GeForce RTX 5070 Ti Frieren Edition 16GB (**Frieren is only the GPU nickname; the PC is not Frieren-themed**)
-- Lian Li O11 Dynamic EVO RGB White
-- Lexar NM790 4TB TLC Gen4 NVMe
-- ASRock Phantom Gaming PG-1600G 1600W, ordered/backordered
+Track:
+- `CB-FKITWT` — ASRock White Cable Full Package Kit. Normal U.S. retail availability is actionable even without a discount.
+- `CB-12V2X6L600W/W` — ASRock white 600W 12V-2x6 TempGuard cable.
 
-Overall aesthetic: **white / black / champagne-gold**. Frieren's factory anime artwork is being covered by a custom marble backplate and should not drive the build design.
+Exact PG-1600G compatibility and supported NTC/TempGuard over-temperature functionality must be preserved. Generic modular PSU cables are not substitutes unless exact PSU-side pinout compatibility is independently verified.
 
-## Current RAM target
+### Future Heavy GPU
 
-Primary exact kit:
-
-**G.Skill Trident Z5 Royal Neo Silver 96GB (2x48GB) DDR5-6000 CL28**  
-MPN: `F5-6000J2836F48GX2-TR5NS`
-
-- AMD EXPO
-- CL28-36-36-96
-- 1.35V
-- 2-DIMM arrangement preferred
-
-Sep 4 current observations:
-- Amazon screenshot: **$1,959.99**
-- Newegg screenshot / web revalidation: **$2,099.99**
-
-Tracker thresholds:
-- <= $1,600: investigate
-- $1,400–$1,500: strong BUY territory
-- <= $1,300: exceptional / BUY NOW territory after live verification
-
-Historical exact-SKU context is stored in `data/historical_baselines.json`, including the Pangoly tracked low, average and 2026 price changes.
-
-64GB is now fallback only; 32GB is no longer a priority.
-
-## Frieren return-window / RTX 4090 target
-
-Until the original receipt date is verified, the tracker uses **Sep 28 2026 as the safe internal Frieren decision date**.
-
-Default: keep the RTX 5070 Ti unless a compelling, healthy, protected and waterblock-compatible RTX 4090 appears.
-
-Thresholds:
-- <= $1,950: exceptional / BUY NOW after verification
-- $1,950–$2,100: BUY territory
-- $2,100–$2,200: conditional for unusually strong examples
-- > $2,200: keep Frieren / WAIT
-
-Current and historical RTX 4090 market references are stored in `data/historical_baselines.json` and `data/observations/gpu-4090.json`.
-
-## Cooling / fans
-
-Preferred CPU AIO: **Lian Li HydroShift II OLED Curved 360 P28 White**.
-- Below $270: strong
-- <= $250: exceptional
-
-Fans: six white 120mm reverse-blade intake fans, preferably Lian Li UNI FAN TL Reverse White if price is sensible.
-
-## Storage
-
-- Existing Lexar NM790 4TB = persistent server data.
-- Continue tracking an exact second NM790 4TB for the future mirror.
-- Separate ~1TB OS/apps NVMe is recommended; prefer a strong Black Friday storage deal.
-- Windows 11 Pro bare-metal first remains the current OS direction.
-
-## PSU
-
-Current PSU target is resolved:
-
-**ASRock Phantom Gaming PG-1600G 1600W** — ordered from Newegg for **$199.99**, currently backordered.
-
-Key specs: ATX 3.1, PCIe 5.1, fully modular, dual native 12V-2x6, 10-year warranty.
-
-The old Lian Li RS1200 target is retired from active search.
-
-## Future Heavy AI GPU
-
-Heavy is intentionally **not committed yet** and is expected roughly 1–2 years out. The tracker continues to watch:
-
+Exact Heavy GPU is intentionally open for the later 2027/2028 horizon. The tracker keeps reference graphs for:
 - RTX PRO 5000 Blackwell 48GB ECC
 - used RTX A6000 48GB ECC
 - RTX 5090 32GB
-- exceptional RTX PRO 6000 Blackwell 96GB deals
+- RTX PRO 6000 Blackwell 96GB as an exceptional-value wildcard
 
-The current gaming/Light GPU should not be overbuilt solely for AI because the future Heavy GPU will handle the serious high-VRAM role.
+## Deal logic
 
-## Tracker trust rules
+A sale label does not make an item a deal. BUY / BUY NOW / CONSIDER decisions are based on verified market value and build fit.
+
+During Prime Big Deal Days, early-November promotions, Black Friday Week, Cyber Monday and similar sale windows, compare the advertised price against recent verified baselines. Fake markdowns, inflated reference prices and ordinary prices wearing sale labels remain WAIT/PASS.
+
+## Price-history graphs
+
+The Parts page links each product to `history.html?id=<product-id>`.
+
+Graphs plot verified observations from `data/observations/<product-id>.json`. Current exact-model manual-web observations can seed a graph immediately; subsequent scheduled SerpApi checks add new points.
+
+The older HydroShift P28 graph was reset when the active cooler changed to the 360TL model so unrelated variants do not share one trend line.
+
+## Collection architecture
+
+- GitHub Pages UI is read-only with respect to GitHub.
+- `SERPAPI_API_KEY` exists only as a GitHub Actions Secret.
+- `.github/workflows/price-check-v2.yml` runs twice weekly, Tuesdays and Fridays, and can also be launched manually from GitHub Actions.
+- `scripts/check_prices.py` continues collecting the legacy-supported exact targets such as the 9950X3D, HydroShift family and primary Heavy-GPU candidates.
+- `scripts/check_current_targets.py` collects the newer exact graph targets: current Lian Li fan banks, ASRock white cabling, current MP44 OS-SSD comparison and RTX PRO 6000 wildcard.
+- `scripts/build_summary.py` rebuilds current summary data after collection.
+
+The separate ChatGPT Frieren Build Deal Tracker is independent of the twice-weekly GitHub collector and performs the broader live deal search.
+
+## Freshness / trust rules
 
 - Never fabricate a price.
-- Search snippets and price trackers are leads, not live proof.
-- User screenshots can be treated as verified manual observations when retailer, exact item and price are visible.
-- Historical pricing is explicitly labeled and cannot masquerade as current live availability.
-- A BUY/BUY NOW recommendation requires exact SKU/model, live price, seller, condition, warranty/returns, shipping/local availability and compatibility to be checked.
-- Exact GPU waterblock compatibility is PCB-specific and must be verified before purchase.
+- Search snippets, shopping feeds and price trackers are leads, not sufficient proof for a purchase recommendation.
+- BUY/BUY NOW requires live exact-model verification, seller, condition, stock/orderability, shipping, warranty/returns or buyer protection and compatibility.
+- GitHub graph observations may come from verified manual-web research or the repository's SerpApi collectors.
+- A graph point is price-history evidence, not an instruction to purchase without rechecking the live listing.
+- If a retailer disappears from a later scan, retain prior verified history rather than guessing a replacement price.
 
-## Enabling the API
+## Main files
 
-Create a repository Actions secret named exactly:
+- `index.html` — GitHub Pages app
+- `history.html` — per-product price-history graph
+- `data/config.json` — current build state and tracker policy
+- `data/products.json` — current product list
+- `data/observations/` — per-product price history
+- `data/summary.json` — displayed build summary
+- `scripts/check_prices.py` — primary SerpApi collector
+- `scripts/check_current_targets.py` — exact current-target graph collector
+- `.github/workflows/price-check-v2.yml` — scheduled/manual collector workflow
 
-`SERPAPI_API_KEY`
+## Manual refresh
 
-Then open **Actions → SerpApi Price Check → Run workflow** for an immediate manual check. Do not put the API key in `index.html`, a JSON file, browser storage, an issue, or a commit.
+Open **Actions → SerpApi Price Check v2 → Run workflow** for an immediate GitHub-side price refresh. Do not place API keys in repository files, browser storage, issues or commits.
