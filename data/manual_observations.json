@@ -1,0 +1,80 @@
+[
+  {
+    "component_id": "nvme-nm790-4tb",
+    "retailer": "Micro Center Houston",
+    "price": 499.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-12",
+    "notes": "Exact Lexar NM790 4TB shelf price verified from user's in-store photo."
+  },
+  {
+    "component_id": "fans-sl-inf-flex-reverse-3pack",
+    "retailer": "Micro Center Houston",
+    "price": 104.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-12",
+    "notes": "Exact white SL-INF FLEX 120 Reverse 3-pack, Micro Center SKU 023937, verified from user's in-store photo."
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "retailer": "Newegg",
+    "price": 339.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-12",
+    "source_url": "https://www.newegg.com/lian-li-liquid-cooling-system-hydroshift-ii-radiator-size-15-75-4-80-0-94-inches-white/p/2YM-002Y-00059",
+    "notes": "Exact HydroShift II OLED Curved 360TL White HS2OLDC36TW, sold by Lian Li and shipped by Newegg."
+  },
+  {
+    "component_id": "fans-tl-lcd-flex-reverse-3pack",
+    "retailer": "Micro Center",
+    "price": 134.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-11",
+    "notes": "Exact TL LCD FLEX Reverse White 3-pack manual verified price."
+  },
+  {
+    "component_id": "cable-asrock-tempguard-white",
+    "retailer": "Newegg",
+    "price": 44.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-11",
+    "notes": "Exact ASRock CB-12V2X6L600W/W white TempGuard cable manual verified price."
+  },
+  {
+    "component_id": "os-ssd-mp44-2tb",
+    "retailer": "Newegg",
+    "price": 319.99,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-11",
+    "notes": "Exact TeamGroup MP44 2TB live page price from manual verification."
+  },
+  {
+    "component_id": "os-ssd-mp44-4tb",
+    "retailer": "Newegg",
+    "price": 516.66,
+    "currency": "USD",
+    "status": "verified",
+    "method": "manual_verified",
+    "match_status": "strong",
+    "timestamp": "2026-09-11",
+    "notes": "Exact TeamGroup MP44 4TB live page price from manual verification."
+  }
+]
