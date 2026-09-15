@@ -1,7 +1,7 @@
 [
   {
     "component_id": "fans-sl-inf-flex-reverse-3pack",
-    "component": "Bottom intake — 3x Lian Li SL-INF FLEX Reverse White",
+    "component": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
     "model": "Lian Li UNI FAN SL-INF FLEX Reverse Blade 120mm White 3-Pack",
     "condition": "New",
     "seller": "Micro Center",
@@ -18,5 +18,47 @@
     "query_kind": "exact_model_manual_web",
     "timestamp": "2026-09-11T15:46:00+00:00",
     "notes": "Stage-1 bottom intake baseline."
+  },
+  {
+    "component_id": "fans-sl-inf-flex-reverse-3pack",
+    "component": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
+    "model": "Lian Li UNI SL-INF FLEX 120mm Reverse Blade ARGB 3 Pack Fan - White | G9F.12RSLIN1F3W.00",
+    "condition": null,
+    "seller": "GCC Gamers",
+    "delivery": null,
+    "retailer": "gcc_gamers",
+    "price": 102.11,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN SL-INF FLEX Reverse White 3 Pack&prds=productid:10317503735758832034,headlineOfferDocid:10317503735758832034,imageDocid:4687558343351083248,rds:PC_1034694218059236315|PROD_PC_1034694218059236315,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-15T11:42:13.129561+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "fans-sl-inf-flex-reverse-3pack",
+    "component": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
+    "model": "Lian Li - UNI FAN SL Infinity LCD Flex 120mm Normal Blade (NOT Reverse) ARGB Fan, 3 Pack, Controller Not Included (12SLIND1F3W) - White",
+    "condition": null,
+    "seller": "Best Buy",
+    "delivery": null,
+    "retailer": "bestbuy",
+    "price": 144.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN SL-INF FLEX Reverse White 3 Pack&prds=productid:1149031841901152646,headlineOfferDocid:1149031841901152646,imageDocid:17846208507785490326,rds:PC_1037146193449248018|PROD_PC_1037146193449248018,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-15T11:42:13.129561+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

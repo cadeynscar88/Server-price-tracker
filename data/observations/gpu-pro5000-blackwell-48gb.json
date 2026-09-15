@@ -106,5 +106,26 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-09-11T11:15:56.569325+00:00",
     "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA GeForce RTX Pro 4000 Blackwell Single-Fan AI & Workstation Graphics Card",
+    "condition": null,
+    "seller": "B&H Photo-Video-Audio",
+    "delivery": "Free delivery by Thu",
+    "retailer": "bh",
+    "price": 3299.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=catalogid:829886721538483239,productid:17657063850977683485,headlineOfferDocid:17289492085013632832,imageDocid:5354371890394143236,gpcid:11064221451372259806,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-09-15T11:39:54.101699+00:00",
+    "notes": "different model/variant"
   }
 ]

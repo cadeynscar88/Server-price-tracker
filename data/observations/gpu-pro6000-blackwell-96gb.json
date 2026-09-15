@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "gpu-pro6000-blackwell-96gb",
+    "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "RTX PRO 6000 96GB Blackwell NVIDIA Workstation GPU",
+    "condition": null,
+    "seller": "Empowered PC",
+    "delivery": "Free delivery",
+    "retailer": "empowered_pc",
+    "price": 15000.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:14448109548649717405,headlineOfferDocid:14448109548649717405,imageDocid:15284612660839382309,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-15T11:42:13.129561+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  }
+]

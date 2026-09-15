@@ -1,7 +1,7 @@
 [
   {
     "component_id": "cooler-hydroshift-ii",
-    "component": "AIO — Lian Li HydroShift II OLED Curved 360TL White",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
     "model": "Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW",
     "condition": "New",
     "seller": "LIAN LI",
@@ -18,5 +18,39 @@
     "query_kind": "exact_sku_manual_web",
     "timestamp": "2026-09-11T15:46:00+00:00",
     "notes": "Current verified baseline after cooler decision changed from the older P28 target to 360TL."
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "model": "Lian Li Hydroshift II OLED Curved 360P28 CPU Cooler",
+    "condition": null,
+    "seller": "Newegg.com - LIAN LI",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 299.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW&prds=catalogid:5436584894279412421,productid:5708540202264079983,headlineOfferDocid:13799331867550026265,imageDocid:4357632065536359742,rds:PC_10186070516893859199|PROD_PC_10186070516893859199,gpcid:10186070516893859199,mid:576462912441908700,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-15T11:39:54.101699+00:00",
+    "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "model": "Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=HydroShift+II+OLED+Curved+360TL+White",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "query_kind": "retailer_fallback",
+    "timestamp": "2026-09-15T11:39:54.101699+00:00",
+    "notes": "Google hasn't returned any results for this query."
   }
 ]

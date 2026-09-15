@@ -403,5 +403,29 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-09-11T11:15:56.569325+00:00",
     "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "NVIDIA GeForce RTX 5090 32GB",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=RTX+5090",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-15T11:39:54.101699+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "NVIDIA GeForce RTX 5090 32GB",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=RTX+5090",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-15T11:39:54.101699+00:00",
+    "notes": "The read operation timed out"
   }
 ]
