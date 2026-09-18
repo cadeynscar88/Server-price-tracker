@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-15T11:44:59.753412+00:00",
-  "last_check": "2026-09-15T11:39:54.101699+00:00",
+  "generated": "2026-09-18T11:14:35.156862+00:00",
+  "last_check": "2026-09-18T11:09:14.679061+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 6,
+      "n": 8,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -212,24 +212,24 @@
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery by Sun",
+        "delivery": "Free delivery by Thu",
         "retailer": "bestbuy",
         "price": 699.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D Best Buy&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
-        "query_kind": "generic",
-        "timestamp": "2026-09-11T11:15:56.569325+00:00",
+        "query_kind": "retailer_fallback",
+        "timestamp": "2026-09-18T11:09:14.679061+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
       "max": 729.0,
-      "avg": 698.6666666666666,
+      "avg": 702.5,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -435,7 +435,35 @@
       "avg": 44.99,
       "median": 44.99
     },
-    "os-ssd-mp44-2tb": null,
+    "os-ssd-mp44-2tb": {
+      "n": 1,
+      "cur": 354.31,
+      "curObs": {
+        "component_id": "os-ssd-mp44-2tb",
+        "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
+        "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD tm8fpw008t0c101",
+        "condition": null,
+        "seller": "eBay - memoryc_deals",
+        "delivery": "Free delivery",
+        "retailer": "ebay",
+        "price": 354.31,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:5722301679849673525,imageDocid:8137915902749740827,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-09-18T11:11:11.598600+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 354.31,
+      "max": 354.31,
+      "avg": 354.31,
+      "median": 354.31
+    },
     "os-ssd-mp44-4tb": {
       "n": 1,
       "cur": 516.66,
@@ -520,19 +548,19 @@
       "median": 4303.535
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 1,
-      "cur": 15000.0,
+      "n": 4,
+      "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
         "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
-        "model": "RTX PRO 6000 96GB Blackwell NVIDIA Workstation GPU",
+        "model": "PNY Technologies - NVRTXPRO6000TCGPU3-KIT - Pny Vcx Nvrtxpro6000tcgpu3-kit Nvidia Rtx Pro 6000 Blackwell Server 96gb Gddr7",
         "condition": null,
-        "seller": "Empowered PC",
+        "seller": "Neobits.com",
         "delivery": "Free delivery",
-        "retailer": "empowered_pc",
-        "price": 15000.0,
+        "retailer": "neobits_com",
+        "price": 11025.8,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:14448109548649717405,headlineOfferDocid:14448109548649717405,imageDocid:15284612660839382309,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:6194957156859522527,headlineOfferDocid:6194957156859522527,imageDocid:16522763017025224548,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -540,13 +568,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-15T11:42:13.129561+00:00",
+        "timestamp": "2026-09-18T11:11:11.598600+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 15000.0,
+      "min": 11025.8,
       "max": 15000.0,
-      "avg": 15000.0,
-      "median": 15000.0
+      "avg": 13504.95,
+      "median": 13997.0
     }
   },
   "manual_price_crossover": [

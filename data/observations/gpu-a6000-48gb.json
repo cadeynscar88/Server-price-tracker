@@ -94,5 +94,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-15T11:39:54.101699+00:00",
     "notes": "RTX A6000 48GB + sane price"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "Nvidia Pny Rtx A6000 Heat Sink Housing, Excluding Graphics Card And",
+    "condition": null,
+    "seller": "eBay - ebl-2377",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 119.98,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:16430020225073154901,headlineOfferDocid:16430020225073154901,imageDocid:15329260341343227336,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "price $119.98 outside sanity band $1000-$8000",
+    "query_kind": "generic",
+    "timestamp": "2026-09-18T11:09:14.679061+00:00",
+    "notes": "price $119.98 outside sanity band $1000-$8000"
   }
 ]

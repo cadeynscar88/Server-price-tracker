@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "os-ssd-mp44-2tb",
+    "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
+    "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD tm8fpw008t0c101",
+    "condition": null,
+    "seller": "eBay - memoryc_deals",
+    "delivery": "Free delivery",
+    "retailer": "ebay",
+    "price": 354.31,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:5722301679849673525,imageDocid:8137915902749740827,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-18T11:11:11.598600+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  }
+]
