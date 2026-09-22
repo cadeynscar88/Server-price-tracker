@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-22T01:23:21.420180+00:00",
-  "last_check": "2026-09-22T01:18:22.312583+00:00",
+  "generated": "2026-09-22T11:37:12.912962+00:00",
+  "last_check": "2026-09-22T11:32:50.310860+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 8,
+      "n": 9,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "retailer_fallback",
-        "timestamp": "2026-09-18T11:09:14.679061+00:00",
+        "timestamp": "2026-09-22T11:32:50.310860+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
       "max": 729.0,
-      "avg": 702.5,
+      "avg": 702.1111111111111,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -519,19 +519,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 4,
-      "cur": 4999.0,
+      "n": 5,
+      "cur": 4359.99,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia Rtx A6000 48gb Gddr6 384-bit Gpu Graphics Card",
+        "model": "Lenovo Quadro Rtx A6000 48gb Ram - Graphics Card - Excellent Condition",
         "condition": null,
-        "seller": "eBay - egoods.supply",
-        "delivery": "Free delivery",
+        "seller": "eBay - itsworthmore",
+        "delivery": "Free delivery by Mon",
         "retailer": "ebay",
-        "price": 4999.0,
+        "price": 4359.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:8609981066353396225,headlineOfferDocid:8609981066353396225,imageDocid:4647855416855421588,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:10649727933554339090,headlineOfferDocid:10649727933554339090,imageDocid:767313737798309675,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-09-15T11:39:54.101699+00:00",
+        "timestamp": "2026-09-22T11:32:50.310860+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 4999.0,
-      "avg": 4430.785,
-      "median": 4303.535
+      "avg": 4416.625999999999,
+      "median": 4359.99
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 4,
+      "n": 7,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -556,7 +556,7 @@
         "model": "PNY Technologies - NVRTXPRO6000TCGPU3-KIT - Pny Vcx Nvrtxpro6000tcgpu3-kit Nvidia Rtx Pro 6000 Blackwell Server 96gb Gddr7",
         "condition": null,
         "seller": "Neobits.com",
-        "delivery": "Free delivery",
+        "delivery": null,
         "retailer": "neobits_com",
         "price": 11025.8,
         "currency": "USD",
@@ -568,13 +568,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-18T11:11:11.598600+00:00",
+        "timestamp": "2026-09-22T11:34:07.634852+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13504.95,
-      "median": 13997.0
+      "avg": 13549.369999999999,
+      "median": 14799.99
     }
   },
   "manual_price_crossover": [

@@ -127,5 +127,26 @@
     "method": "serpapi_google_shopping",
     "timestamp": "2026-09-22T01:18:22.312583+00:00",
     "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "Lenovo Quadro Rtx A6000 48gb Ram - Graphics Card - Excellent Condition",
+    "condition": null,
+    "seller": "eBay - itsworthmore",
+    "delivery": "Free delivery by Mon",
+    "retailer": "ebay",
+    "price": 4359.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:10649727933554339090,headlineOfferDocid:10649727933554339090,imageDocid:767313737798309675,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-22T11:32:50.310860+00:00",
+    "notes": "RTX A6000 48GB + sane price"
   }
 ]
