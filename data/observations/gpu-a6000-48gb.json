@@ -115,5 +115,17 @@
     "query_kind": "generic",
     "timestamp": "2026-09-18T11:09:14.679061+00:00",
     "notes": "price $119.98 outside sanity band $1000-$8000"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "NVIDIA RTX A6000 48GB ECC",
+    "retailer": "ebay",
+    "source_url": "https://www.ebay.com/sch/i.html?_nkw=NVIDIA+RTX+A6000+48GB",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-09-22T01:18:22.312583+00:00",
+    "notes": "The read operation timed out"
   }
 ]
