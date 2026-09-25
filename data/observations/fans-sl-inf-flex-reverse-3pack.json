@@ -60,5 +60,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-09-15T11:42:13.129561+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "fans-sl-inf-flex-reverse-3pack",
+    "component": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
+    "model": "Lian Li UNI SL-INF FLEX 120mm Reverse Blade ARGB 3 Pack Fan - White | G9F.12RSLIN1F3W.00",
+    "condition": null,
+    "seller": "GCC Gamers",
+    "delivery": null,
+    "retailer": "gcc_gamers",
+    "price": 102.11,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN SL-INF FLEX Reverse White 3 Pack&prds=productid:10317503735758832034,headlineOfferDocid:10317503735758832034,imageDocid:4687558343351083248,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-25T11:46:41.432855+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

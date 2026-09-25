@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-22T11:37:12.912962+00:00",
-  "last_check": "2026-09-22T11:32:50.310860+00:00",
+  "generated": "2026-09-25T11:47:18.783244+00:00",
+  "last_check": "2026-09-25T11:46:30.439977+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 9,
+      "n": 11,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -212,7 +212,7 @@
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery by Thu",
+        "delivery": "Free delivery by Sun",
         "retailer": "bestbuy",
         "price": 699.0,
         "currency": "USD",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "retailer_fallback",
-        "timestamp": "2026-09-22T11:32:50.310860+00:00",
+        "timestamp": "2026-09-25T11:46:30.439977+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
       "max": 729.0,
-      "avg": 702.1111111111111,
+      "avg": 701.5454545454545,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -349,7 +349,7 @@
       "median": 339.99
     },
     "fans-sl-inf-flex-reverse-3pack": {
-      "n": 3,
+      "n": 4,
       "cur": 102.11,
       "curObs": {
         "component_id": "fans-sl-inf-flex-reverse-3pack",
@@ -361,7 +361,7 @@
         "retailer": "gcc_gamers",
         "price": 102.11,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN SL-INF FLEX Reverse White 3 Pack&prds=productid:10317503735758832034,headlineOfferDocid:10317503735758832034,imageDocid:4687558343351083248,rds:PC_1034694218059236315|PROD_PC_1034694218059236315,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN SL-INF FLEX Reverse White 3 Pack&prds=productid:10317503735758832034,headlineOfferDocid:10317503735758832034,imageDocid:4687558343351083248,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -369,13 +369,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-15T11:42:13.129561+00:00",
+        "timestamp": "2026-09-25T11:46:41.432855+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 102.11,
       "max": 144.99,
-      "avg": 117.36333333333334,
-      "median": 104.99
+      "avg": 113.55,
+      "median": 103.55
     },
     "fans-tl-lcd-flex-reverse-3pack": {
       "n": 1,
@@ -436,19 +436,19 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 1,
-      "cur": 354.31,
+      "n": 2,
+      "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
         "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
         "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD tm8fpw008t0c101",
         "condition": null,
-        "seller": "eBay - memoryc_deals",
+        "seller": "Newegg.com",
         "delivery": "Free delivery",
-        "retailer": "ebay",
-        "price": 354.31,
+        "retailer": "newegg",
+        "price": 325.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:5722301679849673525,imageDocid:8137915902749740827,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:6541872939760430024,imageDocid:1106170821801692178,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -456,13 +456,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-18T11:11:11.598600+00:00",
+        "timestamp": "2026-09-25T11:46:41.432855+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 354.31,
+      "min": 325.99,
       "max": 354.31,
-      "avg": 354.31,
-      "median": 354.31
+      "avg": 340.15,
+      "median": 340.15
     },
     "os-ssd-mp44-4tb": {
       "n": 1,
@@ -519,19 +519,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 5,
-      "cur": 4359.99,
+      "n": 6,
+      "cur": 5800.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Lenovo Quadro Rtx A6000 48gb Ram - Graphics Card - Excellent Condition",
+        "model": "nvidia rtx a6000 48GB GDDR6 Workstation GPU Price Datasheet",
         "condition": null,
-        "seller": "eBay - itsworthmore",
-        "delivery": "Free delivery by Mon",
+        "seller": "eBay",
+        "delivery": null,
         "retailer": "ebay",
-        "price": 4359.99,
+        "price": 5800.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:10649727933554339090,headlineOfferDocid:10649727933554339090,imageDocid:767313737798309675,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:9550687752240928077,productid:15846874883193601234,headlineOfferDocid:4083486318943608699,imageDocid:10982031012291732550,gpcid:3054996078208934303,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-09-22T11:32:50.310860+00:00",
+        "timestamp": "2026-09-25T11:46:30.439977+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
-      "max": 4999.0,
-      "avg": 4416.625999999999,
-      "median": 4359.99
+      "max": 5800.0,
+      "avg": 4647.188333333333,
+      "median": 4424.995
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 7,
+      "n": 8,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -573,8 +573,8 @@
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13549.369999999999,
-      "median": 14799.99
+      "avg": 13730.6975,
+      "median": 14897.494999999999
     }
   },
   "manual_price_crossover": [

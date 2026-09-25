@@ -145,5 +145,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-09-22T11:34:07.634852+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "gpu-pro6000-blackwell-96gb",
+    "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "PNY NVIDIA RTX Pro 6000 Blackwell Workstation 96GB GDDR7 24064 CUDA Cores PCI Express 5.0 x16 600W",
+    "condition": null,
+    "seller": "Central Computers",
+    "delivery": null,
+    "retailer": "central_computers",
+    "price": 14999.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=catalogid:3338569832965248282,productid:13560963872706356885,headlineOfferDocid:14379111912727672062,imageDocid:13780394875734909640,gpcid:4796018920792343726,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-09-25T11:46:41.432855+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

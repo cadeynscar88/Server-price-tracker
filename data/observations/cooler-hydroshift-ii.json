@@ -139,5 +139,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-22T11:32:50.310860+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "model": "Lian Li Hydroshift II LCD-S 360CL AIO Liquid Cooler \u2013 Black",
+    "condition": null,
+    "seller": "Walmart - Newegg Inc.",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 186.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW&prds=catalogid:7129275476078990851,productid:1289986089078314280,headlineOfferDocid:7138189535367894359,imageDocid:7276290890191555594,rds:PC_16379152318297081254|PROD_PC_16379152318297081254,gpcid:16379152318297081254,mid:576462896358975874,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-09-25T11:46:30.439977+00:00",
+    "notes": "required exact-model terms missing"
   }
 ]

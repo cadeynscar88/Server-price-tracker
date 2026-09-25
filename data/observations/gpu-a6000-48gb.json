@@ -148,5 +148,26 @@
     "query_kind": "generic",
     "timestamp": "2026-09-22T11:32:50.310860+00:00",
     "notes": "RTX A6000 48GB + sane price"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "nvidia rtx a6000 48GB GDDR6 Workstation GPU Price Datasheet",
+    "condition": null,
+    "seller": "eBay",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 5800.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:9550687752240928077,productid:15846874883193601234,headlineOfferDocid:4083486318943608699,imageDocid:10982031012291732550,gpcid:3054996078208934303,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-09-25T11:46:30.439977+00:00",
+    "notes": "RTX A6000 48GB + sane price"
   }
 ]
