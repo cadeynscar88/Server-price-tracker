@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-25T11:47:18.783244+00:00",
-  "last_check": "2026-09-25T11:46:30.439977+00:00",
+  "generated": "2026-09-29T12:47:30.291980+00:00",
+  "last_check": "2026-09-29T12:46:49.549529+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 11,
+      "n": 12,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -228,8 +228,8 @@
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
-      "max": 729.0,
-      "avg": 701.5454545454545,
+      "max": 748.99,
+      "avg": 705.4991666666666,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -349,7 +349,7 @@
       "median": 339.99
     },
     "fans-sl-inf-flex-reverse-3pack": {
-      "n": 4,
+      "n": 5,
       "cur": 102.11,
       "curObs": {
         "component_id": "fans-sl-inf-flex-reverse-3pack",
@@ -369,13 +369,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-25T11:46:41.432855+00:00",
+        "timestamp": "2026-09-29T12:47:18.276565+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 102.11,
       "max": 144.99,
-      "avg": 113.55,
-      "median": 103.55
+      "avg": 111.26199999999999,
+      "median": 102.11
     },
     "fans-tl-lcd-flex-reverse-3pack": {
       "n": 1,
@@ -436,12 +436,12 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 2,
+      "n": 3,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
         "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
-        "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD tm8fpw008t0c101",
+        "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD TM8FPW002T0C101",
         "condition": null,
         "seller": "Newegg.com",
         "delivery": "Free delivery",
@@ -456,13 +456,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-25T11:46:41.432855+00:00",
+        "timestamp": "2026-09-29T12:47:18.276565+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
       "max": 354.31,
-      "avg": 340.15,
-      "median": 340.15
+      "avg": 335.43,
+      "median": 325.99
     },
     "os-ssd-mp44-4tb": {
       "n": 1,
@@ -519,19 +519,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 6,
-      "cur": 5800.0,
+      "n": 7,
+      "cur": 7150.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "nvidia rtx a6000 48GB GDDR6 Workstation GPU Price Datasheet",
+        "model": "Nvidia Rtx A6000 Ampere Gpu Accelarator 48gb Graphics Card Deep",
         "condition": null,
-        "seller": "eBay",
+        "seller": "eBay - ea_memory",
         "delivery": null,
         "retailer": "ebay",
-        "price": 5800.0,
+        "price": 7150.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:9550687752240928077,productid:15846874883193601234,headlineOfferDocid:4083486318943608699,imageDocid:10982031012291732550,gpcid:3054996078208934303,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:831472781273547766,headlineOfferDocid:831472781273547766,imageDocid:11711123592140099905,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-09-25T11:46:30.439977+00:00",
+        "timestamp": "2026-09-29T12:46:49.549529+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
-      "max": 5800.0,
-      "avg": 4647.188333333333,
-      "median": 4424.995
+      "max": 7150.0,
+      "avg": 5004.732857142857,
+      "median": 4490.0
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 8,
+      "n": 9,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -560,7 +560,7 @@
         "retailer": "neobits_com",
         "price": 11025.8,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:6194957156859522527,headlineOfferDocid:6194957156859522527,imageDocid:16522763017025224548,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:17902455769310107864,headlineOfferDocid:17902455769310107864,imageDocid:16522763017025224548,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -568,13 +568,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-22T11:34:07.634852+00:00",
+        "timestamp": "2026-09-29T12:47:18.276565+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13730.6975,
-      "median": 14897.494999999999
+      "avg": 13430.153333333334,
+      "median": 14799.99
     }
   },
   "manual_price_crossover": [
