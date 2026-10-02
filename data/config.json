@@ -80,8 +80,14 @@
       "label": "Stage 1 cooling",
       "description": "Permanent minimum cooling configuration for normal use and commissioning.",
       "items": [
-        {"product_id": "cooler-hydroshift-ii", "baseline_usd": 339.99},
-        {"product_id": "fans-sl-inf-flex-reverse-3pack", "baseline_usd": 104.99}
+        {
+          "product_id": "cooler-hydroshift-ii",
+          "baseline_usd": 339.99
+        },
+        {
+          "product_id": "fans-sl-inf-flex-reverse-3pack",
+          "baseline_usd": 104.99
+        }
       ],
       "baseline_total_usd": 444.98
     },
@@ -89,8 +95,14 @@
       "label": "Stage 2 cooling",
       "description": "Side display intake bank plus rear exhaust.",
       "items": [
-        {"product_id": "fans-tl-lcd-flex-reverse-3pack", "baseline_usd": 134.99},
-        {"product_id": "fans-tl-flex-standard-single", "baseline_usd": 30.99}
+        {
+          "product_id": "fans-tl-lcd-flex-reverse-3pack",
+          "baseline_usd": 134.99
+        },
+        {
+          "product_id": "fans-tl-flex-standard-single",
+          "baseline_usd": 30.99
+        }
       ],
       "baseline_total_usd": 165.98
     }
@@ -129,7 +141,9 @@
   "dynamic_groups": {
     "ram": {
       "required": false,
-      "candidates": ["ram-royal-neo-96"],
+      "candidates": [
+        "ram-royal-neo-96"
+      ],
       "rules": {
         "initial": "ram-royal-neo-96",
         "preferred_dimm_count": 2,
@@ -139,13 +153,23 @@
     },
     "cooler": {
       "required": true,
-      "candidates": ["cooler-hydroshift-ii"],
-      "rules": {"preferred": "cooler-hydroshift-ii", "exact_model": "HS2OLDC36TW"}
+      "candidates": [
+        "cooler-hydroshift-ii"
+      ],
+      "rules": {
+        "preferred": "cooler-hydroshift-ii",
+        "exact_model": "HS2OLDC36TW"
+      }
     },
     "psu": {
       "required": false,
-      "candidates": ["psu-asrock-pg1600g"],
-      "rules": {"status": "ordered", "purchase_price_usd": 199.99}
+      "candidates": [
+        "psu-asrock-pg1600g"
+      ],
+      "rules": {
+        "status": "ordered",
+        "purchase_price_usd": 199.99
+      }
     },
     "fans": {
       "required": true,
@@ -155,14 +179,22 @@
         "fans-tl-flex-standard-single"
       ],
       "rules": {
-        "stage_1": ["fans-sl-inf-flex-reverse-3pack"],
-        "stage_2": ["fans-tl-lcd-flex-reverse-3pack", "fans-tl-flex-standard-single"],
+        "stage_1": [
+          "fans-sl-inf-flex-reverse-3pack"
+        ],
+        "stage_2": [
+          "fans-tl-lcd-flex-reverse-3pack",
+          "fans-tl-flex-standard-single"
+        ],
         "top_radiator_fans_included_with_aio": true
       }
     },
     "storage": {
       "required": true,
-      "candidates": ["os-ssd-mp44-2tb", "os-ssd-mp44-4tb"],
+      "candidates": [
+        "os-ssd-mp44-2tb",
+        "os-ssd-mp44-4tb"
+      ],
       "rules": {
         "baseline_capacity_tb": 2,
         "opportunistic_capacity_tb": 4,
@@ -172,7 +204,10 @@
     },
     "cabling": {
       "required": false,
-      "candidates": ["cable-asrock-full-white-kit", "cable-asrock-tempguard-white"],
+      "candidates": [
+        "cable-asrock-full-white-kit",
+        "cable-asrock-tempguard-white"
+      ],
       "rules": {
         "full_white_kit_availability_is_actionable": true,
         "require_pg1600g_compatibility": true,
@@ -182,11 +217,39 @@
     "gpu": {
       "required": false,
       "role": "future Heavy AI GPU",
-      "candidates": ["gpu-pro5000-blackwell-48gb", "gpu-a6000-48gb", "gpu-5090", "gpu-pro6000-blackwell-96gb"],
+      "candidates": [
+        "gpu-pro5000-blackwell-48gb",
+        "gpu-a6000-48gb",
+        "gpu-5090",
+        "gpu-pro6000-blackwell-96gb"
+      ],
       "rules": {
         "heavy_exact_model_open": true,
         "expected_horizon": "late 2027/2028",
         "verify_slot_thickness_for_dual_gpu": true
+      }
+    },
+    "always_on_server": {
+      "required": false,
+      "candidates": [
+        "aon-minisforum-n5-ryzen7-255",
+        "aon-minisforum-n5-air-ryzen7-255",
+        "aon-minisforum-n5-pro-hx370",
+        "aon-ugreen-dxp4800-gt",
+        "aon-ugreen-dxp4800-plus",
+        "aon-ugreen-dxp4800-pro",
+        "aon-terramaster-f4-425-pro-n305",
+        "aon-terramaster-f4-425-pro-n350",
+        "aon-asustor-as6804t",
+        "aon-qnap-ts464"
+      ],
+      "rules": {
+        "storage_capacity_deferred_until_aegis_measurement": true,
+        "compare_barebone_or_diskless_platform_cost": true,
+        "hdd_purchase_deferred": true,
+        "preferred_initial_ram_gb": 32,
+        "minecraft_and_media_service_headroom_required": true,
+        "exact_model_variant_required": true
       }
     }
   },
@@ -194,9 +257,18 @@
     "enabled": true,
     "manual_plus_automation": true,
     "primary_candidates": [
-      {"product_id": "gpu-pro5000-blackwell-48gb", "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC"},
-      {"product_id": "gpu-a6000-48gb", "model": "NVIDIA RTX A6000 48GB ECC"},
-      {"product_id": "gpu-5090", "model": "NVIDIA GeForce RTX 5090 32GB"}
+      {
+        "product_id": "gpu-pro5000-blackwell-48gb",
+        "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC"
+      },
+      {
+        "product_id": "gpu-a6000-48gb",
+        "model": "NVIDIA RTX A6000 48GB ECC"
+      },
+      {
+        "product_id": "gpu-5090",
+        "model": "NVIDIA GeForce RTX 5090 32GB"
+      }
     ],
     "wildcard": {
       "product_id": "gpu-pro6000-blackwell-96gb",
@@ -220,7 +292,17 @@
       "cable-asrock-tempguard-white",
       "os-ssd-mp44-2tb",
       "os-ssd-mp44-4tb",
-      "gpu-pro6000-blackwell-96gb"
+      "gpu-pro6000-blackwell-96gb",
+      "aon-minisforum-n5-ryzen7-255",
+      "aon-minisforum-n5-air-ryzen7-255",
+      "aon-minisforum-n5-pro-hx370",
+      "aon-ugreen-dxp4800-gt",
+      "aon-ugreen-dxp4800-plus",
+      "aon-ugreen-dxp4800-pro",
+      "aon-terramaster-f4-425-pro-n305",
+      "aon-terramaster-f4-425-pro-n350",
+      "aon-asustor-as6804t",
+      "aon-qnap-ts464"
     ],
     "excluded_purchased_ids": [
       "motherboard-taichi-white",
@@ -252,15 +334,37 @@
       "Lian Li O11 Dynamic EVO RGB White",
       "ASRock Phantom Gaming PG-1600G 1600W"
     ],
-    "remaining_stage_1": ["HydroShift II OLED Curved 360TL White", "3x SL-INF FLEX Reverse White bottom intake"],
-    "remaining_stage_2": ["3x TL LCD FLEX Reverse White side intake", "1x TL FLEX Standard White rear exhaust"],
-    "remaining_storage": ["2TB or opportunistic 4TB TLC Gen4 OS/application SSD"],
-    "optional": ["ASRock factory white cable kit", "ASRock white TempGuard 12V-2x6 cable", "future Heavy AI GPU"]
+    "remaining_stage_1": [
+      "HydroShift II OLED Curved 360TL White",
+      "3x SL-INF FLEX Reverse White bottom intake"
+    ],
+    "remaining_stage_2": [
+      "3x TL LCD FLEX Reverse White side intake",
+      "1x TL FLEX Standard White rear exhaust"
+    ],
+    "remaining_storage": [
+      "2TB or opportunistic 4TB TLC Gen4 OS/application SSD"
+    ],
+    "optional": [
+      "ASRock factory white cable kit",
+      "ASRock white TempGuard 12V-2x6 cable",
+      "future Heavy AI GPU"
+    ]
   },
   "open_box_policy": {
     "enabled": true,
     "home_search_area": "Use the user's current location when a local search is explicitly performed; otherwise search nationally in the U.S.",
-    "used_online_sources": ["MBPC.gg", "eBay", "Jawa", "Mercari", "OfferUp", "Facebook Marketplace when searchable", "ShopGoodwill", "HiBid", "local auction/liquidation sellers"],
+    "used_online_sources": [
+      "MBPC.gg",
+      "eBay",
+      "Jawa",
+      "Mercari",
+      "OfferUp",
+      "Facebook Marketplace when searchable",
+      "ShopGoodwill",
+      "HiBid",
+      "local auction/liquidation sellers"
+    ],
     "component_rules": {
       "gpu": "Protected purchase strongly preferred.",
       "nvme": "Prefer new with strong warranty/buyer protection.",
@@ -314,5 +418,54 @@
     "serpapi_monthly_limit": 250,
     "serpapi_reserve": 10,
     "serpapi_monthly_budget": 240
+  },
+  "always_on_server_watch": {
+    "enabled": true,
+    "status": "research / pre-purchase",
+    "storage_sizing_dependency": "Wait for Aegis on Frieren to measure validated data footprint before choosing HDD capacity.",
+    "candidates": [
+      {
+        "product_id": "aon-minisforum-n5-ryzen7-255",
+        "model": "MINISFORUM N5 AMD Ryzen 7 255"
+      },
+      {
+        "product_id": "aon-minisforum-n5-air-ryzen7-255",
+        "model": "MINISFORUM N5 AIR AMD Ryzen 7 255"
+      },
+      {
+        "product_id": "aon-minisforum-n5-pro-hx370",
+        "model": "MINISFORUM N5 Pro AI NAS AMD Ryzen AI 9 HX PRO 370"
+      },
+      {
+        "product_id": "aon-ugreen-dxp4800-gt",
+        "model": "UGREEN NASync DXP4800 GT"
+      },
+      {
+        "product_id": "aon-ugreen-dxp4800-plus",
+        "model": "UGREEN NASync DXP4800 Plus"
+      },
+      {
+        "product_id": "aon-ugreen-dxp4800-pro",
+        "model": "UGREEN NASync DXP4800 Pro"
+      },
+      {
+        "product_id": "aon-terramaster-f4-425-pro-n305",
+        "model": "TerraMaster F4-425 Pro Intel N305"
+      },
+      {
+        "product_id": "aon-terramaster-f4-425-pro-n350",
+        "model": "TerraMaster F4-425 Pro Intel N350"
+      },
+      {
+        "product_id": "aon-asustor-as6804t",
+        "model": "ASUSTOR Lockerstor 4 Gen3 AS6804T"
+      },
+      {
+        "product_id": "aon-qnap-ts464",
+        "model": "QNAP TS-464 4-Bay NAS"
+      }
+    ],
+    "pricing_rule": "Track chassis/barebone/diskless price separately from RAM, SSD and HDD additions; do not treat storage-array cost as chassis cost.",
+    "purchase_rule": "No automatic purchase. Verify live exact model, seller, condition, warranty, returns and final checkout price before action."
   }
 }
