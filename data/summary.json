@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-29T12:47:30.291980+00:00",
-  "last_check": "2026-09-29T12:46:49.549529+00:00",
+  "generated": "2026-10-02T12:28:25.070330+00:00",
+  "last_check": "2026-10-02T12:27:45.184008+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 12,
+      "n": 13,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "retailer_fallback",
-        "timestamp": "2026-09-25T11:46:30.439977+00:00",
+        "timestamp": "2026-10-02T12:27:45.184008+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
       "max": 748.99,
-      "avg": 705.4991666666666,
+      "avg": 704.9992307692307,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -436,7 +436,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 3,
+      "n": 4,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -456,12 +456,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-29T12:47:18.276565+00:00",
+        "timestamp": "2026-10-02T12:27:54.699827+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
       "max": 354.31,
-      "avg": 335.43,
+      "avg": 333.07,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -519,7 +519,7 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 7,
+      "n": 8,
       "cur": 7150.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-09-29T12:46:49.549529+00:00",
+        "timestamp": "2026-10-02T12:27:45.184008+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5004.732857142857,
-      "median": 4490.0
+      "avg": 5272.89125,
+      "median": 4744.5
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 9,
+      "n": 10,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -568,13 +568,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-09-29T12:47:18.276565+00:00",
+        "timestamp": "2026-10-02T12:27:54.699827+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13430.153333333334,
-      "median": 14799.99
+      "avg": 13189.717999999999,
+      "median": 13899.494999999999
     }
   },
   "manual_price_crossover": [

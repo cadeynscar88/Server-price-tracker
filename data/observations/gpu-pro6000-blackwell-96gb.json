@@ -187,5 +187,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-09-29T12:47:18.276565+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "gpu-pro6000-blackwell-96gb",
+    "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "PNY Technologies - NVRTXPRO6000TCGPU3-KIT - Pny Vcx Nvrtxpro6000tcgpu3-kit Nvidia Rtx Pro 6000 Blackwell Server 96gb Gddr7",
+    "condition": null,
+    "seller": "Neobits.com",
+    "delivery": null,
+    "retailer": "neobits_com",
+    "price": 11025.8,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:17902455769310107864,headlineOfferDocid:17902455769310107864,imageDocid:16522763017025224548,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-02T12:27:54.699827+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]
