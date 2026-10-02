@@ -35,6 +35,26 @@ def exact(pid,title):
         return all(x in t for x in ('team','group','mp44','4tb')) and not any(x in t for x in ('mp44l','mp44q'))
     if pid=='gpu-pro6000-blackwell-96gb':
         return all(x in t for x in ('rtx','pro','6000','blackwell','96gb'))
+    if pid=='aon-minisforum-n5-ryzen7-255':
+        return all(x in t for x in ('minisforum','n5','ryzen','7','255')) and 'air' not in t and 'pro' not in t
+    if pid=='aon-minisforum-n5-air-ryzen7-255':
+        return all(x in t for x in ('minisforum','n5','air','ryzen','7','255')) and 'pro' not in t
+    if pid=='aon-minisforum-n5-pro-hx370':
+        return all(x in t for x in ('minisforum','n5','pro')) and ('hx pro 370' in t or 'hxpro370' in t or '370' in t)
+    if pid=='aon-ugreen-dxp4800-gt':
+        return all(x in t for x in ('ugreen','dxp4800','gt')) and 'plus' not in t and 'pro' not in t
+    if pid=='aon-ugreen-dxp4800-plus':
+        return all(x in t for x in ('ugreen','dxp4800','plus')) and 'pro' not in t and 'gt' not in t
+    if pid=='aon-ugreen-dxp4800-pro':
+        return all(x in t for x in ('ugreen','dxp4800','pro')) and 'plus' not in t and 'gt' not in t
+    if pid=='aon-terramaster-f4-425-pro-n305':
+        return all(x in t for x in ('terramaster','f4','425','pro','n305'))
+    if pid=='aon-terramaster-f4-425-pro-n350':
+        return all(x in t for x in ('terramaster','f4','425','pro','n350'))
+    if pid=='aon-asustor-as6804t':
+        return ('as6804t' in t) and ('asustor' in t or 'lockerstor' in t)
+    if pid=='aon-qnap-ts464':
+        return ('qnap' in t) and ('ts 464' in t or 'ts464' in t)
     return False
 
 
@@ -47,7 +67,17 @@ def allowed_price(pid,p):
         'cable-asrock-tempguard-white':(20,100),
         'os-ssd-mp44-2tb':(100,700),
         'os-ssd-mp44-4tb':(200,900),
-        'gpu-pro6000-blackwell-96gb':(4000,15000)
+        'gpu-pro6000-blackwell-96gb':(4000,15000),
+        'aon-minisforum-n5-ryzen7-255':(300,1200),
+        'aon-minisforum-n5-air-ryzen7-255':(300,1300),
+        'aon-minisforum-n5-pro-hx370':(600,2200),
+        'aon-ugreen-dxp4800-gt':(300,1000),
+        'aon-ugreen-dxp4800-plus':(300,1100),
+        'aon-ugreen-dxp4800-pro':(400,1300),
+        'aon-terramaster-f4-425-pro-n305':(300,1000),
+        'aon-terramaster-f4-425-pro-n350':(300,1100),
+        'aon-asustor-as6804t':(700,2200),
+        'aon-qnap-ts464':(300,1100)
     }
     lo,hi=bands.get(pid,(0,float('inf')))
     return isinstance(p,(int,float)) and lo<=p<=hi
