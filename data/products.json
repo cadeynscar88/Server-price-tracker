@@ -2,7 +2,7 @@
   {
     "id": "cpu-9950x3d",
     "category": "CPU",
-    "label": "CPU \u2014 AMD Ryzen 9 9950X3D",
+    "label": "CPU — AMD Ryzen 9 9950X3D",
     "model": "AMD Ryzen 9 9950X3D",
     "manufacturer": "AMD",
     "qty": 1,
@@ -28,7 +28,7 @@
   {
     "id": "motherboard-taichi-white",
     "category": "Motherboard",
-    "label": "Motherboard \u2014 ASRock X870E Taichi White",
+    "label": "Motherboard — ASRock X870E Taichi White",
     "model": "ASRock X870E Taichi White",
     "manufacturer": "ASRock",
     "qty": 1,
@@ -53,7 +53,7 @@
   {
     "id": "gpu-frieren-5070ti",
     "category": "GPU / Gaming",
-    "label": "GPU \u2014 MSI RTX 5070 Ti Frieren Edition 16GB",
+    "label": "GPU — MSI RTX 5070 Ti Frieren Edition 16GB",
     "model": "MSI GeForce RTX 5070 Ti Frieren Edition 16GB",
     "manufacturer": "MSI",
     "qty": 1,
@@ -77,7 +77,7 @@
   {
     "id": "case-o11-evo-rgb-white",
     "category": "Case",
-    "label": "Case \u2014 Lian Li O11 Dynamic EVO RGB White",
+    "label": "Case — Lian Li O11 Dynamic EVO RGB White",
     "model": "Lian Li O11 Dynamic EVO RGB White",
     "manufacturer": "Lian Li",
     "qty": 1,
@@ -97,7 +97,7 @@
   {
     "id": "ram-royal-neo-96",
     "category": "RAM",
-    "label": "RAM \u2014 G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
+    "label": "RAM — G.Skill Trident Z5 Royal Neo Silver 96GB DDR5-6000 CL28",
     "model": "G.Skill F5-6000J2836F48GX2-TR5NS",
     "manufacturer": "G.Skill",
     "qty": 1,
@@ -125,7 +125,7 @@
   {
     "id": "psu-asrock-pg1600g",
     "category": "PSU",
-    "label": "PSU \u2014 ASRock Phantom Gaming PG-1600G 1600W",
+    "label": "PSU — ASRock Phantom Gaming PG-1600G 1600W",
     "model": "ASRock Phantom Gaming PG-1600G 1600W",
     "manufacturer": "ASRock",
     "qty": 1,
@@ -151,7 +151,7 @@
   {
     "id": "nvme-nm790-4tb",
     "category": "Storage / Server Data",
-    "label": "Server data \u2014 Lexar NM790 4TB TLC Gen4 NVMe",
+    "label": "Server data — Lexar NM790 4TB TLC Gen4 NVMe",
     "model": "Lexar NM790 4TB",
     "manufacturer": "Lexar",
     "qty": 1,
@@ -177,7 +177,7 @@
   {
     "id": "cooler-hydroshift-ii",
     "category": "CPU Cooler",
-    "label": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "label": "AIO — Lian Li HydroShift II OLED Curved 360TL White",
     "model": "Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW",
     "manufacturer": "Lian Li",
     "qty": 1,
@@ -202,7 +202,7 @@
   {
     "id": "fans-sl-inf-flex-reverse-3pack",
     "category": "Case Fans / Stage 1",
-    "label": "Bottom intake \u2014 3x Lian Li SL-INF FLEX Reverse White",
+    "label": "Bottom intake — 3x Lian Li SL-INF FLEX Reverse White",
     "model": "Lian Li UNI FAN SL-INF FLEX Reverse Blade 120mm White 3-Pack",
     "manufacturer": "Lian Li",
     "qty": 1,
@@ -228,7 +228,7 @@
   {
     "id": "fans-tl-lcd-flex-reverse-3pack",
     "category": "Case Fans / Stage 2",
-    "label": "Side intake \u2014 3x Lian Li TL LCD FLEX Reverse White",
+    "label": "Side intake — 3x Lian Li TL LCD FLEX Reverse White",
     "model": "Lian Li UNI FAN TL LCD FLEX Reverse Blade 120mm White 3-Pack",
     "manufacturer": "Lian Li",
     "qty": 1,
@@ -255,7 +255,7 @@
   {
     "id": "fans-tl-flex-standard-single",
     "category": "Case Fans / Stage 2",
-    "label": "Rear exhaust \u2014 1x Lian Li TL FLEX Standard White",
+    "label": "Rear exhaust — 1x Lian Li TL FLEX Standard White",
     "model": "Lian Li UNI FAN TL FLEX Standard Blade 120mm White Single",
     "manufacturer": "Lian Li",
     "qty": 1,
@@ -280,7 +280,7 @@
   {
     "id": "cable-asrock-full-white-kit",
     "category": "PSU Cabling",
-    "label": "Factory white cable kit \u2014 ASRock CB-FKITWT",
+    "label": "Factory white cable kit — ASRock CB-FKITWT",
     "model": "ASRock White Cable Full Package Kit CB-FKITWT",
     "manufacturer": "ASRock",
     "qty": 1,
@@ -301,7 +301,7 @@
   {
     "id": "cable-asrock-tempguard-white",
     "category": "PSU Cabling",
-    "label": "White TempGuard GPU cable \u2014 ASRock CB-12V2X6L600W/W",
+    "label": "White TempGuard GPU cable — ASRock CB-12V2X6L600W/W",
     "model": "ASRock CB-12V2X6L600W/W 600W 12V-2x6 White",
     "manufacturer": "ASRock",
     "qty": 1,
@@ -321,7 +321,7 @@
   {
     "id": "os-ssd-mp44-2tb",
     "category": "Storage / OS",
-    "label": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
+    "label": "OS SSD — TeamGroup MP44 2TB TLC Gen4",
     "model": "TeamGroup MP44 2TB TM8FPW002T0C101",
     "manufacturer": "TeamGroup",
     "qty": 1,
@@ -347,7 +347,7 @@
   {
     "id": "os-ssd-mp44-4tb",
     "category": "Storage / OS",
-    "label": "OS SSD \u2014 TeamGroup MP44 4TB TLC Gen4",
+    "label": "OS SSD — TeamGroup MP44 4TB TLC Gen4",
     "model": "TeamGroup MP44 4TB TM8FPW004T0C101",
     "manufacturer": "TeamGroup",
     "qty": 1,
@@ -373,7 +373,7 @@
   {
     "id": "gpu-5090",
     "category": "Future Heavy AI GPU",
-    "label": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "label": "Future Heavy candidate — RTX 5090 32GB",
     "model": "NVIDIA GeForce RTX 5090 32GB",
     "manufacturer": "NVIDIA / AIB",
     "qty": 1,
@@ -397,7 +397,7 @@
   {
     "id": "gpu-pro5000-blackwell-48gb",
     "category": "Future Heavy AI GPU",
-    "label": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "label": "Future Heavy candidate — RTX PRO 5000 Blackwell 48GB ECC",
     "model": "NVIDIA RTX PRO 5000 Blackwell 48GB ECC",
     "manufacturer": "NVIDIA",
     "qty": 1,
@@ -422,7 +422,7 @@
   {
     "id": "gpu-a6000-48gb",
     "category": "Future Heavy AI GPU",
-    "label": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "label": "Future Heavy candidate — RTX A6000 48GB ECC",
     "model": "NVIDIA RTX A6000 48GB ECC",
     "manufacturer": "NVIDIA",
     "qty": 1,
@@ -446,7 +446,7 @@
   {
     "id": "gpu-pro6000-blackwell-96gb",
     "category": "Future Heavy AI GPU",
-    "label": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "label": "Future Heavy wildcard — RTX PRO 6000 Blackwell 96GB ECC",
     "model": "NVIDIA RTX PRO 6000 Blackwell 96GB ECC",
     "manufacturer": "NVIDIA",
     "qty": 1,
@@ -465,6 +465,268 @@
     "attrs": {
       "vram_gb": 96,
       "ecc": true
+    }
+  },
+  {
+    "id": "aon-minisforum-n5-ryzen7-255",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — MINISFORUM N5 Ryzen 7 255",
+    "model": "MINISFORUM N5 AMD Ryzen 7 255",
+    "manufacturer": "MINISFORUM",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "MINISFORUM N5 Ryzen 7 255 NAS"
+    ],
+    "retailer_search_urls": {
+      "minisforum": "https://store.minisforum.com/search?q=N5",
+      "newegg": "https://www.newegg.com/p/pl?d=MINISFORUM+N5+Ryzen+7+255",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=MINISFORUM+N5+Ryzen+7+255"
+    },
+    "notes": "Five-bay all-in-one candidate. Track barebone/new pricing separately from RAM/HDD costs. Storage sizing waits for Aegis measurements.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 5,
+      "cpu": "AMD Ryzen 7 255",
+      "role": "always-on infrastructure + storage + Minecraft/media services"
+    }
+  },
+  {
+    "id": "aon-minisforum-n5-air-ryzen7-255",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — MINISFORUM N5 AIR Ryzen 7 255",
+    "model": "MINISFORUM N5 AIR AMD Ryzen 7 255",
+    "manufacturer": "MINISFORUM",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "MINISFORUM N5 AIR Ryzen 7 255 NAS"
+    ],
+    "retailer_search_urls": {
+      "minisforum": "https://store.minisforum.com/search?q=N5+AIR",
+      "newegg": "https://www.newegg.com/p/pl?d=MINISFORUM+N5+AIR",
+      "bestbuy": "https://www.bestbuy.com/site/searchpage.jsp?st=MINISFORUM+N5+AIR"
+    },
+    "notes": "Five-bay all-in-one candidate. Track exact N5 AIR variant; do not conflate with N5 or N5 Pro.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 5,
+      "cpu": "AMD Ryzen 7 255",
+      "role": "always-on infrastructure + storage + Minecraft/media services"
+    }
+  },
+  {
+    "id": "aon-minisforum-n5-pro-hx370",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — MINISFORUM N5 Pro AI NAS HX PRO 370",
+    "model": "MINISFORUM N5 Pro AI NAS AMD Ryzen AI 9 HX PRO 370",
+    "manufacturer": "MINISFORUM",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "MINISFORUM N5 Pro AI NAS Ryzen AI 9 HX PRO 370"
+    ],
+    "retailer_search_urls": {
+      "minisforum": "https://store.minisforum.com/products/minisforum-n5-pro-ai-nas",
+      "newegg": "https://www.newegg.com/p/pl?d=MINISFORUM+N5+Pro+NAS"
+    },
+    "notes": "High-headroom five-bay wildcard. Only compelling if discount closes the gap to N5/N5 AIR.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 5,
+      "cpu": "AMD Ryzen AI 9 HX PRO 370",
+      "role": "always-on infrastructure + storage + Minecraft/media services"
+    }
+  },
+  {
+    "id": "aon-ugreen-dxp4800-gt",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — UGREEN NASync DXP4800 GT",
+    "model": "UGREEN NASync DXP4800 GT",
+    "manufacturer": "UGREEN",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "UGREEN NASync DXP4800 GT"
+    ],
+    "retailer_search_urls": {
+      "ugreen": "https://www.ugreen.com/products/ugreen-nasync-dxp4800-gt",
+      "newegg": "https://www.newegg.com/p/pl?d=UGREEN+DXP4800+GT",
+      "amazon": "https://www.amazon.com/s?k=UGREEN+DXP4800+GT"
+    },
+    "notes": "Four-bay integrated candidate; AMD Ryzen Embedded R2514, dual 10GbE class.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "AMD Ryzen Embedded R2514"
+    }
+  },
+  {
+    "id": "aon-ugreen-dxp4800-plus",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — UGREEN NASync DXP4800 Plus",
+    "model": "UGREEN NASync DXP4800 Plus",
+    "manufacturer": "UGREEN",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "UGREEN NASync DXP4800 Plus"
+    ],
+    "retailer_search_urls": {
+      "ugreen": "https://www.ugreen.com/search?q=DXP4800+Plus",
+      "newegg": "https://www.newegg.com/p/pl?d=UGREEN+DXP4800+Plus",
+      "amazon": "https://www.amazon.com/s?k=UGREEN+DXP4800+Plus"
+    },
+    "notes": "Four-bay integrated reference candidate. Track only exact Plus, not Pro/GT.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "Intel Pentium Gold 8505"
+    }
+  },
+  {
+    "id": "aon-ugreen-dxp4800-pro",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — UGREEN NASync DXP4800 Pro",
+    "model": "UGREEN NASync DXP4800 Pro",
+    "manufacturer": "UGREEN",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "UGREEN NASync DXP4800 Pro"
+    ],
+    "retailer_search_urls": {
+      "ugreen": "https://ai.ugreen.com/collections/dxp-series",
+      "newegg": "https://www.newegg.com/p/pl?d=UGREEN+DXP4800+Pro",
+      "amazon": "https://www.amazon.com/s?k=UGREEN+DXP4800+Pro"
+    },
+    "notes": "Four-bay higher-CPU UGREEN candidate. Compare discount against five-bay MINISFORUM options.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "Intel Core i3-1315U"
+    }
+  },
+  {
+    "id": "aon-terramaster-f4-425-pro-n305",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — TerraMaster F4-425 Pro N305",
+    "model": "TerraMaster F4-425 Pro Intel N305",
+    "manufacturer": "TerraMaster",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "TerraMaster F4-425 Pro N305"
+    ],
+    "retailer_search_urls": {
+      "terramaster": "https://www.terra-master.com/search?q=F4-425+Pro",
+      "newegg": "https://www.newegg.com/p/pl?d=TerraMaster+F4-425+Pro+N305",
+      "amazon": "https://www.amazon.com/s?k=TerraMaster+F4-425+Pro+N305"
+    },
+    "notes": "Four-bay low-power candidate. Track exact N305 variant separately from N350.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "Intel N305"
+    }
+  },
+  {
+    "id": "aon-terramaster-f4-425-pro-n350",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — TerraMaster F4-425 Pro N350",
+    "model": "TerraMaster F4-425 Pro Intel N350",
+    "manufacturer": "TerraMaster",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "TerraMaster F4-425 Pro N350"
+    ],
+    "retailer_search_urls": {
+      "terramaster": "https://www.terra-master.com/search?q=F4-425+Pro",
+      "newegg": "https://www.newegg.com/p/pl?d=TerraMaster+F4-425+Pro+N350",
+      "amazon": "https://www.amazon.com/s?k=TerraMaster+F4-425+Pro+N350"
+    },
+    "notes": "Four-bay low-power candidate. Track exact N350 variant separately from N305.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "Intel N350"
+    }
+  },
+  {
+    "id": "aon-asustor-as6804t",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — ASUSTOR Lockerstor 4 Gen3 AS6804T",
+    "model": "ASUSTOR Lockerstor 4 Gen3 AS6804T",
+    "manufacturer": "ASUSTOR",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "ASUSTOR Lockerstor 4 Gen3 AS6804T"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=ASUSTOR+AS6804T",
+      "newegg": "https://www.newegg.com/p/pl?d=ASUSTOR+AS6804T",
+      "bh": "https://www.bhphotovideo.com/c/search?q=AS6804T"
+    },
+    "notes": "Premium four-bay candidate with ECC-capable DDR5 and high-end networking. Price must justify premium.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4,
+      "cpu": "AMD Ryzen Embedded V3C14",
+      "ecc_capable": true
+    }
+  },
+  {
+    "id": "aon-qnap-ts464",
+    "category": "Always-on Server / NAS",
+    "label": "Always-on candidate — QNAP TS-464",
+    "model": "QNAP TS-464 4-Bay NAS",
+    "manufacturer": "QNAP",
+    "qty": 1,
+    "in_build": false,
+    "search_enabled": false,
+    "watch_urls": [],
+    "search_terms": [
+      "QNAP TS-464 4-Bay NAS"
+    ],
+    "retailer_search_urls": {
+      "amazon": "https://www.amazon.com/s?k=QNAP+TS-464",
+      "newegg": "https://www.newegg.com/p/pl?d=QNAP+TS-464",
+      "bh": "https://www.bhphotovideo.com/c/search?q=QNAP+TS-464"
+    },
+    "notes": "Established four-bay comparison baseline; retained so a deep sale is visible even if newer CPU options remain preferred.",
+    "kind": "future_infrastructure",
+    "price_source": "search",
+    "attrs": {
+      "hdd_bays": 4
     }
   }
 ]
