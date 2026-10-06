@@ -619,5 +619,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-02T12:27:45.184008+00:00",
     "notes": "price $7509.90 outside sanity band $1200-$6500"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "[2025] Alienware 18 Area-51 [Membrane Keyboard] 18\" QHD+ 300Hz, 2.7 GHz Ultra 9-290HX Plus, RTX 5090, 32 GB DDR5 RAM, 1 TB PCIe SSD, Windows 11 Pro",
+    "condition": null,
+    "seller": "Newegg.com - HIDevolution US",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 6354.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:12822307946900611143,headlineOfferDocid:12822307946900611143,imageDocid:8942515875430675830,rds:PC_4243226412017670281|PROD_PC_4243226412017670281,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-10-06T13:14:54.680795+00:00",
+    "notes": "different model/variant"
   }
 ]

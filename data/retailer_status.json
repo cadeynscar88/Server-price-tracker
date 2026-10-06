@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T12:28:25.102875+00:00",
+  "generated_at": "2026-10-06T13:15:56.974935+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 27 days old",
+      "status": "price is 31 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,17 +15,17 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-02T12:27:54.699827+00:00",
-      "last_verified_price": 325.99,
+      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_price": 694.99,
       "latest_check_status": "verified"
     },
     {
       "id": "walmart",
       "name": "Walmart",
-      "state": "yellow",
-      "status": "price is 34 days old",
-      "last_verified_at": "2026-08-29T02:37:22.107045+00:00",
-      "last_verified_price": 5319.05,
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_price": 667.87,
       "latest_check_status": "verified"
     },
     {
@@ -33,8 +33,8 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-02T12:27:45.184008+00:00",
-      "last_verified_price": 699.0,
+      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_price": 394.39,
       "latest_check_status": "verified"
     },
     {
@@ -49,11 +49,11 @@
     {
       "id": "microcenter",
       "name": "Micro Center",
-      "state": "yellow",
-      "status": "price is 20 days old",
-      "last_verified_at": "2026-09-11T15:46:00+00:00",
-      "last_verified_price": 104.99,
-      "latest_check_status": "check_failed"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_price": 699.99,
+      "latest_check_status": "verified"
     }
   ],
   "freshness_policy": {

@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "aon-terramaster-f4-425-pro-n305",
+    "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
+    "model": "TERRAMASTER F4-425 Pro 4Bay Intel N305 8-Core 8GB RAM 5GbE LAN x 2",
+    "condition": null,
+    "seller": "Newegg.com - TERRAMASTER OFFICIAL",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 594.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:4700401401643022697,mid:576462898593649880,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-06T13:15:05.623916+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  }
+]

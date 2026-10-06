@@ -211,5 +211,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-02T12:27:45.184008+00:00",
     "notes": "RTX A6000 48GB + sane price"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "Nvidia Rtx A6000 Ampere Gpu Accelarator 48gb Graphics Card Deep",
+    "condition": null,
+    "seller": "eBay - ea_memory",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 7150.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:831472781273547766,headlineOfferDocid:831472781273547766,imageDocid:11711123592140099905,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-10-06T13:14:54.680795+00:00",
+    "notes": "RTX A6000 48GB + sane price"
   }
 ]

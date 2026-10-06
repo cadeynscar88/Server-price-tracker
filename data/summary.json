@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-02T12:28:25.070330+00:00",
-  "last_check": "2026-10-02T12:27:45.184008+00:00",
+  "generated": "2026-10-06T13:15:56.949713+00:00",
+  "last_check": "2026-10-06T13:14:54.680795+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 13,
+      "n": 14,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -229,7 +229,7 @@
       },
       "min": 667.0,
       "max": 748.99,
-      "avg": 704.9992307692307,
+      "avg": 704.5707142857143,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -436,7 +436,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 4,
+      "n": 5,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -460,8 +460,8 @@
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
-      "max": 354.31,
-      "avg": 333.07,
+      "max": 394.39,
+      "avg": 345.334,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -519,7 +519,7 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 8,
+      "n": 9,
       "cur": 7150.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-02T12:27:45.184008+00:00",
+        "timestamp": "2026-10-06T13:14:54.680795+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5272.89125,
-      "median": 4744.5
+      "avg": 5481.458888888888,
+      "median": 4999.0
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 10,
+      "n": 12,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -568,14 +568,192 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-02T12:27:54.699827+00:00",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13189.717999999999,
+      "avg": 13160.2475,
       "median": 13899.494999999999
-    }
+    },
+    "aon-minisforum-n5-ryzen7-255": {
+      "n": 2,
+      "cur": 429.0,
+      "curObs": {
+        "component_id": "aon-minisforum-n5-ryzen7-255",
+        "component": "Always-on candidate \u2014 MINISFORUM N5 Ryzen 7 255",
+        "model": "Minisforum N5 5 Bay Desktop Nas Amd Ryzen7 255 Metal Case 128gb Ssd",
+        "condition": null,
+        "seller": "eBay",
+        "delivery": null,
+        "retailer": "ebay",
+        "price": 429.0,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Ryzen 7 255 NAS&prds=productid:14074171880472861276,headlineOfferDocid:14074171880472861276,imageDocid:11355715924621622518,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 429.0,
+      "max": 667.87,
+      "avg": 548.435,
+      "median": 548.435
+    },
+    "aon-minisforum-n5-air-ryzen7-255": {
+      "n": 4,
+      "cur": 515.0,
+      "curObs": {
+        "component_id": "aon-minisforum-n5-air-ryzen7-255",
+        "component": "Always-on candidate \u2014 MINISFORUM N5 AIR Ryzen 7 255",
+        "model": "MINISFORUM N5 Air AI NAS Refurbished AMD Ryzen 7 255 OS Storage",
+        "condition": null,
+        "seller": "Walmart - MINISFORUM Store",
+        "delivery": "Free delivery",
+        "retailer": "walmart",
+        "price": 515.0,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 AIR Ryzen 7 255 NAS&prds=catalogid:16460543852755271102,productid:5817273902141947279,headlineOfferDocid:13460733298606504375,imageDocid:14562218486760636591,gpcid:17473500413422265458,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 515.0,
+      "max": 694.99,
+      "avg": 569.9975,
+      "median": 535.0
+    },
+    "aon-minisforum-n5-pro-hx370": null,
+    "aon-ugreen-dxp4800-gt": {
+      "n": 2,
+      "cur": 475.99,
+      "curObs": {
+        "component_id": "aon-ugreen-dxp4800-gt",
+        "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 GT",
+        "model": "UGREEN NASync dxp4800 gt 4-Bay NAS Enclosure",
+        "condition": null,
+        "seller": "Newegg.com",
+        "delivery": null,
+        "retailer": "newegg",
+        "price": 475.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:8151492529935553933,productid:2738503362686387628,headlineOfferDocid:9295062643359968081,imageDocid:17577430105861024607,gpcid:12790436221338022382,mid:576462896359469705,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 475.99,
+      "max": 627.98,
+      "avg": 551.985,
+      "median": 551.985
+    },
+    "aon-ugreen-dxp4800-plus": null,
+    "aon-ugreen-dxp4800-pro": {
+      "n": 4,
+      "cur": 583.99,
+      "curObs": {
+        "component_id": "aon-ugreen-dxp4800-pro",
+        "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 Pro",
+        "model": "UGREEN NASync DXP4800 4-Bay High-Density NAS Server \u2013 Secure 112TB Network Storage for Personal Data Protection & Multi-Device Access",
+        "condition": null,
+        "seller": "ai.ugreen.com",
+        "delivery": "Free delivery",
+        "retailer": "ai_ugreen_com",
+        "price": 583.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Pro&prds=catalogid:4779410569283369075,productid:3760525838994835959,headlineOfferDocid:15722517890622194558,imageDocid:340585384311410352,gpcid:15598188912710345307,mid:576462892669026702,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 583.99,
+      "max": 1298.99,
+      "avg": 829.49,
+      "median": 717.49
+    },
+    "aon-terramaster-f4-425-pro-n305": {
+      "n": 1,
+      "cur": 594.99,
+      "curObs": {
+        "component_id": "aon-terramaster-f4-425-pro-n305",
+        "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
+        "model": "TERRAMASTER F4-425 Pro 4Bay Intel N305 8-Core 8GB RAM 5GbE LAN x 2",
+        "condition": null,
+        "seller": "Newegg.com - TERRAMASTER OFFICIAL",
+        "delivery": "Free delivery",
+        "retailer": "newegg",
+        "price": 594.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:4700401401643022697,mid:576462898593649880,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 594.99,
+      "max": 594.99,
+      "avg": 594.99,
+      "median": 594.99
+    },
+    "aon-terramaster-f4-425-pro-n350": {
+      "n": 2,
+      "cur": 559.99,
+      "curObs": {
+        "component_id": "aon-terramaster-f4-425-pro-n350",
+        "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N350",
+        "model": "TERRAMASTER F4-425 Pro NAS 4-Bay, Intel N350 8-Core, 16GB DDR5 (Diskless)",
+        "condition": null,
+        "seller": "TerraMaster Official Shop",
+        "delivery": "Free delivery",
+        "retailer": "terramaster_official_shop",
+        "price": 559.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:10138549988832149085,productid:8872446718343960296,headlineOfferDocid:10979779337994670631,imageDocid:6866884448007532509,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 559.99,
+      "max": 679.99,
+      "avg": 619.99,
+      "median": 619.99
+    },
+    "aon-asustor-as6804t": null,
+    "aon-qnap-ts464": null
   },
   "manual_price_crossover": [
     {
