@@ -640,5 +640,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-06T13:14:54.680795+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "BITSPOWER NEBULA CLASSIC GeForce RTX 5090 VENTUS",
+    "condition": null,
+    "seller": "Newegg.com - Bitspower",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 265.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:7637681973416960588,productid:18328472506592814119,headlineOfferDocid:7073279951000164655,imageDocid:16697318763211569801,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "price $265.00 outside sanity band $1200-$6500",
+    "query_kind": "generic",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "price $265.00 outside sanity band $1200-$6500"
   }
 ]

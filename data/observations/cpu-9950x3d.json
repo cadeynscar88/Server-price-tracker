@@ -558,5 +558,41 @@
     "query_kind": "retailer_fallback",
     "timestamp": "2026-10-06T13:14:54.680795+00:00",
     "notes": "complete-system/prebuilt result"
+  },
+  {
+    "component_id": "cpu-9950x3d",
+    "component": "CPU \u2014 AMD Ryzen 9 9950X3D",
+    "model": "AMD Ryzen 9 9950X3D",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=AMD+Ryzen+9+9950X3D",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "cpu-9950x3d",
+    "component": "CPU \u2014 AMD Ryzen 9 9950X3D",
+    "model": "AMD Ryzen 9 9950X3D",
+    "retailer": "bestbuy",
+    "source_url": "https://www.bestbuy.com/site/searchpage.jsp?st=AMD+Ryzen+9+9950X3D",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "The read operation timed out"
+  },
+  {
+    "component_id": "cpu-9950x3d",
+    "component": "CPU \u2014 AMD Ryzen 9 9950X3D",
+    "model": "AMD Ryzen 9 9950X3D",
+    "retailer": "newegg",
+    "source_url": "https://www.newegg.com/p/pl?d=AMD+Ryzen+9+9950X3D",
+    "availability": "Unknown",
+    "status": "check_failed",
+    "method": "serpapi_google_shopping",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "The read operation timed out"
   }
 ]

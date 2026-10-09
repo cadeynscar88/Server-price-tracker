@@ -40,5 +40,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-06T13:15:05.623916+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "aon-minisforum-n5-ryzen7-255",
+    "component": "Always-on candidate \u2014 MINISFORUM N5 Ryzen 7 255",
+    "model": "Minisforum N5-h255-0-128 128 GB Ryzen 7h255 Radeon 780M MinisCloud No ME 5-Bay Enclosure",
+    "condition": null,
+    "seller": "Walmart - UnbeatableSale",
+    "delivery": null,
+    "retailer": "walmart",
+    "price": 667.87,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Ryzen 7 255 NAS&prds=catalogid:14014815991125047112,productid:1008891349951062766,headlineOfferDocid:2036261865685034999,imageDocid:1566395747904831607,gpcid:10608363522946502231,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-09T13:11:50.020211+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

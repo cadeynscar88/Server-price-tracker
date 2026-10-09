@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-06T13:15:56.974935+00:00",
+  "generated_at": "2026-10-09T13:13:31.978505+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 31 days old",
+      "status": "price is 34 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,8 +15,8 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
-      "last_verified_price": 694.99,
+      "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
+      "last_verified_price": 1299.99,
       "latest_check_status": "verified"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Walmart",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
       "last_verified_price": 667.87,
       "latest_check_status": "verified"
     },
@@ -33,25 +33,25 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
       "last_verified_price": 394.39,
       "latest_check_status": "verified"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
-      "state": "gray",
-      "status": "no trusted verified price",
-      "last_verified_at": null,
-      "last_verified_price": null,
-      "latest_check_status": "rejected"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
+      "last_verified_price": 849.0,
+      "latest_check_status": "verified"
     },
     {
       "id": "microcenter",
       "name": "Micro Center",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-06T13:15:05.623916+00:00",
+      "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
       "last_verified_price": 699.99,
       "latest_check_status": "verified"
     }

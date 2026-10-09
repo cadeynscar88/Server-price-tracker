@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-06T13:15:56.949713+00:00",
-  "last_check": "2026-10-06T13:14:54.680795+00:00",
+  "generated": "2026-10-09T13:13:31.948936+00:00",
+  "last_check": "2026-10-09T13:10:48.795179+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -436,7 +436,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 5,
+      "n": 6,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -461,8 +461,8 @@
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 345.334,
-      "median": 325.99
+      "avg": 353.51,
+      "median": 340.15
     },
     "os-ssd-mp44-4tb": {
       "n": 1,
@@ -519,7 +519,7 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 9,
+      "n": 10,
       "cur": 7150.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
@@ -539,16 +539,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-06T13:14:54.680795+00:00",
+        "timestamp": "2026-10-09T13:10:48.795179+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5481.458888888888,
-      "median": 4999.0
+      "avg": 5648.313,
+      "median": 5399.5
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 12,
+      "n": 13,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -568,16 +568,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "timestamp": "2026-10-09T13:11:50.020211+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13160.2475,
-      "median": 13899.494999999999
+      "avg": 12996.05923076923,
+      "median": 12999.0
     },
     "aon-minisforum-n5-ryzen7-255": {
-      "n": 2,
+      "n": 3,
       "cur": 429.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-ryzen7-255",
@@ -602,8 +602,8 @@
       },
       "min": 429.0,
       "max": 667.87,
-      "avg": 548.435,
-      "median": 548.435
+      "avg": 588.2466666666667,
+      "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
       "n": 4,
@@ -666,7 +666,7 @@
     },
     "aon-ugreen-dxp4800-plus": null,
     "aon-ugreen-dxp4800-pro": {
-      "n": 4,
+      "n": 8,
       "cur": 583.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-pro",
@@ -686,12 +686,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "timestamp": "2026-10-09T13:11:50.020211+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 583.99,
-      "max": 1298.99,
-      "avg": 829.49,
+      "max": 1299.99,
+      "avg": 829.615,
       "median": 717.49
     },
     "aon-terramaster-f4-425-pro-n305": {
@@ -724,19 +724,19 @@
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 2,
-      "cur": 559.99,
+      "n": 4,
+      "cur": 679.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N350",
-        "model": "TERRAMASTER F4-425 Pro NAS 4-Bay, Intel N350 8-Core, 16GB DDR5 (Diskless)",
+        "model": "TERRAMASTER F4-425 Pro 4Bay Intel N350 8-Core 16GB DDR5 5GbE LAN x 2",
         "condition": null,
-        "seller": "TerraMaster Official Shop",
+        "seller": "Newegg.com - TERRAMASTER OFFICIAL",
         "delivery": "Free delivery",
-        "retailer": "terramaster_official_shop",
-        "price": 559.99,
+        "retailer": "newegg",
+        "price": 679.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:10138549988832149085,productid:8872446718343960296,headlineOfferDocid:10979779337994670631,imageDocid:6866884448007532509,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:4196114986877892325,productid:7076411877089483934,headlineOfferDocid:4041116879580768598,imageDocid:769254294090869996,gpcid:15588546676660866718,mid:576462563930112858,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -744,16 +744,44 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "timestamp": "2026-10-09T13:11:50.020211+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
-      "max": 679.99,
-      "avg": 619.99,
-      "median": 619.99
+      "max": 799.99,
+      "avg": 679.99,
+      "median": 679.99
     },
     "aon-asustor-as6804t": null,
-    "aon-qnap-ts464": null
+    "aon-qnap-ts464": {
+      "n": 8,
+      "cur": 543.99,
+      "curObs": {
+        "component_id": "aon-qnap-ts464",
+        "component": "Always-on candidate \u2014 QNAP TS-464",
+        "model": "QNAP TS-464-8G NAS",
+        "condition": null,
+        "seller": "Best Buy",
+        "delivery": "Free delivery",
+        "retailer": "bestbuy",
+        "price": 543.99,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:2464323904975156387,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-10-09T13:11:50.020211+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 543.99,
+      "max": 1082.84,
+      "avg": 823.27375,
+      "median": 819.0
+    }
   },
   "manual_price_crossover": [
     {

@@ -223,5 +223,39 @@
     "query_kind": "generic",
     "timestamp": "2026-10-06T13:14:54.680795+00:00",
     "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "model": "Lian Li Hydroshift II-S 360 Liquid CPU Cooler 3.4\" IPS LCD Square Screen",
+    "condition": null,
+    "seller": "Newegg.com - LIAN LI",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 159.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW&prds=catalogid:515590537250129157,productid:15638328214317965959,headlineOfferDocid:16386337546291560691,imageDocid:1516422814807421311,rds:PC_10379414416869228731|PROD_PC_10379414416869228731,gpcid:10379414416869228731,mid:576462556281751817,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "required exact-model terms missing",
+    "query_kind": "generic",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "required exact-model terms missing"
+  },
+  {
+    "component_id": "cooler-hydroshift-ii",
+    "component": "AIO \u2014 Lian Li HydroShift II OLED Curved 360TL White",
+    "model": "Lian Li HydroShift II OLED Curved 360TL White HS2OLDC36TW",
+    "retailer": "microcenter",
+    "source_url": "https://www.microcenter.com/search/search_results.aspx?Ntt=HydroShift+II+OLED+Curved+360TL+White",
+    "availability": "Unknown",
+    "status": "not_found",
+    "method": "serpapi_google_shopping",
+    "query_kind": "retailer_fallback",
+    "timestamp": "2026-10-09T13:10:48.795179+00:00",
+    "notes": "No matching result in retailer-specific fallback."
   }
 ]
