@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-13T14:06:46.469724+00:00",
-  "last_check": "2026-10-13T14:05:48.820126+00:00",
+  "generated": "2026-10-16T11:18:19.996421+00:00",
+  "last_check": "2026-10-16T11:16:56.404983+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 14,
+      "n": 16,
       "cur": 699.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "retailer_fallback",
-        "timestamp": "2026-10-02T12:27:45.184008+00:00",
+        "timestamp": "2026-10-16T11:16:56.404983+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 667.0,
       "max": 748.99,
-      "avg": 704.5707142857143,
+      "avg": 703.874375,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -436,7 +436,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 7,
+      "n": 8,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -456,12 +456,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 349.5785714285715,
+      "avg": 346.63,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -519,19 +519,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 11,
-      "cur": 7150.0,
+      "n": 12,
+      "cur": 4900.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia Rtx A6000 Ampere Gpu Accelarator 48gb Graphics Card Deep",
+        "model": "Nvidia Rtx A6000 48gb Gddr6 Workstation Graphics Card Gpu - Tested &",
         "condition": null,
-        "seller": "eBay - ea_memory",
+        "seller": "eBay",
         "delivery": null,
         "retailer": "ebay",
-        "price": 7150.0,
+        "price": 4900.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:831472781273547766,headlineOfferDocid:831472781273547766,imageDocid:11711123592140099905,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:20396182463525852,headlineOfferDocid:20396182463525852,imageDocid:15402034828147586076,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -539,13 +539,13 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-13T14:05:48.820126+00:00",
+        "timestamp": "2026-10-16T11:16:56.404983+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5784.83,
-      "median": 5800.0
+      "avg": 5711.094166666667,
+      "median": 5399.5
     },
     "gpu-pro6000-blackwell-96gb": {
       "n": 15,
@@ -577,7 +577,7 @@
       "median": 12999.0
     },
     "aon-minisforum-n5-ryzen7-255": {
-      "n": 4,
+      "n": 5,
       "cur": 429.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-ryzen7-255",
@@ -602,23 +602,23 @@
       },
       "min": 429.0,
       "max": 669.09,
-      "avg": 608.4575,
+      "avg": 620.3399999999999,
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 7,
-      "cur": 515.0,
+      "n": 9,
+      "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
         "component": "Always-on candidate \u2014 MINISFORUM N5 AIR Ryzen 7 255",
-        "model": "MINISFORUM N5 Air AI NAS Refurbished AMD Ryzen 7 255 OS Storage",
+        "model": "Minisforum N5 Air AI NAS | AMD Ryzen 7 255 | Max.96GB DDR5 AMD Ryzen 7 255 / 16G DDR5 + 64G OS Storage / UK Warehouse",
         "condition": null,
-        "seller": "Walmart - MINISFORUM Store",
-        "delivery": "Free delivery",
-        "retailer": "walmart",
-        "price": 515.0,
+        "seller": null,
+        "delivery": null,
+        "retailer": "unknown",
+        "price": 490.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 AIR Ryzen 7 255 NAS&prds=catalogid:16460543852755271102,productid:5817273902141947279,headlineOfferDocid:13460733298606504375,imageDocid:14562218486760636591,gpcid:17473500413422265458,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -626,28 +626,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 515.0,
+      "min": 490.0,
       "max": 694.99,
-      "avg": 574.9971428571429,
+      "avg": 558.8866666666667,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 3,
-      "cur": 994.0,
+      "n": 5,
+      "cur": 899.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
         "component": "Always-on candidate \u2014 MINISFORUM N5 Pro AI NAS HX PRO 370",
-        "model": "MINISFORUM N5 Pro Desktop NAS AMD Ryzen AI 9 HX Pro 370",
+        "model": "Minisforum N5 PRO AI NAS AMD Ryzen AI 9 HX PRO 370 DDR5 + 128G OS Storage / US",
         "condition": null,
-        "seller": "Best Buy",
+        "seller": "Minisforum",
         "delivery": "Free delivery",
-        "retailer": "bestbuy",
-        "price": 994.0,
+        "retailer": "minisforum",
+        "price": 899.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Pro AI NAS Ryzen AI 9 HX PRO 370&prds=catalogid:3763898441593408821,productid:13277856445065290009,headlineOfferDocid:11317269348823046474,imageDocid:14137896860311233564,rds:PC_7247612809636869796|PROD_PC_7247612809636869796,gpcid:7247612809636869796,mid:576462887772588537,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Pro AI NAS Ryzen AI 9 HX PRO 370&prds=catalogid:6625285386868274035,productid:4633736352228831995,headlineOfferDocid:10958852822749474918,imageDocid:10400595940973974092,rds:PC_12510290382927361858|PROD_PC_12510290382927361858,gpcid:12510290382927361858,mid:576462896518619352,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -655,13 +655,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 994.0,
+      "min": 899.0,
       "max": 1461.17,
-      "avg": 1211.39,
-      "median": 1179.0
+      "avg": 1105.434,
+      "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
       "n": 2,
@@ -693,7 +693,7 @@
       "median": 551.985
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 4,
+      "n": 8,
       "cur": 618.46,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
@@ -713,16 +713,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 618.46,
       "max": 917.59,
-      "avg": 715.7575,
-      "median": 663.49
+      "avg": 714.1325,
+      "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
-      "n": 12,
+      "n": 16,
       "cur": 656.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-pro",
@@ -742,16 +742,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 583.99,
       "max": 1299.99,
-      "avg": 844.9900000000001,
+      "avg": 831.4975,
       "median": 733.49
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 2,
+      "n": 3,
       "cur": 594.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
@@ -771,7 +771,7 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 594.99,
@@ -809,7 +809,7 @@
       "median": 679.99
     },
     "aon-asustor-as6804t": {
-      "n": 3,
+      "n": 7,
       "cur": 1517.99,
       "curObs": {
         "component_id": "aon-asustor-as6804t",
@@ -829,28 +829,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 1517.99,
       "max": 1855.4,
-      "avg": 1630.46,
+      "avg": 1652.5457142857142,
       "median": 1517.99
     },
     "aon-qnap-ts464": {
-      "n": 13,
-      "cur": 639.0,
+      "n": 18,
+      "cur": 685.95,
       "curObs": {
         "component_id": "aon-qnap-ts464",
         "component": "Always-on candidate \u2014 QNAP TS-464",
         "model": "QNAP TS-464-8G NAS",
         "condition": null,
-        "seller": "QNAP Online Store USA",
+        "seller": "Best Buy",
         "delivery": "Free delivery",
-        "retailer": "qnap_online_store_usa",
-        "price": 639.0,
+        "retailer": "bestbuy",
+        "price": 685.95,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:2816662717712219861,imageDocid:6969432027706364354,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:12000671651455733625,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -858,13 +858,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-13T14:06:09.275926+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 543.99,
-      "max": 1082.84,
-      "avg": 853.9846153846154,
-      "median": 849.0
+      "max": 1086.62,
+      "avg": 866.575,
+      "median": 862.495
     }
   },
   "manual_price_crossover": [
