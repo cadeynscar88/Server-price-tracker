@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-16T11:18:19.996421+00:00",
-  "last_check": "2026-10-16T11:16:56.404983+00:00",
+  "generated": "2026-10-20T11:31:36.826930+00:00",
+  "last_check": "2026-10-20T11:29:59.844752+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,32 +204,32 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 16,
-      "cur": 699.0,
+      "n": 17,
+      "cur": 624.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
         "component": "CPU \u2014 AMD Ryzen 9 9950X3D",
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery by Sun",
+        "delivery": "Free delivery",
         "retailer": "bestbuy",
-        "price": 699.0,
+        "price": 624.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D Best Buy&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
         "match_status": "strong",
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
-        "query_kind": "retailer_fallback",
-        "timestamp": "2026-10-16T11:16:56.404983+00:00",
+        "query_kind": "generic",
+        "timestamp": "2026-10-20T11:29:59.844752+00:00",
         "notes": "exact 9950X3D + sane price"
       },
-      "min": 667.0,
+      "min": 624.0,
       "max": 748.99,
-      "avg": 703.874375,
+      "avg": 699.1758823529411,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -436,7 +436,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 8,
+      "n": 9,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -456,12 +456,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-16T11:17:11.685857+00:00",
+        "timestamp": "2026-10-20T11:30:16.100704+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 346.63,
+      "avg": 344.3366666666667,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -519,19 +519,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 12,
-      "cur": 4900.0,
+      "n": 13,
+      "cur": 5706.8,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia Rtx A6000 48gb Gddr6 Workstation Graphics Card Gpu - Tested &",
+        "model": "Graphics Card Nvidia Rtx A6000 48gb Pci-e 4.0 300w 900-5g133-1700-000",
         "condition": null,
-        "seller": "eBay",
+        "seller": "eBay - hardwaredirect_com",
         "delivery": null,
         "retailer": "ebay",
-        "price": 4900.0,
+        "price": 5706.8,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:20396182463525852,headlineOfferDocid:20396182463525852,imageDocid:15402034828147586076,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:4673978155832824643,headlineOfferDocid:4673978155832824643,imageDocid:17341660554030125972,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -539,13 +539,13 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-16T11:16:56.404983+00:00",
+        "timestamp": "2026-10-20T11:29:59.844752+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5711.094166666667,
-      "median": 5399.5
+      "avg": 5710.763846153845,
+      "median": 5706.8
     },
     "gpu-pro6000-blackwell-96gb": {
       "n": 15,
@@ -577,7 +577,7 @@
       "median": 12999.0
     },
     "aon-minisforum-n5-ryzen7-255": {
-      "n": 5,
+      "n": 6,
       "cur": 429.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-ryzen7-255",
@@ -602,7 +602,7 @@
       },
       "min": 429.0,
       "max": 669.09,
-      "avg": 620.3399999999999,
+      "avg": 628.2616666666667,
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
@@ -635,19 +635,19 @@
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 5,
-      "cur": 899.0,
+      "n": 7,
+      "cur": 994.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
         "component": "Always-on candidate \u2014 MINISFORUM N5 Pro AI NAS HX PRO 370",
-        "model": "Minisforum N5 PRO AI NAS AMD Ryzen AI 9 HX PRO 370 DDR5 + 128G OS Storage / US",
+        "model": "MINISFORUM N5 PRO Desktop NAS AMD Ryzen AI 9 HX PRO 370",
         "condition": null,
-        "seller": "Minisforum",
+        "seller": "Best Buy",
         "delivery": "Free delivery",
-        "retailer": "minisforum",
-        "price": 899.0,
+        "retailer": "bestbuy",
+        "price": 994.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Pro AI NAS Ryzen AI 9 HX PRO 370&prds=catalogid:6625285386868274035,productid:4633736352228831995,headlineOfferDocid:10958852822749474918,imageDocid:10400595940973974092,rds:PC_12510290382927361858|PROD_PC_12510290382927361858,gpcid:12510290382927361858,mid:576462896518619352,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Pro AI NAS Ryzen AI 9 HX PRO 370&prds=catalogid:3763898441593408821,productid:13277856445065290009,headlineOfferDocid:11317269348823046474,imageDocid:14137896860311233564,rds:PC_7247612809636869796|PROD_PC_7247612809636869796,gpcid:7247612809636869796,mid:576462887772588537,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -655,28 +655,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-16T11:17:11.685857+00:00",
+        "timestamp": "2026-10-20T11:30:16.100704+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 899.0,
       "max": 1461.17,
-      "avg": 1105.434,
+      "avg": 1100.0242857142857,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
-      "n": 2,
-      "cur": 475.99,
+      "n": 5,
+      "cur": 659.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-gt",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 GT",
-        "model": "UGREEN NASync dxp4800 gt 4-Bay NAS Enclosure",
+        "model": "UGREEN NAS DXP4800 GT 4-Bay Desktop Network Attached Storage AMD R2514 CPU 8GB DDR4 RAM",
         "condition": null,
-        "seller": "Newegg.com",
-        "delivery": null,
-        "retailer": "newegg",
-        "price": 475.99,
+        "seller": "ai.ugreen.com",
+        "delivery": "Free delivery",
+        "retailer": "ai_ugreen_com",
+        "price": 659.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:8151492529935553933,productid:2738503362686387628,headlineOfferDocid:9295062643359968081,imageDocid:17577430105861024607,gpcid:12790436221338022382,mid:576462896359469705,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:6836628467734864971,productid:15214957500032409744,headlineOfferDocid:17257574413069975237,imageDocid:16507290539742429111,rds:PC_15947649116504632696|PROD_PC_15947649116504632696,gpcid:15947649116504632696,mid:576462567088184715,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -684,13 +684,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "timestamp": "2026-10-20T11:30:16.100704+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 475.99,
-      "max": 627.98,
-      "avg": 551.985,
-      "median": 551.985
+      "max": 920.61,
+      "avg": 668.912,
+      "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
       "n": 8,
@@ -751,7 +751,7 @@
       "median": 733.49
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 3,
+      "n": 4,
       "cur": 594.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
@@ -763,7 +763,7 @@
         "retailer": "newegg",
         "price": 594.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:4700401401643022697,mid:576462898593649880,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -771,7 +771,7 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-16T11:17:11.685857+00:00",
+        "timestamp": "2026-10-20T11:30:16.100704+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 594.99,
