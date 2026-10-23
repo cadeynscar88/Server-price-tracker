@@ -1,7 +1,7 @@
 [
   {
     "component_id": "os-ssd-mp44-4tb",
-    "component": "OS SSD — TeamGroup MP44 4TB TLC Gen4",
+    "component": "OS SSD \u2014 TeamGroup MP44 4TB TLC Gen4",
     "model": "TeamGroup MP44 4TB TM8FPW004T0C101",
     "condition": "New",
     "seller": "Newegg",
@@ -18,5 +18,26 @@
     "query_kind": "exact_sku_manual_web",
     "timestamp": "2026-09-11T15:46:00+00:00",
     "notes": "Current 4TB OS/application candidate baseline."
+  },
+  {
+    "component_id": "os-ssd-mp44-4tb",
+    "component": "OS SSD \u2014 TeamGroup MP44 4TB TLC Gen4",
+    "model": "TEAMGROUP SSD TM8FPW004T0C101 4TB MP44 M.2 2280 NVMe 1.4 PCIE GEN 4X4 Retail",
+    "condition": null,
+    "seller": "industrial automation parts",
+    "delivery": null,
+    "retailer": "industrial_automation_parts",
+    "price": 589.76,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 4TB TM8FPW004T0C101&prds=productid:6851879063372851826,headlineOfferDocid:6851879063372851826,imageDocid:15609001296539173628,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-23T11:32:39.786467+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

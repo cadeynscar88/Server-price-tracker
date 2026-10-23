@@ -82,5 +82,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-09T13:11:50.020211+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "aon-terramaster-f4-425-pro-n350",
+    "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N350",
+    "model": "TERRAMASTER F4-425 Pro - 4Bay, Intel N350 8-Core, 16GB DDR5, 5GbE LAN x 2, M.2 Slot x 3, AI-Native OS TOS 7, OpenClaw Supported, Network Attached",
+    "condition": null,
+    "seller": "neweggbusiness.com",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 799.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=productid:8963622518570802234,headlineOfferDocid:8963622518570802234,imageDocid:3786456691365008566,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-23T11:32:39.786467+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

@@ -1,0 +1,23 @@
+[
+  {
+    "component_id": "cable-asrock-full-white-kit",
+    "component": "Factory white cable kit \u2014 ASRock CB-FKITWT",
+    "model": "[asrock] [white] Cable Full Package Kit",
+    "condition": null,
+    "seller": "eBay - japan_finds_seven",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 198.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=ASRock CB-FKITWT White Cable Full Package Kit&prds=productid:9573960070976173035,headlineOfferDocid:9573960070976173035,imageDocid:3200101598195335481,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-23T11:32:39.786467+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  }
+]

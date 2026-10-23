@@ -145,5 +145,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-20T11:30:16.100704+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "aon-minisforum-n5-pro-hx370",
+    "component": "Always-on candidate \u2014 MINISFORUM N5 Pro AI NAS HX PRO 370",
+    "model": "MINISFORUM N5 Pro Desktop NAS - AMD Ryzen AI 9 HX Pro 370 - N5 Pro / Barebone + 128GB OS Storage",
+    "condition": null,
+    "seller": null,
+    "delivery": null,
+    "retailer": "unknown",
+    "price": 880.0,
+    "currency": "USD",
+    "source_url": "",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-23T11:32:39.786467+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]
