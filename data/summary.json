@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-23T11:33:13.525072+00:00",
-  "last_check": "2026-10-23T11:32:32.984052+00:00",
+  "generated": "2026-10-27T12:05:33.629081+00:00",
+  "last_check": "2026-10-27T12:04:27.141179+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 17,
+      "n": 18,
       "cur": 624.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -212,11 +212,11 @@
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery",
+        "delivery": "Free delivery by Thu",
         "retailer": "bestbuy",
         "price": 624.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462518625375436,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=AMD Ryzen 9 9950X3D&prds=catalogid:2741003527512259676,productid:16314624667684979506,headlineOfferDocid:11835633588355975649,imageDocid:2809400649772013778,rds:PC_12280504807335346691|PROD_PC_12280504807335346691,gpcid:12280504807335346691,mid:576462889425452749,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-20T11:29:59.844752+00:00",
+        "timestamp": "2026-10-27T12:04:27.141179+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 624.0,
       "max": 748.99,
-      "avg": 699.1758823529411,
+      "avg": 694.9994444444444,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -464,7 +464,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 10,
+      "n": 11,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -489,7 +489,7 @@
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 349.342,
+      "avg": 353.4372727272727,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -547,7 +547,7 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 13,
+      "n": 14,
       "cur": 5706.8,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
@@ -567,12 +567,12 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-20T11:29:59.844752+00:00",
+        "timestamp": "2026-10-27T12:04:27.141179+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5710.763846153845,
+      "avg": 5710.480714285714,
       "median": 5706.8
     },
     "gpu-pro6000-blackwell-96gb": {
@@ -634,7 +634,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 13,
+      "n": 15,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -659,21 +659,21 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 579.003076923077,
+      "avg": 586.274,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 8,
-      "cur": 880.0,
+      "n": 9,
+      "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
         "component": "Always-on candidate \u2014 MINISFORUM N5 Pro AI NAS HX PRO 370",
-        "model": "MINISFORUM N5 Pro Desktop NAS - AMD Ryzen AI 9 HX Pro 370 - N5 Pro / Barebone + 128GB OS Storage",
+        "model": "MINISFORUM Desktop NAS N5 PRO 5 Bay 128GB SSD,AMD Ryzen AI 9 HX PRO 370(12C/24T) DDR5 RAM Slots, 1*10Gbe,1*5Gbe, 2*USB4(8K), 8K HDMI,1xM.2 Slot & 2xU.",
         "condition": null,
         "seller": null,
         "delivery": null,
         "retailer": "unknown",
-        "price": 880.0,
+        "price": 830.0,
         "currency": "USD",
         "source_url": "",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
@@ -683,16 +683,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-23T11:32:39.786467+00:00",
+        "timestamp": "2026-10-27T12:04:36.728024+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 880.0,
+      "min": 830.0,
       "max": 1461.17,
-      "avg": 1072.52125,
+      "avg": 1045.5744444444445,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
-      "n": 8,
+      "n": 11,
       "cur": 659.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-gt",
@@ -712,28 +712,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-23T11:32:39.786467+00:00",
+        "timestamp": "2026-10-27T12:04:36.728024+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 475.99,
       "max": 920.61,
-      "avg": 665.56625,
+      "avg": 665.4090909090909,
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 12,
-      "cur": 618.46,
+      "n": 16,
+      "cur": 489.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 Plus",
-        "model": "Ugreen NASync DXP4800 Plus NAS Desktop Intel Pentium Gold",
+        "model": "UGREEN NASync DXP4800 Plus 4-Bay Desktop NAS 2 * NVMe Slots NAS Server",
         "condition": null,
-        "seller": "CompSource",
-        "delivery": null,
-        "retailer": "compsource",
-        "price": 618.46,
+        "seller": "ai.ugreen.com",
+        "delivery": "Free delivery",
+        "retailer": "ai_ugreen_com",
+        "price": 489.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Plus&prds=catalogid:1972064018532853826,productid:13291791060899787219,headlineOfferDocid:1047982789051795221,imageDocid:13657676348257296366,rds:PC_13191470947480596787|PROD_PC_13191470947480596787,gpcid:13191470947480596787,mid:576462808134227996,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Plus&prds=catalogid:7993292635842655055,productid:508224881790035263,headlineOfferDocid:15077017439738137599,imageDocid:15228849476993688192,rds:PC_6832500816647706516|PROD_PC_6832500816647706516,gpcid:6832500816647706516,mid:576462567968353263,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -741,12 +741,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-16T11:17:11.685857+00:00",
+        "timestamp": "2026-10-27T12:04:36.728024+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 618.46,
+      "min": 489.99,
       "max": 917.59,
-      "avg": 729.8016666666667,
+      "avg": 713.089375,
       "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
@@ -808,7 +808,7 @@
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 5,
+      "n": 6,
       "cur": 799.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
@@ -833,8 +833,8 @@
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 703.99,
-      "median": 679.99
+      "avg": 719.9900000000001,
+      "median": 739.99
     },
     "aon-asustor-as6804t": {
       "n": 7,

@@ -745,5 +745,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-23T11:32:32.984052+00:00",
     "notes": "price $265.00 outside sanity band $1200-$6500"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "Gaming PC Ultra 9 285K 32GB RAM 2TB SSD RTX 5090 32GB Windows 11 Computer",
+    "condition": null,
+    "seller": "newegg.com",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 8499.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=productid:830037965829179031,headlineOfferDocid:830037965829179031,imageDocid:12122483021323769004,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "complete-system/prebuilt result",
+    "query_kind": "generic",
+    "timestamp": "2026-10-27T12:04:27.141179+00:00",
+    "notes": "complete-system/prebuilt result"
   }
 ]

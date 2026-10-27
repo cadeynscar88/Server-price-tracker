@@ -337,5 +337,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-23T11:32:32.984052+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-a6000-48gb",
+    "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
+    "model": "Graphics Card Nvidia Rtx A6000 48gb Pci-e 4.0 300w 900-5g133-1700-000",
+    "condition": null,
+    "seller": "eBay - hardwaredirect_com",
+    "delivery": null,
+    "retailer": "ebay",
+    "price": 5706.8,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:4673978155832824643,headlineOfferDocid:4673978155832824643,imageDocid:17341660554030125972,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX A6000 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-10-27T12:04:27.141179+00:00",
+    "notes": "RTX A6000 48GB + sane price"
   }
 ]

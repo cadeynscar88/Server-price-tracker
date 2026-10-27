@@ -166,5 +166,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-23T11:32:39.786467+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "aon-minisforum-n5-pro-hx370",
+    "component": "Always-on candidate \u2014 MINISFORUM N5 Pro AI NAS HX PRO 370",
+    "model": "MINISFORUM Desktop NAS N5 PRO 5 Bay 128GB SSD,AMD Ryzen AI 9 HX PRO 370(12C/24T) DDR5 RAM Slots, 1*10Gbe,1*5Gbe, 2*USB4(8K), 8K HDMI,1xM.2 Slot & 2xU.",
+    "condition": null,
+    "seller": null,
+    "delivery": null,
+    "retailer": "unknown",
+    "price": 830.0,
+    "currency": "USD",
+    "source_url": "",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-27T12:04:36.728024+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]
