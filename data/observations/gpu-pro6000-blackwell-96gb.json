@@ -313,5 +313,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-13T14:06:09.275926+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "gpu-pro6000-blackwell-96gb",
+    "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "Nvidia Rtx Pro 6000 Blackwell m Ax-Q 96GB DPX4 GDDR7 Graphics Card",
+    "condition": null,
+    "seller": "Flatiron Networks",
+    "delivery": null,
+    "retailer": "flatiron_networks",
+    "price": 11285.32,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=productid:10561426322800309823,headlineOfferDocid:10561426322800309823,imageDocid:260812226059078769,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-10-30T12:47:23.994877+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

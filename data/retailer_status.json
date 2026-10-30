@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-27T12:05:33.664143+00:00",
+  "generated_at": "2026-10-30T12:48:12.579367+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 52 days old",
+      "status": "price is 55 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,8 +15,8 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-27T12:04:36.728024+00:00",
-      "last_verified_price": 659.99,
+      "last_verified_at": "2026-10-30T12:47:23.994877+00:00",
+      "last_verified_price": 694.99,
       "latest_check_status": "verified"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Walmart",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-27T12:04:36.728024+00:00",
+      "last_verified_at": "2026-10-30T12:47:23.994877+00:00",
       "last_verified_price": 515.0,
       "latest_check_status": "verified"
     },
@@ -33,7 +33,7 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-27T12:04:36.728024+00:00",
+      "last_verified_at": "2026-10-30T12:47:23.994877+00:00",
       "last_verified_price": 394.39,
       "latest_check_status": "verified"
     },
@@ -41,7 +41,7 @@
       "id": "bh",
       "name": "B&H Photo",
       "state": "yellow",
-      "status": "price is 17 days old",
+      "status": "price is 20 days old",
       "last_verified_at": "2026-10-09T13:11:50.020211+00:00",
       "last_verified_price": 849.0,
       "latest_check_status": "rejected"
@@ -51,7 +51,7 @@
       "name": "Micro Center",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-10-27T12:04:36.728024+00:00",
+      "last_verified_at": "2026-10-30T12:47:23.994877+00:00",
       "last_verified_price": 674.99,
       "latest_check_status": "verified"
     }

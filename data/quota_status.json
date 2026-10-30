@@ -4,10 +4,10 @@
   "monthly_limit": 250,
   "reserve": 10,
   "planned_budget": 240,
-  "checks_used": 182,
-  "checks_remaining_to_plan": 58,
-  "checks_remaining_absolute": 68,
-  "last_updated": "2026-10-27T12:04:36.728024+00:00",
+  "checks_used": 206,
+  "checks_remaining_to_plan": 34,
+  "checks_remaining_absolute": 44,
+  "last_updated": "2026-10-30T12:47:23.994877+00:00",
   "source": "tracker_ledger",
   "note": "Tracks SerpApi attempts made by this repository; provider-dashboard usage outside this repo is not included."
 }
