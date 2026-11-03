@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-30T12:48:12.546177+00:00",
-  "last_check": "2026-10-30T12:47:08.823846+00:00",
+  "generated": "2026-11-03T14:04:56.459059+00:00",
+  "last_check": "2026-11-03T14:04:20.387984+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 19,
+      "n": 20,
       "cur": 624.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -212,7 +212,7 @@
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery by Tue",
+        "delivery": "Free delivery by Thu",
         "retailer": "bestbuy",
         "price": 624.0,
         "currency": "USD",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-30T12:47:08.823846+00:00",
+        "timestamp": "2026-11-03T14:04:20.387984+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 624.0,
       "max": 748.99,
-      "avg": 691.2626315789473,
+      "avg": 687.8995,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -464,19 +464,19 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 12,
+      "n": 13,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
         "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
         "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD TM8FPW002T0C101",
         "condition": null,
-        "seller": "Newegg.com",
+        "seller": "Walmart - Newegg Inc.",
         "delivery": "Free delivery",
         "retailer": "newegg",
         "price": 325.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:6541872939760430024,imageDocid:1106170821801692178,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:13825755390807944043,imageDocid:3875052371012175013,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -484,13 +484,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-20T11:30:16.100704+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 356.84999999999997,
-      "median": 340.15
+      "avg": 354.4761538461538,
+      "median": 325.99
     },
     "os-ssd-mp44-4tb": {
       "n": 2,
@@ -547,7 +547,7 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 15,
+      "n": 16,
       "cur": 5999.97,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
@@ -555,7 +555,7 @@
         "model": "Nvidia RTX A6000 48GB GDDR6 Professional GPU",
         "condition": null,
         "seller": "eBay - respec.io",
-        "delivery": "Free delivery",
+        "delivery": "Free delivery by Mon",
         "retailer": "ebay",
         "price": 5999.97,
         "currency": "USD",
@@ -567,13 +567,13 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-10-30T12:47:08.823846+00:00",
+        "timestamp": "2026-11-03T14:04:20.387984+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5729.78,
-      "median": 5706.8
+      "avg": 5746.666875,
+      "median": 5753.4
     },
     "gpu-pro6000-blackwell-96gb": {
       "n": 16,
@@ -634,7 +634,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 19,
+      "n": 23,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -659,11 +659,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 594.2721052631579,
+      "avg": 598.9634782608696,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 11,
+      "n": 15,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -688,23 +688,23 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1055.560909090909,
+      "avg": 1038.1446666666666,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
-      "n": 14,
-      "cur": 659.99,
+      "n": 18,
+      "cur": 605.21,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-gt",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 GT",
-        "model": "UGREEN NASync DXP4800 GT 4-bay NAS, AMD Ryzen Embedded R2514, Dual 10GbE GbE LAN, Dual M.2 NVMe SSD Slots, Diskless",
+        "model": "UGREEN NASync DXP4800 GT 4 Bay NAS",
         "condition": null,
-        "seller": "neweggbusiness.com",
+        "seller": "Microless.com",
         "delivery": null,
-        "retailer": "newegg",
-        "price": 659.99,
+        "retailer": "microless_com",
+        "price": 605.21,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=productid:1990778582187001017,headlineOfferDocid:1990778582187001017,imageDocid:15246514877324001621,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:7333525020403086067,productid:1298412393598086825,headlineOfferDocid:7531864105412640893,imageDocid:13156791175473470733,gpcid:16598029294980974800,mid:576462916710234495,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -712,16 +712,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-30T12:47:23.994877+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 475.99,
       "max": 920.61,
-      "avg": 665.3192857142857,
+      "avg": 661.0916666666667,
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 19,
+      "n": 23,
       "cur": 407.28,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
@@ -746,12 +746,12 @@
       },
       "min": 407.28,
       "max": 917.59,
-      "avg": 695.6326315789474,
+      "avg": 705.6656521739131,
       "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
-      "n": 20,
-      "cur": 656.99,
+      "n": 24,
+      "cur": 619.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-pro",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 Pro",
@@ -760,7 +760,7 @@
         "seller": "ai.ugreen.com",
         "delivery": "Free delivery",
         "retailer": "ai_ugreen_com",
-        "price": 656.99,
+        "price": 619.99,
         "currency": "USD",
         "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Pro&prds=catalogid:4779410569283369075,productid:3760525838994835959,headlineOfferDocid:15722517890622194558,imageDocid:340585384311410352,gpcid:15598188912710345307,mid:576462892669026702,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
@@ -770,17 +770,17 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-30T12:47:23.994877+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 583.99,
       "max": 1299.99,
-      "avg": 830.652,
-      "median": 734.99
+      "avg": 827.88,
+      "median": 767.49
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 5,
-      "cur": 559.99,
+      "n": 6,
+      "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
@@ -789,9 +789,9 @@
         "seller": "Newegg.com - TERRAMASTER OFFICIAL",
         "delivery": "Free delivery",
         "retailer": "newegg",
-        "price": 559.99,
+        "price": 699.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:15862739549341114347,productid:7126414786026433290,headlineOfferDocid:1761569808484000319,imageDocid:17796858311007993077,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:15862739549341114347,productid:7126414786026433290,headlineOfferDocid:11701819658064989982,imageDocid:17796858311007993077,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -799,28 +799,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-23T11:32:39.786467+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
-      "max": 594.99,
-      "avg": 587.99,
+      "max": 699.99,
+      "avg": 606.6566666666666,
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 7,
-      "cur": 799.99,
+      "n": 9,
+      "cur": 594.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N350",
-        "model": "Terramaster F4-425 Pro -N350 SMB 4-Bay NAS *Gunmetal Gray*",
+        "model": "TERRAMASTER F4-425 Pro NAS 4Bay Intel N350 8-Core 16GB DDR5 5GbE LAN x 2",
         "condition": null,
         "seller": "TerraMaster Official Shop",
         "delivery": "Free delivery",
         "retailer": "terramaster_official_shop",
-        "price": 799.99,
+        "price": 594.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:17248431413074980812,productid:8855564282091625540,headlineOfferDocid:17434331161165718412,imageDocid:6866884448007532509,gpcid:14484167495653783507,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:10138549988832149085,productid:8872446718343960296,headlineOfferDocid:1296729314257620814,imageDocid:6866884448007532509,gpcid:12517809516046094935,mid:576462563930112858,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -828,16 +828,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-09T13:11:50.020211+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 731.4185714285715,
+      "avg": 723.8788888888889,
       "median": 799.99
     },
     "aon-asustor-as6804t": {
-      "n": 9,
+      "n": 12,
       "cur": 1517.99,
       "curObs": {
         "component_id": "aon-asustor-as6804t",
@@ -857,17 +857,17 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-30T12:47:23.994877+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 1517.99,
       "max": 1855.4,
-      "avg": 1660.1344444444446,
+      "avg": 1652.7158333333334,
       "median": 1517.99
     },
     "aon-qnap-ts464": {
-      "n": 25,
-      "cur": 677.49,
+      "n": 32,
+      "cur": 687.07,
       "curObs": {
         "component_id": "aon-qnap-ts464",
         "component": "Always-on candidate \u2014 QNAP TS-464",
@@ -876,9 +876,9 @@
         "seller": "Best Buy",
         "delivery": "Free delivery",
         "retailer": "bestbuy",
-        "price": 677.49,
+        "price": 687.07,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:2464323904975156387,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:12000671651455733625,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -886,13 +886,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-30T12:47:23.994877+00:00",
+        "timestamp": "2026-11-03T14:04:39.051114+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 543.99,
       "max": 1088.52,
-      "avg": 877.6164,
-      "median": 875.99
+      "avg": 879.4109375,
+      "median": 862.495
     }
   },
   "manual_price_crossover": [

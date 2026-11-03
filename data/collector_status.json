@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T12:47:08.823846+00:00",
+  "checked_at": "2026-11-03T14:04:20.387984+00:00",
   "source": "serpapi_google_shopping",
   "searches_attempted": 6,
   "base_searches": 5,
@@ -13,20 +13,20 @@
   "check_failures": 0,
   "existing_results_revalidated": {
     "changed": 0,
-    "trusted_rows": 39,
-    "rejected_rows": 86,
+    "trusted_rows": 41,
+    "rejected_rows": 91,
     "review_rows": 2
   },
   "quota": {
     "provider": "serpapi",
-    "month": "2026-10",
+    "month": "2026-11",
     "monthly_limit": 250,
     "reserve": 10,
     "planned_budget": 240,
-    "checks_used": 188,
-    "checks_remaining_to_plan": 52,
-    "checks_remaining_absolute": 62,
-    "last_updated": "2026-10-30T12:47:08.823846+00:00",
+    "checks_used": 6,
+    "checks_remaining_to_plan": 234,
+    "checks_remaining_absolute": 244,
+    "last_updated": "2026-11-03T14:04:20.387984+00:00",
     "source": "tracker_ledger",
     "note": "Tracks SerpApi attempts made by this repository; provider-dashboard usage outside this repo is not included."
   },

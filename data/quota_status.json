@@ -1,13 +1,13 @@
 {
   "provider": "serpapi",
-  "month": "2026-10",
+  "month": "2026-11",
   "monthly_limit": 250,
   "reserve": 10,
   "planned_budget": 240,
-  "checks_used": 206,
-  "checks_remaining_to_plan": 34,
-  "checks_remaining_absolute": 44,
-  "last_updated": "2026-10-30T12:47:23.994877+00:00",
+  "checks_used": 24,
+  "checks_remaining_to_plan": 216,
+  "checks_remaining_absolute": 226,
+  "last_updated": "2026-11-03T14:04:39.051114+00:00",
   "source": "tracker_ledger",
   "note": "Tracks SerpApi attempts made by this repository; provider-dashboard usage outside this repo is not included."
 }

@@ -644,5 +644,26 @@
     "query_kind": "generic",
     "timestamp": "2026-10-30T12:47:08.823846+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA RTX PRO 5000 Blackwell Graphic Card, 48 GB GDDR7 ECC - PCIe 5.0 x16 - 2x Slot - Active - FHFL - 300 W - Graphics Card, PRO 5000 Blackwell 48 GB",
+    "condition": null,
+    "seller": "neweggbusiness.com",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 8779.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=productid:17874642066139864822,headlineOfferDocid:17874642066139864822,imageDocid:10225002336270734860,rds:PC_3623168826209212930|PROD_PC_3623168826209212930,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-11-03T14:04:20.387984+00:00",
+    "notes": "different model/variant"
   }
 ]
