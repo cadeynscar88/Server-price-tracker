@@ -665,5 +665,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-03T14:04:20.387984+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA RTX - Graphics card - RTX A5000 - 24 GB GDDR6 - PCIe 4.0 x16 low Profile - 4 x DisplayPort",
+    "condition": null,
+    "seller": "neweggbusiness.com",
+    "delivery": null,
+    "retailer": "newegg",
+    "price": 2999.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=catalogid:16330744324754646119,productid:15053156106129902061,headlineOfferDocid:12832709111817806628,imageDocid:10439286776689451361,gpcid:6275512132458939331,mid:576462915982778604,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-11-06T14:10:49.635528+00:00",
+    "notes": "different model/variant"
   }
 ]

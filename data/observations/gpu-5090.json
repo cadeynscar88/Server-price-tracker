@@ -850,5 +850,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-03T14:04:20.387984+00:00",
     "notes": "price $336.00 outside sanity band $1200-$6500"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "Gigabyte NVIDIA AORUS GeForce RTX 5090 XTREME WATERFORCE WB 32G GDDR7 PCI Express 5.0 Graphics Card",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 6979.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:1228015518952550882,productid:2371422078048052479,headlineOfferDocid:12707868253284882287,imageDocid:9250760898596829925,gpcid:3985840352327311771,mid:576462912501828243,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "price $6979.99 outside sanity band $1200-$6500",
+    "query_kind": "generic",
+    "timestamp": "2026-11-06T14:10:49.635528+00:00",
+    "notes": "price $6979.99 outside sanity band $1200-$6500"
   }
 ]
