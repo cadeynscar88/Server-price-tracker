@@ -292,5 +292,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-11-06T14:11:00.413115+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "os-ssd-mp44-2tb",
+    "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
+    "model": "Team Group MP44S M.2 2230 2TB PCIe 4.0 x4 with NVMe tm5ff3002t0c101",
+    "condition": null,
+    "seller": "SHI International",
+    "delivery": "Free delivery by Mon",
+    "retailer": "shi_international",
+    "price": 355.34,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:16814347768094399303,productid:12528564577047610021,headlineOfferDocid:9570128347500851516,imageDocid:591512455652613947,rds:PC_15557722118489663967|PROD_PC_15557722118489663967,gpcid:11717289530873629817,mid:576462915983438074,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-11-10T14:47:32.086820+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

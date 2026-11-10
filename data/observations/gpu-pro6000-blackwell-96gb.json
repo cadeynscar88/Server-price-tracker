@@ -334,5 +334,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-10-30T12:47:23.994877+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "gpu-pro6000-blackwell-96gb",
+    "component": "Future Heavy wildcard \u2014 RTX PRO 6000 Blackwell 96GB ECC",
+    "model": "HP B11F0AA GFX NVIDIA RTX PRO 6000 BLACKWELL96GB4DP",
+    "condition": null,
+    "seller": "Silarius",
+    "delivery": "Free delivery",
+    "retailer": "silarius",
+    "price": 13036.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 6000 Blackwell 96GB&prds=catalogid:413741698909354440,productid:7224807152146380682,headlineOfferDocid:11752098261072407746,imageDocid:3203205543096497468,rds:PC_13724929429275708069|PROD_PC_13724929429275708069,gpcid:13724929429275708069,mid:576462874118251268,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-11-10T14:47:32.086820+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

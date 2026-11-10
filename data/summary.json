@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-06T14:11:43.417546+00:00",
-  "last_check": "2026-11-06T14:10:49.635528+00:00",
+  "generated": "2026-11-10T14:47:58.297484+00:00",
+  "last_check": "2026-11-10T14:47:25.369337+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -405,7 +405,35 @@
       "avg": 134.99,
       "median": 134.99
     },
-    "fans-tl-flex-standard-single": null,
+    "fans-tl-flex-standard-single": {
+      "n": 1,
+      "cur": 47.42,
+      "curObs": {
+        "component_id": "fans-tl-flex-standard-single",
+        "component": "Rear exhaust \u2014 1x Lian Li TL FLEX Standard White",
+        "model": "Lian-Li UNI Fan TL FLEX 120mm ARGB Case Fan White",
+        "condition": null,
+        "seller": "Newegg.com - BeachAudio",
+        "delivery": "Free delivery",
+        "retailer": "newegg",
+        "price": 47.42,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=Lian Li UNI FAN TL FLEX Standard White Single&prds=catalogid:14863513246830239304,productid:8788155824987308576,headlineOfferDocid:13801840390097086454,imageDocid:16872486735699329878,gpcid:5325270449013240198,mid:576462914492844787,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 47.42,
+      "max": 47.42,
+      "avg": 47.42,
+      "median": 47.42
+    },
     "cable-asrock-full-white-kit": {
       "n": 1,
       "cur": 198.0,
@@ -464,7 +492,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 14,
+      "n": 15,
       "cur": 325.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -489,7 +517,7 @@
       },
       "min": 325.99,
       "max": 394.39,
-      "avg": 352.4414285714286,
+      "avg": 352.6346666666667,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -547,19 +575,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 17,
-      "cur": 6899.0,
+      "n": 18,
+      "cur": 4850.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "NVIDIA Quadro RTX A6000 48GB Graphics Card",
+        "model": "Nvidia Rtx A6000 48gb Gddr6",
         "condition": null,
-        "seller": "eBay - halbry",
+        "seller": "eBay",
         "delivery": "Free delivery",
         "retailer": "ebay",
-        "price": 6899.0,
+        "price": 4850.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:15891419127395867759,productid:12864631841489792257,headlineOfferDocid:4321842818447615838,imageDocid:13979354312959172268,gpcid:11965723139792277450,mid:576462915542479556,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:17029542436407157631,headlineOfferDocid:17029542436407157631,imageDocid:4728165393065212836,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -567,16 +595,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-06T14:10:49.635528+00:00",
+        "timestamp": "2026-11-10T14:47:25.369337+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5814.4511764705885,
-      "median": 5800.0
+      "avg": 5760.870555555555,
+      "median": 5753.4
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 16,
+      "n": 17,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -601,23 +629,23 @@
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 12891.2425,
-      "median": 12142.16
+      "avg": 12899.815882352941,
+      "median": 12999.0
     },
     "aon-minisforum-n5-ryzen7-255": {
-      "n": 7,
-      "cur": 429.0,
+      "n": 9,
+      "cur": 667.87,
       "curObs": {
         "component_id": "aon-minisforum-n5-ryzen7-255",
         "component": "Always-on candidate \u2014 MINISFORUM N5 Ryzen 7 255",
-        "model": "Minisforum N5 5 Bay Desktop Nas Amd Ryzen7 255 Metal Case 128gb Ssd",
+        "model": "Minisforum N5-h255-0-128 128 GB Ryzen 7h255 Radeon 780M MinisCloud No ME 5-Bay Enclosure",
         "condition": null,
-        "seller": "eBay",
+        "seller": "Walmart - UnbeatableSale",
         "delivery": null,
-        "retailer": "ebay",
-        "price": 429.0,
+        "retailer": "walmart",
+        "price": 667.87,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Ryzen 7 255 NAS&prds=productid:14074171880472861276,headlineOfferDocid:14074171880472861276,imageDocid:11355715924621622518,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=MINISFORUM N5 Ryzen 7 255 NAS&prds=catalogid:14014815991125047112,productid:1008891349951062766,headlineOfferDocid:2036261865685034999,imageDocid:1566395747904831607,gpcid:10608363522946502231,mid:576462896431545030,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -625,16 +653,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-10-06T13:15:05.623916+00:00",
+        "timestamp": "2026-10-20T11:30:16.100704+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 429.0,
-      "max": 710.53,
-      "avg": 640.0142857142857,
+      "max": 867.0,
+      "avg": 674.82,
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 25,
+      "n": 28,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -659,11 +687,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 601.0064,
+      "avg": 600.3271428571428,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 16,
+      "n": 19,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -688,23 +716,23 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1046.948125,
+      "avg": 1028.0615789473684,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
-      "n": 22,
-      "cur": 605.21,
+      "n": 26,
+      "cur": 559.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-gt",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 GT",
-        "model": "UGREEN NASync DXP4800 GT 4 Bay NAS",
+        "model": "UGREEN NAS DXP4800 GT 4-Bay Desktop Network Attached Storage AMD R2514 CPU 8GB DDR4 RAM",
         "condition": null,
-        "seller": "Microless.com",
-        "delivery": null,
-        "retailer": "microless_com",
-        "price": 605.21,
+        "seller": "ai.ugreen.com",
+        "delivery": "Free delivery",
+        "retailer": "ai_ugreen_com",
+        "price": 559.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:7333525020403086067,productid:1298412393598086825,headlineOfferDocid:7531864105412640893,imageDocid:13156791175473470733,gpcid:16598029294980974800,mid:576462916710234495,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:6836628467734864971,productid:15214957500032409744,headlineOfferDocid:7995933080231950530,imageDocid:16507290539742429111,rds:PC_15947649116504632696|PROD_PC_15947649116504632696,gpcid:15947649116504632696,mid:576462567088184715,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -712,12 +740,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 475.99,
       "max": 920.61,
-      "avg": 670.2022727272728,
+      "avg": 668.8557692307693,
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
@@ -779,7 +807,7 @@
       "median": 799.99
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 7,
+      "n": 8,
       "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
@@ -799,17 +827,17 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 699.99,
-      "avg": 619.99,
+      "avg": 629.99,
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 11,
-      "cur": 629.99,
+      "n": 13,
+      "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N350",
@@ -818,7 +846,7 @@
         "seller": "TerraMaster Official Shop",
         "delivery": "Free delivery",
         "retailer": "terramaster_official_shop",
-        "price": 629.99,
+        "price": 699.99,
         "currency": "USD",
         "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N350&prds=catalogid:10138549988832149085,productid:8872446718343960296,headlineOfferDocid:10979779337994670631,imageDocid:6866884448007532509,gpcid:12517809516046094935,mid:576462916033436423,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
@@ -828,16 +856,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 707.7172727272728,
-      "median": 679.99
+      "avg": 714.2207692307693,
+      "median": 699.99
     },
     "aon-asustor-as6804t": {
-      "n": 15,
+      "n": 18,
       "cur": 1517.99,
       "curObs": {
         "component_id": "aon-asustor-as6804t",
@@ -857,28 +885,28 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 1517.99,
       "max": 1855.4,
-      "avg": 1648.2646666666667,
+      "avg": 1645.2972222222224,
       "median": 1517.99
     },
     "aon-qnap-ts464": {
-      "n": 38,
-      "cur": 687.07,
+      "n": 42,
+      "cur": 639.0,
       "curObs": {
         "component_id": "aon-qnap-ts464",
         "component": "Always-on candidate \u2014 QNAP TS-464",
-        "model": "QNAP TS-464-8G NAS",
+        "model": "QNAP TS-464-8G 4-Bay NAS Enclosure",
         "condition": null,
-        "seller": "Best Buy",
+        "seller": "Newegg.com",
         "delivery": "Free delivery",
-        "retailer": "bestbuy",
-        "price": 687.07,
+        "retailer": "newegg",
+        "price": 639.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:12000671651455733625,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:1568197306698006203,imageDocid:12929895075541294591,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -886,13 +914,13 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-10T14:47:32.086820+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 543.99,
       "max": 1088.52,
-      "avg": 877.1657894736843,
-      "median": 862.495
+      "avg": 874.2683333333332,
+      "median": 849.0
     }
   },
   "manual_price_crossover": [
