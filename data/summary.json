@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-10T14:47:58.297484+00:00",
-  "last_check": "2026-11-10T14:47:25.369337+00:00",
+  "generated": "2026-11-13T14:29:51.407369+00:00",
+  "last_check": "2026-11-13T14:29:22.260752+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 22,
+      "n": 23,
       "cur": 624.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -212,7 +212,7 @@
         "model": "AMD Ryzen 9 9950X3D 16-Core Processor",
         "condition": null,
         "seller": "Best Buy",
-        "delivery": "Free delivery",
+        "delivery": "Free delivery by Wed",
         "retailer": "bestbuy",
         "price": 624.0,
         "currency": "USD",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-06T14:10:49.635528+00:00",
+        "timestamp": "2026-11-13T14:29:22.260752+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 624.0,
       "max": 748.99,
-      "avg": 687.3609090909091,
+      "avg": 684.6060869565217,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -492,19 +492,19 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 15,
-      "cur": 325.99,
+      "n": 16,
+      "cur": 309.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
         "component": "OS SSD \u2014 TeamGroup MP44 2TB TLC Gen4",
-        "model": "2TB TEAMGROUP MP44 PCIe 4.0 NVMe M.2 SSD TM8FPW002T0C101",
+        "model": "Team Group MP44S M.2 2230 2TB PCIe 4.0 x4 with NVMe tm5ff3002t0c101",
         "condition": null,
-        "seller": "Newegg.com",
+        "seller": "Newegg Business",
         "delivery": "Free delivery",
         "retailer": "newegg",
-        "price": 325.99,
+        "price": 309.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:7575400091537013852,productid:16808905764247029055,headlineOfferDocid:6541872939760430024,imageDocid:1106170821801692178,rds:PC_2026202770357251937|PROD_PC_2026202770357251937,gpcid:2026202770357251937,mid:576462563335293653,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TeamGroup MP44 2TB TM8FPW002T0C101&prds=catalogid:16814347768094399303,productid:12528564577047610021,headlineOfferDocid:10154046086019900257,imageDocid:13889404580733768923,rds:PC_15557722118489663967|PROD_PC_15557722118489663967,gpcid:11717289530873629817,mid:576462915983438074,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -512,12 +512,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-13T14:29:29.730996+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 325.99,
+      "min": 309.99,
       "max": 394.39,
-      "avg": 352.6346666666667,
+      "avg": 349.969375,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -575,19 +575,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 18,
-      "cur": 4850.0,
+      "n": 19,
+      "cur": 7150.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia Rtx A6000 48gb Gddr6",
+        "model": "Nvidia Rtx A6000 Ampere Gpu Accelarator 48gb Graphics Card Deep",
         "condition": null,
-        "seller": "eBay",
-        "delivery": "Free delivery",
+        "seller": "eBay - ea_memory",
+        "delivery": null,
         "retailer": "ebay",
-        "price": 4850.0,
+        "price": 7150.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:17029542436407157631,headlineOfferDocid:17029542436407157631,imageDocid:4728165393065212836,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:831472781273547766,headlineOfferDocid:831472781273547766,imageDocid:11711123592140099905,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -595,13 +595,13 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-10T14:47:25.369337+00:00",
+        "timestamp": "2026-11-13T14:29:22.260752+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5760.870555555555,
-      "median": 5753.4
+      "avg": 5833.982631578947,
+      "median": 5800.0
     },
     "gpu-pro6000-blackwell-96gb": {
       "n": 17,
@@ -662,7 +662,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 28,
+      "n": 31,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -687,11 +687,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 600.3271428571428,
+      "avg": 598.9080645161291,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 19,
+      "n": 23,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -716,7 +716,7 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1028.0615789473684,
+      "avg": 1033.6817391304348,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
@@ -749,7 +749,7 @@
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 27,
+      "n": 31,
       "cur": 407.28,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
@@ -774,11 +774,11 @@
       },
       "min": 407.28,
       "max": 917.59,
-      "avg": 705.7351851851853,
+      "avg": 696.21,
       "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
-      "n": 27,
+      "n": 30,
       "cur": 619.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-pro",
@@ -798,17 +798,17 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-06T14:11:00.413115+00:00",
+        "timestamp": "2026-11-13T14:29:29.730996+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 583.99,
       "max": 1299.99,
-      "avg": 818.1144444444444,
-      "median": 799.99
+      "avg": 814.206,
+      "median": 767.49
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 8,
-      "cur": 699.99,
+      "n": 9,
+      "cur": 559.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
@@ -817,9 +817,9 @@
         "seller": "Newegg.com - TERRAMASTER OFFICIAL",
         "delivery": "Free delivery",
         "retailer": "newegg",
-        "price": 699.99,
+        "price": 559.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:15862739549341114347,productid:7126414786026433290,headlineOfferDocid:11701819658064989982,imageDocid:17796858311007993077,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -827,16 +827,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-10T14:47:32.086820+00:00",
+        "timestamp": "2026-11-13T14:29:29.730996+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 699.99,
-      "avg": 629.99,
+      "avg": 622.2122222222222,
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 13,
+      "n": 14,
       "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
@@ -861,8 +861,8 @@
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 714.2207692307693,
-      "median": 699.99
+      "avg": 720.3471428571429,
+      "median": 749.99
     },
     "aon-asustor-as6804t": {
       "n": 18,

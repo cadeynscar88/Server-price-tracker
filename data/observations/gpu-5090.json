@@ -892,5 +892,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-10T14:47:25.369337+00:00",
     "notes": "price $17159.00 outside sanity band $1200-$6500"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "GIGABYTE Aorus GeForce RTX 5090 STEALTH ICE 32GB GDDR7 PCI Express 5.0 Graphics Card",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 6709.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:7469668265581004937,productid:9748545137694515549,headlineOfferDocid:4976848291127602688,imageDocid:13182396351948506866,rds:PC_16182176081246125197|PROD_PC_16182176081246125197,gpcid:16182176081246125197,mid:576462896444399611,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "price $6709.99 outside sanity band $1200-$6500",
+    "query_kind": "generic",
+    "timestamp": "2026-11-13T14:29:22.260752+00:00",
+    "notes": "price $6709.99 outside sanity band $1200-$6500"
   }
 ]
