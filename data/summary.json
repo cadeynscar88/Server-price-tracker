@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-13T14:29:51.407369+00:00",
-  "last_check": "2026-11-13T14:29:22.260752+00:00",
+  "generated": "2026-11-17T15:58:55.306451+00:00",
+  "last_check": "2026-11-17T15:54:41.688416+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -604,7 +604,7 @@
       "median": 5800.0
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 17,
+      "n": 18,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -629,8 +629,8 @@
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 12899.815882352941,
-      "median": 12999.0
+      "avg": 13005.38111111111,
+      "median": 13017.994999999999
     },
     "aon-minisforum-n5-ryzen7-255": {
       "n": 9,
@@ -662,7 +662,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 31,
+      "n": 33,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -687,11 +687,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 598.9080645161291,
+      "avg": 600.459090909091,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 23,
+      "n": 25,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -716,7 +716,7 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1033.6817391304348,
+      "avg": 1025.2672,
       "median": 994.0
     },
     "aon-ugreen-dxp4800-gt": {
@@ -807,8 +807,8 @@
       "median": 767.49
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 9,
-      "cur": 559.99,
+      "n": 10,
+      "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
@@ -817,9 +817,9 @@
         "seller": "Newegg.com - TERRAMASTER OFFICIAL",
         "delivery": "Free delivery",
         "retailer": "newegg",
-        "price": 559.99,
+        "price": 699.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:11701819658064989982,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -827,16 +827,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-13T14:29:29.730996+00:00",
+        "timestamp": "2026-11-17T15:55:50.933016+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 699.99,
-      "avg": 622.2122222222222,
+      "avg": 629.99,
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 14,
+      "n": 15,
       "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
@@ -861,8 +861,8 @@
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 720.3471428571429,
-      "median": 749.99
+      "avg": 725.6566666666666,
+      "median": 799.99
     },
     "aon-asustor-as6804t": {
       "n": 18,
@@ -894,19 +894,19 @@
       "median": 1517.99
     },
     "aon-qnap-ts464": {
-      "n": 42,
-      "cur": 639.0,
+      "n": 47,
+      "cur": 511.2,
       "curObs": {
         "component_id": "aon-qnap-ts464",
         "component": "Always-on candidate \u2014 QNAP TS-464",
-        "model": "QNAP TS-464-8G 4-Bay NAS Enclosure",
+        "model": "QNAP TS-464-8G-US 4 Bay Desktop NAS Intel Quad-core Processor",
         "condition": null,
-        "seller": "Newegg.com",
+        "seller": "QNAP Online Store USA",
         "delivery": "Free delivery",
-        "retailer": "newegg",
-        "price": 639.0,
+        "retailer": "qnap_online_store_usa",
+        "price": 511.2,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:1568197306698006203,imageDocid:12929895075541294591,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:2943668601042691949,productid:16475504625874616309,headlineOfferDocid:8046348197050914221,imageDocid:6600778699875782708,rds:PC_10202696575836500837|PROD_PC_10202696575836500837,gpcid:10202696575836500837,mid:576462912639315771,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -914,12 +914,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-10T14:47:32.086820+00:00",
+        "timestamp": "2026-11-17T15:55:50.933016+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
-      "min": 543.99,
+      "min": 511.2,
       "max": 1088.52,
-      "avg": 874.2683333333332,
+      "avg": 858.8587234042553,
       "median": 849.0
     }
   },
