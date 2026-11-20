@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-17T15:58:55.306451+00:00",
-  "last_check": "2026-11-17T15:54:41.688416+00:00",
+  "generated": "2026-11-20T15:21:53.217858+00:00",
+  "last_check": "2026-11-20T15:21:23.404215+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -204,7 +204,7 @@
   },
   "component_price_stats": {
     "cpu-9950x3d": {
-      "n": 23,
+      "n": 25,
       "cur": 624.0,
       "curObs": {
         "component_id": "cpu-9950x3d",
@@ -224,12 +224,12 @@
         "validation_version": "2.9",
         "validation_reason": "exact 9950X3D + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-13T14:29:22.260752+00:00",
+        "timestamp": "2026-11-20T15:21:23.404215+00:00",
         "notes": "exact 9950X3D + sane price"
       },
       "min": 624.0,
       "max": 748.99,
-      "avg": 684.6060869565217,
+      "avg": 682.7972,
       "median": 699.0
     },
     "motherboard-taichi-white": null,
@@ -492,7 +492,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 16,
+      "n": 17,
       "cur": 309.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -517,7 +517,7 @@
       },
       "min": 309.99,
       "max": 394.39,
-      "avg": 349.969375,
+      "avg": 350.2852941176471,
       "median": 325.99
     },
     "os-ssd-mp44-4tb": {
@@ -575,19 +575,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 19,
-      "cur": 7150.0,
+      "n": 20,
+      "cur": 4300.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia Rtx A6000 Ampere Gpu Accelarator 48gb Graphics Card Deep",
+        "model": "Nvidia RTX A6000E 900-5G133-2200-E00 48GB GDDR6 10752 Graphic Card",
         "condition": null,
-        "seller": "eBay - ea_memory",
-        "delivery": null,
+        "seller": "eBay",
+        "delivery": "Free delivery",
         "retailer": "ebay",
-        "price": 7150.0,
+        "price": 4300.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:831472781273547766,headlineOfferDocid:831472781273547766,imageDocid:11711123592140099905,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:7703946916754366525,productid:4416673331678936809,headlineOfferDocid:17029542436407157631,imageDocid:4728165393065212836,gpcid:12582127179656054169,mid:576462576252010594,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -595,16 +595,16 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-13T14:29:22.260752+00:00",
+        "timestamp": "2026-11-20T15:21:23.404215+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5833.982631578947,
-      "median": 5800.0
+      "avg": 5757.2835,
+      "median": 5753.4
     },
     "gpu-pro6000-blackwell-96gb": {
-      "n": 18,
+      "n": 19,
       "cur": 11025.8,
       "curObs": {
         "component_id": "gpu-pro6000-blackwell-96gb",
@@ -629,8 +629,8 @@
       },
       "min": 11025.8,
       "max": 15000.0,
-      "avg": 13005.38111111111,
-      "median": 13017.994999999999
+      "avg": 13099.834210526316,
+      "median": 13036.99
     },
     "aon-minisforum-n5-ryzen7-255": {
       "n": 9,
@@ -662,7 +662,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 33,
+      "n": 36,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -687,11 +687,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 600.459090909091,
+      "avg": 599.8375000000001,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 25,
+      "n": 27,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -716,8 +716,8 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1025.2672,
-      "median": 994.0
+      "avg": 1014.4325925925926,
+      "median": 968.0
     },
     "aon-ugreen-dxp4800-gt": {
       "n": 26,
@@ -749,7 +749,7 @@
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 31,
+      "n": 35,
       "cur": 407.28,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
@@ -774,23 +774,23 @@
       },
       "min": 407.28,
       "max": 917.59,
-      "avg": 696.21,
+      "avg": 689.9191428571429,
       "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
-      "n": 30,
-      "cur": 619.99,
+      "n": 31,
+      "cur": 669.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-pro",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 Pro",
-        "model": "UGREEN NASync DXP4800 4-Bay High-Density NAS Server \u2013 Secure 112TB Network Storage for Personal Data Protection & Multi-Device Access",
+        "model": "Ugreen NASync DXP4800 NAS Compact N100 8 GB DDR5 0 TB UGOS Pro Black",
         "condition": null,
-        "seller": "ai.ugreen.com",
-        "delivery": "Free delivery",
-        "retailer": "ai_ugreen_com",
-        "price": 619.99,
+        "seller": "PayMore Copperfield",
+        "delivery": "Free delivery by Thu",
+        "retailer": "paymore_copperfield",
+        "price": 669.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Pro&prds=catalogid:4779410569283369075,productid:3760525838994835959,headlineOfferDocid:15722517890622194558,imageDocid:340585384311410352,gpcid:15598188912710345307,mid:576462892669026702,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Pro&prds=catalogid:17172190314874457995,productid:16828921599053431384,headlineOfferDocid:5889823447139190151,imageDocid:12775855270528026770,rds:PC_14214342731783463224|PROD_PC_14214342731783463224,gpcid:14214342731783463224,mid:576462914674993761,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -798,17 +798,17 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-13T14:29:29.730996+00:00",
+        "timestamp": "2026-10-16T11:17:11.685857+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 583.99,
       "max": 1299.99,
-      "avg": 814.206,
-      "median": 767.49
+      "avg": 811.0054838709677,
+      "median": 734.99
     },
     "aon-terramaster-f4-425-pro-n305": {
-      "n": 10,
-      "cur": 699.99,
+      "n": 11,
+      "cur": 559.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n305",
         "component": "Always-on candidate \u2014 TerraMaster F4-425 Pro N305",
@@ -817,9 +817,9 @@
         "seller": "Newegg.com - TERRAMASTER OFFICIAL",
         "delivery": "Free delivery",
         "retailer": "newegg",
-        "price": 699.99,
+        "price": 559.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:11701819658064989982,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=TerraMaster F4-425 Pro N305&prds=catalogid:593727872091621489,productid:4708051098440377062,headlineOfferDocid:1761569808484000319,imageDocid:2602508324307075506,gpcid:1859196712398098042,mid:576462895687988117,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -827,16 +827,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-17T15:55:50.933016+00:00",
+        "timestamp": "2026-11-20T15:21:30.893521+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 559.99,
       "max": 699.99,
-      "avg": 629.99,
+      "avg": 623.6263636363636,
       "median": 594.99
     },
     "aon-terramaster-f4-425-pro-n350": {
-      "n": 15,
+      "n": 16,
       "cur": 699.99,
       "curObs": {
         "component_id": "aon-terramaster-f4-425-pro-n350",
@@ -861,23 +861,52 @@
       },
       "min": 559.99,
       "max": 799.99,
-      "avg": 725.6566666666666,
+      "avg": 730.3025,
       "median": 799.99
     },
     "aon-asustor-as6804t": {
-      "n": 18,
-      "cur": 1517.99,
+      "n": 20,
+      "cur": 1054.8,
       "curObs": {
         "component_id": "aon-asustor-as6804t",
         "component": "Always-on candidate \u2014 ASUSTOR Lockerstor 4 Gen3 AS6804T",
-        "model": "Asustor - Lockerstor 4 Gen3 AS6804T 4 Bay NAS, AMD Ryzen Quad-Core 3.8GHz Network Attached Storage (Diskless)",
+        "model": "ASUSTOR AS6804T LOCKERSTOR 4 Gen3 NAS (4\u30d9\u30a4/\u30e1\u30e2\u30ea16GB)",
+        "condition": null,
+        "seller": "aquaventurewhitetip.com",
+        "delivery": null,
+        "retailer": "aquaventurewhitetip_com",
+        "price": 1054.8,
+        "currency": "USD",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=ASUSTOR Lockerstor 4 Gen3 AS6804T&prds=productid:3681201167599767467,headlineOfferDocid:3681201167599767467,imageDocid:5227591570524338998,pvt:hg&hl=en&gl=us&udm=28",
+        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+        "status": "verified",
+        "method": "serpapi_current_targets",
+        "match_status": "strong",
+        "validation_version": "3.0",
+        "validation_reason": "Exact current-target matcher passed",
+        "query_kind": "current_exact_target",
+        "timestamp": "2026-11-20T15:21:30.893521+00:00",
+        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+      },
+      "min": 1054.8,
+      "max": 1855.4,
+      "avg": 1597.907,
+      "median": 1517.99
+    },
+    "aon-qnap-ts464": {
+      "n": 52,
+      "cur": 687.06,
+      "curObs": {
+        "component_id": "aon-qnap-ts464",
+        "component": "Always-on candidate \u2014 QNAP TS-464",
+        "model": "QNAP TS-464-8G 4-Bay NAS Enclosure",
         "condition": null,
         "seller": "Best Buy",
         "delivery": "Free delivery",
         "retailer": "bestbuy",
-        "price": 1517.99,
+        "price": 687.06,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=ASUSTOR Lockerstor 4 Gen3 AS6804T&prds=productid:18397375219546861977,headlineOfferDocid:18397375219546861977,imageDocid:12368099015611707982,rds:PC_9162189307174183073|PROD_PC_9162189307174183073,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:12000671651455733625,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -885,41 +914,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-10T14:47:32.086820+00:00",
-        "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
-      },
-      "min": 1517.99,
-      "max": 1855.4,
-      "avg": 1645.2972222222224,
-      "median": 1517.99
-    },
-    "aon-qnap-ts464": {
-      "n": 47,
-      "cur": 511.2,
-      "curObs": {
-        "component_id": "aon-qnap-ts464",
-        "component": "Always-on candidate \u2014 QNAP TS-464",
-        "model": "QNAP TS-464-8G-US 4 Bay Desktop NAS Intel Quad-core Processor",
-        "condition": null,
-        "seller": "QNAP Online Store USA",
-        "delivery": "Free delivery",
-        "retailer": "qnap_online_store_usa",
-        "price": 511.2,
-        "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:2943668601042691949,productid:16475504625874616309,headlineOfferDocid:8046348197050914221,imageDocid:6600778699875782708,rds:PC_10202696575836500837|PROD_PC_10202696575836500837,gpcid:10202696575836500837,mid:576462912639315771,pvt:hg&hl=en&gl=us&udm=28",
-        "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
-        "status": "verified",
-        "method": "serpapi_current_targets",
-        "match_status": "strong",
-        "validation_version": "3.0",
-        "validation_reason": "Exact current-target matcher passed",
-        "query_kind": "current_exact_target",
-        "timestamp": "2026-11-17T15:55:50.933016+00:00",
+        "timestamp": "2026-11-20T15:21:30.893521+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 511.2,
       "max": 1088.52,
-      "avg": 858.8587234042553,
+      "avg": 852.9363461538462,
       "median": 849.0
     }
   },

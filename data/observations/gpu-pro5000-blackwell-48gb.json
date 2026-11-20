@@ -791,5 +791,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-17T15:54:41.688416+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "ABS AI Workstation - 48GB VRAM (NVIDIA RTX PRO 5000 Blackwell), AMD EPYC 4545P, 128GB ECC DDR5 UDIMM, 2x 2TB NVMe M.2, Ubuntu (Zaurion ZRE4545P-RP5000",
+    "condition": null,
+    "seller": "Newegg Business",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 15999.0,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=productid:1292561974830973449,headlineOfferDocid:1292561974830973449,imageDocid:7613562442011934227,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "price $15999.00 outside sanity band $2000-$9000",
+    "query_kind": "generic",
+    "timestamp": "2026-11-20T15:21:23.404215+00:00",
+    "notes": "price $15999.00 outside sanity band $2000-$9000"
   }
 ]

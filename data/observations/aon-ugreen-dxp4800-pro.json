@@ -628,5 +628,26 @@
     "query_kind": "current_exact_target",
     "timestamp": "2026-11-13T14:29:29.730996+00:00",
     "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
+  },
+  {
+    "component_id": "aon-ugreen-dxp4800-pro",
+    "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 Pro",
+    "model": "UGREEN DXP4800 Pro 4-Bay NAS + UPS3000 12000mAh Battery Backup Bundle",
+    "condition": null,
+    "seller": "ai.ugreen.com",
+    "delivery": "Free delivery",
+    "retailer": "ai_ugreen_com",
+    "price": 714.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 Pro&prds=productid:16693449276069099130,headlineOfferDocid:16693449276069099130,imageDocid:8542882372685400191,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
+    "status": "verified",
+    "method": "serpapi_current_targets",
+    "match_status": "strong",
+    "validation_version": "3.0",
+    "validation_reason": "Exact current-target matcher passed",
+    "query_kind": "current_exact_target",
+    "timestamp": "2026-11-20T15:21:30.893521+00:00",
+    "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
   }
 ]

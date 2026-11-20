@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T15:58:55.332981+00:00",
+  "generated_at": "2026-11-20T15:21:53.243017+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 73 days old",
+      "status": "price is 76 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,15 +15,15 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-17T15:55:50.933016+00:00",
-      "last_verified_price": 509.0,
+      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
+      "last_verified_price": 504.0,
       "latest_check_status": "verified"
     },
     {
       "id": "walmart",
       "name": "Walmart",
-      "state": "green",
-      "status": "fresh trusted price",
+      "state": "yellow",
+      "status": "price is 7 days old",
       "last_verified_at": "2026-11-13T14:29:29.730996+00:00",
       "last_verified_price": 515.0,
       "latest_check_status": "verified"
@@ -33,15 +33,15 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-17T15:55:50.933016+00:00",
-      "last_verified_price": 968.0,
+      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
+      "last_verified_price": 1287.99,
       "latest_check_status": "verified"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
       "state": "yellow",
-      "status": "price is 14 days old",
+      "status": "price is 17 days old",
       "last_verified_at": "2026-11-03T14:04:39.051114+00:00",
       "last_verified_price": 849.0,
       "latest_check_status": "rejected"
@@ -49,11 +49,11 @@
     {
       "id": "microcenter",
       "name": "Micro Center",
-      "state": "red",
-      "status": "missing from latest search",
-      "last_verified_at": "2026-11-13T14:29:29.730996+00:00",
-      "last_verified_price": 679.99,
-      "latest_check_status": "check_failed"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
+      "last_verified_price": 656.99,
+      "latest_check_status": "verified"
     }
   ],
   "freshness_policy": {
