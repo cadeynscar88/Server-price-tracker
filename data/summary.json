@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-20T15:21:53.217858+00:00",
-  "last_check": "2026-11-20T15:21:23.404215+00:00",
+  "generated": "2026-11-24T17:36:52.817481+00:00",
+  "last_check": "2026-11-24T17:35:55.207772+00:00",
   "tracker_version": "3.0.0",
   "target_budget": 4000,
   "build_state_updated": "2026-09-11",
@@ -492,7 +492,7 @@
       "median": 44.99
     },
     "os-ssd-mp44-2tb": {
-      "n": 17,
+      "n": 18,
       "cur": 309.99,
       "curObs": {
         "component_id": "os-ssd-mp44-2tb",
@@ -517,8 +517,8 @@
       },
       "min": 309.99,
       "max": 394.39,
-      "avg": 350.2852941176471,
-      "median": 325.99
+      "avg": 350.56611111111107,
+      "median": 340.15
     },
     "os-ssd-mp44-4tb": {
       "n": 2,
@@ -575,19 +575,19 @@
     },
     "gpu-pro5000-blackwell-48gb": null,
     "gpu-a6000-48gb": {
-      "n": 20,
+      "n": 21,
       "cur": 4300.0,
       "curObs": {
         "component_id": "gpu-a6000-48gb",
         "component": "Future Heavy candidate \u2014 RTX A6000 48GB ECC",
-        "model": "Nvidia RTX A6000E 900-5G133-2200-E00 48GB GDDR6 10752 Graphic Card",
+        "model": "Nvidia Rtx A6000 48gb Gddr6",
         "condition": null,
         "seller": "eBay",
         "delivery": "Free delivery",
         "retailer": "ebay",
         "price": 4300.0,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=catalogid:7703946916754366525,productid:4416673331678936809,headlineOfferDocid:17029542436407157631,imageDocid:4728165393065212836,gpcid:12582127179656054169,mid:576462576252010594,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX A6000 48GB&prds=productid:17029542436407157631,headlineOfferDocid:17029542436407157631,imageDocid:4728165393065212836,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping",
         "status": "verified",
         "method": "serpapi_google_shopping",
@@ -595,13 +595,13 @@
         "validation_version": "2.9",
         "validation_reason": "RTX A6000 48GB + sane price",
         "query_kind": "generic",
-        "timestamp": "2026-11-20T15:21:23.404215+00:00",
+        "timestamp": "2026-11-24T17:35:55.207772+00:00",
         "notes": "RTX A6000 48GB + sane price"
       },
       "min": 4117.07,
       "max": 7150.0,
-      "avg": 5757.2835,
-      "median": 5753.4
+      "avg": 5687.889047619047,
+      "median": 5706.8
     },
     "gpu-pro6000-blackwell-96gb": {
       "n": 19,
@@ -662,7 +662,7 @@
       "median": 667.87
     },
     "aon-minisforum-n5-air-ryzen7-255": {
-      "n": 36,
+      "n": 39,
       "cur": 490.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-air-ryzen7-255",
@@ -687,11 +687,11 @@
       },
       "min": 490.0,
       "max": 752.07,
-      "avg": 599.8375000000001,
+      "avg": 599.6210256410257,
       "median": 535.0
     },
     "aon-minisforum-n5-pro-hx370": {
-      "n": 27,
+      "n": 31,
       "cur": 830.0,
       "curObs": {
         "component_id": "aon-minisforum-n5-pro-hx370",
@@ -716,23 +716,23 @@
       },
       "min": 830.0,
       "max": 1461.17,
-      "avg": 1014.4325925925926,
+      "avg": 1024.0551612903225,
       "median": 968.0
     },
     "aon-ugreen-dxp4800-gt": {
-      "n": 26,
-      "cur": 559.99,
+      "n": 29,
+      "cur": 527.99,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-gt",
         "component": "Always-on candidate \u2014 UGREEN NASync DXP4800 GT",
-        "model": "UGREEN NAS DXP4800 GT 4-Bay Desktop Network Attached Storage AMD R2514 CPU 8GB DDR4 RAM",
+        "model": "UGREEN DXP4800 GT 4 Bay 144TB NAS Enterprise-Class Storage for Home Lab & Small Office",
         "condition": null,
         "seller": "ai.ugreen.com",
         "delivery": "Free delivery",
         "retailer": "ai_ugreen_com",
-        "price": 559.99,
+        "price": 527.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:6836628467734864971,productid:15214957500032409744,headlineOfferDocid:7995933080231950530,imageDocid:16507290539742429111,rds:PC_15947649116504632696|PROD_PC_15947649116504632696,gpcid:15947649116504632696,mid:576462567088184715,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=UGREEN NASync DXP4800 GT&prds=catalogid:6836628467734864971,productid:934994355361886535,headlineOfferDocid:17257574413069975237,imageDocid:16507290539742429111,rds:PC_15947649116504632696|PROD_PC_15947649116504632696,gpcid:54075054352499483,mid:576462916918968738,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -740,16 +740,16 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-10T14:47:32.086820+00:00",
+        "timestamp": "2026-11-24T17:36:06.498030+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 475.99,
       "max": 920.61,
-      "avg": 668.8557692307693,
+      "avg": 667.8220689655172,
       "median": 659.99
     },
     "aon-ugreen-dxp4800-plus": {
-      "n": 35,
+      "n": 40,
       "cur": 407.28,
       "curObs": {
         "component_id": "aon-ugreen-dxp4800-plus",
@@ -773,8 +773,8 @@
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 407.28,
-      "max": 917.59,
-      "avg": 689.9191428571429,
+      "max": 973.95,
+      "avg": 695.76475,
       "median": 656.99
     },
     "aon-ugreen-dxp4800-pro": {
@@ -865,7 +865,7 @@
       "median": 799.99
     },
     "aon-asustor-as6804t": {
-      "n": 20,
+      "n": 22,
       "cur": 1054.8,
       "curObs": {
         "component_id": "aon-asustor-as6804t",
@@ -890,23 +890,23 @@
       },
       "min": 1054.8,
       "max": 1855.4,
-      "avg": 1597.907,
+      "avg": 1570.278181818182,
       "median": 1517.99
     },
     "aon-qnap-ts464": {
-      "n": 52,
-      "cur": 687.06,
+      "n": 58,
+      "cur": 711.99,
       "curObs": {
         "component_id": "aon-qnap-ts464",
         "component": "Always-on candidate \u2014 QNAP TS-464",
-        "model": "QNAP TS-464-8G 4-Bay NAS Enclosure",
+        "model": "QNAP TS-464-8G NAS",
         "condition": null,
-        "seller": "Best Buy",
-        "delivery": "Free delivery",
-        "retailer": "bestbuy",
-        "price": 687.06,
+        "seller": "Techinn.com",
+        "delivery": null,
+        "retailer": "techinn_com",
+        "price": 711.99,
         "currency": "USD",
-        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12528242832456674759,productid:12283817139144939161,headlineOfferDocid:12000671651455733625,imageDocid:1271800174818004960,rds:PC_8181687497724425127|PROD_PC_8181687497724425127,gpcid:8181687497724425127,mid:576462563308006616,pvt:hg&hl=en&gl=us&udm=28",
+        "source_url": "https://www.google.com/search?ibp=oshop&q=QNAP TS-464 4-Bay NAS&prds=catalogid:12412959505106798018,productid:4134771008136086131,headlineOfferDocid:15694823075774317259,imageDocid:12005855650453721925,rds:PC_14851674681628263308|PROD_PC_14851674681628263308,gpcid:14851674681628263308,mid:576462917239630276,pvt:hg&hl=en&gl=us&udm=28",
         "availability": "Shown in Google Shopping; live retailer verification still required before purchase",
         "status": "verified",
         "method": "serpapi_current_targets",
@@ -914,12 +914,12 @@
         "validation_version": "3.0",
         "validation_reason": "Exact current-target matcher passed",
         "query_kind": "current_exact_target",
-        "timestamp": "2026-11-20T15:21:30.893521+00:00",
+        "timestamp": "2026-11-24T17:36:06.498030+00:00",
         "notes": "Graph observation only. Confirm the live retailer page before BUY/BUY NOW."
       },
       "min": 511.2,
       "max": 1088.52,
-      "avg": 852.9363461538462,
+      "avg": 852.885,
       "median": 849.0
     }
   },

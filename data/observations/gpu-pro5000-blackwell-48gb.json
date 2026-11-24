@@ -812,5 +812,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-20T15:21:23.404215+00:00",
     "notes": "price $15999.00 outside sanity band $2000-$9000"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "PNY NVIDIA RTX PRO 5000 Blackwell",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 7899.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=catalogid:8097872664313781736,productid:2482272942698930888,headlineOfferDocid:7809095822283479025,imageDocid:10617118242016532653,rds:PC_1898254378844617508|PROD_PC_1898254378844617508,gpcid:2285522551201998419,mid:576462576506666301,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-11-24T17:35:55.207772+00:00",
+    "notes": "different model/variant"
   }
 ]

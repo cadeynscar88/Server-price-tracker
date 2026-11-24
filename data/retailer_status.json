@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T15:21:53.243017+00:00",
+  "generated_at": "2026-11-24T17:36:52.850512+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 76 days old",
+      "status": "price is 80 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,7 +15,7 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
+      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
       "last_verified_price": 504.0,
       "latest_check_status": "verified"
     },
@@ -23,7 +23,7 @@
       "id": "walmart",
       "name": "Walmart",
       "state": "yellow",
-      "status": "price is 7 days old",
+      "status": "price is 11 days old",
       "last_verified_at": "2026-11-13T14:29:29.730996+00:00",
       "last_verified_price": 515.0,
       "latest_check_status": "verified"
@@ -33,25 +33,25 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
-      "last_verified_price": 1287.99,
+      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
+      "last_verified_price": 1159.0,
       "latest_check_status": "verified"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
-      "state": "yellow",
-      "status": "price is 17 days old",
-      "last_verified_at": "2026-11-03T14:04:39.051114+00:00",
-      "last_verified_price": 849.0,
-      "latest_check_status": "rejected"
+      "state": "green",
+      "status": "fresh trusted price",
+      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
+      "last_verified_price": 527.99,
+      "latest_check_status": "verified"
     },
     {
       "id": "microcenter",
       "name": "Micro Center",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-20T15:21:30.893521+00:00",
+      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
       "last_verified_price": 656.99,
       "latest_check_status": "verified"
     }

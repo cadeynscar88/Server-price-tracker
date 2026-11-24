@@ -976,5 +976,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-20T15:21:23.404215+00:00",
     "notes": "price $265.00 outside sanity band $1200-$6500"
+  },
+  {
+    "component_id": "gpu-5090",
+    "component": "Future Heavy candidate \u2014 RTX 5090 32GB",
+    "model": "Sapphire NITRO+ Radeon RX 7900 XTX Vapor-X 24GB GDDR6 Graphics Card",
+    "condition": null,
+    "seller": "Newegg.com - TECH EDGE",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 1787.01,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX 5090 32GB&prds=catalogid:7298706157343287561,productid:14032012183652506043,headlineOfferDocid:14370329933981854023,imageDocid:11112553734515656404,rds:PC_11683339646656653207|PROD_PC_11683339646656653207,gpcid:11683339646656653207,mid:576462826396336943,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "rejected",
+    "method": "serpapi_google_shopping",
+    "match_status": "rejected",
+    "validation_version": "2.9",
+    "validation_reason": "different model/variant",
+    "query_kind": "generic",
+    "timestamp": "2026-11-24T17:35:55.207772+00:00",
+    "notes": "different model/variant"
   }
 ]
