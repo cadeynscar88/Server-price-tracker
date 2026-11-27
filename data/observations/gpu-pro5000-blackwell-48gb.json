@@ -833,5 +833,26 @@
     "query_kind": "generic",
     "timestamp": "2026-11-24T17:35:55.207772+00:00",
     "notes": "different model/variant"
+  },
+  {
+    "component_id": "gpu-pro5000-blackwell-48gb",
+    "component": "Future Heavy candidate \u2014 RTX PRO 5000 Blackwell 48GB ECC",
+    "model": "NVIDIA RTX PRO 5000 Blackwell 48GB Workstation",
+    "condition": null,
+    "seller": "Newegg.com",
+    "delivery": "Free delivery",
+    "retailer": "newegg",
+    "price": 7299.99,
+    "currency": "USD",
+    "source_url": "https://www.google.com/search?ibp=oshop&q=NVIDIA RTX PRO 5000 Blackwell 48GB&prds=catalogid:8969104400372642493,productid:2486596053807070050,headlineOfferDocid:5996754876080746433,imageDocid:17760563498302149079,rds:PC_1920953418603750936|PROD_PC_1920953418603750936,gpcid:1920953418603750936,mid:576462898600168337,pvt:hg&hl=en&gl=us&udm=28",
+    "availability": "Shown in Google Shopping",
+    "status": "verified",
+    "method": "serpapi_google_shopping",
+    "match_status": "strong",
+    "validation_version": "2.9",
+    "validation_reason": "RTX PRO 5000 Blackwell 48GB + sane price",
+    "query_kind": "generic",
+    "timestamp": "2026-11-27T16:33:25.491733+00:00",
+    "notes": "RTX PRO 5000 Blackwell 48GB + sane price"
   }
 ]

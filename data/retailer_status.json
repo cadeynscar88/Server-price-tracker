@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-24T17:36:52.850512+00:00",
+  "generated_at": "2026-11-27T16:34:19.281000+00:00",
   "retailers": [
     {
       "id": "amazon",
       "name": "Amazon",
       "state": "yellow",
-      "status": "price is 80 days old",
+      "status": "price is 83 days old",
       "last_verified_at": "2026-09-04T21:30:00+00:00",
       "last_verified_price": 1959.99,
       "latest_check_status": "check_failed"
@@ -15,15 +15,15 @@
       "name": "Newegg",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
-      "last_verified_price": 504.0,
+      "last_verified_at": "2026-11-27T16:33:37.830310+00:00",
+      "last_verified_price": 527.99,
       "latest_check_status": "verified"
     },
     {
       "id": "walmart",
       "name": "Walmart",
       "state": "yellow",
-      "status": "price is 11 days old",
+      "status": "price is 14 days old",
       "last_verified_at": "2026-11-13T14:29:29.730996+00:00",
       "last_verified_price": 515.0,
       "latest_check_status": "verified"
@@ -33,17 +33,17 @@
       "name": "Best Buy",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
-      "last_verified_price": 1159.0,
-      "latest_check_status": "verified"
+      "last_verified_at": "2026-11-27T16:33:25.491733+00:00",
+      "last_verified_price": 624.0,
+      "latest_check_status": "rejected"
     },
     {
       "id": "bh",
       "name": "B&H Photo",
       "state": "green",
       "status": "fresh trusted price",
-      "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
-      "last_verified_price": 527.99,
+      "last_verified_at": "2026-11-27T16:33:37.830310+00:00",
+      "last_verified_price": 649.99,
       "latest_check_status": "verified"
     },
     {
@@ -53,7 +53,7 @@
       "status": "fresh trusted price",
       "last_verified_at": "2026-11-24T17:36:06.498030+00:00",
       "last_verified_price": 656.99,
-      "latest_check_status": "verified"
+      "latest_check_status": "rejected"
     }
   ],
   "freshness_policy": {
